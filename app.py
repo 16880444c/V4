@@ -18,17 +18,17 @@ def load_split_local_agreement() -> dict:
     failed_files = []
     sections_loaded = {}
     
-    # List of all split files in the new directory
+    # List of all split files with the correct naming pattern
     split_files = [
-        'agreements/bcgeu_local/local_metadata.json',
-        'agreements/bcgeu_local/local_definitions.json',
-        'agreements/bcgeu_local/local_articles_1_10.json',
-        'agreements/bcgeu_local/local_articles_11_20.json', 
-        'agreements/bcgeu_local/local_articles_21_30.json',
-        'agreements/bcgeu_local/local_articles_31_35.json',
-        'agreements/bcgeu_local/local_appendices.json',
-        'agreements/bcgeu_local/local_letters_of_agreement.json',
-        'agreements/bcgeu_local/local_memorandum.json'
+        'agreements/bcgeu_local/local-metadata-json.json',
+        'agreements/bcgeu_local/local-definitions-json.json',
+        'agreements/bcgeu_local/local-articles-1-10-json.json',
+        'agreements/bcgeu_local/local-articles-11-20-json.json', 
+        'agreements/bcgeu_local/local-articles-21-30-json.json',
+        'agreements/bcgeu_local/local-articles-31-35-json.json',
+        'agreements/bcgeu_local/local-appendices-json.json',
+        'agreements/bcgeu_local/local-letters-of-agreement-json.json',
+        'agreements/bcgeu_local/local-memorandum-json.json'
     ]
     
     st.info(f"📂 Attempting to load {len(split_files)} split files from agreements/bcgeu_local/")
