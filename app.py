@@ -14,9 +14,6 @@ st.set_page_config(
 def load_split_local_agreement() -> dict:
     """Load the local agreement from split JSON files"""
     local_agreement = {}
-    loaded_files = []
-    failed_files = []
-    sections_loaded = {}
     
     # List of all split files with the correct naming pattern
     split_files = [
@@ -31,122 +28,43 @@ def load_split_local_agreement() -> dict:
         'agreements/bcgeu_local/local-memorandum-json.json'
     ]
     
-    st.info(f"📂 Attempting to load {len(split_files)} split files from agreements/bcgeu_local/")
-    
     # Load each file and merge into the complete agreement
     for filename in split_files:
         try:
             with open(filename, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Track what sections are in each file
-                file_sections = list(data.keys())
-                sections_loaded[os.path.basename(filename)] = file_sections
-                
                 local_agreement.update(data)
-                loaded_files.append(os.path.basename(filename))
-                st.success(f"✅ Loaded {os.path.basename(filename)} - sections: {', '.join(file_sections)}")
-        except FileNotFoundError:
-            failed_files.append(f"{os.path.basename(filename)} (not found)")
-            st.error(f"❌ File not found: {filename}")
-        except json.JSONDecodeError as e:
-            failed_files.append(f"{os.path.basename(filename)} (invalid JSON: {str(e)})")
-            st.error(f"❌ Invalid JSON in {filename}: {e}")
-        except Exception as e:
-            failed_files.append(f"{os.path.basename(filename)} ({str(e)})")
-            st.error(f"❌ Error loading {filename}: {e}")
-    
-    # Show summary
-    if loaded_files:
-        st.success(f"📁 Successfully loaded {len(loaded_files)}/{len(split_files)} split files")
-        
-        # Show all sections loaded
-        all_sections = list(local_agreement.keys())
-        st.info(f"📋 Total sections loaded from split files: {len(all_sections)}")
-        st.info(f"📋 Sections: {', '.join(all_sections)}")
-    
-    if failed_files:
-        st.warning(f"⚠️ Failed to load {len(failed_files)} files")
+        except:
+            pass  # Silently skip any files that can't be loaded
     
     return local_agreement
 
 def load_builtin_agreements() -> tuple:
     """Load the built-in agreements from JSON files"""
-    st.write("🔍 **Loading Collective Agreements...**")
-    
     try:
         # Try loading split files first
-        st.write("### Loading Local Agreement from Split Files")
         local_agreement = load_split_local_agreement()
         
         # Only fall back to complete file if NO sections were loaded from splits
         if not local_agreement or len(local_agreement) == 0:
-            st.warning("⚠️ No sections loaded from split files, falling back to complete file...")
             complete_local_path = 'agreements/bcgeu_local/complete_local.json'
             try:
                 with open(complete_local_path, 'r', encoding='utf-8') as f:
                     local_agreement = json.load(f)
-                st.success(f"✅ Loaded complete local agreement from {complete_local_path}")
-            except FileNotFoundError:
-                st.error(f"❌ Complete local agreement not found at {complete_local_path}")
-                st.error("❌ Unable to load local agreement from either split files or complete file")
+            except:
                 return None, None
-        else:
-            st.success(f"✅ Successfully loaded local agreement from split files!")
         
         # Load common agreement
-        st.write("\n### Loading Common Agreement")
         common_agreement_path = 'agreements/bcgeu_common/complete_common.json'
         try:
             with open(common_agreement_path, 'r', encoding='utf-8') as f:
                 common_agreement = json.load(f)
-            st.success(f"✅ Loaded common agreement from {common_agreement_path}")
-        except FileNotFoundError:
-            st.error(f"❌ Common agreement not found at {common_agreement_path}")
+        except:
             return None, None
-        
-        # Show final summary
-        st.write("\n### Final Summary")
-        local_sections = list(local_agreement.keys())
-        common_sections = list(common_agreement.keys())
-        
-        st.success(f"✅ **Local Agreement loaded successfully** ({len(local_sections)} sections)")
-        st.success(f"✅ **Common Agreement loaded successfully** ({len(common_sections)} sections)")
-        
-        # Verify critical sections in detail
-        st.write("\n### Verification of Critical Sections")
-        
-        # Check for appendices
-        if 'appendices' in local_agreement:
-            st.success("✅ Appendices section found")
-            if 'appendix_3' in local_agreement.get('appendices', {}):
-                st.success("✅ Appendix 3 (Program Coordinator) is available")
-                # Show a preview of Appendix 3
-                app3 = local_agreement['appendices']['appendix_3']
-                st.info(f"   - Title: {app3.get('title', 'No title')}")
-                st.info(f"   - Has workload reduction tables: {'workload_reduction_tables' in app3}")
-            else:
-                st.error("❌ Appendix 3 not found in appendices section")
-        else:
-            st.error("❌ No appendices section found")
-        
-        # Check for other important sections
-        if 'letters_of_agreement' in local_agreement:
-            loas = local_agreement['letters_of_agreement']
-            st.success(f"✅ Letters of Agreement found ({len(loas)} LOAs)")
-        else:
-            st.warning("⚠️ No letters_of_agreement section found")
-            
-        if 'memorandum_of_understanding' in local_agreement:
-            st.success("✅ Memorandum of Understanding found")
-        else:
-            st.warning("⚠️ No memorandum_of_understanding section found")
         
         return local_agreement, common_agreement
         
-    except Exception as e:
-        st.error(f"❌ Error loading agreements: {e}")
-        import traceback
-        st.error(f"Traceback: {traceback.format_exc()}")
+    except Exception:
         return None, None
 
 def format_agreement_for_context(agreement: dict, agreement_name: str) -> str:
@@ -238,13 +156,15 @@ Provide clear guidance with specific citations from the agreement text."""
         st.session_state.total_queries += 1
         
         return response.content[0].text
+    
+    except anthropic.RateLimitError:
+        return "⚠️ **Rate Limit Reached**\n\nThe system has reached its usage limit for this minute. This typically happens when processing large amounts of text.\n\n**What you can do:**\n• Wait a minute and try again\n• Try searching for specific sections (Local or Common only) instead of both\n• Simplify your question to reduce processing requirements\n\nThis limit resets every minute, so you'll be able to continue shortly."
+    
+    except anthropic.APIError as e:
+        return f"⚠️ **API Error**\n\nThere was an issue connecting to the AI service. Please try again in a moment.\n\nIf the problem persists, please contact support."
+    
     except Exception as e:
-        return f"Error generating response: {e}"
-
-def clear_chat():
-    """Clear the chat history"""
-    st.session_state.messages = []
-    st.rerun()
+        return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again.\n\nIf the issue continues, please contact support."
 
 def main():
     st.title("⚖️ Coast Mountain College Agreement Assistant")
@@ -286,9 +206,9 @@ def main():
                 st.session_state.common_agreement = common_agreement
                 st.session_state.agreements_loaded = True
             else:
-                st.error("❌ Could not load agreement files. Please check that the files exist in the correct directories:")
-                st.error("- Local agreement files in: agreements/bcgeu_local/")
-                st.error("- Common agreement file in: agreements/bcgeu_common/")
+                st.error("❌ Could not load agreement files. Please check that the files exist in:")
+                st.error("• Local: agreements/bcgeu_local/")
+                st.error("• Common: agreements/bcgeu_common/")
                 st.stop()
     
     # Agreement Selection
@@ -297,7 +217,8 @@ def main():
         "Which agreement do you want to search?",
         ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
         index=2,  # Default to both
-        horizontal=True
+        horizontal=True,
+        help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
     )
     
     st.markdown("---")
@@ -344,18 +265,10 @@ def main():
             st.markdown("- How does the sick leave system work?")
             st.markdown("- What are the vacation entitlements?")
     
-    # Bottom section
-    st.markdown("---")
-    col1, col2 = st.columns([3, 1])
-    
-    with col1:
-        if st.session_state.total_queries > 0:
-            st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {agreement_scope}")
-    
-    with col2:
-        if len(st.session_state.messages) > 0:
-            if st.button("🔄 New Chat", type="primary", use_container_width=True):
-                clear_chat()
+    # Bottom section with query count
+    if st.session_state.total_queries > 0:
+        st.markdown("---")
+        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {agreement_scope}")
 
 if __name__ == "__main__":
     main()
