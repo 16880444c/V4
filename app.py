@@ -16,6 +16,7 @@ def load_split_local_agreement() -> dict:
     local_agreement = {}
     loaded_files = []
     failed_files = []
+    sections_loaded = {}
     
     # List of all split files in the new directory
     split_files = [
@@ -30,25 +31,41 @@ def load_split_local_agreement() -> dict:
         'agreements/bcgeu_local/local_memorandum.json'
     ]
     
+    st.info(f"📂 Attempting to load {len(split_files)} split files from agreements/bcgeu_local/")
+    
     # Load each file and merge into the complete agreement
     for filename in split_files:
         try:
             with open(filename, 'r', encoding='utf-8') as f:
                 data = json.load(f)
+                # Track what sections are in each file
+                file_sections = list(data.keys())
+                sections_loaded[os.path.basename(filename)] = file_sections
+                
                 local_agreement.update(data)
                 loaded_files.append(os.path.basename(filename))
+                st.success(f"✅ Loaded {os.path.basename(filename)} - sections: {', '.join(file_sections)}")
         except FileNotFoundError:
             failed_files.append(f"{os.path.basename(filename)} (not found)")
-        except json.JSONDecodeError:
-            failed_files.append(f"{os.path.basename(filename)} (invalid JSON)")
+            st.error(f"❌ File not found: {filename}")
+        except json.JSONDecodeError as e:
+            failed_files.append(f"{os.path.basename(filename)} (invalid JSON: {str(e)})")
+            st.error(f"❌ Invalid JSON in {filename}: {e}")
         except Exception as e:
             failed_files.append(f"{os.path.basename(filename)} ({str(e)})")
+            st.error(f"❌ Error loading {filename}: {e}")
     
-    # Show debug info
+    # Show summary
     if loaded_files:
-        st.info(f"📁 Loaded {len(loaded_files)} local agreement files: {', '.join(loaded_files)}")
+        st.success(f"📁 Successfully loaded {len(loaded_files)}/{len(split_files)} split files")
+        
+        # Show all sections loaded
+        all_sections = list(local_agreement.keys())
+        st.info(f"📋 Total sections loaded from split files: {len(all_sections)}")
+        st.info(f"📋 Sections: {', '.join(all_sections)}")
+    
     if failed_files:
-        st.warning(f"⚠️ Failed to load {len(failed_files)} files: {', '.join(failed_files)}")
+        st.warning(f"⚠️ Failed to load {len(failed_files)} files")
     
     return local_agreement
 
@@ -58,11 +75,12 @@ def load_builtin_agreements() -> tuple:
     
     try:
         # Try loading split files first
+        st.write("### Loading Local Agreement from Split Files")
         local_agreement = load_split_local_agreement()
         
-        # If split files don't exist or are incomplete, fall back to complete file
-        if not local_agreement:
-            st.info("📂 Attempting to load complete local agreement file...")
+        # Only fall back to complete file if NO sections were loaded from splits
+        if not local_agreement or len(local_agreement) == 0:
+            st.warning("⚠️ No sections loaded from split files, falling back to complete file...")
             complete_local_path = 'agreements/bcgeu_local/complete_local.json'
             try:
                 with open(complete_local_path, 'r', encoding='utf-8') as f:
@@ -70,9 +88,13 @@ def load_builtin_agreements() -> tuple:
                 st.success(f"✅ Loaded complete local agreement from {complete_local_path}")
             except FileNotFoundError:
                 st.error(f"❌ Complete local agreement not found at {complete_local_path}")
+                st.error("❌ Unable to load local agreement from either split files or complete file")
                 return None, None
+        else:
+            st.success(f"✅ Successfully loaded local agreement from split files!")
         
         # Load common agreement
+        st.write("\n### Loading Common Agreement")
         common_agreement_path = 'agreements/bcgeu_common/complete_common.json'
         try:
             with open(common_agreement_path, 'r', encoding='utf-8') as f:
@@ -82,18 +104,42 @@ def load_builtin_agreements() -> tuple:
             st.error(f"❌ Common agreement not found at {common_agreement_path}")
             return None, None
         
-        # Show what was loaded
+        # Show final summary
+        st.write("\n### Final Summary")
         local_sections = list(local_agreement.keys())
         common_sections = list(common_agreement.keys())
         
-        st.success(f"✅ **Local Agreement loaded successfully** ({len(local_sections)} sections: {', '.join(local_sections)})")
-        st.success(f"✅ **Common Agreement loaded successfully** ({len(common_sections)} sections: {', '.join(common_sections)})")
+        st.success(f"✅ **Local Agreement loaded successfully** ({len(local_sections)} sections)")
+        st.success(f"✅ **Common Agreement loaded successfully** ({len(common_sections)} sections)")
         
-        # Verify critical sections
-        if 'appendices' in local_agreement and 'appendix_3' in local_agreement.get('appendices', {}):
-            st.info("✅ Verified: Appendix 3 (Program Coordinator) is available")
+        # Verify critical sections in detail
+        st.write("\n### Verification of Critical Sections")
+        
+        # Check for appendices
+        if 'appendices' in local_agreement:
+            st.success("✅ Appendices section found")
+            if 'appendix_3' in local_agreement.get('appendices', {}):
+                st.success("✅ Appendix 3 (Program Coordinator) is available")
+                # Show a preview of Appendix 3
+                app3 = local_agreement['appendices']['appendix_3']
+                st.info(f"   - Title: {app3.get('title', 'No title')}")
+                st.info(f"   - Has workload reduction tables: {'workload_reduction_tables' in app3}")
+            else:
+                st.error("❌ Appendix 3 not found in appendices section")
         else:
-            st.warning("⚠️ Warning: Appendix 3 (Program Coordinator) not found in local agreement")
+            st.error("❌ No appendices section found")
+        
+        # Check for other important sections
+        if 'letters_of_agreement' in local_agreement:
+            loas = local_agreement['letters_of_agreement']
+            st.success(f"✅ Letters of Agreement found ({len(loas)} LOAs)")
+        else:
+            st.warning("⚠️ No letters_of_agreement section found")
+            
+        if 'memorandum_of_understanding' in local_agreement:
+            st.success("✅ Memorandum of Understanding found")
+        else:
+            st.warning("⚠️ No memorandum_of_understanding section found")
         
         return local_agreement, common_agreement
         
