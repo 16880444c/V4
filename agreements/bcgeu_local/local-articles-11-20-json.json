@@ -1,0 +1,696 @@
+{
+    "articles_11_20": {
+        "11": {
+            "title": "SENIORITY, LAYOFF AND RECALL",
+            "sections": {
+                "11.1": {
+                    "title": "Seniority",
+                    "content": "Seniority shall mean the length of continuous service as an employee of the College. Seniority for part-time employees shall be prorated on the basis of full-time workload as described in Article 31 for faculty."
+                },
+                "11.2": {
+                    "title": "Seniority List",
+                    "content": "The Employer shall maintain a seniority list showing all necessary information relevant to the application of the seniority provisions of the Agreement. An up-to-date seniority list shall be sent to the President of the Union or their designate quarterly."
+                },
+                "11.3": {
+                    "title": "Letter of Appointment",
+                    "content": "Employees shall receive a letter of appointment prior to commencing employment if possible. The Employer shall provide the union designate with a copy of all letters of appointment issued to regular or non-regular employees within the bargaining unit."
+                },
+                "11.4": {
+                    "title": "Seniority During Initial Probation",
+                    "content": "Employees shall earn but not be credited with seniority during the initial probationary period. Upon successful completion of initial probation, an employee shall be credited with seniority from the initial date of hire. Except as otherwise specified during initial probation, all other terms and conditions of this Agreement apply."
+                },
+                "11.5": {
+                    "title": "Seniority Accrual",
+                    "content": "Employees shall maintain and accrue seniority for:",
+                    "subsections": {
+                        "a": "all service within the bargaining unit, subject to Clause 11.8;",
+                        "b": "periods of leave for illness or injury for a maximum period of two (2) years commencing from the first (1st) day of illness or injury under the STIIP plan;",
+                        "c": "periods of leave for any purpose except as outlined in Clause 11.6;",
+                        "d": "where an employee is on leave for illness or injury exceeding two (2) years, the employee shall retain seniority to that point but not continue to accrue seniority;",
+                        "e": "leave of absence periods of up to one (1) year for upgrading or maintaining job related skills. Reasons for the leave should be clearly stated and agreed to prior to leave commencement.",
+                        "f": "Employees shall maintain but not accrue seniority for periods of employment in another bargaining unit."
+                    }
+                },
+                "11.6": {
+                    "title": "Seniority Breaks",
+                    "content": "Employees shall maintain but not accrue seniority:",
+                    "subsections": {
+                        "a": "during periods of layoff of less than two (2) years;",
+                        "b": "during periods of leave in excess of thirty (30) days: to seek or hold public office; general leave as provided in Clauses 19.7, 19.9 and 11.5(d).",
+                        "c": "during periods of less than two (2) years for the purpose of filling a management or excluded position within the College."
+                    }
+                },
+                "11.7": {
+                    "title": "Bridging of Service",
+                    "content": "If an employee resigns their employment as a result of a decision to raise a dependent child or dependent children, and is re-employed, the employee shall be credited with length of seniority accumulated at time of termination for the purposes of benefits based on seniority. The following conditions shall apply:",
+                    "conditions": [
+                        "the employee must have accrued at least three (3) years of seniority at time of termination.",
+                        "the resignation must indicate the resignation was for the purpose of raising a dependent child or children.",
+                        "the break in service shall be for no longer than six (6) years; and during that time the employee must not have been engaged in remunerative employment for more than six (6) months."
+                    ],
+                    "note": "The previous seniority shall be reinstated on the successful completion of the probationary period for the new position."
+                },
+                "11.8": {
+                    "title": "Loss of Seniority",
+                    "content": "An employee shall lose their seniority in the event that:",
+                    "subsections": {
+                        "a": "they are discharged for just cause;",
+                        "b": "subject to Clause 11.7, they voluntarily terminate their employment;",
+                        "c": "they are on layoff for more than two (2) years;",
+                        "d": "they fail to report for duty for ten (10) consecutive workdays without informing the Employer of the reason for their absence. An employee shall be afforded the opportunity to demonstrate that there were reasonable grounds for not having informed the Employer;",
+                        "e": "they decline two (2) recalls within a six (6) month period, for which seventy-two (72) hours' notice of recall is given. Where the Employer intends to register a decline, the employee shall be notified in writing with a copy to their shop steward."
+                    }
+                },
+                "11.9": {
+                    "title": "Layoff",
+                    "sections": {
+                        "11.9.1": {
+                            "content": "Where the Employer identifies to the Union that the deletion of positions will result in the layoff of employees pursuant to Clause 11.9, the Employer and the Union shall, prior to the layoff of employees, identify any employees who: may be eligible for early retirement and, may be willing to resign to provide a vacant position. Should the cost of the payment of severance to an employee willing to resign not exceed the actual cost of the initial layoff, the Employer may make this option available. It is recognized that an employee taking severance under this option must actually prevent the layoff of another employee and the Employer shall not incur any relocation expenses as a result of this application."
+                        },
+                        "11.9.2": {
+                            "content": "In the event of a layoff, employees shall be laid off in reverse order of seniority within their seniority group providing those retained are qualified to perform the work available and can be expected to satisfactorily perform the work within a period of on the job training under immediate supervision not exceeding one (1) month."
+                        },
+                        "11.9.3": {
+                            "title": "Bumping Procedure",
+                            "procedures": [
+                                "Regular employees who receive notice of layoff shall have the right to bump employees with less seniority.",
+                                "Where seniority is equal, the regular employee with the superior qualifications, for their particular job is deemed to have greater seniority.",
+                                "Regular employees, with three (3) or more years of seniority, shall have the right to bump employees in any of the nine (9) College geographic locations",
+                                "Regular employees, with less than three (3) years of seniority, shall be able to bump within their geographic location",
+                                "Regular employees who are bumped shall in turn have the right to bump employees with less seniority."
+                            ],
+                            "geographic_locations": [
+                                "Queen Charlotte City",
+                                "Prince Rupert",
+                                "Terrace",
+                                "Kitimat",
+                                "Hazelton",
+                                "Smithers",
+                                "Houston",
+                                "Stewart",
+                                "Nass Valley"
+                            ]
+                        },
+                        "11.9.4": {
+                            "content": "In the event the employee does not have the necessary seniority or qualifications to bump, the employee shall be laid off."
+                        },
+                        "11.9.5": {
+                            "content": "A regular employee shall notify the Employer in writing within two (2) weeks of receiving layoff notice whether bumping rights shall be exercised or whether the employee opts for a layoff."
+                        },
+                        "11.9.6": {
+                            "content": "If a regular employee opts for a layoff, the employee must choose either recall rights in accordance with Clause 11.11 or severance pay in accordance with Clause 13.3 which shall take effect on the date the layoff is scheduled to occur. If a regular employee declines to make a selection they shall be deemed to have taken the severance option under Clause 13.3(a)(1)."
+                        },
+                        "11.9.7": {
+                            "content": "All relocation expenses resulting from bumping shall be the employee's responsibility."
+                        }
+                    }
+                },
+                "11.10": {
+                    "title": "Application",
+                    "content": "The application of the layoff, bumping and recall procedures in this article shall be subject to joint employer/union discussion. These procedures shall be carried out on a college-wide basis as appropriate."
+                },
+                "11.11": {
+                    "title": "Recall",
+                    "subsections": {
+                        "a": "Regular employees on layoff shall retain recall rights, commencing with the date of notice under Clause 11.9(f) above, for a period of two (2) years within the geographic region from which they were laid off. Regular employees with three (3) or more years service shall retain recall rights throughout the College region.",
+                        "b": "Employees shall be recalled in order of seniority within their seniority group provided those to be recalled are qualified to perform the work available and can be expected to satisfactorily perform the work within a period of on the job training under immediate supervision not exceeding one (1) month. Prior to posting a regular vacancy the Employer shall send a notice of such vacancy to the bargaining unit Chairperson.",
+                        "c": "All relocation expenses resulting from recall shall be the employee's responsibility.",
+                        "d": "Recall shall be in order of service seniority. Regular employees shall be recalled before non-regular employees."
+                    }
+                },
+                "11.12": {
+                    "title": "No New Employees",
+                    "content": "No new employees shall be hired until: the provisions in Clause 12.9(a) have been complied with; and those on layoff have been given opportunity of recall pursuant to Clause 11.11."
+                }
+            }
+        },
+        "12": {
+            "title": "SERVICE CAREER POLICY",
+            "sections": {
+                "12.1": {
+                    "title": "Union Observer",
+                    "content": "The President of the Union or their designate may sit as an observer on a selection panel for positions in the bargaining unit. The observer shall be a disinterested party. This clause shall not apply to excluded positions. The union observer shall be provided with a minimum selection criteria for the job posting, the review and short list of all applicants, and any other tool used in determining the selection."
+                },
+                "12.2": {
+                    "title": "Selection Committee",
+                    "content": "The Selection Committee for a regular appointment shall be comprised of a minimum of four (4) individuals including: the appropriate administrator; a coordinator or Chair, where applicable, or instructor; one (1) instructor who is part of the discipline in which the vacancy occurs; and one (1) support person. This Committee shall short list, interview and make recommendations. Appropriate release time shall be made available to those on the interview committee."
+                },
+                "12.3": {
+                    "title": "Notification",
+                    "content": "Unsuccessful employee applicants to posted positions shall be notified of the name and classification of the successful applicant. The unsuccessful employee applicants shall upon written request be notified in writing of the reasons why they were unsuccessful."
+                },
+                "12.4": {
+                    "title": "Appeal Procedure",
+                    "content": "Where an employee feels they have been aggrieved by the decision of the selection panel, the President or the President's designate may appeal the decision in accordance with Clause 8.4 within fourteen (14) days of the employee receiving the Employer's written reply to their request for the reasons why they were unsuccessful."
+                },
+                "12.5": {
+                    "title": "Relocations",
+                    "content": "It is understood by the parties that employees shall not be required to relocate from one geographic location to another against their will. However, the Employer and the Union recognize that in certain cases relocations may be in the interests of the Employer and/or the employee. In such cases, an employee shall be fully advised of the reason for their relocation, as well as the possible result of refusal to be relocated."
+                },
+                "12.6": {
+                    "title": "Transfers Without Posting",
+                    "content": "Lateral transfers or voluntary demotions may be granted, without posting for: compassionate or medical grounds to regular employees who have completed their initial probationary period; all employees who have become incapacitated by industrial injury or industrial illness."
+                },
+                "12.7": {
+                    "title": "Interview Expenses",
+                    "content": "An employee applicant for a posted position who is not on leave of absence without pay or not on layoff or not on a scheduled day of rest, and who has been called for a panel interview shall be granted leave of absence with basic pay and shall have their authorized expenses paid. An employee granted leave under this clause shall notify their supervisor as soon as the employee is notified of their requirement to appear for an interview."
+                },
+                "12.8": {
+                    "title": "Appointment Procedures",
+                    "subsections": {
+                        "a": "Appointments, including promotions, filling vacancies, and transfers shall be on the basis of full qualifications and seniority. Full qualifications shall mean the candidate has all the necessary skills and qualifications as specified in the job description. Full qualifications being sufficient, the candidate with greater seniority shall be selected.",
+                        "b": "All BCGEU employees of the College shall be considered as internal applicants on any BCGEU postings.",
+                        "c": "Where there is an internal applicant with the necessary qualifications to perform the job the position shall be offered to that candidate and the Employer shall provide on-the-job training of up to one (1) month.",
+                        "d": "Where the Employer decides to select an applicant from outside the College, when there are applicants from among College employees, or where the senior applicant meeting the criteria outlined in Clause 12.8(a) is not selected, the onus for justifying such a selection shall rest with the Employer.",
+                        "e": "Promotion out of Bargaining Unit: An employee promoted permanently to an excluded position shall cease to be covered by the terms of this Agreement. The employee may within two (2) years return to a position of equal classification and pay rate without loss of their rights and privileges under this Agreement. However, after an absence of one (1) year, the regular continuing employee's position shall be considered to be vacant and shall be posted as a regular continuing position. Except as provided in this article, excluded employees shall have no placement rights within the bargaining unit."
+                    }
+                },
+                "12.9": {
+                    "title": "Postings",
+                    "subsections": {
+                        "a": "All vacancies in existing positions and all new positions shall be posted within fourteen (14) days of their becoming required. Where ever operationally feasible, such postings shall be throughout the College region and shall be posted for five (5) working days prior to outside advertising.",
+                        "b": "The notice of postings shall contain the following information: nature of position, qualifications, experience, skills, whether shift work is involved, wages or salary rate or range, and specific location. Such qualifications may not be established in an arbitrary or discriminatory manner.",
+                        "c": "Notices shall be posted on the appropriate bulletin boards at least fourteen (14) days prior to the closing date of the competition, except as provided for in Clauses 12.5 and 12.6.",
+                        "d": "A copy of each posting shall be sent to all shop stewards."
+                    }
+                },
+                "12.10": {
+                    "title": "Vehicles",
+                    "content": "If an employee is required to use their own automobile in the performance of their duties, the Employer shall ensure that the position posting or advertisement shall include this requirement."
+                },
+                "12.11": {
+                    "title": "Instructor's Diploma",
+                    "content": "For career advancement in related areas in the College service, where the job specification requires a bachelor's degree, the possession of a Provincial Instructor's Diploma may be considered. The parties recognize that a Provincial Instructor's Diploma is not equivalent to a Bachelor's Degree."
+                },
+                "12.12": {
+                    "title": "Exchange Programs",
+                    "content": "The College agrees that exchange programs between the College and other jurisdictions, public and private, shall be encouraged. Employees shall be given the opportunity to participate in exchange programs at full basic pay and benefits."
+                },
+                "12.13": {
+                    "title": "Selection of Senior Administrators",
+                    "content": "Appointment of all excluded employees is clearly the responsibility of the Employer.",
+                    "sections": {
+                        "selection_committee": "There shall be a selection committee with equal representation from CUPE, BCGEU Support, BCGEU Instructors, Administration, and the College Board. The Union shall designate their representative(s).",
+                        "committee_responsibilities": [
+                            "The Selection Committee shall meet and set the minimum selection criteria, create a job posting, review and short list all applications, interview candidates and make recommendations to the President.",
+                            "The job posting shall contain the working title, brief description of duties and classifications of positions, qualifications, and state ability and experience required.",
+                            "The posting shall be posted within the College five (5) working days prior to it being advertised externally. A copy of the posting shall be provided to the Union.",
+                            "The selection criteria will include the following: academic and professional qualifications, work experience, College related experience and contributions, community involvement, personal attributes, and competence in applicable areas.",
+                            "In the event that an administrative and union-excluded position is filled by a member of the bargaining unit, the vacant position within the bargaining unit will be treated as a normal vacancy and filled in accordance with Article 12.",
+                            "In the event of a managerial reorganization, the Union will be consulted."
+                        ]
+                    }
+                }
+            }
+        },
+        "13": {
+            "title": "JOB SECURITY/SENIORITY RIGHTS",
+            "sections": {
+                "13.1": {
+                    "title": "Application of Agreement",
+                    "content": "The Employer will not use a combination of part-time and/or non-regular employees to the extent that they replace, displace or prevent the hiring of a full-time employee."
+                },
+                "13.2": {
+                    "title": "Notice of Layoff",
+                    "subsections": {
+                        "a": "Employees shall be given at least two (2) months' notice of layoff or pay in lieu thereof.",
+                        "b": "Where the appointment term is specified in the letter of appointment, such letter shall be considered layoff notice.",
+                        "c": "Where the letter of appointment specifies an appointment of twelve (12) months or less, there shall be no severance pay entitlement. If after the initial appointment an additional period of work is appointed, the employee will be entitled to severance pay calculated to the date of their initial hire."
+                    }
+                },
+                "13.3": {
+                    "title": "Severance, Retraining and Recall",
+                    "subsections": {
+                        "a": "An employee who is to be laid off shall be entitled to one of the following options and shall so indicate their option in writing to the Employer within two (2) weeks of notification of layoff. Where no indication is given within one (1) calendar month, the employee will be deemed to have chosen option (1) below. Together with the layoff notice, the employee shall receive, a listing of employees with less seniority in order to review job possibilities. The employee shall be entitled upon request to also receive job descriptions for any of these job possibilities.",
+                        "options": {
+                            "option_1": "A severance pay calculated on the basis of: one (1) month's current pay for each year of seniority rounded upward to the nearest year to a maximum of six (6) months' salary and; one (1) additional month's current pay for each additional five (5) years of seniority rounded upward to the nearest year to a maximum of four (4) months salary. This will be paid in full as soon after the date of layoff as administratively possible. An employee exercising this option shall be eligible for recall to either regular or non-regular positions.",
+                            "option_2": "A severance pay calculated on the same basis as outlined in Clause 13.3(a)(1) above, and paid by instalments on regular paydays at regular pay rate until the full amount of severance pay is paid. An employee exercising this option shall be eligible for recall to either regular or non-regular positions.",
+                            "option_3": "Salary and benefit continuance excluding annual leave/annual vacation during period of retraining for employees with two (2) or more years seniority calculated on the basis of one (1) month's continuance for each year of seniority to a maximum of six (6) months. An employee exercising this option shall not be eligible for recall notwithstanding Clause 11.11."
+                        },
+                        "additional_provisions": [
+                            "Benefits under Clause 13.3(a) above shall not exceed the time that would be required for the employee to reach their maximum retirement age.",
+                            "On or prior to the date of layoff the Employer shall advise the employee of the probability of recall to regular and/or non-regular positions.",
+                            "An employee failing to indicate to the Employer their option in writing within the time limit set out in Clause 13.3(a) above shall be deemed to have taken the option under Clause 13.3(a)(1) above.",
+                            "An employee taking the option under Clause 13.3(a)(1) above shall sign a statement to the effect that, should the employee be recalled to a regular position during the period covered by the severance pay, they shall immediately repay to the Employer the proportionate amount of severance pay received, and that failure to do so shall be deemed just cause for dismissal.",
+                            "An employee taking the option under Clause 13.3(a)(2) above and recalled to a regular position during the period covered by the severance pay shall immediately cease to receive any further instalment payments.",
+                            "Subject to Clause 11.11, an employee taking the option under Clause 13.3(a)(2) above shall take precedence over non-regular employees when appropriate non-regular vacancies arise. If the recall to non-regular position occurs during the period covered by the severance pay, further instalment payments shall be suspended during the period of work but, upon layoff again, shall resume until the full amount of severance pay is paid. Refusal of a non-regular job offer shall be counted as one (1) decline under Clause 11.8(e).",
+                            "An employee recalled to or retrained for a regular position and subsequently laid off again shall have calculation of their entitlement under Clause 13.3(a) based only on seniority accrued since the last appointment, but such amount shall not be less than the amount they did not receive previously."
+                        ]
+                    }
+                }
+            }
+        },
+        "14": {
+            "title": "HOURS OF WORK",
+            "sections": {
+                "14.1": {
+                    "title": "Conversion of Hours",
+                    "content": "The earning and granting of lieu days for designated holidays, short-term disability leave, annual leave and designated paid holiday for instructional staff shall be on the basis of the weekly maximum defined in Clause 31.3 divided by five (5) days."
+                },
+                "14.2": {
+                    "title": "Work Locations/Points of Assembly/Work Start Times",
+                    "subsections": {
+                        "a": "Every stationary employee covered by this Agreement shall be assigned to a designated headquarters. When temporarily assigned another work location, time spent in travel from the employee's residence to the new work location in excess of time normally spent in travel from the employee's residence to their designated headquarters shall be considered time worked.",
+                        "b": "When employees are required to report to a central location in order to be assigned their work location, their workday shall commence from the time they are required to report for assignment."
+                    }
+                }
+            }
+        },
+        "15": {
+            "title": "OVERTIME",
+            "sections": {
+                "15.1": {
+                    "title": "Definitions",
+                    "definitions": {
+                        "overtime": "work performed by a full-time employee in excess or outside of their regularly scheduled hours of work",
+                        "straight_time_rate": "the hourly rate of remuneration",
+                        "time_and_one_half": "one and one-half times (1½x) the straight-time rate",
+                        "double_time": "twice (2x) the straight-time rate",
+                        "double_time_and_one_half": "two and one-half times (2½x) the straight-time rate"
+                    }
+                },
+                "15.2": {
+                    "title": "Authorization and Application of Overtime",
+                    "subsections": {
+                        "a": "An employee who is required to work overtime shall be entitled to overtime compensation when: the overtime worked is authorized in advance by the Employer; and the employee does not control the duration of the overtime worked.",
+                        "b": "Notwithstanding the foregoing, the Employer and the Union recognize that the nature of the work carried out by persons in some classifications is such that it may not be possible for the employee to obtain prior authorization for the necessary overtime work. In such cases the employee shall use their discretion in working the overtime and the Employer shall be considered to have authorized the overtime in advance. However, the Employer reserves the right, subject to the grievance procedure, to determine the legitimacy of the overtime claimed. In order to facilitate a fair and reasonable administration of the clause, the Employer shall draw up regulations defining the circumstances under which an employee may undertake overtime work without prior authorization. Copies of these regulations shall be supplied to the Joint Committee."
+                    }
+                },
+                "15.3": {
+                    "title": "Overtime Entitlement",
+                    "subsections": {
+                        "a": "An employee shall be entitled to compensation for authorized overtime in excess of: the scheduled daily hours; or the maximum daily hours for those employees on flextime; or the agreed averaging period.",
+                        "b": "Overtime shall be compensated in thirty (30) minute increments; however, employees shall not be entitled to any compensation for periods of overtime of less than five (5) minutes per day."
+                    }
+                },
+                "15.4": {
+                    "title": "Recording of Overtime",
+                    "content": "Employees shall record starting and finishing times for overtime worked in a form determined by the Employer."
+                },
+                "15.5": {
+                    "title": "Sharing of Overtime",
+                    "content": "Overtime work shall be allocated equitably considering availability and location of employees."
+                },
+                "15.6": {
+                    "title": "Overtime Compensation",
+                    "subsections": {
+                        "a": "Overtime worked shall be compensated at the following rates: time and one-half (1½x) for the first two (2) hours of overtime on a regularly scheduled workday; and double-time (2x) for hours worked in excess of Clause 15.6(a)(1); double-time (2x) for all hours worked on a day of rest. The compensation of overtime in Clauses 15.6(a)(1) and (2) is to be on a daily basis and not cumulative.",
+                        "b": "An employee who works on a designated holiday which is not a scheduled workday shall be considered to have worked overtime and shall receive their regular day's pay, and shall receive additional compensation at the rate of double-time (2x) for all hours worked; except for Christmas and New Year's when the additional compensation shall be at the rate of double-time and one-half (2½x) for all hours worked.",
+                        "c": "Overtime shall be compensated either in cash or time off. Where an employee opts for time off, such time off shall be scheduled by mutual agreement prior to the overtime being worked or in the case of Clause 15.2(b) within thirty (30) workdays immediately after the overtime was worked. Where there is no mutual agreement, the employee shall be compensated in cash. Where cash is paid, every effort shall be made to make payment by the end of the month following the month in which the overtime was reported."
+                    }
+                },
+                "15.7": {
+                    "title": "Overtime Meal Allowance",
+                    "subsections": {
+                        "a": "When an employee is required to work in excess of two and one-half (2½) hours overtime immediately before or after completion of their scheduled daily hours, the employee shall be provided with a meal or shall be reimbursed with an overtime meal allowance, and a meal break of one-half (½) hour with pay shall be given. The overtime meal allowance shall be twelve dollars and seventy-five cents ($12.75) effective date of signing of the Agreement.",
+                        "b": "If the employee continues to work overtime beyond three (3) hours, a further meal or allowance and meal break as above shall be provided upon completion of an additional four (4) hours worked, and upon the completion of every three (3) hours worked thereafter.",
+                        "c": "When an employee is called out for overtime prior to their scheduled shift and it was not possible to give sufficient notice to permit preparation of the meal normally taken to work, the Employer shall provide the meal or pay the overtime meal allowance.",
+                        "d": "In the case of an employee called out on overtime to work on a rest day, this clause shall apply only to hours worked outside the employee's regular shift times for a normal workday.",
+                        "e": "Where any of the meals provided under Clauses 15.7(a), (b), (c) or (d) above duplicates a meal for which an employee is entitled because of travel status, then the employee shall receive only one (1) benefit for each meal."
+                    }
+                },
+                "15.8": {
+                    "title": "No Layoff to Compensate for Overtime",
+                    "content": "Employees shall not be required to lay off during regular hours to equalize any overtime worked."
+                },
+                "15.9": {
+                    "title": "Right to Refuse Overtime",
+                    "content": "All employees shall have the right to refuse to work overtime, except when required to do so in emergency situations, without being subject to disciplinary action for so refusing."
+                },
+                "15.10": {
+                    "title": "Overtime for Part-Time Employees",
+                    "subsections": {
+                        "a": "A part-time employee working less than the normal hours per day of a full-time employee, and who is required to work longer than their regular workday, shall be paid at the rate of straight-time for the hours so worked, up to and including the normal hours in the workday of a full-time employee.",
+                        "b": "A part-time employee working less than the normal days per week of a full-time employee, and who is required to work other than their regularly scheduled workdays shall be paid at the rate of straight-time for the days so worked up to and including the normal workdays in the workweek of a full-time employee.",
+                        "c": "Overtime rates shall apply to hours worked in excess of Clauses 15.10(a) and (b) above."
+                    }
+                },
+                "15.11": {
+                    "title": "Callout Provisions",
+                    "subsections": {
+                        "a": "Callout Compensation - A regular employee who is called back to work outside their regular working hours shall be compensated for a minimum of three (3) hours at overtime rates. The employee shall be compensated from the time they leave their home to report for duty until the time they arrive back upon proceeding directly to and from work.",
+                        "b": "Callout Time Which Abuts the Succeeding Shift: If the callout is for three (3) hours or less, the employee shall be required to work the callout period and the whole of the abutting shift. In this case, compensation shall be overtime rates for the callout period and straight-time rate for the regular shift. If the callout is for longer than three (3) hours, the employee shall be required to work the callout period and a portion of the abutting regular shift. The portion of the regular shift which must be worked shall be regular shift less the amount that callout exceeds three (3) hours. Compensation shall be at overtime rates for the callout period and straight-time for the regular shift without shortfall. For the purpose of Clause 15.11(b)(1) above it is agreed that 'callout' means that the employee has been called out without prior notice.",
+                        "c": "Overtime or Callout which does not Abut the Succeeding Shift: When overtime is worked there shall be an elapsed time of eight (8) hours between the end of overtime and the time the employee reports for duty on the next regular shift, with no shortfall out of their regular shift. In a callout situation where at least three (3) hours which do not abut the succeeding shift are worked in the ten (10) hours preceding the start of the regular shift, there shall be an elapsed time of eight (8) hours between the end of the callout and the time the employee reports for duty on their next regular shift, with no shortfalls out of the regular shift. If the elapsed eight (8) hour period following results in only two (2) hours or less of their regular shift available for work, employees shall not be required to report for work on that shift, with no shortfall.",
+                        "d": "Time spent by an employee travelling to work or returning to their residence before and after callout shall not constitute time worked but shall be compensated at the overtime rate.",
+                        "e": "Should an employee be required to work that period which is considered free from work in the regular shift, as provided for in Clauses 15.11(b)(2), (c)(1) and (c)(2) above, then that portion of the shift shall be compensated at overtime rates."
+                    }
+                },
+                "15.12": {
+                    "title": "Rest Interval After Overtime",
+                    "content": "An employee required to work overtime adjoining their regularly scheduled shift shall be entitled to eight (8) clear hours between the end of the overtime work and the start of their next regular shift. If eight (8) clear hours are not provided, a premium calculated at overtime rates shall apply to hours worked on the next regular shift."
+                }
+            }
+        },
+        "16": {
+            "title": "PAID HOLIDAYS",
+            "sections": {
+                "16.1": {
+                    "title": "Paid Holidays",
+                    "subsections": {
+                        "a": "The following have been designated as paid holidays:",
+                        "holidays": [
+                            "New Year's Day",
+                            "BC Day",
+                            "Family Day",
+                            "Labour Day",
+                            "Good Friday",
+                            "Thanksgiving Day",
+                            "Easter Monday",
+                            "Remembrance Day",
+                            "Victoria Day",
+                            "Christmas Day",
+                            "Canada Day",
+                            "Boxing Day"
+                        ],
+                        "b": "It is understood that Heritage Day shall be recognized as a designated paid holiday upon proclamation. Any other holiday proclaimed as a holiday by the federal, provincial or municipal governments for the locality in which an employee is working shall also be a paid holiday."
+                    }
+                },
+                "16.2": {
+                    "title": "Holidays Falling on Saturday or Sunday",
+                    "content": "For an employee whose workweek is from Monday to Friday and when any of the above-noted holidays falls on a Saturday and is not proclaimed as being observed on some other day, the following Monday shall be deemed to be the holiday for the purpose of this Agreement; and when a holiday falls on a Sunday and it is not proclaimed as being observed on some other day, the following Monday (or Tuesday, where the preceding section already applies to the Monday), shall be deemed to be the holiday for the purpose of this Agreement."
+                },
+                "16.3": {
+                    "title": "Holiday Falling on a Day of Rest",
+                    "subsections": {
+                        "a": "When a paid holiday falls on an employee's day of rest, the employee shall be entitled to a day off with pay in lieu.",
+                        "b": "If an employee is called in to work on the day designated as the lieu day pursuant to Clause 16.3(a) above, they shall be compensated at double-time (2x) rate."
+                    }
+                },
+                "16.4": {
+                    "title": "Holiday Falling on a Scheduled Workday",
+                    "content": "An employee who works on a designated holiday which is a scheduled workday shall be compensated at the rate of double-time (2x) for hours worked, plus a day off in lieu of the holiday; except for Christmas and New Year's when the compensation shall be at the rate of double-time and one-half (2½x) for hours worked, plus a day off in lieu of the holiday."
+                },
+                "16.5": {
+                    "title": "Holiday Coinciding with a Day of Vacation",
+                    "content": "Where an employee is on vacation leave and a day of paid holiday falls within that period, the paid holiday shall not count as a day of vacation."
+                },
+                "16.6": {
+                    "title": "Christmas or New Year's Day Off",
+                    "content": "The Employer agrees to make every reasonable effort to ensure that employees required to work shift shall have at least Christmas Day or the following New Year's Day off."
+                },
+                "16.7": {
+                    "title": "Paid Holiday Pay",
+                    "content": "Payment for paid holidays shall be made at an employee's basic pay, except if an employee has been working in a higher paid position than their regular position for a majority of the sixty (60) workdays preceding a paid holiday, in which case the employee shall receive the higher rate."
+                }
+            }
+        },
+        "17": {
+            "title": "ANNUAL VACATION",
+            "sections": {
+                "17.1": {
+                    "title": "Annual Vacation",
+                    "subsections": {
+                        "a": "Instructional staff shall be entitled to annual vacation of forty-four (44) workdays per calendar year, earned on the basis of three and two-thirds (3⅔) workdays per calendar month in which at least ten (10) workdays' pay at straight-time rates has been received.",
+                        "b": "Upon reaching the twentieth (20th) annual vacation year, the employee shall be entitled to an additional five (5) workdays' vacation.",
+                        "c": "Subject to Clause 17.8, vacation entitlement not taken in the calendar year in which it is earned shall be forfeited.",
+                        "d": "Employees engaged on a part-time basis shall be entitled to the above vacation on a pro rata basis."
+                    }
+                },
+                "17.2": {
+                    "title": "Definitions",
+                    "definitions": {
+                        "vacation_year": "For the purposes of this article a vacation year shall be the calendar year commencing January 1st and ending December 31st.",
+                        "first_vacation_year": "The first (1st) vacation year is the calendar year in which the employee's first (1st) anniversary falls."
+                    }
+                },
+                "17.3": {
+                    "title": "War Service",
+                    "subsections": {
+                        "a": "Service with the Active Forces of the Crown during any war may be counted in the calculation for vacation entitlement after the employee has completed one (1) years service with the College. This regulation applies solely to those who served as members of the commonwealth forces.",
+                        "b": "Discharge certificates must be presented before war service is recognized. It is not necessary that an individual shall have been employed by the College immediately prior to any war nor to have joined the College immediately following war service. In other words, any war service with HM Forces may be added to their period of service with the College for the purpose of computing the required service for the additional vacation privileges.",
+                        "c": "Merchant Marine Service - Service on the high seas (deep sea) during World War II may be credited toward the service requirement for vacation purposes. Employees are required to submit certified records of their deep-sea time for assessment by the College."
+                    }
+                },
+                "17.4": {
+                    "title": "Vacation Earnings for Partial Years",
+                    "subsections": {
+                        "a": "During the first partial year of service a new employee shall earn vacation at the rate of three and two-thirds (3⅔) days for each month for which the employee earns ten (10) days pay. Subject to Clause 17.8, any unused vacation earned during the first (1st) partial year shall be paid to the employee at December 31st of that year.",
+                        "b": "During the first (1st) and subsequent vacation years an employee shall earn one-twelfth (1/12) of the annual entitlement for each month in which the employee has received at least ten (10) days' pay at straight-time rates. Where an employee has taken more vacation than earned, the unearned portion taken shall be charged against future earned credits or recovered upon termination whichever occurs first."
+                    }
+                },
+                "17.5": {
+                    "title": "Vacation Scheduling",
+                    "subsections": {
+                        "a": "With the exception of authorized vacation carryover under Clause 17.8, the scheduling and completion of vacations shall be on a calendar year basis.",
+                        "b": "The calendar year in which an employee's first (1st) anniversary falls shall be the first (1st) vacation year. For the purpose of additional leave entitlement, the calendar year in which the ninth (9th) anniversary falls shall be the ninth (9th) vacation year; in which the tenth (10th) anniversary falls the tenth (10th) vacation year; etc.",
+                        "c": "An employee earns but is not entitled to receive vacation during the first six (6) months of continuous employment.",
+                        "d": "Vacation schedules, once approved by the Employer, shall not be changed, other than in cases of emergency, except by mutual agreement between the employee and the Employer.",
+                        "e": "Subject to operational requirements, it is the intent of the parties that no employee shall be restricted in the time of year they choose to take their vacation entitlement, and that all employees shall be allowed to take at least four (4) weeks of their vacation entitlement during the period of May 1st to September 30th inclusive, which shall be defined as prime time vacation period.",
+                        "f": "Vacations shall be granted on the basis of service seniority within a classification series in the work unit. Subject to operational requirements, an employee shall be entitled to receive their vacation in an unbroken period. If an employee decides to break their entitlement into more than one continuous group of workdays, the employee shall be entitled to use their seniority rights for only one such group of days in a calendar year. An employee, who does not exercise their seniority rights within two (2) weeks of receiving the vacation schedule, shall not be entitled to exercise those rights in respect of any vacation time previously selected by an employee with less seniority. Instructors required to work during July and August shall be entitled to take a single block of ten (10) days from their vacation entitlement during this time.",
+                        "g": "Completed vacation schedules shall be posted by March 1st of each year. The schedule shall be circulated commencing February 1st of each year."
+                    }
+                },
+                "17.6": {
+                    "title": "Vacation Pay",
+                    "subsections": {
+                        "a": "Payment for vacations shall be made at an employee's basic pay.",
+                        "b": "Once per calendar year, upon thirty (30) days written notice, a regular employee shall be entitled to receive prior to commencement of a vacation, a payroll advance equivalent to the amount of their regular paycheque issued during the vacation period, except that no payroll advance shall be issued in December for the January pay or in March for the April pay."
+                    }
+                },
+                "17.7": {
+                    "title": "Approved Leave of Absence with Pay During Vacation",
+                    "content": "When an employee is in receipt of the Short-Term Illness and Injury Plan benefits or on leave with pay in accordance with Clauses 19.1, 19.5, and 19.7 during their vacation period, there shall be no deduction from the vacation credits for such leave. The period of vacation so displaced shall be taken at a mutually agreed time. An employee intending to claim displaced vacation must advise the Employer and provide necessary documentation within seven (7) days of returning to work."
+                },
+                "17.8": {
+                    "title": "Vacation Carryover",
+                    "subsections": {
+                        "a": "An employee may carry over up to five (5) days' vacation per vacation year for two (2) consecutive vacation years, to a maximum of ten (10) days which must be taken not later than the third (3rd) consecutive vacation year. Employees in their first partial year of service, who commenced prior to July 1st of that year, may carry over up to five (5) days' vacation into their first vacation year. Except as provided in Clause 17.4(a)(2), an employee shall not receive cash in lieu of vacation time except upon termination, resignation or retirement.",
+                        "b": "Where it is through the fault of the Employer that the full vacation entitlement has not been taken within the calendar year in which it is earned, a carryover of unused days shall be granted by the College."
+                    }
+                },
+                "17.9": {
+                    "title": "Callback from Vacation",
+                    "subsections": {
+                        "a": "Employees who have commenced their annual vacation shall not be called back to work except in cases of extreme emergency.",
+                        "b": "When, an employee is recalled to duty during any vacation period, the employee shall be reimbursed for all expenses thereby incurred by the employee in proceeding to their place of duty and in returning to the place from which they were recalled upon resumption of vacation, upon submission of receipts to the Employer (except for meals).",
+                        "c": "Time necessary for travel in returning to their place of duty and returning again to the place from which they were recalled shall not be counted against their remaining vacation entitlement."
+                    }
+                },
+                "17.10": {
+                    "title": "Vacation Leave on Retirement",
+                    "content": "An employee scheduled to retire and to receive a superannuation allowance under the Colleges Pension Act, shall be granted full vacation entitlement for the final calendar year of service."
+                },
+                "17.11": {
+                    "title": "Vacation Credits Upon Death",
+                    "content": "Upon termination due to death, earned but unused vacation entitlement shall be made payable, to the employee's dependant, or where there is no dependant, to the employee's estate."
+                }
+            }
+        },
+        "18": {
+            "title": "SICK LEAVE, SHORT AND LONG-TERM DISABILITY",
+            "sections": {
+                "18.1": {
+                    "title": "Short-Term Illness and Injury & Long-Term Disability",
+                    "subsections": {
+                        "a": "Employees shall be entitled to coverage for short-term illness and injury and long-term disability in accordance with the Common Agreement - Clause 9.3.",
+                        "b": "(Common Agreement Clause 9.3 last paragraph) Subject to provisions of the Plan, enrolment is mandatory for all active regular employees and for active non-regular employees employed on a continuing basis for at least a four (4) month period with fifty percent (50%) or more of a full-time workload as defined by local provisions.",
+                        "note": "The current terms of the plans may be found at: https://www.coastmountaincollege.ca/about-cmtn/cmtn-careers/employee-benefits",
+                        "c": "An employee intending to return to work following an absence pursuant to Clause 11.5(b) shall be entitled to reinstatement in their former position, provided it still exists. Where the former position no longer exists, the Employer shall place the employee in an alternate position of equivalent classification, subject to qualifications and seniority. Where an employee returns from long-term disability the Employer shall have a period not exceeding thirty (30) days to make the necessary staffing adjustments."
+                    }
+                },
+                "18.2": {
+                    "title": "Sick Leave (Short-Term Disability Qualifying Period)",
+                    "sections": {
+                        "entitlement": {
+                            "a": "Eligible employees who are unable to work because of an illness or injury are entitled to thirty (30) calendar days coverage at full pay, equivalent to the qualifying period.",
+                            "b": "Where a regular employee is on a claim recognized by the Workers' Compensation Board while the employee was on the Employer's business, they shall be entitled to leave at their regular rate of pay for the duration of the thirty (30) day qualifying period. In such cases the compensation payable by the Workers' Compensation Board shall be remitted to the Employer.",
+                            "c": "Pay for a regular part-time employee under this plan shall be based on their part-time percentage of full-time employment at date of present appointment."
+                        },
+                        "recurring_disabilities": "Employees who return to work after a period of illness or injury and who do not work the same number of hours that were scheduled prior to the illness or injury shall receive prorated benefits under this plan, however, not beyond thirty (30) days from the initial date of absence as defined in Clause 18.2(a)(1), if absence is due to the same illness or injury.",
+                        "doctors_certificate": {
+                            "requirement": "The Employer may require an employee who is unable to work because of illness or injury to provide a statement from: a medical practitioner qualified to practise in the Province of BC; or where necessary, from a medical practitioner licensed to practise in the province of Alberta or the Yukon; or the consulting physician to whom the employee is referred by the medical practitioner in Clause 18.2(c)(1)(i) and (ii) above, providing medical evidence of the employee's inability to work in any of the following circumstances:",
+                            "circumstances": [
+                                "where it appears that a pattern of consistent or frequent absence from work is developing;",
+                                "where the employee has been absent for six (6) consecutive scheduled days of work."
+                            ],
+                            "cessation": "Benefits shall cease to be paid when an employee fails to provide satisfactory evidence of medical disability during the benefit period."
+                        },
+                        "integration_with_other_disability_income": {
+                            "reduction": "Sick leave benefits shall be reduced by all other disability income benefits to which the absent employee is entitled except disability income which was being received prior to the illness or injury resulting in the employee being absent from work and which is unrelated to the illness or injury causing the current absence.",
+                            "other_benefits_include": [
+                                "Any amount the absent employee receives from any group insurance, wage continuation or pension plan of the Employer.",
+                                "Any amount of disability income provided by any compulsory Act or law, except Unemployment Insurance sickness benefits and WCB benefits payable in accordance with Clause 18.2(a)(2).",
+                                "Any periodic benefit payment from the Canada or Quebec Pension Plan or other social security plan of any country."
+                            ],
+                            "icbc_provision": "Notwithstanding the above, in the case of ICBC weekly indemnity payments or, in the case of personal insurance coverage, integration shall apply to the extent that the combination of Plan benefits and ICBC weekly indemnity payments or personal insurance disability income benefits exceed either: one hundred percent (100%) of pay; or the applicable benefit percentage of the individual's average total monthly income in the twelve (12) month period immediately preceding commencement of the disability, whichever is the greater.",
+                            "war_disability_exception": "This section does not apply to a war disability pension paid under an Act of the governments of Canada or other commonwealth countries."
+                        },
+                        "benefits_not_paid_during_certain_periods": {
+                            "periods": [
+                                "receiving designated paid holiday pay;",
+                                "engaged in an occupation for wage or profit;",
+                                "on strike or is locked out unless the strike or lockout occurred after the illness or injury resulting in the employee being absent from work;",
+                                "serving a prison sentence;",
+                                "on suspension without pay;",
+                                "on paid absence in the period immediately preceding retirement;",
+                                "on any leave of absence without pay."
+                            ],
+                            "exceptions": "Notwithstanding Clause 18.2(e)(7) above, where an illness or injury occurs during a period of approved: educational leave, general leave of absence not exceeding thirty (30) days, maternity leave, which prevents the employee from returning to work on the scheduled date of return, the Sick Leave Plan shall be effective from the date of disability due to illness or injury and benefits shall be paid for the balance of the thirty (30) day period remaining from the scheduled date of return to work. For maternity leave, the intention is no coverage for normal pregnancy."
+                        },
+                        "employee_to_inform_employer": "The employee shall inform the Employer as soon as possible of their inability to report to work because of illness or injury. The employee shall inform the Employer of the date of return to duty, in advance of that date, in order that relief scheduled for that employee can be notified.",
+                        "entitlement_calculation": "For the purpose of calculating the thirty (30) day period, one day shall be considered to be one day, regardless of the regularly scheduled workday. Calculation for part-time employees and partial days shall be on a prorated basis.",
+                        "uic_premium": "The parties agree that the complete premium reduction from the Unemployment Insurance Commission accruing through the improved illness and injury plan shall be returned to the Employer."
+                    }
+                },
+                "18.3": {
+                    "title": "Long-Term Disability",
+                    "sections": {
+                        "entitlement": "An employee who is not actively at work because of illness or injury on the workday coincident with, or immediately preceding the date they would otherwise have become eligible for coverage under the Plan shall not be eligible for coverage until the date the employee returns to active employment.",
+                        "long_term_disability_benefit": {
+                            "coverage": "An employee in receipt of long-term disability benefits shall continue to be covered by the College Pension Plan, group life, extended health, dental and medical plans. Such employees shall also be covered by Clauses 11.5, 11.6 and 18.1(c) and shall, during the two (2) year period of disability re: own occupation, be eligible for Clauses 25.9 and 25.10. Employees shall not be covered by any other portion of the Collective Agreement but shall retain the right to the grievance procedure and the right of access to the Joint Committee established in the Collective Agreement.",
+                            "contribution_waiver": "When an employee is in receipt of long-term disability benefits, the contributions required for benefit plans in Clause 18.3(b)(1) above and contributions for the College Pension Plan shall be waived by the Employer.",
+                            "rehabilitative_employment": "An employee engaged in rehabilitative employment with the Employer and who is receiving partial long-term disability benefit payments shall have contributions required for benefit plans in Clause 18.3(b)(1) and contributions for the College Pension Plan waived by the Employer, except that the College Pension Plan contributions shall be deducted from any salary received from the Employer to cover the period of rehabilitative employment."
+                        },
+                        "benefits_upon_plan_termination": "In the event this Long-Term Disability Plan is terminated the benefit payments shall continue to be paid in accordance with the provisions of this Plan to disabled employees who become disabled while covered by this Plan prior to its termination.",
+                        "waiver_of_contributions": "Employee contributions to this Plan shall be waived with respect to disabled employees during the time such an employee is in receipt of disability benefit payments from this Plan.",
+                        "physical_examination": "At its own expense the Employer, shall have the right and be given the opportunity to have as often as it may reasonably require a medical doctor appointed by the Employer to examine, any employee whose injury, sickness, or mental or nervous disorder or health condition is the basis of claim upon this Plan."
+                    }
+                }
+            }
+        },
+        "19": {
+            "title": "SPECIAL AND OTHER LEAVES",
+            "sections": {
+                "19.1": {
+                    "title": "Bereavement Leave",
+                    "subsections": {
+                        "a": "In the case of bereavement in the immediate family an employee not on leave of absence without pay shall be entitled to special leave, at their regular rate of pay, from the date of death to and including the day of the funeral with, if necessary, an allowance for immediate return travelling time. Such leave shall normally not exceed five (5) workdays.",
+                        "b": "Immediate family is defined as an employee's parent, spouse, child, brother, sister, father-in-law, mother-in-law and any other relative permanently residing in the employee's household or with whom the employee permanently resides.",
+                        "c": "In the event of the death of the employee's grandparent, grandchild, son-in-law, daughter-in-law, brother-in-law or sister-in-law, the employee shall be entitled to special leave for one (1) day for the purpose of attending the funeral."
+                    }
+                },
+                "19.2": {
+                    "title": "Special Leave",
+                    "subsections": {
+                        "a": "Where leave from work is required, an employee shall be entitled to special leave at their regular rate of pay for the following:",
+                        "leave_types": {
+                            "marriage_of_employee": "3 days",
+                            "attend_wedding_of_employees_child": "1 day",
+                            "birth_of_employees_child": "1 day",
+                            "adoption_of_employees_child": "3 days",
+                            "serious_household_or_domestic_emergency": "1 day",
+                            "moving_household_furniture_and_effects": "1 day",
+                            "attend_employees_formal_hearing_to_become_canadian_citizen": "1 day",
+                            "attend_funeral_as_pallbearer_or_mourner": "½ day",
+                            "court_appearance_for_hearing_of_employees_child": "1 day"
+                        },
+                        "additional_leave": "Should an employee request special leave for any reason other than those identified in Clauses 19.2(a)(1) through 19.2(a)(8) above, the request shall be directed to the Director, Human Resources for approval. Such leave shall not be unreasonably denied.",
+                        "notice_requirements": "Two (2) weeks notice is required for leave under Clauses 19.2(a)(1), (2), (5) and (6).",
+                        "timing_restrictions": "For the purposes of Clauses 19.2(a)(2), (4), (5), (6) (7) and (8), leave with pay shall be only for the workday on which the situation occurs. For the purpose of Clauses 19.2(a)(1) and (3), the leave requested must fall within a seven (7) day period of the event.",
+                        "moving_qualifications": "For the purpose of determining eligibility for special leave under Clause 19.2(a)(5), an employee shall qualify if they are maintaining a self-contained household and if they are changing their place of residence which necessitates the moving of household furniture and effects during their normal working hours, and if they have not already qualified for special leave under Clause 19.2(a)(5) on two (2) occasions within the preceding twelve (12) months."
+                    }
+                },
+                "19.3": {
+                    "title": "Family Illness",
+                    "subsections": {
+                        "a": "After notifying their supervisor, an employee is entitled to use up to a maximum of five (5) days paid leave at any one time for the purpose of looking after an ill dependent child or spouse when no one at the employee's home other than the employee can provide for the needs of the child or spouse.",
+                        "b": "The Employer may request a report from a qualified medical practitioner when it appears that a pattern of consistent absence is developing.",
+                        "c": "The provisions of this article shall apply to an employee's parent. The Employer may require the written confirmation from a medical practitioner that the employee's attendance was required."
+                    }
+                },
+                "19.4": {
+                    "title": "Full-Time Union or Public Duties",
+                    "content": "On written request the Employer shall grant, a leave of absence without pay for:",
+                    "leave_types": [
+                        "employees seeking election in a municipal, provincial or federal election, for a maximum period of ninety (90) days;",
+                        "employees selected for a full-time position with the Union or any body to which the Union is affiliated for a period of one (1) year;",
+                        "employees elected to a public office for a maximum period of five (5) years."
+                    ]
+                },
+                "19.5": {
+                    "title": "Leave for Court Appearances",
+                    "subsections": {
+                        "a": "The Employer shall grant paid leave to employees, other than employees on leave without pay, who serve as jurors or witnesses in a court action, provided such court action is not occasioned by the employee's private affairs.",
+                        "b": "In cases where an employee's private affairs have occasioned a court appearance, such leave to attend at court shall be without pay.",
+                        "c": "An employee in receipt of their regular earnings while serving at court shall remit to the Employer all monies paid to them by the court within five (5) workdays of receipt of such monies, except travelling and meal allowances not reimbursed by the Employer.",
+                        "d": "Time spent at court by an employee in their official capacity shall be at their regular rate of pay.",
+                        "e": "Court actions arising from employment, requiring attendance at court, shall be with pay.",
+                        "f": "In the event an accused employee is jailed pending a court appearance, such leave of absence shall be without pay.",
+                        "g": "For all the above leaves, the employee shall advise their supervisor as soon as the employee is aware that such leave is required."
+                    }
+                },
+                "19.6": {
+                    "title": "Leave for Examinations",
+                    "subsections": {
+                        "a": "Leave of absence with pay shall be granted to allow employees time to write examinations for courses approved by the Employer. Employees shall advise the Employer of the time and place of the examination when they are made aware of the time and place.",
+                        "b": "Employees shall be permitted to write any in-service examination required by the Employer, upon satisfactory completion of the necessary term of service and training programs. Employees who fail an in-service examination shall, upon request and where available, receive a copy of their examination paper and shall be eligible to be re-examined. This provision shall not apply to examinations set as a condition of initial employment.",
+                        "c": "Where workloads permit, employees shall be granted reasonable time during the regular workday to prepare for examinations in order to complete courses offered by the College for the employees. The parties recognize, however, that employees who avail themselves of the provisions of this clause have a responsibility to devote some of their own time to prepare themselves for such examinations."
+                    }
+                },
+                "19.7": {
+                    "title": "Leave for Taking Courses and Educational Leave",
+                    "subsections": {
+                        "a": "An employee shall be granted leave with pay to take courses at the request of the Employer. The Employer shall bear the full cost of the course, including tuition fees, entrance or registration fees, laboratory fees, and course-required books, necessary travelling and subsistence expenses, and other legitimate expenses where applicable. Fees are to be paid by the Employer when due.",
+                        "b": "A regular employee shall be granted leave without pay for up to two (2) years to take courses in which the employee wishes to enrol, provided they give the Employer a minimum of four (4) months notice. Applications for such leave shall be submitted to the Employer for approval. The Employer shall pay all the benefits while the employee is on this leave provided the courses or education are beneficial to the College.",
+                        "c": "Courses required by the Employer leading to a Provincial Instructor's Diploma shall be reimbursed in accordance with Clause 19.7(a).",
+                        "d": "An employee shall notify the Employer of their return four (4) months prior to their scheduled return date."
+                    }
+                },
+                "19.8": {
+                    "title": "Elections",
+                    "content": "Any employee eligible to vote in a federal, provincial or municipal election or a referendum shall have four (4) consecutive clear hours during the hours in which the polls are open in which to cast their ballot."
+                },
+                "19.9": {
+                    "title": "General Leave",
+                    "subsections": {
+                        "a": "Notwithstanding any provision for leave in this Agreement, and subject to operational requirements, a leave of absence without pay may also be granted for any other reason, in which case, approval shall not be unreasonably withheld. All requests shall be submitted in writing with as much advance notice as possible. The Employer shall give notice in writing as to whether the request is approved or denied and the reasons therefore.",
+                        "b": "An employee shall notify the Employer of their return four (4) months prior to their scheduled return date."
+                    }
+                },
+                "19.10": {
+                    "title": "Leave for Medical and Dental Care",
+                    "subsections": {
+                        "a": "Where it is not possible to schedule medical and/or dental appointments outside regularly scheduled working hours, reasonable time off for medical and dental appointments for employees, for their spouses or for dependent children shall be permitted, but where any such absence exceeds two (2) hours, the full-time absence shall be charged to the entitlement described in Clause 19.11.",
+                        "b": "Employees in areas where adequate medical and dental facilities are not available shall be allowed to deduct from their credit described in Clause 19.11 the necessary return travelling time to receive personal or immediate family medical and dental care at the nearest medical centre. The Employer may request a certificate of a qualified medical or dental practitioner, as the case may be, stating that treatment could not be provided by facilities or services available at the employee's place of residence.",
+                        "c": "The provisions of this article shall apply to an employee's parent. The Employer may require the written confirmation from a medical practitioner that the employee's attendance was required."
+                    }
+                },
+                "19.11": {
+                    "title": "Maximum Leave Entitlement",
+                    "content": "Leaves taken under Clauses 19.2, 19.3 and 19.10 shall not exceed a total of ten (10) workdays per calendar year, unless additional special leave is approved by the Employer."
+                },
+                "19.12": {
+                    "title": "Emergency Service Leave",
+                    "content": "Where employees' services are required for emergency operations by request from provincial emergency programs or appropriate police authority, leave from work as required may be granted without loss of basic pay. If any remuneration, other than for expenses, is received, it shall be remitted to the Employer."
+                },
+                "19.13": {
+                    "title": "Canadian Armed Forces",
+                    "subsections": {
+                        "a": "Employees who participate in activities related to the Reserve Component of the Canadian Armed Forces may be granted leave of absence as follows:",
+                        "leave_types": {
+                            "with_pay": "where an employee is required to take annual training with Her Majesty's Reserve Forces provided any remuneration from the Government of Canada is remitted to the Employer;",
+                            "without_pay_training": "where an employee participates in a program of training for the purpose of qualifying for a higher rank;",
+                            "without_pay_meetings": "where an employee, as a delegate, attends meetings of service associations or conferences related to the Canadian Armed Forces."
+                        },
+                        "b": "Any remuneration received from the Government of Canada for the purpose of activities related to the Canadian Armed Forces, may be retained by the employee when on leave of absence without pay, or where the employee chooses to use part or all of their vacation/annual leave entitlement for these activities, or where they elect to take leave of absence without pay for annual training as stipulated in Clause 19.13(a)(1) above."
+                    }
+                },
+                "19.14": {
+                    "title": "Technical Equipment or New Methods",
+                    "content": "Where an employee is, or shall be, required to operate technical equipment or use new methods during the course of their duties and where seminars, demonstrations or conferences are held pertaining to such technical equipment or new methods, the employee may attend such demonstrations, conferences or seminars upon approval of their application by the Employer. Employees shall suffer no loss of regular salary as a result of such attendance."
+                },
+                "19.15": {
+                    "title": "Oaths, X-Rays and Medical Examinations",
+                    "content": "When the Employer requires employees to take oaths or undergo medical examinations or x-rays as required for employment, the Employer shall grant the necessary time off."
+                },
+                "19.16": {
+                    "title": "Self-Funded Leave Plan",
+                    "content": "The Self-Funded Leave Plan is available to all employees who hold a regular continuing appointment and have completed their probationary period."
+                }
+            }
+        },
+        "20": {
+            "title": "PARENTAL LEAVE",
+            "content": "Upon request, an employee shall be granted parental leave without pay subject to the following:",
+            "provisions": [
+                "The provisions of Article 8 of the Common Agreement.",
+                "The request to take the parental leave must be made in writing, at least four (4) weeks prior to the proposed commencement of the leave and be accompanied by either a certificate of birth or a medical practitioner's certificate of the probable date of birth or proof of adoption. If four (4) weeks is not possible due to unforeseeable circumstances, the request must be submitted immediately once the need for parental leave becomes known.",
+                "Where both parents are employees of the College, the parents shall decide which one of them will apply for the leave.",
+                "For the birth mother, the leave shall commence: nine (9) weeks before the expected date of birth, or a date within that nine (9) week period that they choose, or when they are no longer able to work, or the date of birth",
+                "An employee shall be deemed to have resigned on the date upon which the leave commenced if an application for re-employment is not made one (1) month prior to the expiration of the leave or if they do not return to work after having applied for re-employment.",
+                "If an employee fails to return to work on the pre-arranged date, the Employer shall recover any monies paid for benefit continuation during the leave."
+            ]
+        }
+    }
+}
+                

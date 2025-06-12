@@ -1,0 +1,96 @@
+{
+    "letters_of_agreement": {
+        "loa_1": {
+            "title": "Mining and Exploration Program Development",
+            "programs": [
+                "Field Assistant Program",
+                "Camp Manager Program"
+            ],
+            "characteristics": "These are intensive, accelerated programs designed to move students quickly into current industry positions. The programs are on-site programs offered in a camp setting.",
+            "terms_and_conditions": [
+                "The annual contact hours workload for these Instructor positions shall be 1025 hours",
+                "Instructor evaluation shall be done in accordance with Continuing Education practice for accelerated courses due to the intensive nature of the Program",
+                "Pay rates shall be established on the basis of Instructor salary rates, overtime rates, and on call rates currently in the Agreement"
+            ],
+            "review_provision": "The parties recognize these are Pilot Projects, and that this letter of agreement is a new direction for both parties. Therefore, this Letter shall be subject to ongoing review by the parties.",
+            "signed_dates": [
+                "February 28, 2006",
+                "January 19, 2007 (Revised)"
+            ]
+        },
+        "loa_2": {
+            "title": "School of Exploration and Mining (SEM)",
+            "committee_composition": "not more than two members of the BCGEU Bargaining Committee, the BCGEU staff representative, and an equal number of employer appointments",
+            "purpose": "to review the changing face of the SEM",
+            "timeline": "The Committee will begin meeting one month following ratification of the Collective Agreement and complete their duties within one calendar year",
+            "recommendations": "The Committee will make recommendations to their principals. Any recommendations to be adopted by the parties are subject to ratification by the parties' principals.",
+            "signed_date": "February 6, 2014"
+        },
+        "loa_3": {
+            "title": "Part-Time Instructor Salary Scale",
+            "effective_date": "September 1, 1992",
+            "formula": "(number of class contact hours for the appointment / annual class contact hours for the program) x .75 x 261 x appropriate daily rate",
+            "formula_explanation": ".75 is determined by factoring out vacation, statutory holidays, and non-instructional days, thus deducting 65 from 261 working days per year yielding a pro rata annual salary factor of 195 ÷ 261 = .75 for part-time instructors",
+            "placement": "Part-time instructors will be placed on salary scale using the same criteria as regular instructors",
+            "daily_rate": "Daily rate is equal to the biweekly rate divided by ten (10) days",
+            "revision_date": "December 7, 1994 (Revision to correct formula - remove monthly)"
+        },
+        "loa_4": {
+            "title": "Health Services Review",
+            "committee_composition": "not more than two members of the BCGEU bargaining committee, the BCGEU Staff Representative, and an equal number of employer appointments",
+            "purpose": "to review the current instructional workload criteria for the Health Care Assistant and Practical Nursing programs",
+            "review_criteria": "recruitment, retention, contact hours and any other criteria the committee believes appropriate",
+            "timeline": "The committee will begin meeting one month following ratification of the Collective Agreement and complete their duties within one calendar year",
+            "signed_date": "February 6, 2014"
+        },
+        "loa_5": {
+            "title": "Chairperson(s), Coordinators, and Duties of Instructors",
+            "committee_composition": "not more than two (2) members of the BCGEU Bargaining Committee, and one (1) instructor from the bargaining unit, and an equal number of employer appointments",
+            "responsibilities": [
+                "Develop clearer language regarding the key responsibilities of the Chairperson(s); Instructional and Non Instructional Coordinators and the Instructors in the bargaining unit",
+                "Develop an appropriate evaluation process for Coordinators, Chairperson(s) and the non-instructional responsibilities of instructors in the bargaining unit",
+                "Review Appendix 3 Program Coordinator for accuracy of practice and/or process"
+            ],
+            "timeline": "The Committee will begin meeting one month following ratification of the Collective Agreement and complete their duties within one calendar year",
+            "signed_date": "February 6, 2014"
+        },
+        "loa_6": {
+            "title": "Service Improvement Fund",
+            "purpose": "to encourage and support innovation in instruction that will tangibly improve services to students at the College",
+            "eligibility": "Only BCGEU instructor members are eligible to apply for funding under the SIF",
+            "funding_levels": {
+                "year_1": "$18,909",
+                "year_2": "$38,255",
+                "year_3": "$58,037"
+            },
+            "acceptable_uses": [
+                "Release time for the development of new curriculum, methods of instruction, time to collaborate with experts and/or colleagues",
+                "Travel expenses required for research and development of topics directly related to an application",
+                "Purchase of technology (hardware, software) required for implementation",
+                "Materials and supplies directly related to the initiative and not otherwise customarily provided to the employee"
+            ],
+            "committee_composition": "three (3) representatives of the Union and one (1) representative of the Employer",
+            "committee_meetings": "The Committee will meet quarterly",
+            "criteria": [
+                "Benefits to Students - the degree to which the proposed initiative supports teaching excellence",
+                "Community Need - the degree to which the proposed initiative overcomes existing obstacles to enhance accessibility",
+                "Anticipated Outcomes - the degree to which the proposed initiative is student focused and positively impacts the learner experience"
+            ]
+        },
+        "loa_7": {
+            "title": "Agreement to Extinguish Liabilities and Allocation of Savings Under Article 23.8 Relating to Reduction in Premiums for MSP",
+            "one_time_payment": "$34,644",
+            "allocation": "All employees eligible for benefits at the date of ratification will receive a one-time payment of approximately $450",
+            "eligibility_conditions": [
+                "Employees who are on an approved leave of absence, with or without pay, at the date of ratification will receive the one-time payment based on their employment status the first month following their return to work",
+                "Employees who are on LTD at the date of ratification shall receive the one-time payment based on their employment status the first month following their return to work if the employees return to work prior to the expiry of the agreement"
+            ]
+        },
+        "loa_8": {
+            "title": "College Competiveness Review Committee",
+            "committee_composition": "not more than two members of the BCGEU bargaining committee, the BCGEU Staff Representative, and an equal number of Employer appointments",
+            "purpose": "to review and improve the competitiveness of the College",
+            "review_criteria": "threats and opportunities presented by industry, competitors, changing demographics, and any other criteria the committee believes appropriate",
+            "timeline": "The committee will begin meeting one month following ratification of the Collective Agreement and complete their duties within one calendar year"
+        }
+            

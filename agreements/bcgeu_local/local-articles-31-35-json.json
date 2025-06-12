@@ -1,0 +1,335 @@
+{
+    "articles_31_35": {
+        "31": {
+            "title": "FACULTY WORKLOAD",
+            "sections": {
+                "31.1": {
+                    "title": "Responsibilities",
+                    "content": "Faculty are expected to assume the responsibilities consistent with the professional status of their position. Duties implied by these responsibilities include services provided to students, activities intended to enhance and maintain curricula and tasks which support the operation and development of the College."
+                },
+                "31.2": {
+                    "title": "Definitions",
+                    "contact_hour": "for the purposes of this article, a contact hour shall be understood to be one hour scheduled by the College during which a faculty member is working with students in classroom related activities which further the attainment of course objectives (e.g. lecture, lab, tutorial, seminar or shop).",
+                    "class_size": "the number of students registered in a course as reported by the Registrar's office at the conclusion of the last day for late registration as published in the College Calendar, or the number of students registered in a program divided by the number of full-time faculty equivalents assigned to the program.",
+                    "workweek": "the standard workweek shall be Monday to Friday inclusive."
+                },
+                "31.3": {
+                    "title": "Instructional Workload",
+                    "development": "The actual instructional assignment of a faculty member shall be developed via consultation between the faculty member and Dean or designate. This consultation shall address educational and professional issues relevant to the course or program in which the faculty member shall be instructing.",
+                    "workload_table": {
+                        "ccp_eswk_fundamental": {
+                            "contact_hours": 25,
+                            "class_size": 16,
+                            "maximum_annual_contact_hours": 900
+                        },
+                        "ccp_eswk_developmental": {
+                            "contact_hours": 25,
+                            "class_size": 20,
+                            "maximum_annual_contact_hours": 900
+                        },
+                        "ccp_eswk_instructor_led": {
+                            "contact_hours": 20,
+                            "class_size": 20,
+                            "maximum_annual_contact_hours": 720
+                        },
+                        "workplace_skills": {
+                            "contact_hours": 20,
+                            "class_size": 16,
+                            "maximum_annual_contact_hours": 720
+                        },
+                        "esl": {
+                            "contact_hours": 20,
+                            "class_size": 16,
+                            "maximum_annual_contact_hours": 720
+                        },
+                        "business_administration": {
+                            "contact_hours": 15,
+                            "class_size": 40,
+                            "maximum_annual_contact_hours": 450
+                        },
+                        "trades": {
+                            "contact_hours": 27.7,
+                            "class_size": 18,
+                            "maximum_annual_contact_hours": 1025
+                        },
+                        "culinary_arts": {
+                            "contact_hours": 27.7,
+                            "class_size": 16,
+                            "maximum_annual_contact_hours": 1025
+                        },
+                        "health_care_assistant": {
+                            "contact_hours": 25,
+                            "class_size": 25,
+                            "maximum_annual_contact_hours": 1025
+                        },
+                        "lpn_classroom_lab": {
+                            "contact_hours": 20,
+                            "class_size": 24,
+                            "maximum_annual_contact_hours": 900
+                        },
+                        "lpn_community_practicum": {
+                            "contact_hours": 35,
+                            "class_size": "12:1",
+                            "maximum_annual_contact_hours": 1435
+                        },
+                        "natural_resource_management": {
+                            "contact_hours": 18,
+                            "class_size": 40,
+                            "maximum_annual_contact_hours": 540
+                        },
+                        "marine": {
+                            "contact_hours": 25,
+                            "class_size": 24,
+                            "maximum_annual_contact_hours": 1025
+                        }
+                    },
+                    "notes": [
+                        "The weekly class hours may exceed those outlined in this article where the instructor and the Dean or designate mutually agree to complete annual class hours in a shorter time frame",
+                        "Fieldwork, clinical, practica, etc. assignments will average thirty-five (35) hours per week over the period of supervision",
+                        "Workloads which include both instructional contact hours and fieldwork, clinical, or practical supervision shall be based on a prorated combination"
+                    ]
+                },
+                "31.4": {
+                    "title": "Program Workload Information",
+                    "applied_business_technology": {
+                        "class_contact_hours_per_certificate": "450 to 470 hours",
+                        "weekly_contact_hours": "25 hours which may be averaged over the academic year",
+                        "class_size": "maximum of 25, with a maximum number of new students to not exceed 20 per certificate intake"
+                    },
+                    "business_administration_programs": {
+                        "weekly_hours": "The weekly class contact hours may exceed those outlined in the Collective Agreement for these programs should the employee opt to complete the annual class contact hours in a shorter time frame",
+                        "statutory_holidays": "Statutory Holidays are included in the 450 class contact hours for the assigned teaching period",
+                        "maximum_preps": "Where the impact is revenue neutral, an instructor will be assigned a maximum of nine (9) preps in an academic year"
+                    },
+                    "career_and_college_prep": {
+                        "type_definitions": {
+                            "type_1_instructor_led": "Weekly student contact hours: 20. Generally, a scheduled, semester-based course with a single intake of students and fixed intake and completion dates",
+                            "type_2_individualized": "Weekly student contact hours: 25. Generally, individualized instruction with some students working at different rates, with no fixed intake and with no completion dates",
+                            "type_3_mixed": "Weekly student contact hours determined by formula"
+                        },
+                        "formula_type_3": "N + 25(1 - N/20) = number of hours per week of student contact time, where N is the number of instructor-led hours taught per week",
+                        "annual_hours": "The maximum annual class contact hours shall not exceed 720 for instructor-led or 900 for self-paced"
+                    },
+                    "trades_culinary_first_nations_fine_arts": "The weekly workload shall consist of 27.7 instructional class contact hours which shall include twenty-five (25) class hours plus two point seven (2.7) hours of tutorial time and/or office hours each week."
+                },
+                "31.5": {
+                    "title": "Non-Instructional Duty Days",
+                    "entitlement": "Instructional staff shall be scheduled ten (10) non-instructional days during the calendar year (January 1st to December 31st) to maintain the currency, relevance, transferability and accreditation of their assigned courses.",
+                    "planning": "Prior to their ten (10) days of curriculum development, instructors shall develop a plan, in consultation with their Chair or Program Coordinator.",
+                    "off_campus_option": "Instructors shall have the option of scheduling three (3) non-instructional days off campus between Christmas and New Year's.",
+                    "proration": "These days shall be prorated for regular part-time instructors and for instructors with term appointments."
+                },
+                "31.6": {
+                    "title": "Preparation Time",
+                    "new_regular_instructor": "Any new regular instructor shall be given two (2) weeks' preparation time prior to the commencement of classes.",
+                    "new_non_regular_instructor": "Any new non-regular instructor shall have a date of appointment which allows for reasonable time for preparation prior to the commencement of classes."
+                },
+                "31.7": {
+                    "title": "Program Coordinator/Instructor Workload Reduction",
+                    "content": "Refer to Appendix 3, Program Coordination. Release time for each Program Coordinator/Instructor shall be determined and approved no later than April 30th of each year."
+                },
+                "31.8": {
+                    "title": "Other Work Conditions",
+                    "support": "The College shall make every reasonable effort to provide faculty with adequate support and resources for instruction, office space furnishings, and support staff.",
+                    "class_size_consultation": "The parties agree that should operational requirement, facility constraints or safety requirements be a factor when considering class size under Article 31, the Dean or designate will consult with the Chair or Coordinator, and instructor regarding the class size as appropriate."
+                },
+                "31.9": {
+                    "title": "Online Courses",
+                    "principles": [
+                        "The use of educational technology to deliver online courses is a recognized method of instructional delivery",
+                        "The development, delivery and revision of online courses shall be a matter of employee choice",
+                        "Class size shall be determined by mutual agreement between the instructor, the Union and management",
+                        "The College shall provide all employees with equipment and support required for program or course development and/or delivery"
+                    ],
+                    "workload": {
+                        "development": "the development of a course making use of online technology shall normally be for an equivalent amount of time to the actual delivery hours",
+                        "contact_time": "Contact time for online delivery shall be considered to be the same as for face-to-face, instructor-led delivery of the same or similar course"
+                    },
+                    "job_security": "All work involved in the development and/or delivery of courses or programs by the College making use of online technology shall be work of the bargaining unit and shall not be contracted out."
+                },
+                "31.10": {
+                    "title": "New Activity Development",
+                    "content": "When a faculty member develops a new and/or unique activity, they shall have the first right of refusal to be assigned the activity for the first two (2) years it is offered. After two (2) years, the position shall be posted as per the Collective Agreement."
+                }
+            }
+        },
+        "32": {
+            "title": "PROFESSIONAL DEVELOPMENT",
+            "sections": {
+                "32.1": {
+                    "title": "Concept",
+                    "content": "The parties support the concept of professional development for the purposes of enabling employees to prepare for promotional advancement and generally upgrade their present skills and abilities which will be of benefit to both the employee and the Employer."
+                },
+                "32.2": {
+                    "title": "Representation",
+                    "content": "A standing professional development committee shall be established, and shall be comprised of three (3) representatives of the Union and one (1) representative of the Employer. This Committee shall manage the professional development program of the employees, including the allocation of funds to support professional development activities."
+                },
+                "32.3": {
+                    "title": "Terms of Reference",
+                    "qualification": "to qualify for funding, an employee must be a regular employee or an employee with one-half (½) year of non-regular seniority",
+                    "employer_responsibility": "any Provincial Instructor Diploma courses required by the Employer will be paid by the Employer."
+                },
+                "32.4": {
+                    "title": "Allocation",
+                    "annual_amount": "The College shall allocate at the beginning of each fiscal year the amount of fifteen thousand dollars ($15,000).",
+                    "carryover": "Any unspent balance at the end of each fiscal year shall be carried forward and added to the allocation for the next fiscal year."
+                },
+                "32.5": {
+                    "title": "Report Terms of Reference",
+                    "content": "The Professional Development Committee shall report to the College President and the Union President the established terms of reference to the College and Union Presidents."
+                },
+                "32.6": {
+                    "title": "Financial Reports",
+                    "content": "Either the Union or the College has the right to request periodic financial statements and details of the Committee's actions."
+                },
+                "32.7": {
+                    "title": "Annual Reports",
+                    "content": "A detailed annual report of the Committee's activities and a financial statement of expenditures shall be prepared for submission to the College President and the Union President at the end of each fiscal year."
+                },
+                "32.8": {
+                    "title": "Training Activities",
+                    "long_term_training": [
+                        "Professional experience leave",
+                        "For updating purposes, audit of apprenticeship courses of not less than six (6) weeks duration, where the employee already possess journeyman status",
+                        "Staff exchange - national or international"
+                    ],
+                    "short_term_training": [
+                        "Short course attendance and distance education courses",
+                        "Conferences, seminars and workshops"
+                    ]
+                },
+                "32.9": {
+                    "title": "Substitutes",
+                    "content": "Upon approval of the Dean or other designated administrator, the College shall pay for substitutes to allow an employee to pursue a professional development activity. Such approval shall not be unreasonably withheld."
+                },
+                "32.10": {
+                    "title": "Professional Development Leave",
+                    "entitlement": "All regular instructors shall be scheduled for ten (10) professional development days during the calendar year (January 1st - December 31st).",
+                    "planning": "In consultation with their Chair or Program Coordinator, instructors shall develop and submit for approval by their Chair or Program Coordinator prior to any PD activities, a professional development plan.",
+                    "reporting": "Within one (1) month of the completion of the professional development activities, instructors shall submit satisfactory evidence of having carried out the professional development activity and met the objectives of the approved professional development plan.",
+                    "proration": "These days shall be prorated for regular part-time instructors and for instructors with term appointments."
+                },
+                "32.11": {
+                    "title": "Employee Seats",
+                    "content": "For the purposes of professional development for employees, the Employer shall provide two (2) employee seats per class, contingent upon physical space requirements and provided there is no additional cost to the College, except where regulations or statutes prohibit."
+                }
+            }
+        },
+        "33": {
+            "title": "EVALUATION AND SKILL DEVELOPMENT",
+            "sections": {
+                "33.1": {
+                    "purpose": "The parties value commitment to excellence in learning and teaching. In support of this commitment, instructor evaluations are intended to assist in the enhancement of employee performance, assist in goal setting, facilitate optimum communication and improve job satisfaction.",
+                    "supportive_nature": "Performance evaluation is also intended to be supportive and proactive and is not intended to replace the ongoing guidance and mentoring involved in day-to-day working relationships."
+                },
+                "33.2": {
+                    "title": "Employee Evaluations",
+                    "content": "Upon employment, the appropriate Dean shall give the instructor information as to their duties including a written job description, the length of the probationary period, and information concerning the performance evaluation process described below."
+                },
+                "33.3": {
+                    "title": "Time of Evaluation",
+                    "new_instructors": [
+                        "during their probationary period",
+                        "at the completion of the second year of appointment",
+                        "every three (3) years subsequently"
+                    ],
+                    "regular_employees": "Regular employees with existing continuing appointments shall be evaluated once every three (3) years.",
+                    "variations": [
+                        "at the instructor's request",
+                        "if the job duties have major changes in them",
+                        "if the instructor has a poor evaluation, an evaluation shall occur again in the following year"
+                    ]
+                },
+                "33.4": {
+                    "title": "Probationary Employees Evaluation",
+                    "probation_definition": "Probationary period is defined as a full academic year for the program or in the case of a term appointment, the equivalent of two (2) full-time teaching semesters.",
+                    "first_semester": {
+                        "step_1": "The mentor is identified by the Dean in consultation with the instructor",
+                        "step_2": "Interim student evaluation within six (6) weeks of appointment",
+                        "step_3": "Mentor meets with the instructor two (2) weeks after student evaluation",
+                        "step_4": "Classroom observation takes place within three (3) weeks of the student evaluation",
+                        "step_5": "Reflection and feedback takes place within one (1) week of the classroom observation",
+                        "step_6": "Student report on teaching (SRT) at the end of the first semester",
+                        "step_7": "Feedback on SRT within one (1) week of completion"
+                    },
+                    "second_semester": {
+                        "step_1": "Classroom observation by the Dean within four (4) weeks of the commencement of the semester",
+                        "step_2": "Reflection and feedback within one (1) week of classroom observation",
+                        "step_3": "Student report on teaching shall take place before the end of the second semester",
+                        "step_4": "The Dean shall provide final feedback at the end of the second semester",
+                        "step_5": "Letter to the employee from personnel stating that they have successfully/unsuccessfully completed their probationary period"
+                    }
+                },
+                "33.5": {
+                    "title": "Regular Instructor Evaluation",
+                    "step_1": "Three (3) methods of evaluation shall be used before the end of the second semester after successful completion of probation: peer appraisal (including classroom observation), self-appraisal, student appraisal",
+                    "step_2": "The instructor shall meet with the Dean to review the results and if necessary develop an action plan. Self, Peer and Student Appraisal Summaries shall be forwarded to the instructor for the development of a personal action plan before meeting with the Dean.",
+                    "unsatisfactory_evaluation": "In the event of an unsatisfactory evaluation, an evaluation is required one (1) year later. If a year later, the instructor still has an unsatisfactory evaluation, the instructor shall be placed on probation with a follow-up evaluation scheduled the following year.",
+                    "conflict_resolution": "In the event of a perceived conflict between the Dean and the instructor, the Union shall arrange with the Employer to have another Dean conduct the evaluation."
+                },
+                "33.6": {
+                    "title": "Personnel File",
+                    "content": "Unsatisfactory evaluations shall remain on file until there is a satisfactory evaluation at which time the unsatisfactory evaluation shall be removed from the file."
+                },
+                "33.7": {
+                    "title": "Confidentiality",
+                    "content": "None of the documentation and evaluation results shall be made available to persons other than the instructor, the Dean, and the Director, Human Resources. Any staff member involved in the tabulation of results shall sign an agreement of confidentiality."
+                },
+                "33.8": {
+                    "title": "Changes in Appraisal Tools",
+                    "content": "No changes in the appraisal tools shall be made unless agreed to by the Union and Employer."
+                }
+            }
+        },
+        "34": {
+            "title": "NEW CAREER PROGRAMS",
+            "sections": {
+                "34.1": {
+                    "content": "The College and the Union agree that when new career programs are proposed by the College, the bargaining unit to which the instructors shall be assigned shall be determined by unanimous agreement of a three-person committee comprising a representative of the College, the Union and CUPE, Local 2409, or failing agreement, by the matter being referred to binding arbitrations under Arbitrator Chris Sullivan."
+                },
+                "34.2": {
+                    "content": "The arbitration shall be held under the arbitration process and the parties noted in (a) shall be entitled to each make submissions and lead evidence."
+                },
+                "34.3": {
+                    "content": "The cost of this arbitration referred to in (b) of this article shall be split fifty percent (50%) between the other two parties."
+                }
+            }
+        },
+        "35": {
+            "title": "TERM OF AGREEMENT",
+            "sections": {
+                "35.1": {
+                    "title": "Duration",
+                    "content": "This Agreement shall be binding and remain in effect to midnight, March 31, 2022."
+                },
+                "35.2": {
+                    "title": "Notice to Bargain",
+                    "provisions": [
+                        "This Agreement may be opened for collective bargaining by either party giving written notice to the other party on or after January 1, 2022, but in any event not later than midnight, January 31, 2022",
+                        "Where no notice is given by either party prior to January 31, 2022, both parties shall be deemed to have been given notice under this clause on January 31, 2022",
+                        "All notices on behalf of the Union shall be given by the President of the Union and similar notices on behalf of the Employer shall be given by the College President"
+                    ]
+                },
+                "35.3": {
+                    "title": "Commencement of Bargaining",
+                    "content": "Where a party to this Agreement has given notice under Clause 35.2, the parties shall commence collective bargaining, within fourteen (14) days after the notice was given."
+                },
+                "35.4": {
+                    "title": "Change in Agreement",
+                    "content": "Any change deemed necessary in this Agreement may be made by mutual agreement at any time during the life of this Agreement."
+                },
+                "35.5": {
+                    "title": "Agreement to Continue in Force",
+                    "content": "Both parties shall adhere fully to the terms of this Agreement during the period of bona fide collective bargaining."
+                },
+                "35.6": {
+                    "title": "Effective Date of Agreement",
+                    "provisions": [
+                        "The provisions of this Agreement, except as otherwise specified, shall come into full force and effect on the first of the month following the date of signing of this Agreement",
+                        "All agreed to changes to the Agreement shall be retroactive to April 1, 2019 unless otherwise specified"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+{
+    "appendices": {
+        "appendix_1": {
+            "title": "BCGEU Instructors Salary Scale",
+            "salary_steps": {
+                "step_1": {
+                    "date_of_ratification_to_march_31_2020": 95134,
+                    "stipend": 1903,
+                    "total": 97037,
+                    "april_1_2020_to_march_31_2021": 97037,
+                    "stipend_2020": 1941,
+                    "total_2020": 98978,
+                    "april_1_2021_to_march_31_2022": 98978,
+                    "stipend_2021": 1980,
+                    "total_2021": 100958
+                },
+                "step_2": {
+                    "date_of_ratification_to_march_31_2020": 89121,
+                    "stipend": 1782,
+                    "total": 90903,
+                    "april_1_2020_to_march_31_2021": 90903,
+                    "stipend_2020": 1818,
+                    "total_2020": 92721,
+                    "april_1_2021_to_march_31_2022": 92721,
+                    "stipend_2021": 1854,
+                    "total_2021": 94575
+                },
+                "step_3": {
+                    "date_of_ratification_to_march_31_2020": 83014,
+                    "stipend": 1660,
+                    "total": 84674,
+                    "april_1_2020_to_march_31_2021": 84674,
+                    "stipend_2020": 1693,
+                    "total_2020": 86367,
+                    "april_1_2021_to_march_31_2022": 86367,
+                    "stipend_2021": 1727,
+                    "total_2021": 88094
+                },
+                "step_4": {
+                    "date_of_ratification_to_march_31_2020": 79620,
+                    "stipend": 1592,
+                    "total": 81212,
+                    "april_1_2020_to_march_31_2021": 81212,
+                    "stipend_2020": 1624,
+                    "total_2020": 82836,
+                    "april_1_2021_to_march_31_2022": 82836,
+                    "stipend_2021": 1657,
+                    "total_2021": 84493
+                },
+                "step_5": {
+                    "date_of_ratification_to_march_31_2020": 76700,
+                    "stipend": 1534,
+                    "total": 78234,
+                    "april_1_2020_to_march_31_2021": 78234,
+                    "stipend_2020": 1565,
+                    "total_2020": 79799,
+                    "april_1_2021_to_march_31_2022": 79799,
+                    "stipend_2021": 1596,
+                    "total_2021": 81395
+                },
+                "step_6": {
+                    "date_of_ratification_to_march_31_2020": 73787,
+                    "stipend": 1476,
+                    "total": 75263,
+                    "april_1_2020_to_march_31_2021": 75263,
+                    "stipend_2020": 1505,
+                    "total_2020": 76768,
+                    "april_1_2021_to_march_31_2022": 76768,
+                    "stipend_2021": 1535,
+                    "total_2021": 78303
+                },
+                "step_7": {
+                    "date_of_ratification_to_march_31_2020": 70868,
+                    "stipend": 1417,
+                    "total": 72285,
+                    "april_1_2020_to_march_31_2021": 72285,
+                    "stipend_2020": 1446,
+                    "total_2020": 73731,
+                    "april_1_2021_to_march_31_2022": 73731,
+                    "stipend_2021": 1475,
+                    "total_2021": 75206
+                },
+                "step_8": {
+                    "date_of_ratification_to_march_31_2020": 67954,
+                    "stipend": 1359,
+                    "total": 69313,
+                    "april_1_2020_to_march_31_2021": 69313,
+                    "stipend_2020": 1386,
+                    "total_2020": 70699,
+                    "april_1_2021_to_march_31_2022": 70699,
+                    "stipend_2021": 1414,
+                    "total_2021": 72113
+                },
+                "step_9": {
+                    "date_of_ratification_to_march_31_2020": 65036,
+                    "stipend": 1301,
+                    "total": 66337,
+                    "april_1_2020_to_march_31_2021": 66337,
+                    "stipend_2020": 1327,
+                    "total_2020": 67664,
+                    "april_1_2021_to_march_31_2022": 67664,
+                    "stipend_2021": 1353,
+                    "total_2021": 69017
+                },
+                "step_10": {
+                    "date_of_ratification_to_march_31_2020": 62119,
+                    "stipend": 1242,
+                    "total": 63361,
+                    "april_1_2020_to_march_31_2021": 63361,
+                    "stipend_2020": 1267,
+                    "total_2020": 64628,
+                    "april_1_2021_to_march_31_2022": 64628,
+                    "stipend_2021": 1293,
+                    "total_2021": 65921
+                },
+                "step_11": {
+                    "date_of_ratification_to_march_31_2020": 59204,
+                    "stipend": 1184,
+                    "total": 60388,
+                    "april_1_2020_to_march_31_2021": 60388,
+                    "stipend_2020": 1208,
+                    "total_2020": 61596,
+                    "april_1_2021_to_march_31_2022": 61596,
+                    "stipend_2021": 1232,
+                    "total_2021": 62828
+                }
+            },
+            "special_allowance": {
+                "article_25_15": {
+                    "date_of_ratification_to_march_31_2020": 130.01,
+                    "april_1_2020_to_march_31_2021": 132.61,
+                    "april_1_2021_to_march_31_2022": 135.26
+                }
+            }
+        },
+        "appendix_2": {
+            "title": "Board and Lodging and Relocation Regulations",
+            "part_1": {
+                "title": "Board and Lodging Regulations",
+                "definitions": {
+                    "stationary_employees": "employees who occupy positions that require them to carry out their duties on a day-to-day basis at their headquarters; and/or travel from their headquarters for short periods of time; travel from their headquarters more or less on a continuous basis, but whose assignments are of sufficiently short duration so that temporary headquarters cannot be practically assigned",
+                    "mobile_employees": "those that occupy positions requiring assignment to a \"temporary\" headquarters for a significant period of time for each specific project and who are required to carry out their duties on a day-to-day basis from their assigned temporary headquarters",
+                    "travel_status": "absence of the employee from their designated headquarters or geographic location on College business with the approval of the Employer",
+                    "headquarters_or_geographic_location": "that area within a radius of thirty-two (32) kilometres of where an employee ordinarily performs their duties",
+                    "local_hire": "a person who is hired or is domiciled within eighty (80) kilometres of the job site by means of the shortest road route",
+                    "dependant": "spouse, dependent children, and anyone for whom the employee claims exemption on Federal Income Tax returns",
+                    "private_dwelling_house": "the single family residence of the employee on a reasonable amount of property required to support such a house, owned by the employee and/or the spouse"
+                },
+                "board_and_lodging_allowance": {
+                    "local_hire": "No board and lodging shall be supplied or living allowance paid to persons hired locally for a project",
+                    "employees_at_headquarters": "no board and lodging shall be supplied, or living allowance or meals and/or accommodation paid to employees while at their permanent place of residence of to \"stationary\" employees while at their permanent headquarters",
+                    "travel_status": "stationary employees who are required to travel away from their permanent headquarters up to a maximum of sixty (60) days at one location on a continuous basis; mobile employees who are required to travel away from their temporary headquarters, or who are moving from one assigned temporary headquarters to another, and for a period up to thirty (30) days at the beginning of each assignment"
+                }
+            },
+            "part_2": {
+                "title": "Relocation Regulations",
+                "policy": "Relocation expenses shall apply to employees who are required by the Employer to move from one headquarters or geographic location to another to fill a position which is permanently located at another headquarters or geographic location",
+                "travel_expenses_on_relocation": {
+                    "initial_trip": "Prior to relocation and at a time mutually agreeable to the College and the employee, the Employer shall grant up to five (5) days plus reasonable travel time, with no loss of base pay, for the employee and their spouse",
+                    "travelling_expense": "The Employer shall reimburse the employee for travel expenses incurred during the relocation for the employee and dependants, for the actual travel time, plus accommodation and meals up to seven (7) days at the new location"
+                },
+                "living_expenses": {
+                    "not_accompanied": "the Employer shall pay an employee not accompanied by dependants at the new location, a living allowance of ten dollars ($10) per day up to a maximum of thirty (30) days",
+                    "accompanied": "the Employer shall pay an employee accompanied by dependants at the new location, a living allowance of thirteen dollars and fifty cents ($13.50) per day up to a maximum of sixty (60) days"
+                },
+                "moving_household_effects": [
+                    "Moving of household effects and chattels up to eight thousand one hundred sixty five (8,165) kilograms",
+                    "Comprehensive insurance to adequately protect the employee's household effects and chattels during the move up to a maximum of twenty-five thousand dollars ($25,000) coverage",
+                    "Where necessary, insured storage up to two (2) months, upon production of receipts",
+                    "The packing and unpacking of the employee's household effects and chattels"
+                ],
+                "self_move_allowances": {
+                    "not_exceeding_240km": "$250",
+                    "exceeding_240km": "$500",
+                    "mobile_home_provision": "$100"
+                },
+                "incidental_expenses": {
+                    "purchasing_dwelling": "$400",
+                    "rental_accommodation": "$150",
+                    "mobile_home": "$100",
+                    "room_and_board": "$50"
+                },
+                "real_estate_legal_fees": {
+                    "real_estate_fees": "Reimbursement of fees to a maximum of four thousand dollars ($4,000) charged by a real estate agency for the selling of the employee's private dwelling home",
+                    "self_sale": "An employee who has sold their own home without the aid of a realtor shall be entitled to claim five hundred dollars ($500)",
+                    "legal_fees": "one percent (1%) of the first forty thousand dollars ($40,000) of the purchase price; one-half (½) of one percent (1%) of any amount of the purchase price above forty thousand dollars ($40,000); the total cost to the Employer shall not exceed eight hundred dollars ($800)"
+                }
+            }
+        },
+        "appendix_3": {
+            "title": "Program Coordinator",
+            "purpose": "The parties recognize and agree there is a need to review and redevelop the current Program Coordination model.",
+            "workload_reduction_tables": {
+                "one_program_one_campus": {
+                    "up_to_40_fte": "25%",
+                    "41_to_80_fte": "33.33%",
+                    "81_to_120_fte": "41.66%",
+                    "120_plus": "50.00%"
+                },
+                "one_program_two_campuses_or_two_programs_one_campus": {
+                    "up_to_40_fte": "40%",
+                    "41_to_80_fte": "50%",
+                    "81_to_120_fte": "60%",
+                    "121_plus": "70%"
+                },
+                "one_program_three_plus_campuses_or_multiple_programs_multiple_campuses": {
+                    "up_to_40_fte": "50%",
+                    "41_to_80_fte": "60%",
+                    "81_to_120_fte": "70%",
+                    "121_plus": "80%"
+                },
+                "assistant_coordinator": {
+                    "up_to_25_fte": "10%"
+                }
+            },
+            "pilot_positions": {
+                "chair_trades": "This position shall be full-time (1.0) and based in Terrace. Duties shall include Terrace coordination; overall regional coordination; and apprenticeship coordination",
+                "chair_health": "This position shall be full-time (1.0) and based in Terrace. Duties shall include overall responsibility for all Health programs and coordinators"
+            },
+            "selection_criteria": "When selecting coordinators, priority shall be given to seniority, qualifications, and the ability to supervise the discipline.",
+            "term_length": "All Coordinator positions shall be for a three (3) year term. At the end of the three (3) year term, the Coordinator position shall be reposted."
+        }
+    }
+}
