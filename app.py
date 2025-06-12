@@ -240,7 +240,9 @@ def main():
                 st.session_state.common_agreement = common_agreement
                 st.session_state.agreements_loaded = True
             else:
-                st.error("❌ Could not load agreement files.")
+                st.error("❌ Could not load agreement files. Please check that the files exist in the correct directories:")
+                st.error("- Local agreement files in: agreements/bcgeu_local/")
+                st.error("- Common agreement file in: agreements/bcgeu_common/")
                 st.stop()
     
     # Agreement Selection
