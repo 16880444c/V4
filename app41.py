@@ -123,6 +123,11 @@ def reset_session():
     st.session_state.messages = []
     st.session_state.selected_agreement = None
     st.session_state.selected_scope = None
+    # Clear radio button states
+    if 'instructor_scope' in st.session_state:
+        del st.session_state.instructor_scope
+    if 'support_agreement' in st.session_state:
+        del st.session_state.support_agreement
     st.rerun()
 
 def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, selected_agreement: str, selected_scope: str, api_key: str) -> str:
@@ -391,33 +396,35 @@ def main():
                 
                 scope_options = ["Local Agreement Only", "Common Agreement Only", "Both Agreements"]
                 
-                # Determine current selection index
-                if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope:
-                    if st.session_state.selected_scope in scope_options:
-                        current_scope_index = scope_options.index(st.session_state.selected_scope)
-                    else:
-                        current_scope_index = 0
+                # Use a unique key and handle the radio button state carefully
+                radio_key = "instructor_scope_v2"
+                
+                # Only set index if this agreement type is currently selected
+                if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope in scope_options:
+                    default_index = scope_options.index(st.session_state.selected_scope)
                 else:
-                    current_scope_index = 0
+                    default_index = 0
                 
                 instructor_scope = st.radio(
                     "",
                     scope_options,
-                    index=current_scope_index,
-                    key="instructor_scope",
+                    index=default_index,
+                    key=radio_key,
                     help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
                     label_visibility="collapsed"
                 )
                 
-                if instructor_scope:
-                    # Clear other selections if switching agreement types
-                    if st.session_state.selected_agreement != "BCGEU Instructor":
-                        st.session_state.selected_agreement = "BCGEU Instructor"
-                        st.session_state.selected_scope = instructor_scope
-                        st.rerun()
-                    elif st.session_state.selected_scope != instructor_scope:
-                        st.session_state.selected_scope = instructor_scope
-                        st.rerun()
+                # Only update state when user makes a selection and it's different from current
+                if instructor_scope and (
+                    st.session_state.selected_agreement != "BCGEU Instructor" or 
+                    st.session_state.selected_scope != instructor_scope
+                ):
+                    st.session_state.selected_agreement = "BCGEU Instructor"
+                    st.session_state.selected_scope = instructor_scope
+                    # Clear the other radio button
+                    if 'support_agreement_v2' in st.session_state:
+                        del st.session_state.support_agreement_v2
+                    st.rerun()
         else:
             st.markdown("""
                 <div style="
@@ -498,31 +505,25 @@ def main():
                 </style>
                 """, unsafe_allow_html=True)
                 
-                support_options = ["Select agreement...", "BCGEU Support Agreement"]
-                
-                # Determine current selection index
-                if st.session_state.selected_agreement == "BCGEU Support":
-                    current_support_index = 1
-                else:
-                    current_support_index = 0
+                # Use a unique key and handle state carefully
+                radio_key = "support_agreement_v2"
                 
                 support_selected = st.radio(
                     "",
-                    support_options,
-                    index=current_support_index,
-                    key="support_agreement",
+                    ["BCGEU Support Agreement"],
+                    index=0,
+                    key=radio_key,
                     help="Complete BCGEU Support Staff collective agreement",
                     label_visibility="collapsed"
                 )
                 
-                if support_selected == "BCGEU Support Agreement":
+                # Only update state when user makes a selection and it's different from current
+                if support_selected and st.session_state.selected_agreement != "BCGEU Support":
                     st.session_state.selected_agreement = "BCGEU Support"
                     st.session_state.selected_scope = "BCGEU Support Agreement"
-                    st.rerun()
-                elif support_selected == "Select agreement..." and st.session_state.selected_agreement == "BCGEU Support":
-                    # User deselected by going back to placeholder
-                    st.session_state.selected_agreement = None
-                    st.session_state.selected_scope = None
+                    # Clear the other radio button
+                    if 'instructor_scope_v2' in st.session_state:
+                        del st.session_state.instructor_scope_v2
                     st.rerun()
         else:
             st.markdown("""
