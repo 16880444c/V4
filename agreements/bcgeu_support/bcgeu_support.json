@@ -1,0 +1,553 @@
+{
+  "agreement_metadata": {
+    "title": "Collective Agreement between Coast Mountain College and the B.C. Government and Service Employees' Union (BCGEU)",
+    "parties": {
+      "employer": "Coast Mountain College",
+      "union": "B.C. Government and Service Employees' Union (BCGEU)",
+      "local": "Local 712 Support Staff Bargaining Unit"
+    },
+    "effective_dates": {
+      "start": "2019-07-01",
+      "end": "2022-06-30"
+    },
+    "document_version": "210713v1 10047-026"
+  },
+  "definitions": {
+    "agreement": "This Collective Agreement reached between the Employer and the Union",
+    "bargaining_unit": "The unit for collective bargaining for which the B.C. Government and Service Employees' Union is certified by the Industrial Relations Council",
+    "basic_pay": "The rate of pay negotiated by the parties to this Agreement, including add-to-pay resulting from salary protection",
+    "child": "Deemed to include a ward of the Superintendent of Child Welfare, or a child of a spouse",
+    "complainant": "A person who alleges that they have been harassed or discriminated against",
+    "continuous_employment": "Uninterrupted employment as a regular or auxiliary employee with the Coast Mountain College and includes service in the Public Service of British Columbia for those employees employed by the Public Service of British Columbia at March 31, 1976 and melded to Coast Mountain College at April 1, 1976",
+    "day_of_rest": "A day other than a holiday on which an employee is not ordinarily required to perform the duties of their position",
+    "demotion": "A change from an employee's position to one with a lower maximum salary",
+    "employee": {
+      "definition": "A member of the bargaining unit",
+      "types": {
+        "regular_employee": "An employee who is employed for work which is of a continuous full-time or continuous part-time nature; or who is employed for work which is of a continuous full-time nature and which is expected to last for a six (6) month period or longer",
+        "recurring_seasonal_employee": "An employee who is employed for work which is of a continuous full-time or continuous part-time nature for a defined period which is expected to last for a six (6) month period or longer and which normally recurs every academic year",
+        "auxiliary_employee": "An employee who is employed for work which is not of a continuous nature such as seasonal positions, positions created to carry out special projects, and temporary positions created to cover employees on vacation, short-term disability leave, education leave, compassionate leave, or other leave"
+      },
+      "exclusions": "Does not include incumbents of managerial or confidential positions mutually excluded by the parties to this Agreement"
+    },
+    "employer": "The Coast Mountain College",
+    "headquarters": "That area within a radius of thirty-two (32) kilometres of where an employee ordinarily performs their duties",
+    "holiday": "The twenty-four (24) hour period commencing at 0001 hours of a day designated as a paid holiday in this Agreement",
+    "hours_of_operation": "The hours established by the Employer to provide adequate service to the public and to fulfil the functions of the work unit",
+    "layoff": "Includes a cessation of employment, resulting from elimination of a job, a reorganization, program termination, closure or other material change in organization",
+    "leave_of_absence_with_pay": "To be absent from duty with permission and with pay",
+    "leave_of_absence_without_pay": "To be absent from duty with permission but without pay",
+    "ministry": "The Ministry of Advanced Education",
+    "non_instructional_staff": "All employees included in the Union's certification who are not instructors and includes Coordinators and Liaison Officers",
+    "parties": "Coast Mountain College and the BCGEU, Local 712",
+    "probation": "A period of sixty (60) workdays to which an employee is subject upon appointment or promotion during which time the Employer may reject the Employee for just cause",
+    "promotion": "A change from an employee's position to one with a higher maximum salary level",
+    "relocation": "The movement of an employee from one geographic location to another",
+    "resignation": "A voluntary notice by the employee that they are terminating their service on the date specified",
+    "respondent": "A person who is alleged to have engaged in harassment or discrimination",
+    "rest_period": "A paid interval which is included in the workday and is intended to give the employee an opportunity to have refreshments or a rest",
+    "shift": "The period of scheduled straight-time working hours on a scheduled workday",
+    "spouse": {
+      "definition": "Any of the following:",
+      "types": [
+        "a lawful husband or wife",
+        "a person of the opposite sex living in a common-law relationship with the employee for a continuous period of at least one (1) year",
+        "a person of the same sex as the employee and with whom the employee cohabited for a period of at least one (1) year and the employee and this person represent themselves as a couple"
+      ]
+    },
+    "termination": "The separation of an employee from the College for cause pursuant to Articles 10, 11 or 33",
+    "travel_status": "Absence of the employee from their headquarters or geographic location on College business with the approval of the Employer",
+    "union": "The B.C. Government and Service Employees' Union",
+    "workday": "A period of twenty-four (24) consecutive hours commencing with the starting time of any shift",
+    "work_schedule": "The roster of work hours and days to meet the annual hours of work"
+  },
+  "articles": {
+    "1": {
+      "title": "PREAMBLE",
+      "sections": {
+        "1.1": {
+          "title": "Purpose of Agreement",
+          "content": {
+            "a": "The purpose of this Agreement is to establish and maintain orderly collective bargaining procedures between the Employer and the Union",
+            "b": "The parties to this Agreement share a desire to improve the quality of educational service provided by the College. Accordingly, they are determined to establish, within the framework provided by the law, an effective working relationship at all levels of the College in which members of the bargaining unit are employed"
+          }
+        },
+        "1.2": {
+          "title": "Future Legislation",
+          "content": "In the event that any future legislation renders null and void or materially alters any provision of this Agreement, the remaining provisions shall remain in effect for the term of the Agreement, and the parties hereto shall negotiate a mutually agreeable provision to be substituted for the provision so rendered null and void or materially altered"
+        },
+        "1.3": {
+          "title": "Conflict with Regulations",
+          "content": "In the event that there is a conflict between the contents of this Agreement and any regulation made by the Employer, or on behalf of the Employer, this Agreement shall take precedence over the said regulation"
+        },
+        "1.4": {
+          "title": "Notice of Legislative Change",
+          "content": "The parties agree that no formal proposal submitted by either party to amend, repeal or revise the Colleges and Provincial Institutes Act, the Labour Code or regulations made pursuant thereto, which would affect the terms and conditions of employment of employees covered by this Agreement shall be put forward without first notifying the other party in writing of the nature of the proposal"
+        },
+        "1.5": {
+          "title": "Singular and Plural",
+          "content": "Wherever the singular is used in this Agreement the same shall be construed as meaning the plural if the context requires unless otherwise specifically stated"
+        },
+        "1.6": {
+          "title": "Human Rights",
+          "content": {
+            "a": "The Employer and the Union agree that under this Collective Agreement there shall be no discrimination, interference, restrictions, or coercion exercised or practised with respect to any employee in the matter of hiring, wage rates, training, up-grading, promotion, transfer, layoff, recall, discipline, classification, discharge or otherwise by reason of race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, or age of that person or because that person has been convicted of a criminal or summary conviction offence that is unrelated to the employment or to the intended employment of that person, nor by reason of membership or activity in the Union",
+            "b": "Nothing in Clause 1.6(a) shall be interpreted as prohibiting the parties from jointly agreeing to an affirmative action program",
+            "c": "Nothing in this Collective Agreement will preclude a member from filing a Human Rights complaint to run concurrently with a complaint or grievance under any article of the Collective Agreement"
+          }
+        },
+        "1.7": {
+          "title": "Sexual Harassment",
+          "content": {
+            "definition": "Sexual harassment means sexual-oriented verbal or physical behaviour which is unwanted by any individuals to whom such behaviour is presented",
+            "examples": [
+              "touching, patting, or other physical contact",
+              "leering, staring or the making of sexual gestures",
+              "implicit and explicit demands for sexual favours",
+              "verbal abuse or threats, unwanted sexual invitations",
+              "physical assault of a sexual nature",
+              "distribution of materials or comments, both written and oral, or a pornographic or sexist nature",
+              "promise of a reward for sexual favours",
+              "expressed or implied threat for failing to provide sexual favours"
+            ],
+            "procedures": {
+              "protection": "In cases of sexual harassment, the employee being harassed has the right to discontinue contact with the alleged harasser without incurring any penalty, pending determination of the grievance",
+              "grievance_rights": "An employee may initiate a grievance under this clause at any step of the grievance procedure",
+              "offender_rights": [
+                "to be given notice of the substance of a grievance under this clause",
+                "to be given notice of and to attend, participate in, and be represented at any arbitration hearing"
+              ],
+              "time_limits": "Time lines for filing grievances of this nature to be waived under this article to a maximum of nine (9) months"
+            }
+          }
+        },
+        "1.8": {
+          "title": "Personal Harassment",
+          "content": {
+            "definition": "Personal harassment means a course of verbal or physical conduct which causes substantial distress in that person or persons",
+            "examples": [
+              "physical threat, intimidation, or assault, or unwelcome physical contact",
+              "unwelcome behaviour or comment that is directed at, or offensive to, any employee that demeans, belittles, causes personal humiliation or embarrassment",
+              "implied or expressed promise of reward or threat of reprisal",
+              "the improper use of power and authority inherent in the position held",
+              "remarks or behaviour which may reasonably be perceived to create a negative psychological or emotional environment for work or study"
+            ],
+            "procedures": {
+              "initial_consultation": "A member of the BCGEU who feels that they have been harassed or discriminated against should begin by discussing the matter with their shop steward of choice",
+              "employer_obligation": "The Employer undertakes to discipline any person employed by the Employer engaging in the personal harassment of another employee",
+              "grievance_process": "A grievance may be initiated at any step in the grievance process and will be handled with all possible confidentiality and dispatch"
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "UNION RECOGNITION AND RIGHTS",
+      "sections": {
+        "2.1": {
+          "title": "Bargaining Unit Defined",
+          "content": "The bargaining unit shall comprise all employees included in the bargaining unit as described in the certificate at each college or institution, issued by the Labour Relations Board of British Columbia, except positions excluded by mutual agreement between the local parties or excluded by the Labour Relations Board of British Columbia"
+        },
+        "2.2": {
+          "title": "Bargaining Agent Recognition",
+          "content": "The Employer recognizes the B.C. Government and Service Employees' Union as the exclusive bargaining agent for all employees to whom the certification issued by the Industrial Relations Council applies"
+        },
+        "2.3": {
+          "title": "Correspondence",
+          "content": "The Employer agrees that all correspondence between the Employer and the Union related to matters covered in this Agreement shall be sent to the President of the Union or their designate and to the Chairperson of the bargaining unit"
+        },
+        "2.4": {
+          "title": "No Other Agreement",
+          "content": "No employee covered by this Agreement shall be required or permitted to make a written or oral agreement with the Employer or its representatives which may conflict with the terms of this Agreement"
+        },
+        "2.5": {
+          "title": "No Discrimination for Union Activity",
+          "content": "The Employer and the Union agree that there shall be no discrimination, interference, restriction or coercion exercised or practised with respect to any employee for reason of membership or activity in the Union"
+        },
+        "2.6": {
+          "title": "Recognition and Rights of Stewards",
+          "content": {
+            "recognition": "The Employer recognizes the Union's right to select stewards to represent employees",
+            "duties": [
+              "investigation of complaints of an urgent nature",
+              "investigation of grievances and assisting any employee whom the steward represents in presenting a grievance",
+              "supervision of ballot boxes and other related functions during ratification votes",
+              "attending meetings at the request or with the prior permission of the Employer"
+            ],
+            "leave_provisions": "A steward, or their alternate, shall obtain the permission of their immediate supervisor before leaving their work to perform their duties as a steward. Leave for this purpose shall be with pay"
+          }
+        },
+        "2.7": {
+          "title": "Bulletin Boards",
+          "content": "The Employer shall provide bulletin board facilities for the exclusive use of the Union, the sites to be determined by mutual agreement"
+        },
+        "2.8": {
+          "title": "Union Insignia",
+          "content": "A union member shall have the right to wear or display the recognized insignia of the Union"
+        },
+        "2.9": {
+          "title": "Right to Refuse to Cross Picket Lines or Handle Hot Products",
+          "content": {
+            "picket_lines": "All employees covered by this Agreement shall have the right to refuse to cross a picket line arising out of a dispute as defined in the Labour Code of British Columbia",
+            "hot_products": "No employee covered by this Agreement shall be required to handle any products declared by the B.C. Federation of Labour to be a Hot Product"
+          }
+        },
+        "2.10": {
+          "title": "Time Off for Union Business",
+          "content": {
+            "without_pay": [
+              "to an elected or appointed representative of the Union to attend conventions",
+              "for elected or appointed representatives to attend to union business",
+              "for employees who are representatives of the Union on the Bargaining Committee",
+              "to employees called by the Union to appear as witnesses before an arbitration board"
+            ],
+            "with_pay": [
+              "Four (4) employees who are representatives of the Union on the Union's Bargaining Committee to carry on negotiations",
+              "Subject to operational requirements, the union Chairperson and BCGEU employees who are on duty will be allowed to attend two (2) one (1) hour meetings per year",
+              "Any employee designated to sit as an observer on a selection committee",
+              "Union representatives on the Joint Committee and the Joint Classification Committee"
+            ],
+            "chairperson_release": "The Chairperson of the bargaining unit or alternate designated by the Union shall be granted twenty-five percent (25%) employer-paid time release from a full workload per year"
+          }
+        },
+        "2.11": {
+          "title": "Emergency Services",
+          "content": "The parties recognize that in the event of a strike or lockout situations may arise of an emergency nature. To this end, the Employer and the Union will agree to provide services of an emergency nature"
+        }
+      }
+    },
+    "17": {
+      "title": "HOURS OF WORK",
+      "sections": {
+        "17.1": {
+          "title": "Hours of Work",
+          "content": {
+            "annual_hours": "The annual hours of work exclusive of meal periods taken away from the workstation but including paid holidays will be eighteen hundred twenty-seven (1,827) which is equivalent to an average of thirty-five (35) hours per week",
+            "standard_workweek": "The standard workweek for employees shall consist of up to five (5) consecutive days",
+            "workplace_flexibility": "Where, for bona fide operational reasons the Employer schedules employees to work Saturday or Sunday, specific criteria shall apply",
+            "regular_workday": "The regular workday shall consist of no less than three (3) hours and no more than nine (9) hours per day exclusive of meal periods",
+            "scheduling_requirements": "Regular hours worked shall total seventy (70) hours averaged over a two (2) week period for full-time employees"
+          }
+        },
+        "17.2": {
+          "title": "Work Schedules",
+          "content": {
+            "establishment": "Shift patterns and lengths of scheduled workdays to meet the annual hours of work shall be established by mutual agreement",
+            "employer_determination": "The Employer shall determine when various services are provided (hours of operation), the classifications of positions and the numbers of employees required to provide the services",
+            "local_negotiations": "The Employer's designate and the employee's representative at the local level will establish work schedules based upon the shift patterns and hours of work clauses",
+            "change_procedures": "If either party wishes a change to existing work schedules it shall provide the other party with the earliest possible advance notice in writing"
+          }
+        },
+        "17.3": {
+          "title": "Rest Periods and Clean-up Time",
+          "content": {
+            "rest_periods": "All employees shall have two (2) fifteen (15) minute rest periods in each work period in excess of six (6) hours, one (1) rest period to be granted before and one (1) after the meal period",
+            "clean_up_time": "Employees shall be allowed reasonable time during the workday or shift for clean-up purposes"
+          }
+        },
+        "17.4": {
+          "title": "Meal Periods",
+          "content": {
+            "duration": "Meal periods shall be between thirty (30) and sixty (60) minutes in length and subject to mutual agreement between the College's and the Union's designated representatives at the local level",
+            "location": "An employee shall be entitled to take their meal period away from the workstation",
+            "scheduling": "Meal periods shall be scheduled as closely as possible to the middle of the workday"
+          }
+        },
+        "17.6": {
+          "title": "Flextime",
+          "content": {
+            "definition": "Flextime means the hours worked by an employee, or group of employees, who shall be given the authority to work flextime by mutual agreement between the parties at a local level",
+            "authority_includes": [
+              "choose their starting and finishing times",
+              "choose their length of workday with a maximum of nine (9) hours, subject to meeting the required annual hours of work"
+            ],
+            "absence_calculation": "The full-time employee on flextime who has a day of absence, whether with or without pay, will be deemed to be absent for seven (7) hours providing at least seven (7) hours are required to complete the averaging period"
+          }
+        },
+        "17.7": {
+          "title": "Staff Meetings",
+          "content": "Staff meetings shall be scheduled within the seven (7) hour workday. If a staff meeting is scheduled during the unpaid lunch period, the meeting shall be with pay at the applicable overtime rates"
+        }
+      }
+    },
+    "19": {
+      "title": "OVERTIME",
+      "sections": {
+        "19.1": {
+          "title": "Definitions",
+          "content": {
+            "overtime": "Work performed by a full-time employee in excess or outside of their regularly scheduled hours of work",
+            "straight_time_rate": "The hourly rate of remuneration",
+            "time_and_one_half": "One and one-half times (1½x) the straight-time rate",
+            "double_time": "Twice (2x) the straight-time rate",
+            "double_time_and_one_half": "Two and one-half times (2½x) the straight-time rate"
+          }
+        },
+        "19.2": {
+          "title": "Authorization and Application of Overtime",
+          "content": {
+            "entitlement_conditions": [
+              "the overtime worked is authorized in advance by the Employer",
+              "the employee does not control the duration of the overtime worked"
+            ],
+            "special_circumstances": "The Employer and the Union recognize that the nature of the work carried out by persons in some classifications is such that it may not be possible for the employee to obtain prior authorization for the necessary overtime work"
+          }
+        },
+        "19.3": {
+          "title": "Overtime Entitlement",
+          "content": {
+            "entitlement_basis": "An employee will be entitled to compensation for authorized overtime in excess of the scheduled daily hours, the maximum daily hours for those employees on flextime, or the agreed averaging period",
+            "calculation": "The overtime hourly rate shall be calculated by dividing the employee's biweekly rate by seventy (70) and multiplying the resultant quotient by the hours worked",
+            "increments": "Overtime shall be compensated in thirty (30) minute increments; however, employees shall not be entitled to any compensation for periods of overtime of less than five (5) minutes per day"
+          }
+        },
+        "19.6": {
+          "title": "Overtime Compensation",
+          "content": {
+            "rates": {
+              "first_two_hours": "time and one-half (1½x) for the first two (2) hours of overtime on a regularly scheduled workday",
+              "excess_hours": "double-time (2x) for hours worked in excess of the first two hours",
+              "day_of_rest": "double-time (2x) for all hours worked on a day of rest",
+              "designated_holidays": "double-time (2x) for all hours worked on designated holidays, except Christmas and New Year's when additional compensation shall be at the rate of double-time and two and one-half (2½x)"
+            },
+            "payment_method": "Overtime shall be compensated either in cash or time off. Where an employee opts for time off, such time off shall be scheduled by mutual agreement within thirty (30) workdays"
+          }
+        },
+        "19.7": {
+          "title": "Overtime Meal Allowance",
+          "content": {
+            "entitlement": "When an employee is required to work in excess of two and one-half (2½) hours overtime immediately before or after completion of their scheduled daily hours, they shall be provided with a meal or reimbursed with an overtime meal allowance of thirteen dollars ($13)",
+            "meal_break": "A meal break of one-half (½) hour with pay will be given",
+            "additional_meals": "If the employee continues to work overtime beyond three (3) hours, a further meal or allowance and meal break will be provided upon completion of an additional four (4) hours worked"
+          }
+        },
+        "19.9": {
+          "title": "Right to Refuse Overtime",
+          "content": "All employees shall have the right to refuse to work overtime, except when required to do so in emergency situations, without being subject to disciplinary action for so refusing"
+        },
+        "19.11": {
+          "title": "Callout Provisions",
+          "content": {
+            "compensation": "A regular employee who is called back to work outside their regular working hours shall be compensated for a minimum of three (3) hours at overtime rates",
+            "travel_time": "They shall be compensated from the time they leave their home to report for duty until the time they arrive back upon proceeding directly to and from work",
+            "rest_intervals": "When overtime is worked there shall be an elapsed time of eight (8) hours between the end of overtime and the time the employee reports for duty on the next regular shift"
+          }
+        }
+      }
+    },
+    "21": {
+      "title": "ANNUAL VACATION",
+      "sections": {
+        "21.1": {
+          "title": "Annual Vacation",
+          "content": {
+            "entitlement_schedule": {
+              "first_to_fifth_years": "21 workdays",
+              "sixth_year": "22 workdays",
+              "seventh_year": "23 workdays",
+              "eighth_year": "24 workdays",
+              "ninth_year": "25 workdays",
+              "tenth_to_fifteenth_years": "26 workdays",
+              "sixteenth_to_nineteenth_years": "31 workdays",
+              "twentieth_to_twenty_fourth_years": "33 workdays",
+              "twenty_fifth_and_thereafter": "35 workdays"
+            },
+            "part_time": "Employees engaged on a part-time basis shall be entitled to the above annual vacation on a pro rata basis"
+          }
+        },
+        "21.5": {
+          "title": "Vacation Scheduling",
+          "content": {
+            "calendar_year_basis": "With the exception of authorized vacation carryover under Clause 21.8, the scheduling and completion of vacations shall be on a calendar year basis",
+            "prime_time": "All employees shall be allowed to take at least four (4) weeks of their vacation entitlement during the period of May 1st to September 30th inclusive",
+            "seniority_basis": "Vacations shall be granted on the basis of service seniority within a classification series in the work unit",
+            "scheduling_process": "Employees will receive their vacation allotment by February 1. Employees will complete their vacation requests within fourteen (14) calendar days and receive approved schedules by March 1"
+          }
+        },
+        "21.8": {
+          "title": "Vacation Carryover",
+          "content": {
+            "employee_carryover": "An employee may carry over up to five (5) days vacation per vacation year which must be taken not later than the next consecutive vacation year",
+            "employer_fault": "Where it is through the fault of the Employer that the full vacation entitlement has not been taken within the calendar year in which it is earned, a carryover of unused days shall be granted by the College"
+          }
+        }
+      }
+    },
+    "29": {
+      "title": "PAYMENT OF WAGES AND ALLOWANCES",
+      "sections": {
+        "29.3": {
+          "title": "Rates of Pay",
+          "content": {
+            "pay_schedule": "Employees shall be paid in accordance with Appendix 2 attached to and forming part of this Agreement",
+            "wage_increases": {
+              "ratification_date": "2.0%",
+              "july_1_2020": "2.0%",
+              "july_1_2021": "2.0%"
+            },
+            "retroactivity": "The Parties agree that retroactive adjustment will apply in the case of a tentative settlement on or before February 28, 2020. After that date there will be no retroactive adjustment"
+          }
+        },
+        "29.4": {
+          "title": "Substitution Pay",
+          "content": "When an employee is directed to relieve or substitute in a higher paying position for two (2) consecutive hours or more in any day they shall receive the rate for the job"
+        },
+        "29.8": {
+          "title": "Vehicle Allowance",
+          "content": {
+            "rates": {
+              "ratification_date": "forty-nine (49¢) per kilometre",
+              "april_1_2020": "fifty (50¢) per kilometre",
+              "april_1_2021": "fifty-one (51¢) per kilometre"
+            },
+            "coverage": "Vehicle allowances for all distances travelled on College business shall be paid to employees required to use their own vehicles in the performance of their duties"
+          }
+        },
+        "29.9": {
+          "title": "Meals, Lodging and Travel Allowances",
+          "content": {
+            "meal_allowances": {
+              "ratification_date": {
+                "breakfast": "$10.77 - Travel prior to 7:00 a.m.",
+                "lunch": "$13.46 - Travel between 11:00 a.m. and 1:00 p.m.",
+                "dinner": "$23.69 - Travel after 6:00 p.m."
+              },
+              "april_1_2020": {
+                "breakfast": "$10.99 - Travel prior to 7:00 a.m.",
+                "lunch": "$13.73 - Travel between 11:00 a.m. and 1:00 p.m.",
+                "dinner": "$24.16 - Travel after 6:00 p.m."
+              },
+              "april_1_2021": {
+                "breakfast": "$11.20 - Travel prior to 7:00 a.m.",
+                "lunch": "$14.00 - Travel between 11:00 a.m. and 1:00 p.m.",
+                "dinner": "$24.64 - Travel after 6:00 p.m."
+              }
+            },
+            "lodging": "Reasonable actual costs upon production of receipts, or thirty-five dollars ($35) per night without receipt"
+          }
+        }
+      }
+    }
+  },
+  "salary_scales": {
+    "effective_dates": {
+      "may_11_2019": "Base rates before increases",
+      "july_6_2019": "2% increase applied",
+      "july_4_2020": "2% increase applied",
+      "july_3_2021": "2% increase applied"
+    },
+    "levels": {
+      "coop_student_banquet_worker": {
+        "hourly_rates": {
+          "may_11_2019": 14.96,
+          "july_6_2019": 15.26,
+          "july_4_2020": 15.57,
+          "july_3_2021": 15.88
+        }
+      },
+      "labourer": {
+        "hourly_rates": {
+          "may_11_2019": 19.77,
+          "july_6_2019": 20.17,
+          "july_4_2020": 20.57,
+          "july_3_2021": 20.98
+        }
+      },
+      "level_1": {
+        "steps": {
+          "step_1": {
+            "hourly_rates": {
+              "may_11_2019": 22.10,
+              "july_6_2019": 22.54,
+              "july_4_2020": 22.99,
+              "july_3_2021": 23.45
+            },
+            "biweekly_rates": {
+              "may_11_2019": 1547.00,
+              "july_6_2019": 1577.80,
+              "july_4_2020": 1609.30,
+              "july_3_2021": 1641.50
+            }
+          }
+        }
+      }
+    }
+  },
+  "appendices": {
+    "appendix_1": {
+      "title": "Short and Long-Term Disability",
+      "sections": {
+        "part_1": {
+          "title": "Short-Term Illness and Injury Plan",
+          "eligibility": "Regular employees shall be covered by the Short-Term Illness and Injury Plan upon completion of six (6) months of service with the Employer",
+          "benefits": "In the event an employee is unable to work because of an illness or injury, they will be entitled to a benefit of seventy-five percent (75%) of pay for a period not to exceed six (6) months from date of absence",
+          "first_fifteen_days": "In any two calendar year period, the first fifteen (15) workdays of absence from work due to illness or injury will be paid at one hundred percent (100%) of pay"
+        },
+        "part_2": {
+          "title": "Long-Term Disability Plan",
+          "eligibility": "Regular full-time employees shall be covered by the Long-Term Disability Plan upon completion of six (6) months' active employment with the Employer",
+          "benefit_calculation": "The employee shall receive a monthly benefit equal to the sum of sixty-six and two-thirds percent (66⅔%) of the first twenty-five hundred dollars ($2,500) of monthly earnings and fifty percent (50%) of the monthly earnings above twenty-five hundred dollars ($2,500)",
+          "duration": "The long-term disability benefit payment will be made so long as an employee remains totally disabled and will cease on the date the employee recovers, or at the end of the month in which the employee reaches age sixty-five (65)"
+        }
+      }
+    },
+    "appendix_2": {
+      "title": "Salary Rates",
+      "note": "Contains detailed salary scales for all levels and steps with effective dates and percentage increases"
+    },
+    "appendix_3": {
+      "title": "Board and Lodging and Relocation Regulations",
+      "sections": {
+        "part_1": "Board and Lodging Regulations",
+        "part_2": "Relocation Regulations"
+      }
+    }
+  },
+  "memoranda_of_agreement": {
+    "moa_1": {
+      "title": "Joint Job Evaluation/Pay Equity Committee",
+      "content": "The parties agree to the formation of a joint job evaluation/pay equity committee whose job will be to develop a Job Evaluation Plan, including implementation strategies and time lines"
+    },
+    "moa_2": {
+      "title": "Staff Development and Training Fund",
+      "content": "Recognition that Coast Mountain College will continue to face a shortage of skilled workers causing staffing shortages. Establishment of a Staff Development and Training Fund to encourage and assist employees in maintaining and improving skills"
+    },
+    "moa_3": {
+      "title": "Medical Services Plan of BC",
+      "content": "If the government reverts to an individually paid premium system for basic medical insurance, the parties agree that the employer will pay 100% of the premium for the employees"
+    },
+    "moa_4": {
+      "title": "Standby Pilot - Information Technology Support",
+      "content": "Information Technology standby provisions with compensation for responding to work inquiries outside of standard workday and predictability in expectations"
+    },
+    "moa_5": {
+      "title": "Workplace Bullying and Harassment",
+      "content": "Both parties agree that the Employer has a duty to ensure the health and safety of its workers and must take all reasonable steps to prevent or minimize workplace bullying and harassment"
+    }
+  },
+  "general_provisions": {
+    "term": {
+      "duration": "This Agreement shall be binding and remain in effect to midnight, June 30, 2022",
+      "notice_to_bargain": "This Agreement may be opened for collective bargaining by either party giving written notice on or after April 1, 2022, but not later than midnight, April 30, 2022"
+    },
+    "union_security": "All employees in the bargaining unit who were members of the Union on March 8, 1974, or thereafter became members shall maintain such membership as a condition of continued employment",
+    "check_off": "The Employer shall, as a condition of employment, deduct from the monthly wages or salary of each employee in the bargaining unit the amount of the regular monthly dues payable to the Union",
+    "grievance_procedure": {
+      "time_limits": "An employee who wishes to present a grievance must do so no later than thirty (30) days after the date on which they were notified of the action or circumstances giving rise to the grievance",
+      "steps": [
+        "Step 1: Discussion with designated supervisor",
+        "Step 2: Written grievance to representative authorized to deal with grievances"
+      ]
+    },
+    "arbitration": {
+      "single_arbitrators": [
+        "Chris Sullivan",
+        "Mark Brown",
+        "Julie Nichol",
+        "Corrin Bell",
+        "David McPhillips",
+        "John McConchie"
+      ]
+    }
+  }
+}
