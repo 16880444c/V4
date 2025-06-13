@@ -278,7 +278,7 @@ def main():
             div[data-testid="stRadio"] {
                 background-color: #f0f8ff;
                 padding: 10px 20px 20px 20px;
-                margin-top: 0;
+                margin-top: -16px !important;
                 margin-bottom: 20px;
                 border-radius: 0 0 10px 10px;
                 border-left: 2px solid #1e90ff;
@@ -287,7 +287,12 @@ def main():
                 border-top: none;
             }
             div[data-testid="stRadio"] > div {
-                margin-top: 0;
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            }
+            div[data-testid="stRadio"] > div > div {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
             }
             </style>
             """, unsafe_allow_html=True)
