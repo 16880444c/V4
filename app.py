@@ -256,27 +256,32 @@ def main():
     
     # Box 1: BCGEU Instructor (Active) - with radio buttons inside
     with col1:
-        st.markdown("""
-            <div style="
-                background-color: #f0f8ff;
-                padding: 20px 20px 10px 20px;
-                border-radius: 10px;
-                border: 2px solid #1e90ff;
-                margin-bottom: 20px;
-            ">
-                <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
-        """, unsafe_allow_html=True)
-        
-        # Radio buttons inside the styled box
-        st.session_state.agreement_scope = st.radio(
-            "Choose scope:",
-            ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-            index=2,
-            key="bcgeu_instructor_radio",
-            help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
-        )
-        
-        st.markdown("</div>", unsafe_allow_html=True)
+        # Create a container with custom styling
+        with st.container():
+            st.markdown("""
+                <div style="
+                    background-color: #f0f8ff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 2px solid #1e90ff;
+                    margin-bottom: 20px;
+                ">
+                    <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            # Use negative margin to pull radio buttons up into the box
+            st.markdown('<div style="margin-top: -60px; padding: 0 20px 20px 20px;">', unsafe_allow_html=True)
+            
+            st.session_state.agreement_scope = st.radio(
+                "Choose scope:",
+                ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
+                index=2,
+                key="bcgeu_instructor_radio",
+                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
+            )
+            
+            st.markdown('</div>', unsafe_allow_html=True)
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
