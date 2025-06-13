@@ -375,7 +375,7 @@ def main():
             with st.container():
                 st.markdown(f"""
                 <style>
-                div[data-testid="stRadio"][key="instructor_scope"] {{
+                div[data-testid="stRadio"] {{
                     background-color: {bg_color};
                     padding: 10px 20px 20px 20px;
                     margin-top: -16px !important;
@@ -390,7 +390,12 @@ def main():
                 """, unsafe_allow_html=True)
                 
                 scope_options = ["Local Agreement Only", "Common Agreement Only", "Both Agreements"]
-                current_scope_index = scope_options.index(st.session_state.selected_scope) if st.session_state.selected_scope in scope_options else None
+                
+                # Only show current selection if this agreement type is selected
+                if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope in scope_options:
+                    current_scope_index = scope_options.index(st.session_state.selected_scope)
+                else:
+                    current_scope_index = None
                 
                 instructor_scope = st.radio(
                     "",
@@ -401,7 +406,7 @@ def main():
                     label_visibility="collapsed"
                 )
                 
-                if instructor_scope and (st.session_state.selected_agreement != "BCGEU Instructor" or st.session_state.selected_scope != instructor_scope):
+                if instructor_scope:
                     st.session_state.selected_agreement = "BCGEU Instructor"
                     st.session_state.selected_scope = instructor_scope
                     st.rerun()
