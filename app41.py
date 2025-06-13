@@ -453,18 +453,14 @@ def main():
         
         for message in st.session_state.messages:
             if message["role"] == "user":
-                st.markdown(f"""
-                <div class="user-message">
-                    <div style="color: #1565c0; font-weight: 600; margin-bottom: 8px;">
-                        👤 Your Question:
-                    </div>
-                    <div style="color: #333;">
-                        {message["content"]}
-                    </div>
-                </div>
-                """, unsafe_allow_html=True)
+                # Completely separate approach - no HTML embedding of user content
+                st.markdown('<div class="user-message">', unsafe_allow_html=True)
+                st.markdown('<div style="color: #1565c0; font-weight: 600; margin-bottom: 8px;">👤 Your Question:</div>', unsafe_allow_html=True)
+                st.markdown(f'<div style="color: #333;">', unsafe_allow_html=True)
+                st.write(message["content"])  # Use st.write to safely display user content
+                st.markdown('</div></div>', unsafe_allow_html=True)
             else:
-                st.markdown(f"""
+                st.markdown("""
                 <div class="assistant-message">
                     <div style="color: #7b1fa2; font-weight: 600; margin-bottom: 8px;">
                         🤖 Expert Analysis:
@@ -472,7 +468,7 @@ def main():
                 </div>
                 """, unsafe_allow_html=True)
                 
-                # Use regular markdown for the assistant content to avoid HTML issues
+                # Use regular markdown for the assistant content
                 st.markdown(message["content"])
     
     # Footer with stats
