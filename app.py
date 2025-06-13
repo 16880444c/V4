@@ -256,29 +256,27 @@ def main():
     
     # Box 1: BCGEU Instructor (Active) - with radio buttons inside
     with col1:
-        with st.container():
-            st.markdown("""
-                <div style="
-                    background-color: #f0f8ff;
-                    padding: 20px;
-                    border-radius: 10px;
-                    border: 2px solid #1e90ff;
-                    margin-bottom: 20px;
-                ">
-                    <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
-                </div>
-            """, unsafe_allow_html=True)
-            
-            # Position radio buttons to appear inside the box
-            st.markdown('<div style="margin-top: -80px; margin-left: 20px; margin-right: 20px;">', unsafe_allow_html=True)
-            st.session_state.agreement_scope = st.radio(
-                "Choose scope:",
-                ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-                index=2,
-                key="bcgeu_instructor_radio",
-                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown("""
+            <div style="
+                background-color: #f0f8ff;
+                padding: 20px 20px 10px 20px;
+                border-radius: 10px;
+                border: 2px solid #1e90ff;
+                margin-bottom: 20px;
+            ">
+                <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+        """, unsafe_allow_html=True)
+        
+        # Radio buttons inside the styled box
+        st.session_state.agreement_scope = st.radio(
+            "Choose scope:",
+            ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
+            index=2,
+            key="bcgeu_instructor_radio",
+            help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
+        )
+        
+        st.markdown("</div>", unsafe_allow_html=True)
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
@@ -322,28 +320,14 @@ def main():
     st.markdown("### 💬 Ask Your Question")
     st.markdown("---")
     
-    # Create a more prominent input area
-    with st.container():
-        st.markdown("""
-            <div style="
-                background-color: #ffffff;
-                padding: 30px;
-                border-radius: 15px;
-                border: 3px solid #1e90ff;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                margin: 20px 0;
-            ">
-            </div>
-        """, unsafe_allow_html=True)
-        
-        # Large text area for questions
-        user_question = st.text_area(
-            "",
-            placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
-            height=100,
-            key="question_input",
-            label_visibility="collapsed"
-        )
+    # Large text area for questions
+    user_question = st.text_area(
+        "",
+        placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
+        height=100,
+        key="question_input",
+        label_visibility="collapsed"
+    )
         
         # Centered submit button
         col_left, col_center, col_right = st.columns([1, 1, 1])
