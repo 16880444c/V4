@@ -389,11 +389,11 @@ def main():
                 </style>
                 """, unsafe_allow_html=True)
                 
-                scope_options = ["Select scope...", "Local Agreement Only", "Common Agreement Only", "Both Agreements"]
+                scope_options = ["Local Agreement Only", "Common Agreement Only", "Both Agreements"]
                 
                 # Determine current selection index
                 if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope:
-                    if st.session_state.selected_scope in scope_options[1:]:
+                    if st.session_state.selected_scope in scope_options:
                         current_scope_index = scope_options.index(st.session_state.selected_scope)
                     else:
                         current_scope_index = 0
@@ -409,15 +409,15 @@ def main():
                     label_visibility="collapsed"
                 )
                 
-                if instructor_scope and instructor_scope != "Select scope...":
-                    st.session_state.selected_agreement = "BCGEU Instructor"
-                    st.session_state.selected_scope = instructor_scope
-                    st.rerun()
-                elif instructor_scope == "Select scope..." and st.session_state.selected_agreement == "BCGEU Instructor":
-                    # User deselected by going back to placeholder
-                    st.session_state.selected_agreement = None
-                    st.session_state.selected_scope = None
-                    st.rerun()
+                if instructor_scope:
+                    # Clear other selections if switching agreement types
+                    if st.session_state.selected_agreement != "BCGEU Instructor":
+                        st.session_state.selected_agreement = "BCGEU Instructor"
+                        st.session_state.selected_scope = instructor_scope
+                        st.rerun()
+                    elif st.session_state.selected_scope != instructor_scope:
+                        st.session_state.selected_scope = instructor_scope
+                        st.rerun()
         else:
             st.markdown("""
                 <div style="
