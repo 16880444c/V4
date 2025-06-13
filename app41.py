@@ -3,6 +3,7 @@ import json
 import anthropic
 from datetime import datetime
 import os
+import requests
 
 # Set page config
 st.set_page_config(
@@ -47,9 +48,35 @@ def load_bcgeu_support_agreement() -> dict:
     except:
         return None
 
-def load_builtin_agreements() -> tuple:
-    """Load the built-in agreements from JSON files"""
+def load_cupe_local_agreement() -> dict:
+    """Load the CUPE Local agreement from JSON file"""
     try:
+        with open('agreements/cupe_local/cupe_local.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except:
+        return None
+
+def load_cupe_common_agreement() -> dict:
+    """Load the CUPE Common agreement from GitHub or local file"""
+    # First try to load from local file
+    try:
+        with open('agreements/cupe_common/cupe_common.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except:
+        # If local file doesn't exist, try to fetch from GitHub
+        try:
+            github_url = "https://raw.githubusercontent.com/16880444c/V4/main/agreements/cupe_common/cupe_common.json"
+            response = requests.get(github_url, timeout=10)
+            if response.status_code == 200:
+                return response.json()
+        except:
+            pass
+        return None
+
+def load_builtin_agreements() -> tuple:
+    """Load all built-in agreements from JSON files"""
+    try:
+        # Load BCGEU agreements
         # Try loading split files first
         local_agreement = load_split_local_agreement()
         
@@ -73,10 +100,14 @@ def load_builtin_agreements() -> tuple:
         # Load BCGEU Support agreement
         support_agreement = load_bcgeu_support_agreement()
         
-        return local_agreement, common_agreement, support_agreement
+        # Load CUPE agreements
+        cupe_local_agreement = load_cupe_local_agreement()
+        cupe_common_agreement = load_cupe_common_agreement()
+        
+        return local_agreement, common_agreement, support_agreement, cupe_local_agreement, cupe_common_agreement
         
     except Exception:
-        return None, None, None
+        return None, None, None, None, None
 
 def format_agreement_for_context(agreement: dict, agreement_name: str) -> str:
     """Convert agreement JSON to formatted text for Claude context"""
@@ -127,7 +158,8 @@ def reset_conversation():
             del st.session_state[key]
     st.rerun()
 
-def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, selection: str, api_key: str) -> str:
+def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, 
+                     cupe_local_agreement: dict, cupe_common_agreement: dict, selection: str, api_key: str) -> str:
     """Generate response using Claude with complete agreement context"""
     
     # Build context based on selection
@@ -148,12 +180,28 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
             context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
             context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
         else:
-            return "❌ **Error**: One or both agreement files not found."
+            return "❌ **Error**: One or both BCGEU agreement files not found."
     elif selection == "BCGEU Support Agreement":
         if support_agreement:
             context = format_agreement_for_context(support_agreement, "BCGEU Support Agreement")
         else:
             return "❌ **Error**: BCGEU Support agreement not found."
+    elif selection == "CUPE - Local Agreement":
+        if cupe_local_agreement:
+            context = format_agreement_for_context(cupe_local_agreement, "CUPE Local Agreement")
+        else:
+            return "❌ **Error**: CUPE Local agreement not found."
+    elif selection == "CUPE - Common Agreement":
+        if cupe_common_agreement:
+            context = format_agreement_for_context(cupe_common_agreement, "CUPE Common Agreement")
+        else:
+            return "❌ **Error**: CUPE Common agreement not found."
+    elif selection == "CUPE - Both Agreements":
+        if cupe_local_agreement and cupe_common_agreement:
+            context = format_agreement_for_context(cupe_local_agreement, "CUPE Local Agreement")
+            context += "\n\n" + format_agreement_for_context(cupe_common_agreement, "CUPE Common Agreement")
+        else:
+            return "❌ **Error**: One or both CUPE agreement files not found."
     
     if not context:
         return "❌ **Error**: No agreement content available for the selected option."
@@ -162,6 +210,9 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
     if "Support" in selection:
         agreement_type = "BCGEU Support Agreement"
         citation_format = "[BCGEU Support Agreement - Article X.X: Title]"
+    elif "CUPE" in selection:
+        agreement_type = "CUPE agreements"
+        citation_format = "[CUPE Agreement - Article X.X: Title]"
     else:
         agreement_type = "BCGEU Instructor agreements"
         citation_format = "[Agreement Type - Article X.X: Title]"
@@ -307,6 +358,13 @@ def main():
         margin-top: 20px;
         border: 1px solid #dee2e6;
     }
+    .agreement-group {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 5px 0;
+        border-left: 4px solid #007bff;
+    }
     </style>
     """, unsafe_allow_html=True)
     
@@ -327,6 +385,10 @@ def main():
         st.session_state.common_agreement = None
     if 'support_agreement' not in st.session_state:
         st.session_state.support_agreement = None
+    if 'cupe_local_agreement' not in st.session_state:
+        st.session_state.cupe_local_agreement = None
+    if 'cupe_common_agreement' not in st.session_state:
+        st.session_state.cupe_common_agreement = None
     
     # Get API key
     api_key = None
@@ -345,11 +407,13 @@ def main():
     # Load agreements once
     if not st.session_state.agreements_loaded:
         with st.spinner("Loading collective agreements..."):
-            local_agreement, common_agreement, support_agreement = load_builtin_agreements()
+            local_agreement, common_agreement, support_agreement, cupe_local_agreement, cupe_common_agreement = load_builtin_agreements()
             
             st.session_state.local_agreement = local_agreement
             st.session_state.common_agreement = common_agreement
             st.session_state.support_agreement = support_agreement
+            st.session_state.cupe_local_agreement = cupe_local_agreement
+            st.session_state.cupe_common_agreement = cupe_common_agreement
             st.session_state.agreements_loaded = True
     
     # Create list of available options
@@ -366,6 +430,17 @@ def main():
     # Add BCGEU Support option if available
     if st.session_state.support_agreement:
         agreement_options.append("BCGEU Support Agreement")
+    
+    # Add CUPE options if available
+    cupe_options = []
+    if st.session_state.cupe_local_agreement:
+        cupe_options.append("CUPE - Local Agreement")
+    if st.session_state.cupe_common_agreement:
+        cupe_options.append("CUPE - Common Agreement")
+    if st.session_state.cupe_local_agreement and st.session_state.cupe_common_agreement:
+        cupe_options.append("CUPE - Both Agreements")
+    
+    agreement_options.extend(cupe_options)
     
     # Agreement selection
     st.markdown("### 📋 Select Agreement")
@@ -394,6 +469,31 @@ def main():
             st.markdown('<div class="status-info">ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.</div>', unsafe_allow_html=True)
     else:
         st.markdown('<div class="status-waiting">ℹ️ Please select an agreement to begin</div>', unsafe_allow_html=True)
+    
+    # Show agreement availability status
+    with st.expander("📊 Agreement Availability Status"):
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("**BCGEU Agreements:**")
+            bcgeu_local_status = "✅ Available" if st.session_state.local_agreement else "❌ Not found"
+            bcgeu_common_status = "✅ Available" if st.session_state.common_agreement else "❌ Not found"
+            bcgeu_support_status = "✅ Available" if st.session_state.support_agreement else "❌ Not found"
+            
+            st.markdown(f"• Local Agreement: {bcgeu_local_status}")
+            st.markdown(f"• Common Agreement: {bcgeu_common_status}")
+            st.markdown(f"• Support Agreement: {bcgeu_support_status}")
+        
+        with col2:
+            st.markdown("**CUPE Agreements:**")
+            cupe_local_status = "✅ Available" if st.session_state.cupe_local_agreement else "❌ Not found"
+            cupe_common_status = "✅ Available" if st.session_state.cupe_common_agreement else "❌ Not found"
+            
+            st.markdown(f"• Local Agreement: {cupe_local_status}")
+            st.markdown(f"• Common Agreement: {cupe_common_status}")
+            
+            if not st.session_state.cupe_common_agreement:
+                st.markdown("  *Attempted to load from GitHub*")
     
     st.markdown("---")
     
@@ -442,6 +542,8 @@ def main():
                     st.session_state.local_agreement, 
                     st.session_state.common_agreement, 
                     st.session_state.support_agreement,
+                    st.session_state.cupe_local_agreement,
+                    st.session_state.cupe_common_agreement,
                     selected_agreement,
                     api_key
                 )
