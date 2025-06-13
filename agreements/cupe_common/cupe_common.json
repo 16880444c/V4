@@ -680,7 +680,7 @@
       "sections": {
         "7.1": {
           "title": "Definitions",
-          "content": "All references to spouse within the leave provisions of this Agreement include married and common-law partners regardless of sexual orientation, gender identity, or gender expression. References to family include spouse, children, children's spouses, stepchild, stepchild in-law, siblings, in-law siblings, parents, step-parents, parents-in-law, grandparents, grandchildren, nieces and nephews, and any other person living in the same household who is dependent upon the employee For the purpose of Article 7.8 – Compassionate Care Leave – only, the definition of "family member" is as set out in Appendix I."
+          "content": "All references to spouse within the leave provisions of this Agreement include married and common-law partners regardless of sexual orientation, gender identity, or gender expression. References to family include spouse, children, children's spouses, stepchild, stepchild in-law, siblings, in-law siblings, parents, step-parents, parents-in-law, grandparents, grandchildren, nieces and nephews, and any other person living in the same household who is dependent upon the employee For the purpose of Article 7.8 Compassionate Care Leave only, the definition of family member is as set out in Appendix I."
         },
         "7.2": {
           "title": "General Leave",
@@ -711,7 +711,7 @@
           "subsections": {
             "7.8.1": {
               "title": "Entitlement",
-              "content": "An employee will be granted a compassionate care leave of absence without pay for up to twenty-seven (27) weeks to care for a gravely ill family member. For the purpose of this Article 7.8, "family member" is defined as one of the persons listed in Appendix I – Family Members for the Purpose of Article 7.8 Compassionate Care Leave. In order to be eligible for this leave, the employee must provide a medical certificate as proof that the ill family member needs care or support and is at risk of dying within twenty-six (26) weeks. An employee who is granted a compassionate care leave of absence to care for a gravely ill family member shall be entitled to the benefits as follows:",
+              "content": "An employee will be granted a compassionate care leave of absence without pay for up to twenty-seven (27) weeks to care for a gravely ill family member. For the purpose of this Article 7.8, family member is defined as one of the persons listed in Appendix I Family Members for the Purpose of Article 7.8 Compassionate Care Leave. In order to be eligible for this leave, the employee must provide a medical certificate as proof that the ill family member needs care or support and is at risk of dying within twenty-six (26) weeks. An employee who is granted a compassionate care leave of absence to care for a gravely ill family member shall be entitled to the benefits as follows:",
               "benefits": [
                 "a) The employee's benefit coverage will continue for the duration of the compassionate care leave, to a maximum of twenty-seven (27) weeks, and the premium payment shall be on the same basis as if the employee were not on leave.",
                 "b) Where an employee elects to buy back pensionable service for part of all of the duration of the compassionate care leave, to a maximum of twenty-seven (27) weeks, the employer will pay the employer portion of the pension contribution in accordance with the Pension Plan regulations.",
@@ -780,69 +780,7 @@
           ]
         }
       }
-    }
-  },
-  "salary_scales": {
-    "provincial_salary_scale": {
-      "step_1": {
-        "april_1_2019_to_march_31_2020": 95134,
-        "april_1_2020_to_march_31_2021": 97037,
-        "april_1_2021_to_march_31_2022": 98978
-      },
-      "step_2": {
-        "april_1_2019_to_march_31_2020": 89121,
-        "april_1_2020_to_march_31_2021": 90903,
-        "april_1_2021_to_march_31_2022": 92721
-      },
-      "step_3": {
-        "april_1_2019_to_march_31_2020": 83014,
-        "april_1_2020_to_march_31_2021": 84674,
-        "april_1_2021_to_march_31_2022": 86367
-      },
-      "step_4": {
-        "april_1_2019_to_march_31_2020": 79620,
-        "april_1_2020_to_march_31_2021": 81212,
-        "april_1_2021_to_march_31_2022": 82836
-      },
-      "step_5": {
-        "april_1_2019_to_march_31_2020": 76700,
-        "april_1_2020_to_march_31_2021": 78234,
-        "april_1_2021_to_march_31_2022": 79799
-      },
-      "step_6": {
-        "april_1_2019_to_march_31_2020": 73787,
-        "april_1_2020_to_march_31_2021": 75263,
-        "april_1_2021_to_march_31_2022": 76768
-      },
-      "step_7": {
-        "april_1_2019_to_march_31_2020": 70868,
-        "april_1_2020_to_march_31_2021": 72285,
-        "april_1_2021_to_march_31_2022": 73731
-      },
-      "step_8": {
-        "april_1_2019_to_march_31_2020": 67954,
-        "april_1_2020_to_march_31_2021": 69313,
-        "april_1_2021_to_march_31_2022": 70699
-      },
-      "step_9": {
-        "april_1_2019_to_march_31_2020": 65036,
-        "april_1_2020_to_march_31_2021": 66337,
-        "april_1_2021_to_march_31_2022": 67664
-      },
-      "step_10": {
-        "april_1_2019_to_march_31_2020": 62119,
-        "april_1_2020_to_march_31_2021": 63361,
-        "april_1_2021_to_march_31_2022": 64628
-      },
-      "step_11": {
-        "april_1_2019_to_march_31_2020": 59204,
-        "april_1_2020_to_march_31_2021": 60388,
-        "april_1_2021_to_march_31_2022": 61596
-      }
     },
-    "footnote": "The first day of the first full pay period after this date. For April 1, 2019, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. For April 1, 2020, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment."
-  },
-  "articles_continued": {
     "8": {
       "title": "PARENTAL LEAVE",
       "sections": {
@@ -1244,6 +1182,66 @@
       "content": "This Agreement shall be in effect from April 1, 2019 to March 31, 2022, and shall continue in force until the renewal of this Agreement."
     }
   },
+  "salary_scales": {
+    "provincial_salary_scale": {
+      "step_1": {
+        "april_1_2019_to_march_31_2020": 95134,
+        "april_1_2020_to_march_31_2021": 97037,
+        "april_1_2021_to_march_31_2022": 98978
+      },
+      "step_2": {
+        "april_1_2019_to_march_31_2020": 89121,
+        "april_1_2020_to_march_31_2021": 90903,
+        "april_1_2021_to_march_31_2022": 92721
+      },
+      "step_3": {
+        "april_1_2019_to_march_31_2020": 83014,
+        "april_1_2020_to_march_31_2021": 84674,
+        "april_1_2021_to_march_31_2022": 86367
+      },
+      "step_4": {
+        "april_1_2019_to_march_31_2020": 79620,
+        "april_1_2020_to_march_31_2021": 81212,
+        "april_1_2021_to_march_31_2022": 82836
+      },
+      "step_5": {
+        "april_1_2019_to_march_31_2020": 76700,
+        "april_1_2020_to_march_31_2021": 78234,
+        "april_1_2021_to_march_31_2022": 79799
+      },
+      "step_6": {
+        "april_1_2019_to_march_31_2020": 73787,
+        "april_1_2020_to_march_31_2021": 75263,
+        "april_1_2021_to_march_31_2022": 76768
+      },
+      "step_7": {
+        "april_1_2019_to_march_31_2020": 70868,
+        "april_1_2020_to_march_31_2021": 72285,
+        "april_1_2021_to_march_31_2022": 73731
+      },
+      "step_8": {
+        "april_1_2019_to_march_31_2020": 67954,
+        "april_1_2020_to_march_31_2021": 69313,
+        "april_1_2021_to_march_31_2022": 70699
+      },
+      "step_9": {
+        "april_1_2019_to_march_31_2020": 65036,
+        "april_1_2020_to_march_31_2021": 66337,
+        "april_1_2021_to_march_31_2022": 67664
+      },
+      "step_10": {
+        "april_1_2019_to_march_31_2020": 62119,
+        "april_1_2020_to_march_31_2021": 63361,
+        "april_1_2021_to_march_31_2022": 64628
+      },
+      "step_11": {
+        "april_1_2019_to_march_31_2020": 59204,
+        "april_1_2020_to_march_31_2021": 60388,
+        "april_1_2021_to_march_31_2022": 61596
+      }
+    },
+    "footnote": "The first day of the first full pay period after this date. For April 1, 2019, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. For April 1, 2020, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment."
+  },
   "appendices": {
     "appendix_a": {
       "title": "PROVINCIAL SALARY SCALE",
@@ -1430,7 +1428,7 @@
     "appendix_i": {
       "title": "FAMILY MEMBERS FOR THE PURPOSE OF ARTICLE 7.8 COMPASSIONATE CARE LEAVE",
       "section_1": {
-        "title": "The following \"family members\" are persons identified through their relationship to the employee.",
+        "title": "The following family members are persons identified through their relationship to the employee.",
         "relationships": [
           "• Spouse (includes heterosexual, common-law, and same-sex relationships)",
           "• Children",
@@ -1466,7 +1464,7 @@
         ]
       },
       "section_2": {
-        "title": "The following \"family members\" are persons identified through their relationship to the employee's spouse",
+        "title": "The following family members are persons identified through their relationship to the employee's spouse",
         "relationships": [
           "• Spouse's parents or step-parents",
           "• Spouse's siblings or step-siblings",
@@ -1480,7 +1478,7 @@
         ]
       },
       "section_3": {
-        "title": "The following \"family members\" are deemed family members",
+        "title": "The following family members are deemed family members",
         "relationships": [
           "• Any other person in the same household who is dependent upon the employee",
           "• Any person who lives with the employee as a member of the employee's family",
