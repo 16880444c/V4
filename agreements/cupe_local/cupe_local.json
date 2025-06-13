@@ -1,0 +1,428 @@
+{
+  "agreement_metadata": {
+    "title": "Collective Agreement between Coast Mountain College and Canadian Union of Public Employees Local 2409 / Federation of Post-Secondary Educators of BC Local 11",
+    "parties": {
+      "employer": "Coast Mountain College",
+      "union": "Canadian Union of Public Employees Local 2409",
+      "union_secondary": "Federation of Post-Secondary Educators of BC (FPSE) Local 11"
+    },
+    "effective_dates": {
+      "start": "2019-04-01",
+      "end": "2022-03-31"
+    },
+    "document_version": "April 1, 2019 to March 31, 2022"
+  },
+  "definitions": {
+    "child": "Deemed to include a ward of the Superintendent of Child Welfare, or a child of a spouse",
+    "consultation": "Meaningful and in-depth discussion by the Parties, including during all stages of any planning process, and full disclosure of all information and access to all documentation as it becomes available. Within ten (10) working days, a written record of the meetings of consultation will be agreed upon and this record of the meeting(s) of consultation shall be signed by the parties and copies provided",
+    "day_of_rest": "A day other than a holiday on which an employee is not ordinarily required to perform the duties of their position. This does not include employees on a leave of absence",
+    "section": "Forty-five (45) hours of class contact or one hundred and forty (140) hours of practicum",
+    "semester": "Fifteen (15) weeks of scheduled class contact. For an instructor whose workload includes practicum sections, the length of the two (2) semesters may be extended over a period not exceeding forty (40) weeks",
+    "relocation": "The movement of an employee from one (1) geographic location to another",
+    "academic_year": "September to August",
+    "annual_workload": "The workload over an academic year",
+    "release_time": "Calculated over an academic year"
+  },
+  "employee_types": {
+    "regular_employee": {
+      "definition": "An employee with fifty (50%) percent or more of a full-time workload as defined in Article 13",
+      "benefits": "Entitled to all employee benefits under this Agreement except for vacation entitlement which shall be prorated",
+      "additional_work": "All regular employees with less than one hundred (100%) percent workload will be offered additional available work provided they are qualified to perform such work"
+    },
+    "temporary_employee": {
+      "definition": "An employee with a workload of fifty (50%) percent or more appointed to a regular position to replace a regular employee who is on leave from their position or on leave due to another assignment in the College for a stipulated period of time",
+      "benefits_3_months_plus": "Where the appointment is for a period of time of three (3) months or more, the employee will be entitled to all benefits except for vacation which will be prorated and paid out at the completion of the term, taken within the term of the appointment or paid out in each bi-weekly pay period at the employee's option",
+      "benefits_under_3_months": "Where the appointment is a period of time less than three (3) months, the employee will be entitled to a payment in lieu of benefits as well as vacation on a pro-rated basis which will be paid out at the completion of the term or paid out in each bi-weekly pay period at the employee's option",
+      "seniority": "Temporary employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings"
+    },
+    "part_time_employee": {
+      "definition": "An employee with a workload of less than fifty (50%) percent hired for a specified period of time and at a specified location",
+      "hiring_priority": "Part-time employees shall be hired only after available work has been offered to all regular employees with less than one hundred (100%) percent of a full workload who are qualified to perform the work",
+      "seniority": "Part-time employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings"
+    },
+    "college_professor": "An employee who has mastered a body of knowledge adequate to develop and teach courses or programs shall have the title of College Professor"
+  },
+  "articles": {
+    "1": {
+      "title": "THE AGREEMENT",
+      "sections": {
+        "1.1": {
+          "title": "Parties to the Agreement",
+          "content": "Whereas the College is an Employer within the meaning of the Labour Code of British Columbia; and whereas the Canadian Union of Public Employees, Local No. 2409 is a trade union within the meaning of the Labour Code of British Columbia and is the sole bargaining agent for those employees described in the certification"
+        },
+        "1.2": {
+          "title": "Preamble",
+          "content": "The purpose of this Agreement is to promote the development and improvement of the quality and effectiveness of the education provided at the College, and to foster an educational climate which will encourage freedom of thought and inquiry, awareness, openness and personal and social responsibility"
+        },
+        "1.3": {
+          "title": "Term of the Agreement",
+          "content": "This Agreement shall be binding and remain in full force and effect from April 1, 2019 to March 31, 2022 inclusive"
+        },
+        "1.4": {
+          "title": "Effective Date of Agreement",
+          "content": "The provisions of this Agreement, except as otherwise specified, shall come into force and effect on the date of signing of the Memorandum of Agreement"
+        },
+        "1.5": {
+          "title": "No Other Agreement",
+          "content": "No employee covered by this Agreement shall be required or permitted to make a written or oral agreement with the Employer or its representatives which may conflict with the terms of this Agreement"
+        },
+        "1.6": {
+          "title": "Contracting Out",
+          "content": "The College shall not contract out any of the duties and responsibilities reserved by this Agreement to the bargaining unit"
+        },
+        "1.7": {
+          "title": "Packaged and Pre-Programmed Systems",
+          "content": "The parties recognize that the College should endeavour to meet the needs of the students to the best of its ability, and that, therefore, it may be necessary and/or desirable to introduce packaged and/or pre-programmed systems as well as live instruction"
+        },
+        "1.8": {
+          "title": "Technological Change",
+          "content": "Technological change shall be understood to mean changes introduced by the College in the manner in which it carries out its operations and services where such a change or changes affects the terms and conditions or security of members of the bargaining unit"
+        }
+      }
+    },
+    "2": {
+      "title": "TYPES OF EMPLOYEES",
+      "sections": {
+        "2.1": {
+          "title": "Regular Employee",
+          "content": "A regular employee is an employee with fifty (50%) percent or more of a full-time workload as defined in Article 13"
+        },
+        "2.2": {
+          "title": "Temporary Employee",
+          "content": "A temporary employee is an employee with a workload of fifty (50%) percent or more appointed to a regular position to replace a regular employee who is on leave"
+        },
+        "2.3": {
+          "title": "Part-Time Employee",
+          "content": "A part-time employee is an employee with a workload of less than fifty (50%) percent hired for a specified period of time and at a specified location"
+        },
+        "2.4": {
+          "title": "List of Employees",
+          "content": "On a monthly basis the College will provide the Union with a list of all employees identifying whether they are regular, temporary or part-time"
+        },
+        "2.5": {
+          "title": "Change in Type of Employee",
+          "content": "The College agrees not to arbitrarily change the status of an employee"
+        },
+        "2.6": {
+          "title": "College Professor",
+          "content": "An employee who has mastered a body of knowledge adequate to develop and teach courses or programs shall have the title of College Professor"
+        }
+      }
+    },
+    "3": {
+      "title": "UNION ACTIVITIES",
+      "sections": {
+        "3.1": {
+          "title": "Union Membership",
+          "content": "Membership in the Union is a condition of employment. The Employer agrees to provide each new employee with a copy of the Collective Agreement, a Union membership card and a Union dues check-off card"
+        },
+        "3.2": {
+          "title": "Union Business",
+          "content": "An employee who is required to handle a grievance shall be granted time off for purposes of settling the grievance within working hours without loss of salary or benefits"
+        },
+        "3.6": {
+          "title": "Release Time for Union President",
+          "content": "At the request of the Union, the Union President shall be granted up to twenty-five percent (25%) release time from a full-time workload as identified in Article 13"
+        }
+      }
+    },
+    "4": {
+      "title": "GRIEVANCE AND ARBITRATION PROCEDURES",
+      "sections": {
+        "4.1": {
+          "title": "Initiation of Grievance",
+          "content": "A grievance may be initiated by the Union on behalf of an employee or the Union, or by the Employer"
+        },
+        "4.2": {
+          "title": "Step 1",
+          "content": "Every attempt shall be made to resolve the grievance at Step 1 by discussions between the aggrieved party, the College Step 1 designate, the Shop Steward, and other persons involved"
+        },
+        "4.5": {
+          "title": "Arbitration",
+          "content": "The parties shall appoint a single arbitrator by mutual agreement to hear a matter from the following: Mark Brown, Joan Gordon, Irene Holden, Marguerite Jackson, or Chris Sullivan"
+        }
+      }
+    },
+    "5": {
+      "title": "SALARIES",
+      "sections": {
+        "5.1": {
+          "title": "Salary Scale",
+          "content": "Annual salary scale with steps 1-11, effective dates and percentage increases"
+        },
+        "5.2": {
+          "title": "Initial Placement on Salary Scale",
+          "content": "Initial placement on the salary scale shall be determined according to established guidelines by the Academic Head and verified through the Department of Human Resources"
+        },
+        "5.3": {
+          "title": "Advancement on Salary Scale",
+          "content": "Advancement on the salary scale shall be in accord with provisions for all types of employees, with applicable prorating"
+        },
+        "5.6": {
+          "title": "Part-Time Employees",
+          "content": "For part-time instructional employees the salary shall be calculated as: Appropriate step on scale × one tenth (1/10) × number of sections × eighty-two hundredths (.82)"
+        }
+      }
+    },
+    "6": {
+      "title": "EMPLOYEE BENEFITS",
+      "sections": {
+        "6.3": {
+          "title": "Medical Services",
+          "content": "The Employer shall pay one hundred percent (100%) of the costs of a Manulife Financial Insurance Co plan for all regular employees"
+        },
+        "6.4": {
+          "title": "Dental Plan",
+          "content": "The Employer will pay one hundred percent (100%) of the premium for Plan A - 100% of costs, Plan B - 80% of costs, Plan C - 50% to a maximum of $3,500.00 per person"
+        },
+        "6.7": {
+          "title": "Sick Leave",
+          "content": "A regular employee with fifty percent (50%) or more of a full-time workload who is unable to work because of an illness or injury shall be maintained by the College on regular pay for the first (1st) one hundred twenty (120) calendar days absence"
+        },
+        "6.10": {
+          "title": "Annual Vacation",
+          "content": "A regular employee shall have an annual vacation entitlement of eight (8) weeks"
+        },
+        "6.11": {
+          "title": "Statutory Holidays",
+          "content": "New Year's Day, Family Day, Good Friday, Easter Monday, Victoria Day, Canada Day, British Columbia Day, Labour Day, Thanksgiving Day, Remembrance Day, Christmas Day, Boxing Day"
+        },
+        "6.12": {
+          "title": "Special Allowances",
+          "content": "Relocation expenses, travel expenses, accommodation, meal allowances"
+        },
+        "6.13": {
+          "title": "Time Off Provisions",
+          "content": "Jury and court duty, maternity/paternity/adoption leave, bereavement leave"
+        }
+      }
+    },
+    "7": {
+      "title": "LEAVES OF ABSENCE",
+      "sections": {
+        "7.1": {
+          "title": "Assisted Educational Leave - Regular Employees",
+          "content": "The parties agree that assisted educational leave is beneficial to both the College and the faculty employees"
+        },
+        "7.2": {
+          "title": "Short Term Professional Development Activities",
+          "content": "All regular employees shall be provided with twenty (20) working days within each fiscal year to pursue professional development activities"
+        },
+        "7.3": {
+          "title": "Unassisted Leave - Regular Employees",
+          "content": "The Employer shall grant an employee unassisted leave for a period of up to two (2) years"
+        }
+      }
+    },
+    "8": {
+      "title": "SELECTION OF EMPLOYEES",
+      "sections": {
+        "8.1": {
+          "title": "Selection Committee",
+          "content": "A committee comprised of a minimum of four (4) members which will include two (2) management representatives and two (2) faculty members"
+        },
+        "8.4": {
+          "title": "Selection Criteria",
+          "content": "Academic and professional qualifications, work experience, College experience and contributions, community involvement, personal attributes, competence in applicable area"
+        },
+        "8.5": {
+          "title": "Election of Academic Head, Associate Academic and Assistant Academic Heads",
+          "content": "At a Union meeting in December of each year, the members of the bargaining unit shall elect one (1) of their members to each position for a term of one (1) year"
+        }
+      }
+    },
+    "9": {
+      "title": "APPOINTMENT OF EMPLOYEES",
+      "sections": {
+        "9.2": {
+          "title": "Probationary Appointment for Regular Employees",
+          "content": "All regular employees shall be appointed pursuant to a probationary appointment for a period of one (1) year from the date of the appointment"
+        },
+        "9.3": {
+          "title": "Continuing Appointments",
+          "content": "A regular employee who has successfully completed their probationary appointment through satisfactory evaluation shall receive a continuing appointment"
+        }
+      }
+    },
+    "10": {
+      "title": "EVALUATION",
+      "sections": {
+        "10.1": {
+          "title": "Time of Evaluation",
+          "content": "Regular employees with continuance of existing sequence shall be evaluated once every three (3) years towards the end of the third (3rd) year"
+        },
+        "10.2": {
+          "title": "Principles of Evaluation",
+          "content": "Ability in applicable area, professional development and competence, attitude towards students, attitude towards colleagues, participation in College activities"
+        }
+      }
+    },
+    "11": {
+      "title": "TERMINATION AND LAY-OFF",
+      "sections": {
+        "11.2": {
+          "title": "Termination or Lay-off for Operational Reasons",
+          "content": "The College may lay-off or terminate the employment of an employee for operational reasons including budgetary exigencies, or program termination, modification or substitution"
+        }
+      }
+    },
+    "12": {
+      "title": "EMPLOYEE RIGHTS",
+      "sections": {
+        "12.1": {
+          "title": "No Discrimination",
+          "content": "The Employer and the Union agree that under this Collective Agreement there shall be no discrimination, interference, restriction, or coercion exercised"
+        },
+        "12.2": {
+          "title": "Academic Freedom",
+          "content": "Every employee is entitled to exercise Academic Freedom in the performance of their duties"
+        },
+        "12.7": {
+          "title": "Occupational Health and Safety",
+          "content": "The Union and the Employer agree that regulations made pursuant to the Workers' Compensation Act shall be fully complied with"
+        },
+        "12.8": {
+          "title": "Personal and Sexual Harassment",
+          "content": "The College shall provide all employees a work environment free from sexual and personal harassment"
+        }
+      }
+    },
+    "13": {
+      "title": "WORKLOAD",
+      "sections": {
+        "13.1": {
+          "title": "Duties of Employees",
+          "content": "The duties of employees may include teaching, course preparation and development, counseling, librarianship, workshops, special program development"
+        },
+        "13.2": {
+          "title": "Annual Workloads for Instructional Employees",
+          "content": "A full-time annual workload shall consist of ten (10) sections. A full-time annual workload shall be not more than eighteen (18) hours of scheduled class contact per week"
+        },
+        "13.3": {
+          "title": "Teaching Workload Reduction for Academic Heads and Programme Coordinators",
+          "content": "The teaching workload for the Academic Head shall be reduced by sixty percent (60%), Associate Academic Head by forty percent (40%), Assistant Academic Head by twenty percent (20%)"
+        }
+      }
+    },
+    "15": {
+      "title": "SENIORITY",
+      "sections": {
+        "15.1": {
+          "title": "Calculation of Seniority",
+          "content": "The basis of seniority will be the full-time annual workload of a regular employee"
+        }
+      }
+    },
+    "16": {
+      "title": "EARLY RETIREMENT PLAN",
+      "sections": {
+        "16.1": {
+          "title": "Eligibility",
+          "content": "The College may offer to a faculty member or a faculty member may request early retirement incentive alternatives provided they meet criteria: age fifty-five (55) or over, minimum of ten (10) years pensionable service"
+        }
+      }
+    }
+  },
+  "salary_scales": {
+    "effective_dates": {
+      "april_1_2019": "Base rates",
+      "april_1_2020": "Rates with increases",
+      "april_1_2021": "Final rates"
+    },
+    "annual_salary": {
+      "step_1": {
+        "april_1_2019_to_march_31_2020": 95134,
+        "april_1_2020_to_march_31_2021": 97037,
+        "april_1_2021_to_march_31_2022": 98978
+      },
+      "step_2": {
+        "april_1_2019_to_march_31_2020": 89121,
+        "april_1_2020_to_march_31_2021": 90903,
+        "april_1_2021_to_march_31_2022": 92721
+      },
+      "step_3": {
+        "april_1_2019_to_march_31_2020": 83014,
+        "april_1_2020_to_march_31_2021": 84674,
+        "april_1_2021_to_march_31_2022": 86367
+      },
+      "step_4": {
+        "april_1_2019_to_march_31_2020": 79620,
+        "april_1_2020_to_march_31_2021": 81212,
+        "april_1_2021_to_march_31_2022": 82836
+      },
+      "step_5": {
+        "april_1_2019_to_march_31_2020": 76700,
+        "april_1_2020_to_march_31_2021": 78234,
+        "april_1_2021_to_march_31_2022": 79799
+      },
+      "step_6": {
+        "april_1_2019_to_march_31_2020": 73787,
+        "april_1_2020_to_march_31_2021": 75263,
+        "april_1_2021_to_march_31_2022": 76768
+      },
+      "step_7": {
+        "april_1_2019_to_march_31_2020": 70868,
+        "april_1_2020_to_march_31_2021": 72285,
+        "april_1_2021_to_march_31_2022": 73731
+      },
+      "step_8": {
+        "april_1_2019_to_march_31_2020": 67954,
+        "april_1_2020_to_march_31_2021": 69313,
+        "april_1_2021_to_march_31_2022": 70699
+      },
+      "step_9": {
+        "april_1_2019_to_march_31_2020": 65036,
+        "april_1_2020_to_march_31_2021": 66337,
+        "april_1_2021_to_march_31_2022": 67664
+      },
+      "step_10": {
+        "april_1_2019_to_march_31_2020": 62119,
+        "april_1_2020_to_march_31_2021": 63361,
+        "april_1_2021_to_march_31_2022": 64628
+      },
+      "step_11": {
+        "april_1_2019_to_march_31_2020": 59204,
+        "april_1_2020_to_march_31_2021": 60388,
+        "april_1_2021_to_march_31_2022": 61596
+      }
+    },
+    "placement_criteria": {
+      "starting_point": "Step 11",
+      "bachelors_degree": "Step 10 (one degree), Step 9 (two degrees)",
+      "masters_degree": "Step 9 (one degree), Step 8 (two degrees)",
+      "doctoral_degree": "Step 8 (one degree), Step 7 (two degrees)",
+      "teaching_certificate": "One additional increment",
+      "related_experience": "One increment for each full year of teaching, librarianship, counseling, coordinating, or related work experience"
+    }
+  },
+  "appendices": {
+    "appendix_a": {
+      "title": "Sick Leave Plan",
+      "eligibility": "Regular employees shall be covered by the Sick Leave Plan upon commencing work for the Employer",
+      "benefits": "Regular employees who are unable to work because of an illness or injury are entitled to a benefit of one hundred percent (100%) of regular salary for a period not to exceed one hundred twenty (120) calendar days"
+    }
+  },
+  "letters_of_understanding": {
+    "online_courses": {
+      "title": "Online Courses",
+      "content": "The development, delivery, and revision of courses or programs making use of online technology shall be a matter of employee choice, up to a maximum of two (2) courses making use of online technology per semester per individual employee"
+    }
+  },
+  "memoranda_of_agreement": {
+    "workload_grievances_ece_ssw": {
+      "title": "Workload Grievances ECE and SSW",
+      "date": "November 22, 1993"
+    },
+    "workload_review_ece_ssw": {
+      "title": "Workload Review of ECE and SSW",
+      "date": "July 16, 1987"
+    }
+  },
+  "general_provisions": {
+    "union_security": "Membership in the Union is a condition of employment",
+    "check_off": "The College Board agrees to the compulsory check-off (collection) of all Union dues and Membership Fees as a condition of employment",
+    "grievance_time_limits": "Grievance must be presented within thirty (30) days after the date on which the College Step 1 designate was notified",
+    "arbitration_expenses": "Each party to the arbitration shall pay its own expenses and costs of arbitration, and one-half (½) the compensation and expenses of the Arbitrator",
+    "management_rights": "Except as otherwise provided in the Agreement, the College or its delegated officers have exclusive control over the management, supervision and administration of the College"
+  }
+}
