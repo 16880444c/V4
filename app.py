@@ -247,16 +247,73 @@ def main():
                 st.error("• Common: agreements/bcgeu_common/")
                 st.stop()
     
-    # Agreement Selection
-    st.markdown("### 📋 Select Collective Agreement")
-    agreement_scope = st.radio(
-        "Which agreement do you want to search?",
-        ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-        index=2,  # Default to both
-        horizontal=True,
-        help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
-    )
+    # Agreement Selection with three boxes
+    st.markdown("### 📋 Select Agreement Type")
     
+    col1, col2, col3 = st.columns(3)
+    
+    # Box 1: BCGEU Instructor (Active)
+    with col1:
+        with st.container():
+            st.markdown("""
+                <div style="
+                    background-color: #f0f8ff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 2px solid #1e90ff;
+                    height: 200px;
+                ">
+                    <h4 style="color: #1e90ff; margin-top: 0;">📘 BCGEU Instructor</h4>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            # Use a container to overlay content on the styled div
+            with st.container():
+                agreement_scope = st.radio(
+                    "",
+                    ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
+                    index=2,
+                    key="bcgeu_instructor_radio",
+                    help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
+                )
+    
+    # Box 2: CUPE Instructor (Coming Soon)
+    with col2:
+        st.markdown("""
+            <div style="
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                border: 2px solid #d3d3d3;
+                height: 200px;
+                opacity: 0.6;
+            ">
+                <h4 style="color: #808080; margin-top: 0;">📙 CUPE Instructor</h4>
+                <p style="color: #808080; font-style: italic; text-align: center; margin-top: 50px;">
+                    Coming Soon
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+    
+    # Box 3: BCGEU Support (Coming Soon)
+    with col3:
+        st.markdown("""
+            <div style="
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                border: 2px solid #d3d3d3;
+                height: 200px;
+                opacity: 0.6;
+            ">
+                <h4 style="color: #808080; margin-top: 0;">📗 BCGEU Support</h4>
+                <p style="color: #808080; font-style: italic; text-align: center; margin-top: 50px;">
+                    Coming Soon
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("---")
     
     # Display conversation history
