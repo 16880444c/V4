@@ -10,11 +10,13 @@
       "start": "2019-04-01",
       "end": "2022-03-31"
     },
-    "document_version": "April 1, 2019 to March 31, 2022"
+    "document_version": "April 1, 2019 to March 31, 2022",
+    "signed_date": "2021",
+    "psea_board_vice_chair": "Present"
   },
   "definitions": {
     "child": "Deemed to include a ward of the Superintendent of Child Welfare, or a child of a spouse",
-    "consultation": "Meaningful and in-depth discussion by the Parties, including during all stages of any planning process, and full disclosure of all information and access to all documentation as it becomes available. Within ten (10) working days, a written record of the meetings of consultation will be agreed upon and this record of the meeting(s) of consultation shall be signed by the parties and copies provided",
+    "consultation": "Meaningful and in-depth discussion by the Parties, including during all stages of any planning process, and full disclosure of all information and access to all documentation as it becomes available. Within ten (10) working days, a written record of the meetings of consultation will be agreed upon and this record of the meeting(s) of consultation shall be signed by the parties and copies provided. Both parties will have the right to include written unedited submissions without penalty. Without such a written record of consultation, consultation shall be considered not to have happened in accordance with the Collective Agreement.",
     "day_of_rest": "A day other than a holiday on which an employee is not ordinarily required to perform the duties of their position. This does not include employees on a leave of absence",
     "section": "Forty-five (45) hours of class contact or one hundred and forty (140) hours of practicum",
     "semester": "Fifteen (15) weeks of scheduled class contact. For an instructor whose workload includes practicum sections, the length of the two (2) semesters may be extended over a period not exceeding forty (40) weeks",
@@ -33,12 +35,18 @@
       "definition": "An employee with a workload of fifty (50%) percent or more appointed to a regular position to replace a regular employee who is on leave from their position or on leave due to another assignment in the College for a stipulated period of time",
       "benefits_3_months_plus": "Where the appointment is for a period of time of three (3) months or more, the employee will be entitled to all benefits except for vacation which will be prorated and paid out at the completion of the term, taken within the term of the appointment or paid out in each bi-weekly pay period at the employee's option",
       "benefits_under_3_months": "Where the appointment is a period of time less than three (3) months, the employee will be entitled to a payment in lieu of benefits as well as vacation on a pro-rated basis which will be paid out at the completion of the term or paid out in each bi-weekly pay period at the employee's option",
-      "seniority": "Temporary employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings"
+      "seniority": "Temporary employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings",
+      "duration": "The duration of the appointment shall include reasonable time for preparation prior to the commencement of classes and administration at the conclusion of classes",
+      "termination_notice": "It is understood and agreed that the letter of appointment for all temporary employees shall state an end date which shall serve as notice of termination and there shall be no entitlement to severance pay"
     },
     "part_time_employee": {
       "definition": "An employee with a workload of less than fifty (50%) percent hired for a specified period of time and at a specified location",
       "hiring_priority": "Part-time employees shall be hired only after available work has been offered to all regular employees with less than one hundred (100%) percent of a full workload who are qualified to perform the work",
-      "seniority": "Part-time employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings"
+      "seniority": "Part-time employees shall have seniority for a period of twenty-four (24) months from the end of their last day of employment with the College for the purpose of internal application for job postings",
+      "termination_notice": "It is understood and agreed that the letter of appointment for all part-time employees shall state an end date which shall serve as notice of termination and there shall be no entitlement to severance pay",
+      "displacement_protection": "It is understood that part-time employees will not be hired for the purpose of displacing regular employees",
+      "additional_work": "Part-time employees shall be offered additional part-time work provided they are qualified to perform such work subject to Article 9.5",
+      "combination_effort": "The College will make every effort to combine available part-time work to create a regular position before a part-time employee is hired"
     },
     "college_professor": "An employee who has mastered a body of knowledge adequate to develop and teach courses or programs shall have the title of College Professor"
   },
@@ -48,35 +56,78 @@
       "sections": {
         "1.1": {
           "title": "Parties to the Agreement",
-          "content": "Whereas the College is an Employer within the meaning of the Labour Code of British Columbia; and whereas the Canadian Union of Public Employees, Local No. 2409 is a trade union within the meaning of the Labour Code of British Columbia and is the sole bargaining agent for those employees described in the certification"
+          "content": "Whereas the College is an Employer within the meaning of the Labour Code of British Columbia; and whereas the Canadian Union of Public Employees, Local No. 2409 is a trade union within the meaning of the Labour Code of British Columbia and is the sole bargaining agent for those employees described in the certification dated October 19, 1976, amended August 31, 1979, amended January 27, 1981, and August 12, 1981 as employees at Coast Mountain College primarily engaged in teaching functions (Academic division including first and second year University Transfer Courses, Early Childhood Education, Social Service Worker, Community Support Worker Integrated Human Services, Community Resource Worker, Special Education Assistant program areas, BSc Nursing and degree granting programmes), except vocational instructors within the bargaining unit for which the BC Government Employees' and Service Union is certified, and also including Librarians, Counsellors, full-time CES Coordinators, Natural Resources Regional Coordinator -- fifty percent (50%), and Prior Learning Assessment Coordinator -- fifty percent (50%).",
+          "arbitration_clause": "The parties agree that when and if new programs or courses within a program are commenced by the College, or when a new position is created which provides services other than instructional duties, the bargaining unit to which the employees will be assigned will be determined by unanimous agreement of a three (3) person committee comprising a representative of each of the parties to this Agreement plus a representative of the BCGEU, or failing this, by the matter being referred to binding arbitration under named arbitrators, Mark Brown, Joan Gordon, Irene Holden, Marguerite Jackson, or Chris Sullivan.",
+          "gender_clause": "It is agreed that wherever in this Agreement the singular is used, the plural shall likewise apply, and that at any time the term 'he/his' is used, the term 'she/her' shall equally apply."
         },
         "1.2": {
           "title": "Preamble",
-          "content": "The purpose of this Agreement is to promote the development and improvement of the quality and effectiveness of the education provided at the College, and to foster an educational climate which will encourage freedom of thought and inquiry, awareness, openness and personal and social responsibility"
+          "content": "The purpose of this Agreement is to promote the development and improvement of the quality and effectiveness of the education provided at the College, and to foster an educational climate which will encourage freedom of thought and inquiry, awareness, openness and personal and social responsibility. The terms and conditions contained in the body of this Agreement are designed to promote harmonious relations and to facilitate the amicable settlement of disputes and misunderstandings. The parties hereto recognize that the College has several broad educational purposes. These are: community education, vocational education, adult basic education, career-technical programs and university transfer programs. In furthering these purposes, the parties hereto recognize that special attention should be given to the educational and training needs of working people, aboriginal people, and women, as well as to other segments of society that historically have been disadvantaged with respect to enjoying full access to educational and training opportunities."
         },
         "1.3": {
           "title": "Term of the Agreement",
-          "content": "This Agreement shall be binding and remain in full force and effect from April 1, 2019 to March 31, 2022 inclusive"
+          "content": "This Agreement shall be binding and remain in full force and effect from April 1, 2019 to March 31, 2022 inclusive. Thereafter, if no agreement is reached at the expiration of the Agreement, the Agreement shall remain in force until a new Agreement is entered into, or until commencement of a strike or lockout. Where a specific end date or duration is stated in an article of the agreement, such date or duration shall take precedence over this article. Any changes deemed necessary in this Agreement may be made by mutual consent of the parties at any time during the term of this Agreement."
         },
         "1.4": {
           "title": "Effective Date of Agreement",
-          "content": "The provisions of this Agreement, except as otherwise specified, shall come into force and effect on the date of signing of the Memorandum of Agreement"
+          "content": "The provisions of this Agreement, except as otherwise specified, shall come into force and effect on the date of signing of the Memorandum of Agreement."
         },
         "1.5": {
           "title": "No Other Agreement",
-          "content": "No employee covered by this Agreement shall be required or permitted to make a written or oral agreement with the Employer or its representatives which may conflict with the terms of this Agreement"
+          "content": "No employee covered by this Agreement shall be required or permitted to make a written or oral agreement with the Employer or its representatives which may conflict with the terms of this Agreement."
         },
         "1.6": {
           "title": "Contracting Out",
-          "content": "The College shall not contract out any of the duties and responsibilities reserved by this Agreement to the bargaining unit"
+          "content": "The College shall not contract out any of the duties and responsibilities reserved by this Agreement to the bargaining unit. The parties recognize and agree that there may be special situations or programs which require supplementary or special expertise, and which necessitate the contracting out of work otherwise normally performed within the bargaining unit. In such cases, the contracting out will be undertaken only after discussion and agreement between the parties. Any contracting out will not result in the layoff or negative change in the employment status of employees covered by this Agreement."
         },
         "1.7": {
           "title": "Packaged and Pre-Programmed Systems",
-          "content": "The parties recognize that the College should endeavour to meet the needs of the students to the best of its ability, and that, therefore, it may be necessary and/or desirable to introduce packaged and/or pre-programmed systems as well as live instruction"
+          "content": "The parties recognize that the College should endeavour to meet the needs of the students to the best of its ability, and that, therefore, it may be necessary and/or desirable to introduce packaged and/or pre-programmed systems as well as live instruction. The parties agree, however, that unless beyond the control of the Employer, the utilization of packaged and/or pre-programmed systems shall not significantly reduce the level of live instruction given by regular employees. The parties further agree that the delivery of such systems shall form part of the regular employee's annual teaching workload."
         },
         "1.8": {
           "title": "Technological Change",
-          "content": "Technological change shall be understood to mean changes introduced by the College in the manner in which it carries out its operations and services where such a change or changes affects the terms and conditions or security of members of the bargaining unit"
+          "content": "Technological change shall be understood to mean changes introduced by the College in the manner in which it carries out its operations and services where such a change or changes affects the terms and conditions or security of members of the bargaining unit or alters the basis on which the Agreement was negotiated.",
+          "examples": [
+            "the introduction by the College of a change in its operation or a change in its equipment or material from the equipment or material previously used by the College in its operation",
+            "a change in the manner the College carries out its operations or services",
+            "a change in work methods, organization, operations or processes which affects one or more employees",
+            "any change in location at which the College operates in which the members of the bargaining unit are, or may be, located"
+          ],
+          "notice_period": "The College shall provide the Union, at least ninety (90) days before the term in which an introduction of technological change is intended, with a detailed description in writing of the change it intends to carry out, disclosing all foreseeable effects and repercussions on employees in the bargaining unit",
+          "bargaining_period": "Within fourteen (14) days of such notice the parties shall commence collective bargaining for the purpose of reaching agreement as to the adjustment to the effects of the technological change",
+          "arbitration_powers": "The arbitrator shall have jurisdiction to rule on all aspects of the technological change and may order that the change be made in accordance with the Collective Agreement unless the change alters significantly the basis on which the Collective Agreement was negotiated, that the College will not proceed with the technological change for a period not exceeding ninety (90) days, that the College reinstate an employee displaced by the technological change, and that the College pay that employee compensation for their displacement as the arbitration board considers reasonable"
+        },
+        "1.9": {
+          "title": "Excluded Personnel",
+          "content": "The parties recognize that it is desirable that qualified administrative personnel who are not covered by this Agreement assume teaching duties where their administrative duties permit. The nature and extent of these teaching duties will be established after consultation with the Union. It is agreed, however, that the teaching function performed by such excluded employees shall not result in the displacement of any existing employee covered by this Agreement."
+        },
+        "1.10": {
+          "title": "Copies of the Agreement",
+          "content": "The Employer shall provide each employee with the link to the electronic copy of the current Collective Agreement. The Employer shall provide any employee with a printed copy of the current Collective Agreement if the employee requests a printed copy. The employer shall provide each new employee with the link to the electronic copy of the current Collective Agreement in their letter of appointment and advise the employee that it shall provide the employee with a printed copy of the current Collective Agreement if the employee requests a printed copy. The Employer shall provide the Union with ten (10) printed copies of the current Collective Agreement. The Employer shall provide a printed copy of the current Collective Agreement to each of the following: the Academic Head, the Associate Academic Heads, the Assistant Academic Heads and all Program Coordinators."
+        },
+        "1.11": {
+          "title": "Joint Consultation",
+          "content": "The parties shall meet at least once every two (2) months or more often if necessary for the purpose of discussing issues that relate to the workplace that affect the parties or any employee bound by the Collective Agreement. This committee does not have the authority to bind its principals."
+        },
+        "1.12": {
+          "title": "Cross-Union Appointments",
+          "content": "An employee performing work covered by this Collective Agreement and other collective agreements, will pay Union dues on a pro-rata basis based upon their workloads in those agreements. Employees who have a workload of fifty percent (50%) or more in this Collective Agreement will receive the benefits of this Collective Agreement. Employees who are entitled to benefits as a result of the combined workload under this Agreement and other agreements will receive the benefits of the Agreement where the majority of the work is performed. If the workload is equal, the employee will be given the choice of which agreement will apply for benefit purposes. Recommendations for cross-union appointments will be made in accordance with Article 8. The College shall offer the employee the cross-union appointment in writing including the terms and conditions of the appointment and shall notify the Union of the appointment with a copy of the offer. Movement on the salary scale will be based on each full year of employment with the college, not each full year of employment within each bargaining unit."
+        },
+        "1.13": {
+          "title": "Education Council",
+          "content": "The College shall establish and implement an Education Council as required by Bill 22, the College and Institute Amendment Act, 1994, which shall amend the College and Institute Act. The parties recognize that should future legislation amend the College and Institute Act, with respect to the Education Council, the College will comply with those amendments."
+        },
+        "1.14": {
+          "title": "Strategic Planning",
+          "content": "Strategic planning shall be undertaken with Union consultation as defined by the Collective Agreement."
+        },
+        "1.15": {
+          "title": "Annual Financial Planning",
+          "content": "Annual financial planning shall be undertaken with Union consultation as defined by the Collective Agreement."
+        },
+        "1.16": {
+          "title": "Access to Information",
+          "content": "The College will provide the Union with all information regarding matters under consultation between the College and the Union."
         }
       }
     },
@@ -85,27 +136,27 @@
       "sections": {
         "2.1": {
           "title": "Regular Employee",
-          "content": "A regular employee is an employee with fifty (50%) percent or more of a full-time workload as defined in Article 13"
+          "content": "A regular employee is an employee with fifty (50%) percent or more of a full-time workload as defined in Article 13. A regular employee is entitled to all employee benefits under this Agreement except for vacation entitlement which shall be prorated. All regular employees with less than one hundred (100%) percent workload will be offered additional available work provided they are qualified to perform such work."
         },
         "2.2": {
           "title": "Temporary Employee",
-          "content": "A temporary employee is an employee with a workload of fifty (50%) percent or more appointed to a regular position to replace a regular employee who is on leave"
+          "content": "A temporary employee is an employee with a workload of fifty (50%) percent or more appointed to a regular position to replace a regular employee who is on leave from their position or on leave due to another assignment in the College for a stipulated period of time. In addition to the above, and upon mutual agreement between the parties, an appointment of a temporary employee may be made to meet an emergent need."
         },
         "2.3": {
           "title": "Part-Time Employee",
-          "content": "A part-time employee is an employee with a workload of less than fifty (50%) percent hired for a specified period of time and at a specified location"
+          "content": "A part-time employee is an employee with a workload of less than fifty (50%) percent hired for a specified period of time and at a specified location."
         },
         "2.4": {
           "title": "List of Employees",
-          "content": "On a monthly basis the College will provide the Union with a list of all employees identifying whether they are regular, temporary or part-time"
+          "content": "In addition to information specified elsewhere in this Agreement, on a monthly basis the College will provide the Union with a list of the following information for all employees identifying whether they are regular, temporary or part-time and including name, address, phone number, position, workload, salary step, calculation of salary step, status, status changes, start date, end date (where applicable)."
         },
         "2.5": {
           "title": "Change in Type of Employee",
-          "content": "The College agrees not to arbitrarily change the status of an employee"
+          "content": "The College agrees not to arbitrarily change the status of an employee."
         },
         "2.6": {
           "title": "College Professor",
-          "content": "An employee who has mastered a body of knowledge adequate to develop and teach courses or programs shall have the title of College Professor"
+          "content": "An employee who has mastered a body of knowledge adequate to develop and teach courses or programs shall have the title of College Professor."
         }
       }
     },
@@ -114,15 +165,27 @@
       "sections": {
         "3.1": {
           "title": "Union Membership",
-          "content": "Membership in the Union is a condition of employment. The Employer agrees to provide each new employee with a copy of the Collective Agreement, a Union membership card and a Union dues check-off card"
+          "content": "Membership in the Union is a condition of employment. The Employer agrees to provide each new employee with a copy of the Collective Agreement, a Union membership card and a Union dues check-off card. The Union dues check-off card is to be signed and turned back to the College Vice President, Finance and Administration. For all employees, the College Board agrees to the compulsory check-off (collection) of all Union dues and Membership Fees as a condition of employment. The College Board agrees to deduct every month from the salary of each employee, one twelfth (1/12) of the total annual Union dues as determined by the Union. The sum will be transmitted to the Union without delay."
         },
         "3.2": {
           "title": "Union Business",
-          "content": "An employee who is required to handle a grievance shall be granted time off for purposes of settling the grievance within working hours without loss of salary or benefits"
+          "content": "An employee who is required to handle a grievance shall be granted time off for purposes of settling the grievance within working hours without loss of salary or benefits. Leaves of absence without loss of pay, seniority, and benefits may be granted to employees for the purpose of attending Union functions, including but not limited to conventions, schools, seminars. Such requests shall not be capriciously denied. However, such leaves for all employees shall not exceed a total of five (5) work days per year. Employees agree not to engage in Union business mentioned above in priority to College duties. Leaves of absence without pay shall be granted for a period of up to two (2) years to an employee who is engaged in full-time Union activity. During such period of absence seniority shall continue to accumulate. After the completion of the leave the employee shall return to the position held at the College prior to the commencement of the leave. In the event the position has been discontinued the provisions of Article 11 shall apply. An employee who is a member of the Union's negotiating committee shall be granted time off without loss of salary or benefits to attend negotiations. The Employer shall not be responsible for any expenses of employees when they are engaging in Union business, unless such expenses are specifically provided for in this Agreement. The Union will be permitted use of College facilities provided it does not interfere with College operations. The Union will be allowed the use of reasonable bulletin board space in the College office and in the Faculty office area. The Employer agrees to provide use of the Xerox machine, or similar photocopying device, at the same price per page as is levied for the photocopying of course material. Charges for this use shall be billed to the Union. College business takes priority. The College agrees that the Union may display at a mutually agreeable location a Union insignia."
+        },
+        "3.3": {
+          "title": "List of Officers",
+          "content": "The Union shall provide the Employer annually with a list of its elected officers."
+        },
+        "3.4": {
+          "title": "College Board Meeting Agendas & Minutes",
+          "content": "The Union will be furnished with a copy of the agenda and other public information assembled for College Board meetings. This material will be mailed to the Union at the time of distribution to the College Board. Approved minutes of all Public College Board meetings will be distributed similarly."
+        },
+        "3.5": {
+          "title": "Financial Status of College",
+          "content": "The College will provide to the Union on a quarterly basis the detailed financial status of the College. The details of the reporting will be decided in consultation between the Union and the Vice President, Finance and Administration."
         },
         "3.6": {
           "title": "Release Time for Union President",
-          "content": "At the request of the Union, the Union President shall be granted up to twenty-five percent (25%) release time from a full-time workload as identified in Article 13"
+          "content": "At the request of the Union, the Union President shall be granted up to twenty-five percent (25%) release time from a full-time workload as identified in Article 13."
         }
       }
     },
@@ -131,15 +194,25 @@
       "sections": {
         "4.1": {
           "title": "Initiation of Grievance",
-          "content": "A grievance may be initiated by the Union on behalf of an employee or the Union, or by the Employer"
+          "content": "A grievance may be initiated by the Union on behalf of an employee or the Union, or by the Employer. Any differences arising from this Agreement concerning its interpretation, application, operation, or any alleged violation thereof, and any question as to whether any matter is arbitrable shall be dealt with without stoppage of work, in the following manner."
         },
         "4.2": {
           "title": "Step 1",
-          "content": "Every attempt shall be made to resolve the grievance at Step 1 by discussions between the aggrieved party, the College Step 1 designate, the Shop Steward, and other persons involved"
+          "content": "Every attempt shall be made to resolve the grievance at Step 1 by discussions between the aggrieved party, the College Step 1 designate, the Shop Steward, and other persons involved. If these preliminary discussions fail to settle the grievance in a satisfactory manner, the Shop Steward shall, within thirty (30) days after that date: (1) on which the College Step 1 designate was notified orally or in writing of the action or circumstances giving rise to the grievance, or (2) on which the College Step 1 designate first became aware of the action or circumstances giving rise to the grievance, whichever is applicable, present the grievance in writing setting out the nature of the grievance and the circumstances from which it arose and the Article(s) violated. The grievance shall be presented to the College Step 2 designate (Manager, Human Resources), who shall provide the steward with a receipt showing the date on which the grievance was received."
+        },
+        "4.3": {
+          "title": "Time Limit to Reply at Step 2",
+          "content": "Within seven (7) days of receiving the grievance at Step 2, the College designate and the Shop Steward shall meet to establish the facts, to examine the nature of the grievance and to attempt to resolve the dispute. This meeting may be waived by mutual agreement. The College designate shall reply to the Shop Steward in writing within fourteen (14) days of receiving the grievance at Step 2."
+        },
+        "4.4": {
+          "title": "Failure to Act",
+          "content": "If the Union does not present a grievance to the next higher level within the prescribed time limits, the grievance will be deemed to have been abandoned. The Union shall not be deemed to have prejudiced its position on any further grievances."
         },
         "4.5": {
           "title": "Arbitration",
-          "content": "The parties shall appoint a single arbitrator by mutual agreement to hear a matter from the following: Mark Brown, Joan Gordon, Irene Holden, Marguerite Jackson, or Chris Sullivan"
+          "content": "Failing settlement at Step 2, and should the griever wish to pursue the matter, the Union shall, within fifteen (15) days from the date of receipt of the decision, notify the College in writing of its intent to submit the grievance to arbitration. Within thirty (30) days of notice of submission to arbitration, the notifying party shall arrange the arbitrator and set arbitration dates for the hearing. Failure to do so within the thirty (30) day period shall result in the deemed abandonment of the grievance. The parties shall appoint a single arbitrator by mutual agreement to hear a matter from the following: Mark Brown, Joan Gordon, Irene Holden, Marguerite Jackson, or Chris Sullivan shall be appointed to act as Arbitrator for all grievances referred by the parties to arbitration. In the event that the chosen Arbitrator is unable to hear an arbitration within a four-month (4) period of its being referred to them one of the others shall be appointed to sit as arbitrator for this occasion. In the event that none of the persons named above is available to hear the arbitration within the four-month (4) period, then the arbitration shall be referred back to one of the persons named above, at the earliest time the parties are available. The decision in writing of the Arbitrator shall be final and binding on both parties, but the Arbitrator shall not have power to amend this Agreement in any respect. The Arbitrator shall provide full opportunity to all parties to present evidence and make representations to it. Each party to the arbitration shall pay its own expenses and costs of arbitration, and one-half (½) the compensation and expenses of the Arbitrator and of stenographic and other expenses of the Arbitrator.",
+          "policy_grievances": "Where either party to this Agreement disputes the general application, interpretation or alleged violation of an Article or Clause of this Agreement, the dispute shall be discussed between the Employer and the Union with a view to resolving the dispute within forty-five (45) days of the occurrence of the dispute. Where no satisfactory agreement is reached, either party may submit the dispute to arbitration within fifteen (15) days after the forty-five (45) day period.",
+          "time_extensions": "The time limits specified in this Article may be extended or waived by mutual agreement in writing between the parties."
         }
       }
     },
@@ -148,52 +221,243 @@
       "sections": {
         "5.1": {
           "title": "Salary Scale",
-          "content": "Annual salary scale with steps 1-11, effective dates and percentage increases"
+          "content": "Annual salary scale with steps 1-11, effective dates and percentage increases",
+          "salary_table": {
+            "step_1": {
+              "apr_1_2019_to_mar_31_2020": 95134,
+              "apr_1_2020_to_mar_31_2021": 97037,
+              "apr_1_2021_to_mar_31_2022": 98978
+            },
+            "step_2": {
+              "apr_1_2019_to_mar_31_2020": 89121,
+              "apr_1_2020_to_mar_31_2021": 90903,
+              "apr_1_2021_to_mar_31_2022": 92721
+            },
+            "step_3": {
+              "apr_1_2019_to_mar_31_2020": 83014,
+              "apr_1_2020_to_mar_31_2021": 84674,
+              "apr_1_2021_to_mar_31_2022": 86367
+            },
+            "step_4": {
+              "apr_1_2019_to_mar_31_2020": 79620,
+              "apr_1_2020_to_mar_31_2021": 81212,
+              "apr_1_2021_to_mar_31_2022": 82836
+            },
+            "step_5": {
+              "apr_1_2019_to_mar_31_2020": 76700,
+              "apr_1_2020_to_mar_31_2021": 78234,
+              "apr_1_2021_to_mar_31_2022": 79799
+            },
+            "step_6": {
+              "apr_1_2019_to_mar_31_2020": 73787,
+              "apr_1_2020_to_mar_31_2021": 75263,
+              "apr_1_2021_to_mar_31_2022": 76768
+            },
+            "step_7": {
+              "apr_1_2019_to_mar_31_2020": 70868,
+              "apr_1_2020_to_mar_31_2021": 72285,
+              "apr_1_2021_to_mar_31_2022": 73731
+            },
+            "step_8": {
+              "apr_1_2019_to_mar_31_2020": 67954,
+              "apr_1_2020_to_mar_31_2021": 69313,
+              "apr_1_2021_to_mar_31_2022": 70699
+            },
+            "step_9": {
+              "apr_1_2019_to_mar_31_2020": 65036,
+              "apr_1_2020_to_mar_31_2021": 66337,
+              "apr_1_2021_to_mar_31_2022": 67664
+            },
+            "step_10": {
+              "apr_1_2019_to_mar_31_2020": 62119,
+              "apr_1_2020_to_mar_31_2021": 63361,
+              "apr_1_2021_to_mar_31_2022": 64628
+            },
+            "step_11": {
+              "apr_1_2019_to_mar_31_2020": 59204,
+              "apr_1_2020_to_mar_31_2021": 60388,
+              "apr_1_2021_to_mar_31_2022": 61596
+            }
+          },
+          "retroactivity_note": "The first day of the first full pay period after this date. For April 1, 2019, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date, there will be no retroactive adjustment. For April 1, 2020, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment."
         },
         "5.2": {
           "title": "Initial Placement on Salary Scale",
-          "content": "Initial placement on the salary scale shall be determined according to established guidelines by the Academic Head and verified through the Department of Human Resources"
+          "content": "Initial placement on the salary scale shall be determined, according to the above guidelines, by the Academic Head and verified through the Department of Human Resources. Where an error in the calculation of credits is discovered during the term of the appointment, the error shall be rectified by retro-actively adjusting the initial placement on the salary scale upwards or downwards, as the case may be.",
+          "criteria": {
+            "starting_point": "Step 11",
+            "bachelors_degree": "One (1) Bachelor's Degree related to the employee's duties - initial placement at Step 10. Two (2) Bachelor's Degrees related to the employee's duties - initial placement at Step 9",
+            "masters_degree": "One (1) Master's Degree or graduate diploma related to the employee's duties - initial placement at Step 9. Two (2) Master's Degrees or graduate diplomas related to the employee's duties - initial placement at Step 8",
+            "doctoral_degree": "One (1) Doctoral Degree related to the employee's duties - initial placement at Step 8. Two (2) Doctoral Degrees related to the employee's duties - initial placement at Step 7",
+            "teaching_certificate": "One (1) additional increment will be granted on initial placement to those who possess a Teaching Certificate or Provincial Instructor's Diploma",
+            "related_experience": "One (1) increment for each full year of teaching, librarianship, counseling, coordinating, or related work experience in a college, technical institution, vocational school or university where the work is related to the duties to be performed for the College by the employee. Fifty percent (50%) or more of a year will be considered a full year in the rounding off of the total. A full year as defined by the institutions of previous employment shall be acknowledged",
+            "ta_experience": "Teaching assistant (T.A.) or graduate assistant work will be recognized as related work experience as outlined in Article 5.2.6 above and will be counted when establishing an employee's initial placement on the salary scale provided the work was not required for, or used for credit for the completion of an educational degree",
+            "other_educational_experience": "One (1) increment for each two (2) years of related work experience in an educational institute other than a post-secondary educational institution, for experience obtained after the award of an initial degree or diploma",
+            "professional_diploma": "One (1) increment for a professional diploma related to the employee's duties at the College, except that no such increment will be given for a diploma where the employee is also entitled to increments for a Master's or Doctoral Degree",
+            "other_work_experience": "One (1) increment for each two (2) years of related work experience at a workplace not covered by any of the above work situations and related to the duties to be performed for the College by the employee, for experience obtained after the award of an initial degree or diploma"
+          }
         },
         "5.3": {
           "title": "Advancement on Salary Scale",
-          "content": "Advancement on the salary scale shall be in accord with provisions for all types of employees, with applicable prorating"
+          "content": "Advancement on the salary scale shall be in accord with the following provisions for all types of employees, with, where applicable, the application of prorating",
+          "advancement_criteria": {
+            "annual_increment": "One (1) increment for each full year of satisfactory service at the College, pursuant to the established evaluation procedure, or one (1) increment for each full year of teaching, librarianship, counseling, coordinating, or related work experience in a college, technical institution, vocational school or university",
+            "part_time_service": "For part-time employees, one (1) full year of service at the College will be eight (8) sections (or equivalent), effective on the date of the employee's most recent increment",
+            "masters_degree": "Two (2) increments if an employee, who did not when hired obtain credit for a Master's degree, obtains a Master's degree related to their duties",
+            "doctoral_degree_with_masters": "One (1) increment if an employee, who when hired obtained credit for a Master's degree but did not obtain credit for a Doctoral degree, obtains a Doctoral degree related to their duties",
+            "doctoral_degree_without_masters": "Three (3) increments if an employee, who when hired did not obtain credit for a Master's degree nor a Doctoral degree, obtains a Doctoral degree related to their duties",
+            "professional_diploma": "One (1) increment for a professional diploma related to the employee's duties at the College",
+            "teaching_certificate": "One (1) increment for the completion of the BC Provincial Instructors Diploma or Teaching Certificate",
+            "unassisted_leave": "One (1) increment as specified in Article 7.3 - Unassisted Leave",
+            "annual_notification": "Once a calendar year, the employer will inform each regular and temporary employee, in writing, of their step on scale and increment date"
+          },
+          "increment_timing": "The increment date shall be specified in the letter of appointment, except that in the case of the award of an increment for a degree, the increment shall be granted effective the first day of the month following submission to the Division Head of complete documentation to prove the degree has been completed. Increments shall be granted until the maximum on the scale is reached. Any change in criteria for the initial placement on salary scale as outlined in Article 5.2 shall, where applicable, be reflected in the advancement on salary scale for an existing employee effective on the date of change in Article 5.2."
+        },
+        "5.4": {
+          "title": "Payment of Salary",
+          "content": "An employee shall be paid every two (2) weeks on the basis of actual earnings during the period in question together with a statement showing the calculation of pay. Should the date upon which salary would be paid fall upon a holiday, salary will be paid on the last work day preceding the holiday. Calculation of bi-weekly salary shall be based on annual salary divided by twenty-six point zero one eight eight (26.0188)."
+        },
+        "5.5": {
+          "title": "Temporary Employees",
+          "content": "The salary scale and placement procedure for regular employees as set out in this Article shall also apply to temporary employees."
         },
         "5.6": {
           "title": "Part-Time Employees",
-          "content": "For part-time instructional employees the salary shall be calculated as: Appropriate step on scale × one tenth (1/10) × number of sections × eighty-two hundredths (.82)"
+          "content": "Salary for part-time non-instructional employees will be calculated as the product of the salary for the employee's step and the ratio of the employee's workload to that of a full-time workload as defined in Article 13. Part-time employees shall be placed on the salary scale in Article 5.1 on the basis of the criteria in Article 5.2. With each reappointment a part-time employee may ask for a review of the placement on the salary scale if the employee believes that they have completed additional relevant educational and/or experience since the last placement on scale. For part-time instructional employees the salary shall be calculated as follows: Appropriate step on scale × one tenth (1/10) × number of sections × eighty-two hundredths (.82). Where a part-time instructional employee is required to travel, the formula for salary calculations shall be amended to substitute one ninth (1/9) for one tenth (1/10)."
+        },
+        "5.7": {
+          "title": "Safeguard Against Salary Reductions",
+          "content": "Any employee receiving salary or benefits in excess of those provided in this Agreement shall be red circled."
+        },
+        "5.8": {
+          "title": "Payment for Cancellation of Course (Part-Time Employees)",
+          "content": "Where after a letter of engagement is made to a part-time employee and that letter of engagement is canceled due to insufficient enrollment the part-time employee shall receive a lump sum payment of one eighth (1/8) of the salary stated in the canceled letter of engagement."
+        },
+        "5.9": {
+          "title": "Lump Sum Payments",
+          "content": "Whenever there is a lump sum payment of salary or benefit entitlements, it may be paid out over a mutually agreed upon time frame."
         }
       }
     },
     "6": {
       "title": "EMPLOYEE BENEFITS",
       "sections": {
+        "6.1": {
+          "title": "Notification of Benefits and Changes",
+          "content": "The Employer shall provide each employee with a copy of the schedule of Health and Welfare Benefits as negotiated under this Agreement. New employees shall receive a copy of the schedule of Health and Welfare benefits together with the letter of appointment. There shall be no reduction in benefits during the life of this Agreement. The Employer shall notify the Union and the employees of changes as they become applicable."
+        },
+        "6.2": {
+          "title": "Eligibility for Benefits",
+          "content": "For the purposes of Article 6, dependent shall be defined as: (1) a spouse or common-law spouse, (2) a person of the same sex as the employee and with whom the employee cohabited for a period of at least one (1) year and the employee and this person represent themselves as a couple, (3) any unmarried child under twenty-one (21) years of age, (4) any unmarried child under twenty-five (25) years of age, and who is a registered student in full-time attendance at a university or similar institution of learning, who is chiefly dependent upon the employee for support and maintenance, (5) mentally or physically handicapped child to any age of a member or the spouse provided such child is mainly dependent on the member or the spouse"
+        },
         "6.3": {
           "title": "Medical Services",
-          "content": "The Employer shall pay one hundred percent (100%) of the costs of a Manulife Financial Insurance Co plan for all regular employees"
+          "content": "The Employer shall pay one hundred percent (100%) of the costs of a Manulife Financial Insurance Co plan for all regular employees. The premium costs of the Extended Health Benefit Plan shall be borne by the Employer. All administrative costs for these plans shall be borne by the Employer. Participation in these plans shall be a condition of employment unless the regular employee is covered as a spouse in another plan. Coverage in the plans shall be from the date of employment.",
+          "special_provisions": {
+            "medex": "MEDEX is a component for all groups and is a standard provision of Manulife Financial Insurance Company's coverage",
+            "psychologist_coverage": "Charges for registered psychologists are covered to a maximum of four hundred dollars ($400) per calendar year. This maximum is per insured",
+            "diabetic_supplies": "There is no set limit for charges for testing supplies, needles and syringes for diabetics. Manulife Financial Insurance Company's standard wording on this is 'reasonable and customary'. Charges for these would be part of the overall reimbursement maximum",
+            "flu_vaccination": "Reimbursement for flu vaccination where the member is not already entitled to a free vaccination"
+          },
+          "transportation": "The College will make provision for transportation for an employee or an eligible dependent to medical services not available in the employee's home community. Where, upon the written advice of a medical practitioner, a person eligible under Article 6.3.2 requires a traveling companion, transportation costs for the companion will also be paid",
+          "daily_allowance": "The Plan will also provide for expenses of up to fifty ($50.00) dollars per day to a maximum of seven (7) days per referral in cases where transportation has been provided under Article 6.3.2 and Article 6.3.3 above. There will be no doubling up of the daily maximum for the patient and the traveling companion",
+          "college_business_travel": "In addition to the travel provisions of Manulife Financial Assurance Co coverage, the College shall provide return travel to the College region if a member is injured or ill while out of the College region on College business"
         },
         "6.4": {
           "title": "Dental Plan",
-          "content": "The Employer will pay one hundred percent (100%) of the premium for Plan A - 100% of costs, Plan B - 80% of costs, Plan C - 50% to a maximum of $3,500.00 per person"
+          "content": "The Employer will pay one hundred percent (100%) of the premium for the following provisions: Plan A - 100% of costs, Plan B - 80% of costs, Plan C - 50% to a maximum of $3,500.00 per person who before age 18 begins orthodontic treatment. Each regular employee is eligible to participate in the Plan on the first (1st) day of the month following the date of appointment. Participation of eligible employees in the Plan shall be a condition of employment."
+        },
+        "6.5": {
+          "title": "Group Life Insurance",
+          "content": "The Employer will provide a Group Life Insurance Plan which provides a regular employee with life insurance equal to three (3) times the employee's annual salary (with a minimum of twenty-five thousand dollars ($25,000)). The plan shall contain a Double Indemnity Clause. The Employer will pay one hundred (100%) percent of the monthly premium on two (2) times the employee's annual salary and the employee shall pay one hundred (100%) percent of the premium to increase the coverage from two hundred percent (200%) to three hundred percent (300%) of the employee's annual salary. Participation is a condition of employment. This plan comes into effect on the first (1st) day of the month after the date of employment. Effective April 1, 1995, the Employer will pay one hundred (100%) percent of the monthly premium on three (3) times the annual salary for Group Life Insurance and Accidental Death. Spousal insurance at the total expense of the employee shall be offered. Coverage to be within the limits of the employee's insurance coverage."
+        },
+        "6.6": {
+          "title": "Accident Insurance",
+          "content": "This plan is compulsory at fifty thousand dollars ($50,000.00) per regular employee as a condition of employment. The Employer will pay one hundred (100%) percent of the premium. The parties will explore the cancellation of the accident insurance should the premiums for this insurance be better utilized as an enhanced benefit in LTD."
         },
         "6.7": {
           "title": "Sick Leave",
-          "content": "A regular employee with fifty percent (50%) or more of a full-time workload who is unable to work because of an illness or injury shall be maintained by the College on regular pay for the first (1st) one hundred twenty (120) calendar days absence"
+          "content": "A regular employee with fifty percent (50%) or more of a full-time workload, as defined in Article 2.1, who is unable to work because of an illness or injury shall be maintained by the College on regular pay for the first (1st) one hundred twenty (120) calendar days absence, subject to medical certification of disability after the first (1st) two (2) weeks and subsequently every month. After the one hundred twenty (120) days an employee shall receive benefits in accordance with the provisions of the Long Term Disability Plan. The Sick Leave Plan includes Appendix A attached to and forming part of this Collective Agreement.",
+          "replacement_policy": "Employees who are absent from work due to illness or an accident for a period of less than two (2) weeks shall make every effort to make arrangements (including rescheduling of classes, if feasible) to ensure that the course material is covered adequately. A replacement shall be hired only if the sick leave is expected to extend for a period of two (2) weeks or more",
+          "ltd_denial": "Should a claim application for Long Term Disability Benefits be denied by the insurer, the employee shall suffer no loss of pay for a further thirty (30) calendar day period, beyond the one hundred twenty (120) day sick leave period provided a medical certification of disability is obtained",
+          "part_time_provisions": "There shall be no reduction in salary for a part-time instructional employee who is not eligible for sick leave benefits and who is absent because of illness or an injury provided arrangements can be made (including rescheduling of classes if feasible) to ensure that the course material is covered adequately",
+          "family_illness": "In the case of illness of an immediate family member, where no one at home other than the employee can provide for the needs of the ill person, the employee shall be entitled to paid sick leave up to a maximum of five (5) work days in any two (2) month period. Medical evidence may be required",
+          "retirement_lump_sum": "An employee who has made no claim against the Sick Leave Plan in the three (3) year period previous to retirement, or early retirement, shall be entitled to a lump sum payment of two (2) months' salary upon retirement, or early retirement. For an employee who has a claim against the Plan, the lump sum payment shall be reduced by the number of days claimed by the employee during the three (3) year period but excluding days claimed in Article 6.7.5 above"
+        },
+        "6.8": {
+          "title": "Long Term Disability",
+          "content": "The Employer shall maintain a Long Term Disability plan for all regular employees. Membership in the plan is compulsory. The plan shall provide monetary benefit equal to seventy percent (70%) of monthly salary to a four thousand five hundred dollars ($4500) maximum per month, to the age of sixty-five (65). The employees shall pay one hundred percent (100%) of the premium of the plan. Effective April 1, 1995, the Employer will pay one hundred (100%) percent of the premium of the plan."
+        },
+        "6.9": {
+          "title": "Death of an Employee",
+          "content": "In the event of the death of a regular employee, their salary shall be continued for an additional two (2) months from the date of death. The salary will be payable to either the employee's spouse or estate."
         },
         "6.10": {
           "title": "Annual Vacation",
-          "content": "A regular employee shall have an annual vacation entitlement of eight (8) weeks"
+          "content": "A regular employee shall have an annual vacation entitlement of eight (8) weeks. Vacations are to be scheduled so as not to be detrimental to the operations of the College and shall be determined by consultation with the Academic Head to whom the employee reports. A statutory holiday falling within a vacation period shall not be counted as part of the vacation. Vacation year for the purposes of this Agreement shall be the calendar year commencing January 1st, and ending December 31st. First vacation year is the calendar year in which the employee's first (1st) anniversary falls, except that an employee hired in the period January 1st to June 30th and who works the balance of the calendar year will have four (4) weeks of vacation in the first (1st) calendar year of employment. Except for a carry forward of an accrual of a partial year into the first (1st) vacation year or a carry forward as per Article 6.10.6 below, all vacations not taken in the calendar year shall be forfeited. Vacation schedules will be submitted to the appropriate line administrator by March 31st of each year. After a minimum of two (2) years of service an employee, when submitting their vacation schedule, may request a carryover of up to ten (10) days of unused vacation days which, if approved, will be used in the subsequent year. Such requests will not be unreasonably denied. A regular employee whose employment is to be terminated under Article 11.2.2 shall be entitled to the full annual vacation for the year in which the termination is to take place. The entitlement shall be paid out in cash upon the expiry date of the notice of termination under Article 11.2.2. Once per calendar year upon thirty (30) days written notice, a regular employee shall be entitled to receive prior to commencement of a vacation period, a payroll advance equal to the amount of earned vacation time to that point."
         },
         "6.11": {
           "title": "Statutory Holidays",
-          "content": "New Year's Day, Family Day, Good Friday, Easter Monday, Victoria Day, Canada Day, British Columbia Day, Labour Day, Thanksgiving Day, Remembrance Day, Christmas Day, Boxing Day"
+          "content": "The following shall be considered paid public holidays: New Year's Day, Family Day, Good Friday, Easter Monday, Victoria Day, Canada Day, British Columbia Day, Labour Day, Thanksgiving Day, Remembrance Day, Christmas Day, Boxing Day and any other day declared a statutory holiday by the Government of Canada or the Government of British Columbia. When a public Holiday falls on a Saturday or Sunday, the Monday following this day shall be considered a paid public Holiday; when Christmas Day and Boxing Day fall on a Saturday and Sunday, the Monday and Tuesday following these days shall be considered paid public Holidays. If the College agrees to add Christmas Eve and New Year's Eve to the BCGEU Faculty Agreement they will be added to the CUPE/FPSE Agreement."
         },
         "6.12": {
           "title": "Special Allowances",
-          "content": "Relocation expenses, travel expenses, accommodation, meal allowances"
+          "content": "Various travel, accommodation, and relocation allowances",
+          "relocation_new_employee": "The College will reimburse a new regular employee for out-of-pocket expenses to a maximum of five thousand ($5000) dollars, for expenses incurred in relocating to the College region from within BC and to a maximum of six thousand ($6000) dollars for expenses incurred in relocating to the College from outside BC",
+          "travel_expenses": {
+            "mileage_rate_2019": "When an employee uses their own car for College business they will be paid a rate of forty-five (45) cents, subject to Article 6.12.6",
+            "mileage_rate_2016": "Effective April 1, 2016, the rate will be forty-six (46) cents, subject to Article 6.12.6",
+            "mileage_rate_2018": "Effective April 1, 2018, the rate will be forty-eight cents, (48) subject to Article 6.12.6",
+            "maximum_reimbursement": "Reimbursement under this clause will not exceed normal economy airfare plus other related costs such as, but not limited to, taxi, ferry, bus, car rental, local mileage, etc",
+            "rate_adjustments": "If the College raises the mileage for excluded personnel or other bargaining unit employees during the life of this Agreement, these rates will be amended accordingly",
+            "insurance_coverage": "An employee designated by the College to use their vehicle on College business for which ICBC would require additional insurance premiums to be paid, over and above 'to and from work', will be reimbursed by the College for the cost of the additional insurance premiums"
+          },
+          "accommodation": "Employees will be reimbursed for the actual costs of hotels upon production of receipts or thirty-five dollars ($35.00) per day while traveling on College business",
+          "meal_allowances": {
+            "2019_rates": "While traveling on College business, employees will receive meal allowances as follows, where applicable: Breakfast $10.00, Lunch $12.50, Dinner $22.00, Total Daily $44.50",
+            "2016_rates": "Effective April 1, 2016, meal allowances will be: Breakfast $10.25, Lunch $12.81, Dinner $22.55, Total Daily $45.61",
+            "2018_rates": "Effective April 1, 2018, meal allowances will be: Breakfast $10.56, Lunch $13.20, Dinner $23.23, Total Daily $46.99",
+            "rate_adjustments": "If the College raises the rates for meals for excluded personnel or other bargaining unit employees during the life of this Agreement, these rates will be amended accordingly"
+          },
+          "employer_initiated_relocation": "The College will reimburse an employee for out-of-pocket expenses to a maximum of three thousand dollars ($3,000), when the employee is asked by the College to relocate within the College region",
+          "employee_initiated_relocation": "In the event that an employee, of their own volition, wishes to relocate within the College region, no relocation expenses will be paid. Travel expenses for College business for such a relocated employee will be calculated on the basis of commencement of travel from the original location of the employee or from the new location of the employee, whichever is the lesser amount. The Employer reserves the right to schedule the work of such a relocated employee as if they were still residing in their original location"
         },
         "6.13": {
           "title": "Time Off Provisions",
-          "content": "Jury and court duty, maternity/paternity/adoption leave, bereavement leave"
+          "content": "Various types of leave provisions",
+          "jury_court_duty": "A regular employee shall be granted leave with pay and benefits when summoned as a juror or by subpoena or summons to attend as a witness at court. Any remuneration for jury duty or witness fees received by the employee shall be remitted to the College",
+          "maternity_paternity_adoption": {
+            "protection_during_maternity": "Maternity leave shall be considered as a right. Accordingly, no employee shall be laid off or otherwise adversely affected in their employment because of pregnancy. The College shall not deny the pregnant employee the right to continue employment during the period of pregnancy",
+            "length_of_leave": "Leave without pay shall cover a period up to six (6) months before and/or after the birth or adoption of a child. Upon request by the employee, an extension of up to a maximum of six (6) additional months shall be allowed",
+            "spousal_leave": "The employee will inform the College at least a month before the desired leave of absence, which may be before and/or after the birth. On request, the employee will supply a medical report confirming that the spouse is pregnant and indicating the anticipated date of delivery. Leave of absence with full pay and benefits shall be granted for a period not to exceed one (1) week",
+            "parental_leave": "An employee shall be granted a parental leave without pay for up to a twelve (12) week period commencing within fifty-two (52) weeks from the date of birth or the date the child or children come into actual custody for the purpose of adoption. Where both parents are employees of the College, the employees will decide how the leave is to be shared. The request to take a Parental Leave must be made four (4) weeks prior to commencement of the leave. A certificate of birth or proof of adoption will be submitted as soon as possible",
+            "status_during_leave": "While on maternity/adoption/parental leave, an employee shall retain and continue to accrue their full employment status, rights and all benefits under this Collective Agreement, except salary. Regular employees on maternity leave eligible for Employment Insurance Benefits will receive a top-up of Employment Insurance Benefits to eighty-five percent (85%) of their basic wage based on their salary averaged over the past twenty-six (26) weeks",
+            "college_payment_of_benefits": "During the period of maternity/adoption/parental leave, the College shall continue to pay the hospital, medical, dental, disability, group life, pension and all other benefits of this agreement",
+            "return_procedure": "When an employee decides to take such leave, they shall inform the College of the intended date of return to work. On the return from leave, the employee shall be placed at least in their former position. If the former position no longer exists, they shall be placed in a position in their department of equal rank and value at the same rate of pay",
+            "childcare_leave": "At the request of the employee, the College shall grant a period of up to two (2) years unpaid leave for child care. Leave granted under this provision will not normally start while classes are in session if this would imply the interruption of the employee's current teaching duties. The employee's request shall be in writing to the Academic Head or Associate Academic Head or Assistant Academic Head as appropriate. The request shall, in all but exceptional circumstances, be made no less than two (2) months before the start of the semester in which the leave is to commence. The request will specify a planned return date. Return from childcare leave for instructional employees shall, whenever possible, coincide with the start or end of an instructional semester. If an instructional employee elects to take the full two (2) years of leave available under this provision and the return date required by the expiration of this provision would fall in the middle of a semester, the leave will be extended to the end of the semester, if requested by the employee. The total leave available under this provision will not normally exceed two (2) years. The temporary appointment of a replacement for an employee taking leave under this provision will not incur any severance costs"
+          },
+          "part_time_maternity_leave": "A Part-Time employee shall be granted maternity/adoption/parental leave to the extent covered by the Employment Standards Act. In the event that legislation (federal and/or provincial) provides superior provisions then the legislation will prevail",
+          "bereavement_leave": "In the case of bereavement in the immediate family (spouse, parent, child, sibling, grandparent, grandchild, mother-in-law, father-in-law, sister-in-law, brother-in-law, daughter-in-law and son-in-law), a regular employee shall be entitled to leave, at their regular rate of pay for a period not exceeding five (5) working days. An additional three (3) days paid leave shall be granted by the College should the circumstance of the death warrant additional time"
+        },
+        "6.14": {
+          "title": "Part-Time Employees - Vacation Pay",
+          "content": "Part-time employees shall receive vacation pay at six percent (6%) of their salary to be paid bi-weekly and included in the payroll cheque."
+        },
+        "6.15": {
+          "title": "Part-Time Employees - Other Benefits",
+          "content": "In lieu of the benefits available to regular employees, part-time employees shall receive a cash payment based on the formula 'Average Cost of Medical, Dental, Long Term Disability and Life Insurance per regular employee × 1/5 × 1/2 × 8/12 × 1/2 × number of semesters engaged to instruct'. This cash payment will be paid bi-weekly and included in the payroll cheque."
+        },
+        "6.16": {
+          "title": "Corporate Rates",
+          "content": "The employer shall make arrangements where possible for employees to receive corporate rates for a community health club/programme at all Centres. The employer will inform the employees of any changes to corporate rates at the start of each Academic year."
+        },
+        "6.17": {
+          "title": "College Courses",
+          "content": "Employees of the Bargaining Unit shall be entitled to enroll and participate in any course offered by the College provided the employee registration does not take the place of a fee-paying student and the course will be taken on the employee's own time. The College shall waive tuition fees."
+        },
+        "6.18": {
+          "title": "Professional Membership Dues and Fees",
+          "content": "Where the College requires, as a condition of continuing employment, that a regular faculty member maintain a specified professional association membership, the College will pay the annual dues required to maintain such membership."
         }
       }
     },
@@ -202,15 +466,46 @@
       "sections": {
         "7.1": {
           "title": "Assisted Educational Leave - Regular Employees",
-          "content": "The parties agree that assisted educational leave is beneficial to both the College and the faculty employees"
+          "content": "The parties agree that assisted educational leave is beneficial to both the College and the faculty employees. Proposed educational leave activities must bear a relationship to the faculty employees' teaching or other professional duties.",
+          "provisions": {
+            "short_term": "Short term (up to four (4) months during the period when instructional employees would normally be teaching) releases from teaching or other professional duties. Such leaves shall fit within the regular teaching cycles. These leaves shall be financed from funds designated for assisted educational leave per Article 7.2.4 and the College will continue its regular contributions to the benefit plan and the pension plan, subject to Carrier conditions. During this leave, the employee shall also in all other respects continue as an employee of the College",
+            "extended_leaves": "Extended leaves (up to one (1) year) for regular employees with a continuing appointment and at least four years of total service or at least four (4) years of service since the last extended assisted leave. During this leave the employee will in all respects continue as a regular employee of the College. During the leave the College will continue to make regular contributions to the benefit plan and the pension plan, subject to Carrier conditions. On returning from educational leave, an employee shall resume their previous or a comparable position. An employee who takes leave under this section shall contract to work for the College for a minimum of one year from the termination date of the leave. If the employee has received financial assistance and fails to meet this condition of return, they shall reimburse to the fund the full amount of financial assistance",
+            "exchange_program": "An exchange program whereby an employee may for one (1) year exchange duties with someone of appropriate qualifications and receive full pay, benefits and increments and in all respects continue as an employee of the College. Such an exchange program shall not result in any additional cost to the Employer"
+          },
+          "approval_process": "The Union shall submit in writing all approved proposals for assisted educational leave to the President at least eight (8) months prior to the commencement date of the proposed extended leave, and at least three (3) months prior to the commencement date of the proposed short term leave. The President shall approve or reject in writing, within three (3) weeks of the receipt of a proposal, each proposal for assisted educational leave, notifying both the applicant and the Union of their decision. The President's approval or rejection of a proposal shall be based exclusively on its educational merits",
+          "funding": "The funding for assisted educational leave(s) shall come from an allocation of the Professional Development Fund established under Article 7.2.4. At the time the Union submits approved proposals to the President, the Union shall submit in writing the determined level of financial assistance to be paid by the Professional Development Fund",
+          "retention_of_rights": "Employees on assisted leave retain the right to receive short-term professional development funds"
         },
         "7.2": {
           "title": "Short Term Professional Development Activities",
-          "content": "All regular employees shall be provided with twenty (20) working days within each fiscal year to pursue professional development activities"
+          "content": "It is mutually agreed that maintaining the currency of subject knowledge and a high level of instructional/professional effectiveness, to achieve College objectives, shall be the primary purpose of professional development. For this purpose, all regular employees shall be provided with twenty (20) working days within each fiscal year to pursue professional development activities as part of their annual workload, as defined in Article 13. This provision shall be prorated for those regular employees with less than one hundred percent (100%) of a full workload. This provision shall be non-cumulative from year to year. For instructional employees, these days shall be scheduled to fall at non-teaching times. Scheduling of these days shall be determined in accordance with the provisions of Article 13.",
+          "committee": "A standing Professional Development Committee shall be established, and shall be composed of four (4) representatives of the Union and two (2) representatives of the Employer. This Committee shall manage the professional development program of the employees, including the allocation of funds to support Professional Development activities and the allocation of funds to support assisted educational leaves as established in Article 7.1 and shall also promote and facilitate in-house professional development activities",
+          "funding": "Effective April 1, 2016, the College shall allocate at the beginning of each fiscal year the amount of fifty-two thousand four hundred dollars ($52,400) to a fund to be administered by the Professional Development Committee. Any unspent balance at the end of the fiscal year shall be carried forward and added to the allocation for the next fiscal year. At the beginning of each fiscal year the Professional Development Committee referred to in Article 7.2.3 shall determine the allocation of funds to both professional development and assisted educational leave activities. Each year, the allocation to assisted educational leave activities shall not exceed fifty (50%) percent",
+          "guidelines": "The Professional Development Committee shall receive and review all requests for use of professional development funds and shall direct the Vice President, Finance and Administration in the disbursement of the funds. The Committee shall establish guidelines and procedures for the approval of activities and the disbursement of funds. Such guidelines shall contain criteria and reasonable time lines for the approval of activities and the disbursement of funds, a requirement that employees report on activities and provide statements of expenses, and an internal accounting process which conforms with normal accounting practices",
+          "reporting": "The Committee shall prepare a detailed annual report of all funded activities and a financial statement of expenditures and shall submit these to both the College President and the Union President at the end of each fiscal year. Either the Union or the College has the right to request periodic financial statements and details of professional development activities funded"
         },
         "7.3": {
           "title": "Unassisted Leave - Regular Employees",
-          "content": "The Employer shall grant an employee unassisted leave for a period of up to two (2) years"
+          "content": "The Employer shall grant an employee unassisted leave for a period of up to two (2) years, provided notice of such request be submitted no later than 28th February of each year. If the employee uses the leave to pursue professional development activities that are determined to be beneficial to the College by the Vice-President, Educational Services, the College will pay all benefits while the employee is on this leave. If it involves experience of particular value to the College, such as industrial, business or educational experience, which does not lead to a change of placement on scale, the employee will receive an increment. Employees shall have completed at least two (2) full years of employment prior to a request being submitted and shall in all respects continue as employees of the College, except that the College will make no contribution to benefit plans while the employee is on unassisted leave. Requests for unassisted leave shall not be capriciously denied. The College's decision shall be communicated, in writing, to the applicant within four (4) weeks after the date of receipt of application. If the request is not granted, the reasons shall be explained in writing. After the completion of the leave the employee shall return to the position held at the College prior to the commencement of the leave. In the event the position has been discontinued the provisions of Article 11 will apply."
+        },
+        "7.4": {
+          "title": "Public or Union Office - Regular Employees",
+          "content": "Employees may seek election to public office, provided there is no conflict of interest and the duties of the office do not adversely affect the performance of the employee at the College.",
+          "campaign": "There are no restrictions on employees engaging in political activities on their own time as campaign workers. Employees scheduled to work during the time when they wish to engage in their own campaign may, subject to prior approval of the College, reschedule such work time",
+          "leave": "If nominated as a candidate for election, an employee shall be granted unassisted leave to engage in the election campaign. If elected, the employee shall be granted unassisted leave for a maximum of five (5) years. Whether or not the employee is elected, the employee shall return to the position held at the College prior to the commencement of the leave. In the event the position has been discontinued the provisions of Article 11 will apply",
+          "union_leaves": "An employee elected for a full-time position in CUPE or Federation of Post Secondary Educators (FPSE) of BC shall be granted a leave of absence subject to the following conditions: (1) The employee shall, by June 15th, or earlier if possible, make a written request to the President for such leave, (2) An employee on leave under this clause shall continue to receive full salary and benefits from the College which will be reimbursed by the Union or Association for the full period of the leave"
+        },
+        "7.5": {
+          "title": "Personal Leave",
+          "content": "With the approval of the College President, leave may be granted for reasons other than those specified elsewhere in this Agreement and shall be without pay unless otherwise authorized. Such requests shall not be capriciously denied."
+        },
+        "7.6": {
+          "title": "Maximum Length of Consecutive Leaves",
+          "content": "No combination of leaves shall exceed five (5) years."
+        },
+        "7.7": {
+          "title": "Conditions of an Educational Leave",
+          "content": "The conditions of an educational leave shall include, but are not limited to, the quality of work, the quantity of leave, and the duration of leave. Employees on educational leave will not be granted additional work under Article 13, where the work has been offered to another employee."
         }
       }
     },
@@ -219,28 +514,73 @@
       "sections": {
         "8.1": {
           "title": "Selection Committee",
-          "content": "A committee comprised of a minimum of four (4) members which will include two (2) management representatives and two (2) faculty members"
+          "content": "A committee comprised of a minimum of four (4) members which will include two (2) management representatives and two (2) faculty members, one (1) of whom is part of the discipline in which the vacancy occurs and the other who is the designate of the Union, will short list and interview candidates and make recommendations to the College President or designate. A recommendation for a regular appointment will be made by the selection committee. The Union president will appoint the Union designate, and the discipline designate in consultation with the Academic Head. The Selection Committee will meet and set minimum selection criteria based upon Article 8.4, create a job posting, review and short list all applications, interview candidates and make recommendations to the College President or designate. The job posting will contain the working title, brief description of duties and classification of position, qualifications, skill, ability and experience required. In centers without the Academic Head, recommendations for the appointment of part-time instructors will be made by the Associate Head / Assistant Head through the Academic Head to the appropriate administrator. In the center with the Academic Head, recommendations for the appointment of part-time instructors will be made by the Academic Head to the appropriate administrator."
+        },
+        "8.2": {
+          "title": "Advertising of Vacancy",
+          "content": "All vacancies shall be posted internally and the Union shall receive a copy at the time of posting. Members of the Bargaining Unit shall have the opportunity to apply for the open position within six (6) working days of the posting. If the internal applicant is not appointed or no internal applications are forthcoming within the six (6) working day period, the vacancy shall be advertised publicly. Such advertisement shall include the statement that the College is an equal opportunity and affirmative action employer. All vacancies shall be posted internally, and the Union, the Academic Head, Associate Academic Heads and Assistant Academic Heads shall receive a copy of both internal and external postings at the time of posting. All postings, both internal and external, shall have a clearly identified date of posting. Postings, both internal and external, for all vacancies in the BCGEU bargaining unit, and vacancies in excluded positions, shall be copied to the Union, the Academic Head and Associate Academic Heads and Assistant Academic Heads at the time of posting."
+        },
+        "8.3": {
+          "title": "Applicant Records",
+          "content": "On the advice of the Selection Committee, unsuccessful candidates will be notified by the Assistant Vice President of Human Resources or designate and all applications will be maintained in that office. The Union is to have access to job application files which will be maintained for a minimum of three (3) months from the date the position was commenced."
         },
         "8.4": {
           "title": "Selection Criteria",
-          "content": "Academic and professional qualifications, work experience, College experience and contributions, community involvement, personal attributes, competence in applicable area"
+          "content": "The only criteria used to evaluate applicants are: (a) academic and professional qualifications, (b) work experience, (c) College experience and contributions, (d) community involvement, (e) personal attributes, (f) competence in applicable area. Provisions of Article 12.1 shall apply."
         },
         "8.5": {
           "title": "Election of Academic Head, Associate Academic and Assistant Academic Heads",
-          "content": "At a Union meeting in December of each year, the members of the bargaining unit shall elect one (1) of their members to each position for a term of one (1) year"
+          "content": "There shall be one (1) Academic Head. There shall be an Associate Academic Head at College centres with a full-time university transfer programme if the Academic Head is at a different College centre. There shall be an Assistant Academic Head at College centres with a significant number of university transfer courses if there is neither an Associate Academic Head nor an Academic Head at that centre. At a Union meeting in December of each year, the members of the bargaining unit shall elect one (1) of their members to each position for a term of one (1) year commencing on the following September 1st. The election of an Associate Academic Head and an Assistant Academic Head will be made by the faculty from the appropriate centre[s]. The names of the elected nominees will be sent as a recommendation to the College Board. For the purposes of Article 8.5, a significant number of university transfer courses shall consist of a minimum of a complete first (1st) year arts or a complete first (1st) year science programme while a full-time university transfer programme shall consist of a minimum of a first (1st) year arts and a first (1st) year science programme or a minimum of an associate degree programme."
+        },
+        "8.6": {
+          "title": "Selection of Administrators",
+          "content": "Appointment of all excluded employees is clearly the responsibility of the Employer. There shall be a selection committee with equal representation from CUPE, BCGEU, Administration and the College Board. The Union shall designate their representative(s). The selection committee will meet and set the minimum selection criteria, create a job posting, review and short list all applications, interview candidates and make recommendations to the College President or designate (or Board, in the event of a Presidential search). The job posting will contain the working title, brief description of duties and classification of position, qualifications, and state ability and experience required. The posting will be posted within the College five (5) working days prior to it being advertised externally. A copy of the posting will be provided to the Union. The selection criteria will include the following: academic and professional qualifications, work experience, College related experience and contributions, community involvement, personal attributes, and competence in applicable area. In the event that an administrative and Union-excluded position is filled by a member of the bargaining unit, the vacated position within the bargaining unit will be treated as a normal vacancy and filled in accordance with Article 8. In the event of a managerial reorganization, the Union will be consulted."
+        },
+        "8.7": {
+          "title": "Election of Coordinators",
+          "content": "At a Union meeting in December of each year, the members of the bargaining unit shall elect one (1) of their members to each department and regional coordinator position for a term of one (1) year commencing on the following September 1st. The election of coordinators will be made by the faculty from the department. The names of the elected nominees will be sent as a recommendation to the appropriate Administrator."
+        },
+        "8.8": {
+          "title": "Letter of Pay Change",
+          "content": "Whenever the pay of a regular or temporary employee decreases the regular or temporary employee and the Union shall be informed in writing."
         }
       }
     },
     "9": {
       "title": "APPOINTMENT OF EMPLOYEES",
       "sections": {
+        "9.1": {
+          "title": "Initial Appointment Procedure - Regular Employees",
+          "content": "The initial offer of appointment shall be made verbally to the prospective employee by the appropriate Dean. This offer shall be open to acceptance for forty-eight (48) hours. Upon verbal acceptance the lengths and conditions of appointments shall be clearly stated in writing through letters of appointment. All candidates for appointment shall be sent two (2) copies of the letter of appointment signed by the President or their designate at least ten (10) business days prior to the start of the appointment, where possible. The employee shall sign one (1) of the copies and within ten (10) days from the date of delivery return it to the College signifying acceptance of the appointment. All new employees appointed as regular employees shall have a date of appointment which allows for reasonable time for preparation prior to the commencement of classes."
+        },
         "9.2": {
           "title": "Probationary Appointment for Regular Employees",
-          "content": "All regular employees shall be appointed pursuant to a probationary appointment for a period of one (1) year from the date of the appointment"
+          "content": "All regular employees shall be appointed pursuant to a probationary appointment for a period of one (1) year from the date of the appointment. The purpose of the probationary appointment is for the College to determine the employee's suitability to receive a continuing appointment.",
+          "first_year_notification": "Prior to the expiration of the initial year of the probationary appointment, the College shall give the probationary appointee written notification that one of the following steps shall be taken: (a) the employee will be offered another one (1) year probationary appointment; or (b) the employee's appointment will be terminated; or (c) the employee will be offered a continuing appointment",
+          "second_year_notification": "Should the employee be offered another one year probationary appointment at the end of that second (2nd) year the College shall give the probationary appointee written notification of one of the following steps: (a) The employee will be offered a continuing appointment; or (b) The employee will be terminated",
+          "evaluation_basis": "The determination of suitability for a continuing appointment shall be in accordance with the principles and procedures in Article 10",
+          "termination_notice": "Should the employee's appointment be terminated in either Article 9.2.1 or Article 9.2.2 above, the College President or designate shall provide the employee with written reasons for termination three (3) months prior to the expiration of the initial or second probationary period. A copy of the letter of termination will be given to the Union President",
+          "temporary_part_time_probation": "The period of probation of an employee on a temporary appointment or a part-time appointment shall not exceed the equivalent of one (1) full year of service with the College. Should such an employee who has completed their probationary period subsequently be appointed to a regular position for which they are qualified, they shall be deemed to have completed the probationary period. Periods of employment in part-time and temporary appointments shall count towards completion of the probationary period"
         },
         "9.3": {
           "title": "Continuing Appointments",
-          "content": "A regular employee who has successfully completed their probationary appointment through satisfactory evaluation shall receive a continuing appointment"
+          "content": "A regular employee who has successfully completed their probationary appointment through satisfactory evaluation pursuant to Article 10 shall receive a continuing appointment."
+        },
+        "9.4": {
+          "title": "Temporary Appointments",
+          "content": "The selection procedure used for the selecting of regular faculty will also be used for temporary appointments of greater than three (3) months. This procedure may be waived upon mutual agreement. Temporary appointments for less than three (3) months shall be made in the same manner as part-time appointments."
+        },
+        "9.5": {
+          "title": "Part-Time Appointments",
+          "content": "All vacancies will be posted, in accordance with Article 8.2. The appropriate Assistant / Associate / Academic Head shall receive all applications to a posting, and shall obtain a written recommendation from the relevant discipline / programme / department regarding the suitability of candidates for posted positions, and shall take into account the seniority of qualified internal applicants. Subject to Article 8.1.3 recommendations for the appointment of part-time instructors will be made by the appropriate Assistant / Associate Academic Head through the Academic Head. The Academic Head will recommend the appointment of part-time instructors to the Dean. Verbal offers of appointment shall be made by the Dean before the commencement of classes. The rights of regular employees as per Article 9.1 shall also apply to part-time employees."
+        },
+        "9.6": {
+          "title": "Appointment Record",
+          "content": "The Employer shall provide the Union and the Academic Head with copies of all letters of appointment at the time they are issued, together with documentation explaining the placement on the salary scale including, but not limited to, the salary, step on the salary scale and rationale for placement on the salary scale."
+        },
+        "9.7": {
+          "title": "Appointment Beyond at Age 65",
+          "content": "The parties agree that employees may continue working beyond the age of sixty-five (65). Such employment is subject to the following conditions: (1) The College shall continue all benefit coverage on behalf of the employee with the following exceptions: (a) long term disability will be discontinued (b) group life insurance shall be reduced by fifty (50%) percent (2) Employees shall be covered by all provisions of the Collective Agreement with the exception of Article 16."
         }
       }
     },
@@ -249,20 +589,68 @@
       "sections": {
         "10.1": {
           "title": "Time of Evaluation",
-          "content": "Regular employees with continuance of existing sequence shall be evaluated once every three (3) years towards the end of the third (3rd) year"
+          "content": "Regular employees with continuance of existing sequence shall be evaluated once every three (3) years towards the end of the third (3rd) year. New regular employees and all part-time employees shall be formally evaluated: (a) during the probationary year at the ninth (9th) month of that year; (b) at the completion of the second (2nd) year of appointment; (c) every three (3) years subsequently. Notwithstanding the above time cycles, nothing shall prevent evaluation of an employee at an alternate time when such evaluation is deemed desirable and mutually agreed between the Union and the Division Head either as a result of a previous evaluation recommendation or for reasons which will be clearly set out to the employee. These evaluations shall be conducted according to the procedures detailed below."
         },
         "10.2": {
           "title": "Principles of Evaluation",
-          "content": "Ability in applicable area, professional development and competence, attitude towards students, attitude towards colleagues, participation in College activities"
+          "content": "(a) ability in applicable area, (b) professional development and competence, (c) attitude towards students, (d) attitude towards colleagues, (e) participation in College activities and College development, (f) contribution to the communities served by the College."
+        },
+        "10.3": {
+          "title": "Evaluation Procedure",
+          "content": "An Evaluation Committee shall be established comprising the Academic Head, the appropriate line administrator, and two (2) Union members nominated by the Union. The members shall serve for a one-year term commencing November 1st.",
+          "evaluation_factors": "When evaluating the performance of an employee, the Evaluation Committee shall take into account the following: (1) The employee's self evaluation, (2) Comments in writing from other members of the Faculty, especially from those faculty members in the same or related disciplines of that of the employee being evaluated. In order not to impose restrictions on the diverse range of comments, use of a form shall be prohibited. Copies of these comments shall be made available to the employee being evaluated at the time of submission to the Evaluation Committee; the employee shall acknowledge receipt of these evaluations and shall have the right to add personal comments and observations. Hearsay is specifically excluded from both types of comments, (3) Student evaluations based on a uniform questionnaire prepared by the Evaluation Committee and student comments elicited along with the questionnaire, (4) Where applicable, written comments from Program Advisory Committee members, (5) The results of class visitations by the Evaluation Committee when such visitations are deemed necessary and after consultation with the instructor, (6) The instructor shall be advised of any unsolicited student input received during the year and such input must be substantiated if it is to be considered in the evaluative process",
+          "student_evaluation_process": "Student evaluations shall be carried out toward the end of each semester or towards the end of a course for all employees. The appropriate student evaluation forms will be circulated by the Office of the Dean and returned to them for compilation. The compilation for each instructor will first include a tabulation of frequency scores and a numerical average of the ratings for each item of the questionnaire obtained from the students in each of the instructor's classes separately. Second, a numerical average based on the student ratings for each item of the questionnaire added together for all of an instructor's classes. In addition, for information purposes, the average numerical rating for each question by all students in all science courses, humanities/social science courses and career courses will be compiled to provide group data and an overall average numerical rating for each question of all students for all instructors will also be compiled. Finally, student comments will be typed, collated by class and included along with the above compilations. The results of each student evaluation shall be made available to the employee and to the Evaluation Committee. The Office of the Dean will accumulate the student evaluations which will then form part of the employee evaluation at the appropriate time cycle",
+          "results_communication": "Within one (1) week of the completion of the evaluation of an employee's performance, the results of the evaluation with any recommendations shall be conveyed to the employee and to the Vice President Academic. The results of the evaluation with any recommendations of the committee will be forwarded to the appropriate Deans. It is understood and agreed that the results of any evaluation shall not be used for any disciplinary action. All documentation used to make the evaluation shall be given to the employee and to the Vice President Academic",
+          "vice_president_review": "When the Vice President Academic receives the final results of the evaluation of an employee from the Evaluation Committee, they shall convey the results together with their written comments and recommendations to the College President also given to the employee being evaluated. The Vice President Academic may delegate the writing of these comments and recommendations to the appropriate line administrator who currently sits on the Evaluation Committee as defined in Article 10.3.1",
+          "president_action": "The College President shall consider evaluations and any recommendations regarding evaluations at the earliest opportunity. Any action taken as a result of evaluation shall be conveyed to the employee within one (1) week of their decision",
+          "file_placement": "All summary results of an employee's evaluation, together with a documentation summary, shall be placed in the employee's personnel file",
+          "confidentiality": "None of the documentation and evaluation results shall be made available to other persons except that the Union President shall receive a copy of the summary evaluation from the Evaluation Committee, a copy of the Vice President Academic's written comments and recommendations, and a copy of the College President's decision at the time these are conveyed to the employee. The above notwithstanding, documentation from the evaluation may be used in program evaluation with the written agreement of the employee"
+        },
+        "10.4": {
+          "title": "Nature of Recommendations and Actions Based on Evaluations",
+          "content": "Employee evaluations may lead to and shall be restricted to the following actions and recognitions:",
+          "probationary_employees": "For employees on a probationary appointment: (a) a decision to offer a continuing appointment; (b) a decision to offer another one-year probationary appointment if it is reasonable to assume that identified weaknesses can be satisfactorily addressed; (c) a decision not to offer a further appointment, if the evaluation is unsatisfactory",
+          "continuing_employees": "For employees on a continuing appointment: (a) a decision that no action is required; (b) a decision that the employee's overall performance is unsatisfactory and requires improvement and that such improvement be obtained in the context of specified objectives and that an additional formal evaluation be carried out towards the end of the following year of active employment. If this additional evaluation is also unsatisfactory further action may be taken",
+          "part_time_employees": "For part-time employees: (a) a decision to offer another appointment in case of a vacant position; (b) a decision to continue the appointment for a specified period of time; (c) a decision not to offer a further appointment (either for a specified period or in case of a vacancy) if the evaluation is totally unsatisfactory",
+          "operational_termination": "Appointments may be terminated for operational or other reasons as per Article 11 of the Agreement"
+        },
+        "10.5": {
+          "title": "Appeal Process",
+          "content": "If the employee is not satisfied with the results of the evaluation by the Evaluation Committee, they may within seven (7) working days of receipt of notification of the results, request in writing (with a copy to the College President) a meeting with the Evaluation Committee. The meeting shall be convened within ten (10) days of receipt of notification by the Evaluation Committee. As a result of this meeting, the Evaluation Committee shall either ratify its original conclusions or amend them, and convey its decision, in writing, to the employee and to the College President (with a copy to the Union President). Where an employee wishes, the employee's comments on the evaluation shall be attached to the documentation. Notwithstanding the above, all other and further appeals shall be handled in accordance with Article 4."
+        },
+        "10.6": {
+          "title": "Non-Instructional or Administrative Employees",
+          "content": "In addition to the specific evaluation criteria contained in Article 10, the parties recognize that the overall performance of an employee is not limited to these criteria. The parties agree that the Academic Head in consultation with the Dean and the employee shall establish annual goals and objectives for the employee and that an annual evaluation and appraisal shall be made against these objectives by the Academic Head in conjunction with the Dean and the employee."
         }
       }
     },
     "11": {
       "title": "TERMINATION AND LAY-OFF",
       "sections": {
+        "11.1": {
+          "title": "Termination and Lay-off",
+          "content": "The College agrees not to layoff or terminate the employment of an employee for reasons other than outlined in this Agreement. The Union president will receive copies of any layoff, or notice of termination, at the same time it is given to the employee."
+        },
         "11.2": {
           "title": "Termination or Lay-off for Operational Reasons",
-          "content": "The College may lay-off or terminate the employment of an employee for operational reasons including budgetary exigencies, or program termination, modification or substitution"
+          "content": "The College may lay-off or terminate the employment of an employee for operational reasons including budgetary exigencies, or program termination, modification or substitution. In the event the lay-off or termination involves a regular employee, the remaining provisions of this Clause shall apply.",
+          "joint_committee": "When an employee's position is identified as redundant, the College shall notify the Union and form a joint layoff committee comprised of four (4) members, two (2) designated by the Union and two (2) designated by the College. The committee shall consider the alternatives to a layoff and explore all possible options as follows: (a) identify regular vacancies in the bargaining unit for which the employee is qualified; (b) determine whether any future temporary or part-time positions will be occurring for which the employee is qualified; (c) identify the position in the bargaining unit which the employee is qualified to occupy and for which the employee is able to use their seniority rights to displace another employee; or (d) determine if any other employee is eligible for early retirement. The committee will meet within two (2) weeks of the notice of redundancy and present the options to the President within two (2) weeks of their meeting",
+          "notice_period": "Once the committee has issued their report, the employee will be given a notice of layoff and the options identified by the committee. The employee will be given a minimum of five (5) months notice of termination which, for other than unexpected budgetary changes, shall be given on or before February 28th",
+          "seniority_displacement": "Within thirty (30) calendar days of the notice of layoff the employee may advise the College that they wish to exercise their seniority rights to displace another employee in which case: (a) the employee shall identify the position within the bargaining unit occupied by a person with lesser seniority whom they intend to displace; (b) the employee must be qualified and able to perform the job of the less senior person, with or without a period of in-service training considered sufficient by the College up to a maximum of one (1) month or employee initiated training up to a maximum period of six (6) months. In the latter case, the College will cover the cost of the training up to the maximum of the employee's severance entitlement; (c) where the displacement involves the relocation, the employer shall bear the entire cost of such relocation; (d) the employee shall retain their salary placement on scale and seniority; (e) should the employee identify displacing an employee who holds a regular fifty/fifty (50/50) joint CUPE/BCGEU appointment, the laid off employee must have greater seniority and an earlier hire date. The employee is only able to displace the fifty percent (50%) of the position that is covered by the CUPE/FPSE Agreement",
+          "early_retirement_option": "The employee may opt for early retirement provided they are eligible to do so under the applicable pension plan, in which case they shall be entitled to additional pensionable service equivalent in value, as determined by the Superannuation Commissioner, to the severance pay compensation stipulated in Article 11.2.6 below. Benefits under this provision shall not exceed the time that would be required for the employee to reach their maximum retirement age",
+          "severance_pay": "The employee may opt for severance pay on the basis of: (a) One (1) month's current pay for each year of seniority rounded upward to the nearest year to a maximum of six (6) months' salary and: (b) One (1) additional month's current pay for each additional five (5) years of seniority rounded upward to the nearest year to a maximum of four (4) months' salary",
+          "recall_provisions": "Where the employee opts for and receives severance pay, they shall be placed on the recall list for a twenty-four (24) month period, effective the date of severance. Where the employee is rehired through the recall process during the period covered by severance pay, they shall repay to the College the proportionate amount of severance pay they received. Recall of employees shall be to positions within the Bargaining Unit and shall be in order of seniority, provided the employee to be recalled is qualified and able to do the work available and provided they are available to commence work when requested. An employee so recalled shall retain the seniority they accrued prior to lay-off",
+          "displacement_chain": "Where the employee exercises their seniority rights to displace another employee in a position that they are qualified to perform, the employee to be displaced must have less seniority. The employee so displaced shall have the right to displace another employee with less seniority. The employee laid off as a result of displacement shall be given a minimum of two (2) months' notice of termination",
+          "probation_after_displacement": "The employee displacing another employee shall be on probation as per Article 9.2 if the new position involves duties they did not previously perform. Where probation is required, should the employee fail to successfully complete their probationary appointment, they shall forthwith be terminated, and no other provision in this Article shall apply to them. No part-time or temporary employee will be offered a position which could be filled by a regular employee on layoff qualified to perform the work",
+          "recall_rights": "Where a regular employee is on lay-off and when a vacancy occurs for which the employee is qualified and capable, the vacancy shall be offered to the employee. The employee shall be guaranteed the offer of a position, should they be qualified and it becomes available, equivalent to the position held prior to lay-off. If the employee takes a part-time or temporary position, this shall not extinguish their recall rights. Article 6.12 is not applicable. Salary and benefits will be at the appropriate rate"
+        },
+        "11.3": {
+          "title": "Termination for Other Reasons",
+          "content": "The College may terminate the employment of an employee for just and reasonable cause, other than for reasons outlined in Article 11.2. In all such cases the burden of proof of just and reasonable cause shall rest with the College, and notice of termination shall be in writing and shall set forth the reason for the termination. All such termination shall be subject to formal grievance procedures as set out in Article 4. Article 11.2 shall not apply to employees whose employment is terminated under this Clause."
+        },
+        "11.4": {
+          "title": "Resignations",
+          "content": "An employee shall give ninety (90) days notice of intention to resign. An employee giving such notice shall be paid all balances of vacation entitlement that are still unused at the date of resignation."
         }
       }
     },
@@ -271,19 +659,72 @@
       "sections": {
         "12.1": {
           "title": "No Discrimination",
-          "content": "The Employer and the Union agree that under this Collective Agreement there shall be no discrimination, interference, restriction, or coercion exercised"
+          "content": "The Employer and the Union agree that under this Collective Agreement there shall be no discrimination, interference, restriction, or coercion exercised or practiced with respect to any employee in the matter of hiring, wage rates, training, up-grading, promotion, transfer, layoff, recall, discipline, classification, discharge or otherwise by reason of age, race, creed, colour, national origin, religion, political affiliation or activity, sexual orientation, sex, gender identity, or marital status, family relationship, place of residence, physical handicap, nor by reason of membership or activity in the Union except where such discrimination is based upon a bonafide occupational requirement. The College and the Union agree to identify and remove any barriers which prevent access to equal opportunity in employment."
         },
         "12.2": {
           "title": "Academic Freedom",
-          "content": "Every employee is entitled to exercise Academic Freedom in the performance of their duties"
+          "content": "Every employee is entitled to exercise Academic Freedom in the performance of their duties. However, it is recognized that Academic Freedom must be exercised responsibly. People benefit from the search for knowledge and its free exposition. Academic freedom is essential to both these purposes in the teaching function of the College as well as in its scholarship and research. There shall be no infringement or abridgment of the academic freedom of any faculty member. Academic freedom is the freedom to examine, question, teach and learn, and it involves the right to investigate, speculate and comment without regard to prescribed doctrine. Academic freedom ensures: (a) freedom in the conduct of teaching; (b) freedom in undertaking research and publishing or making public the results thereof; (c) freedom from institutional censorship. Academic freedom carries with it the duty to use that freedom in a responsible way and in a manner consistent with the scholarly obligation to base teaching and research on an honest search for knowledge and the obligation to follow the curriculum requirements of the instructional assignment."
+        },
+        "12.3": {
+          "title": "Copyrights, Royalties, and Scholarships",
+          "content": "The copyright to and royalties paid on publication of books, articles, pamphlets, teaching aids, kits, tapes, computer software, films and related materials, where such materials have been prepared or created outside of the employee's assigned workload, shall be sole property of the author, and shall be retained by them throughout their lifetime. Lecture notes which an employee creates in support of their teaching or teaching-related functions shall be their sole property and shall not be used by others without their permission. Where an employee's assigned workload include the preparation or creation of programs, courses, teaching aids, kits, computer software, films and similar materials, with the exception of lecture notes, the ownership of, copyright to, and royalties and revenues from such materials shall be vested in the College. The employee shall have the right to retain a personal copy of such materials and shall be granted permission by the College to quote portions of such material in a larger work or to publish same in journals. Such materials shall bear the name of the employee who prepared or created them if they so choose. However, whilst the employee remains in the employ of the College, the College must request permission from the employee to alter or amend such materials. Such permission shall not be unreasonably withheld. Should the College consider the refusal unreasonable, the Grievance Committee comprising the Shop Steward and the College designate for grievance review shall meet within ten (10) days from the date of receipt of communication from the College to attempt to resolve the dispute within seven (7) days. Should there be no resolution, the College may refer the dispute directly to arbitration pursuant to Article 4. Scholarships, bursaries or other grants which an employee may acquire shall be their sole concern except in those circumstances where the terms of the scholarship, bursary or grant specifically require that the College be involved and provided that the scholarship, bursary or grant does not detract from the employee's responsibility to the College."
+        },
+        "12.4": {
+          "title": "Personnel Files",
+          "content": "The employee's personnel file shall be the sole deposit for documents which may be used in procedures which may affect the employee's conditions of employment and job security. During normal working hours, with reasonable notice, and in the presence of the Manager of Human Resources or their designate, every employee has the right of access to their personnel file. Every employee shall receive a copy of any document to be placed in the personnel file. An employee is entitled to add comments regarding documents placed in their personnel file. Documents of a disciplinary nature shall be removed from an employee's personnel file after a period of two (2) years provided that there has been no further infraction. An employee's personnel file shall not be open to unauthorized personnel, except with written permission of the employee."
+        },
+        "12.5": {
+          "title": "Picket Line",
+          "content": "All employees covered by this Agreement shall have the right to refuse to cross a picket line and shall have the right to refuse to perform struck work. The College shall not reprimand, penalize, or dismiss an employee for such refusal. The College shall maintain the benefit plan coverage where employees are not actively working by reason of any strike or lockout affecting the College."
+        },
+        "12.6": {
+          "title": "Legal Indemnification",
+          "content": "Except where it is considered by the Employer and the Union, or in the event of disagreement by an arbitrator, that there has been flagrant or willful negligence on the part of an employee, the College shall: (a) exempt and save harmless each employee from any liability action arising from the performance of their duties for the College, and (b) exempt and save harmless a former employee from any liability action arising from the performance of their duties when in the employ of the College, and (c) assume all costs, legal fees and other expenses arising from any such action which resulted from actions of the employee when in the employ of the College, (d) assume all reasonable legal fees arising from any criminal proceedings against an employee or former employee which resulted from the proper performance of their duties when in the employment of the College and when subsequently found not guilty."
         },
         "12.7": {
           "title": "Occupational Health and Safety",
-          "content": "The Union and the Employer agree that regulations made pursuant to the Workers' Compensation Act shall be fully complied with"
+          "content": "The Union and the Employer agree that regulations made pursuant to the Workers' Compensation Act, the Factories Act, or any other statute of the Province of British Columbia or the Government of Canada pertaining to the working environment, shall be fully complied with. First aid kits shall be supplied in accordance with this clause.",
+          "joint_committee": "The College shall maintain an Occupational Health and Safety Committee in keeping with the Industrial Health and Safety regulations of the Worker's Compensation Board and ensure such Committee carry out all duties and responsibilities in accordance with said regulations. There shall be no fewer than two (2) CUPE Local 2409 members appointed by the Union on this Committee. The Committee shall meet once every month. Minutes of the meetings will be distributed to all members of the Health and Safety Committee and posted at all College campuses. The agenda will be distributed to all members of the Health and Safety Committee a week in advance of the meeting. Hazards identified by the Committee will be resolved on a timely basis. All WorkSafeBC claims will be recorded in the monthly minutes",
+          "unsafe_work_conditions": "No employee shall be disciplined for refusal to work on a job which in the opinion of: (a) A member of the Joint Occupational Health and Safety Committee; or (b) A person designated by the Committee, after an on-site inspection and following discussion with a representative of the Employer, does not meet the standards established pursuant to the Workers' Compensation Act. When an employee acts in compliance with Section 8.24 of the Workers' Compensation Board Industrial Health and Safety Regulations, they shall not be subject to disciplinary action",
+          "worksafe_section_824": "For information purposes only, Section 8.24 reads: (1) No person shall carry out or cause to be carried out any work process or operate or cause to be operated any tool, appliance or equipment when that person has reasonable cause to believe that to do so would create an undue hazard to the health or safety of any person. (2) Pursuant to clause (1) a worker who refuses to carry out a work process or operate a tool, appliance or equipment shall forthwith report the circumstances of the unsafe condition to their supervisor or employer. (3) The supervisor or employer receiving a report made under clause (2) shall forthwith investigate the matter and (a) ensure that any unsafe condition is remedied without delay; or, (b) if in their opinion the report is not valid they shall so inform the person who made the report. (4) When the procedure under clause (3) does not resolve the matter and a worker continues to refuse to carry out a work process, the supervisor or employer shall investigate the matter in the presence of the worker who made the report and in the presence of: (a) a worker representative of the Industrial Health and Safety Committee; or, (b) a worker who is selected by a trade union representing the worker; or, (c) when there is no Industrial Health and Safety Committee or the worker is not represented by a trade union, any other reasonably available worker selected by the worker. (5) When the investigation under clause (4) does not resolve the matter and a worker continues to refuse to carry out a work process or operate a tool, appliance, or equipment, both the supervisor, or the employer, and the worker shall forthwith notify an officer of the Board who shall investigate the matter without undue delay and issue whatever orders they deem necessary. (6) No worker shall be subject to disciplinary action because they have acted in compliance with this regulation or an order made by an officer of the Board. (7) Temporary assignment to alternative work at no loss in pay to the worker until the matter in clause (1) is resolved shall be deemed not to constitute disciplinary action. (8) Materials, articles or objects to be manually lifted, carried or moved shall be lifted, carried or moved in such a manner and with such precautions and safeguards, including training, protective clothing and mechanical aids as will ensure that the process does not endanger the health and safety of any worker",
+          "injury_pay": "An employee who is injured on the job during working hours and is required to leave for treatment or is sent home for such injury shall receive payment for the remainder of their shift without deduction from short-term disability leave",
+          "transportation_accidents": "Transportation to the nearest physician or hospital for employees requiring medical care as a result of an on-the-job accident shall be at the expense of the Employer",
+          "pollution_control": "The Employer and the Union agree to limit all forms of environmental pollution",
+          "accident_investigation": "The Occupational Health and Safety Committee, as provided for, shall be notified of each accident or injury to the employees and shall investigate and report to the Union and the Employer on the nature and cause of the accident or injury. In the event of a fatality of an employee, the College shall immediately notify the Union President of the nature and circumstances of the accident",
+          "first_aid_requirements": "The Union and the Employer agree that First Aid Regulations made pursuant to the Workers' Compensation Act shall be fully complied with",
+          "training_program": "An ongoing training program for the Occupational Health and Safety Committee, which was developed in consultation with the Workers' Compensation Board, and which may be amended from time to time by mutual agreement, will provide a training program for members of the Occupational Health and Safety Committee dealing with the objectives and duties of the Committee",
+          "safe_working_conditions": "The Employer undertakes to maintain office furniture, equipment, etc., in a practical and safe condition in order to avoid injury to employees or damage to their attire. Employees, for their part and in their own interest, are expected to advise the Employer of any such potentially injurious equipment",
+          "investigation_time": "An employee who is a member of, or is designated by, the Joint Occupational Health and Safety Committee and who has been authorized by that Committee to investigate safety matters shall not suffer any loss of basic pay for time so spent",
+          "potential_dangers": "Employees have the right to be informed of any known potential dangers to their health and safety. An employee may refuse to perform assigned work when the employee has reasonable cause to believe that to do the assigned work may be a danger to the health or safety of himself/herself or anyone else at or near the workplace",
+          "risk_assessment": "All employees shall receive a copy of the College's risk assessment, safety plan, or any other information or document that will assist their health and safety",
+          "protective_clothing": "The employer shall provide adequate protective clothing where the need arises. This shall normally include smocks, laboratory coats or coveralls where the employee's clothes may be soiled due to the work situation. Where work is to be performed outdoors in inclement weather pursuant to Article 12.7.14.1 above, the necessary rainwear, parkas, or gloves shall also be made available. Where, due to the work situation, protective eyewear is required, the College shall provide protective eyewear"
         },
         "12.8": {
           "title": "Personal and Sexual Harassment",
-          "content": "The College shall provide all employees a work environment free from sexual and personal harassment"
+          "content": "The College shall provide all employees a work environment free from sexual and personal harassment. All employees have the right to be free from sexual and personal harassment.",
+          "sexual_harassment_definition": "Notwithstanding the definition(s) of harassment that may from time to time appear in the College Harassment Policy, for the purposes of this Article, sexual harassment is defined as follows: (a) Unwanted sexual attention made by a person who knows or ought reasonably to know that such attention is unwanted, or (b) Unwanted physical contact such as touching, patting, pinching or punching, or (c) Implied or expressed promise of reward for complying with a sexually oriented request, or (d) Implied or expressed threat of reprisal, in the form either of actual reprisal or the denial of opportunity, for the refusal to comply with a sexually oriented request, or (e) Subject to the norms of academic discourse and investigation, the inappropriate display of sexually oriented literature, or pornographic material, or (f) Remarks or behaviour which may reasonably be perceived to create a negative psychological and emotional environment for work and study",
+          "personal_harassment_definition": "Notwithstanding the definition(s) of harassment that may from time to time appear in the College Harassment Policy, for the purposes of this Article, personal harassment is defined as follows: (a) Physical threat, intimidation, or assault, or unwelcome physical contact such as touching, patting, pinching and punching, or (b) Unwelcome behaviour or comment that is directed at, or offensive to any employee that demeans, belittles, causes personal humiliation or embarrassment to the employee or any other employees, or (c) Implied or expressed promise of reward or threat of reprisal, or the denial of opportunity for refusal to comply with a request which is unrelated to an employee's assigned duties, or (d) The improper use of power and authority inherent in the position held, so as to endanger an employee's position. threaten the economic livelihood of the employee, or in any other way interfere with or influence the career of such an employee, or (e) Remarks or behaviour which may reasonably be perceived to create a negative psychological or emotional environment for work or study",
+          "grievance_procedure": "Employees may process complaints about harassment through the grievance procedure, subject to the following changes: (a) Where a person who is the subject of the complaint is the College management representative at any step of the grievance procedure, then the Union may bypass that step of the procedure or present the grievance to another appropriate College representative. (b) College representative(s) in the course of investigating a complaint of harassment or the Union representative when filing the complaint, shall have regard for the privacy and confidentiality of the griever and all persons involved in the complaint. (c) An arbitrator, in the determination of a complaint of harassment, may take reasonable steps to protect the interest of all parties in privacy and confidentiality in the determination of procedural and evidentiary matters, subject to the requirement of fairness to all parties. (d) Where the complainant and the person who is the subject of the complaint are both members of the bargaining unit, then the arbitrator seized of a grievance of harassment, shall also have jurisdiction in respect of any grievance arising from related discipline of the employee who is the subject of the complaint",
+          "representation_rights": "Employees against whom a grievance or complaint has been filed pursuant to this Article, shall have the right to know what allegations have been made against them, and shall have the right to Union representation at all meetings, interviews and hearings where the employee's presence is requested. A complainant has the right to Union representation at all meetings, interviews and hearings where the complainant's presence is requested",
+          "time_limits": "Time limits shall be waived for filing grievances under this Article",
+          "investigation": "The Employer will investigate allegations of harassment in a fair and timely manner",
+          "common_agreement": "The parties agree that the College will follow the procedures outlined in Articles 2.3 -- 2.6 inclusive of the Common Agreement for all harassment complaints defined under the local Agreement in Article 12.8.2 (Sexual Harassment) and Article 12.8.3 (Personal Harassment)"
+        },
+        "12.9": {
+          "title": "Other Human Rights",
+          "content": "At any meeting between an employee and an administrative member which is likely to give rise to disciplinary action or is otherwise connected with disciplinary matters pertaining to the employee, the employee has a right to be accompanied by the Shop Steward. The employee shall be informed by the College of this right. If any disciplinary action is taken the employee shall be notified in writing of the reasons for the action at the time the discipline is imposed and the reasons shall set out the substance of every allegation against the employee. The Union will be notified of the disciplinary action and shall receive a copy of the reasons provided to the employee should the employee so request in writing. Such request shall be included in the notice given by the Employer to the employee. The parties agree that the provisions of Section 8 of the Human Rights Act of British Columbia shall apply as though it were included in, and forming part of this agreement."
+        },
+        "12.10": {
+          "title": "Whistleblowing Protection",
+          "content": "No employee shall be disciplined, discharged, penalized, or intimidated as a result of reporting any alleged violations to the College or to another agency, provided the College has been notified of the alleged violation first. The College will have thirty (30) days to investigate the alleged violation and report the outcome to the employee and the Union. The employee will not report the alleged violation to another agency prior to the outcome of the investigation. All information will be kept confidential for the thirty (30) day investigation period."
+        },
+        "12.11": {
+          "title": "Scholarly Activities",
+          "content": "The College recognizes that it is not mandated or funded for scholarly activities, however, the College acknowledges that scholarly activity contributes to academic excellence and the effectiveness of the teaching function at the College. Scholarly activity shall be understood to include continuing mastery of one's field of knowledge, awareness of current scholarship in one's own field, involvement in basic research and development, and professional or creative activity. Basic research has as its purpose contributing to the expansion of knowledge and the sharing of that knowledge through publication or other appropriate professional means. Development involves the examination of the implications of basic research and their practical application. The College may assist with the administration of funds which are received from external sources at no cost to the employee or the fund and no increased costs to the College."
+        },
+        "12.12": {
+          "title": "Student Appeal Procedure",
+          "content": "The employee has the right to have a shop steward present at all meetings or discussions concerning a student appeal at which the employee is present. The employee will be advised of the outcome, in writing, in a timely fashion, which shall not exceed one month."
         }
       }
     },
@@ -292,15 +733,81 @@
       "sections": {
         "13.1": {
           "title": "Duties of Employees",
-          "content": "The duties of employees may include teaching, course preparation and development, counseling, librarianship, workshops, special program development"
+          "content": "The duties of employees may include any of the following: teaching, course preparation and development, counseling, librarianship, workshops, special program development and administration of programs, development and administration of continuing education programs, advising students, evaluation of student work, other functions related to instructing, professional development, student registration, school visitations, participation on College Committees, attendance at professional meetings, representation of the College at other functions, administrative duties, and other duties that may from time to time be necessary for the proper operation of the College."
         },
         "13.2": {
           "title": "Annual Workloads for Instructional Employees",
-          "content": "A full-time annual workload shall consist of ten (10) sections. A full-time annual workload shall be not more than eighteen (18) hours of scheduled class contact per week"
+          "content": "A full-time annual workload shall consist of ten (10) sections. A full-time annual workload shall be not more than eighteen (18) hours of scheduled class contact per week or not more than thirty-five (35) hours of practicum supervision per week including travel time. The full-time annual workload for an instructor shall be submitted for approval by January 15 and shall be approved in writing by March 1st. The College shall make every reasonable effort to have workloads approved by February 15th. Any sections approved by March 1st will be advertised to the students and made available for their registration from that date onward. Any subsequent changes shall be discussed between the Academic / Associate / Assistant Academic Head and the Dean. Any change in workload requires the written consent of the Union, which shall not be unreasonably withheld.",
+          "teaching_workloads": {
+            "academic_programs": "A full-time annual workload shall not exceed fifteen (15) hours per week of scheduled class contact (which shall include the lecture, laboratory, field, or other related components of courses) averaged over two (2) fifteen (15) week semesters and may with the consent of the Union, which shall not be unreasonably withheld, exceed fifteen (15) but shall not be more than eighteen (18) hours per week in any semester. An instructor's workload may be increased from fifteen (15) to eighteen (18) hours per week in a given semester of scheduled class contact if it consists of two (2) sections of the same course comprising Science lectures, laboratories, and/or field component which are directly associated with the lectures",
+            "nursing_program": "The workload for the Northern Collaborative Nursing Program instructors will be determined on the basis of four hundred and fifty (450) hours per annum for lecture and lab courses and five hundred and thirteen (513) hours for the clinical and practicum courses",
+            "career_technical": "A full-time annual workload shall not exceed fifteen (15) hours per week of scheduled class contact, which shall include lectures and related class components, or thirty-five (35) hours per week of practicum supervision, including travel time, or prorated combination of the above averaged over a period not exceeding forty (40) weeks. Workloads shall be averaged over two (2) semesters",
+            "course_assignment": "At any given time an instructor shall not be assigned more than three (3) different courses, except, if an instructor's workload is not more than twelve (12) hours per week in a semester (subject to the averaging conditions established above) and upon written consent of the Union, which shall not be unreasonably withheld, an instructor may be assigned four (4) different courses. The workload for an instructor, the combination of courses to be taught (including practica) shall be initiated on the departmental level and shall be determined by a process of consultation between the Academic Head / Associate / Assistant Academic Head and the instructional departments on the basis of the provisions contained in this Article and shall then be submitted to the Dean for consideration and approval which shall not be unreasonably withheld. An instructor's daily workload shall not exceed seven (7) class contact hours per day"
+          },
+          "additional_factors": {
+            "distance_education": "a distance education course without teleconferencing shall count as one and one half (1½) hours of class contact per week",
+            "initial_development": "the initial development of a distance education package shall count as one and one half (1½) hours of class contact per week",
+            "instructional_travel": "instructional travel to a College centre other than Kitimat shall count as one and one half (1½) hours of class contact per week",
+            "new_instructor_reduction": "Regular instructors new to the College shall have a workload reduction of three (3) hours during each of the first two (2) semesters of employment if they are assigned more than two (2) different courses"
+          },
+          "class_size": "The maximum class size shall be no more than thirty-six (36) students based on the actual enrollment at the end of the second week of classes, except that this maximum will be reduced according to the following conditions: Composition and language courses: 25 students, Experimental Psychology and Anthropology 101: 28 students, Science lab in Terrace: 18 students, Computer lab in Prince Rupert: 18 students, Computer lab in Terrace: 16 students, Science lab in Prince Rupert: 12 students (To become identical to the Terrace laboratory section maximum number of students at that time when the Prince Rupert laboratory facilities reach the dimensions and level of the Terrace laboratory facilities.), Career programme regular sections: 24 students, Career programme practica: 16 students, Career programme intensive sections: 30 students",
+          "program_development": "The parties agree that programme development initiated on the departmental level in consultation with the Academic Head / Dean may be used in place of class contact (as established above)",
+          "proration": "It is understood and agreed that the workload provisions will be prorated where a regular employee's workload is for less than 100% of a full-time workload and where this situation is the result of a contractual agreement including this Agreement",
+          "telecourses": {
+            "definition": "A teleconferencing course is a course where a student communicates with the instructor through audio teleconferencing technology",
+            "restrictions": "Teleconferencing courses originating in Terrace shall only be offered by regular employees, with a maximum of one (1) teleconferencing course per individual employee",
+            "workload_calculation": "A teleconferencing course shall be defined as consisting of three (3) hours, as per Article 13.2.1.1",
+            "class_size": "Class size shall be as set out in Article 13.2.1.6 with a maximum of eight (8) students at each participating centre",
+            "training": "Provisions shall be made for adequate familiarization and training of instructors with teleconferencing during the non-teaching months",
+            "preparation": "Preparation of a teleconferencing course shall count as one (1) course preparation",
+            "live_instruction": "All of the University Transfer, SSW and ECE programming offered in Terrace shall consist exclusively of live conventional instruction except as under Article 13.2.1.9.7 below",
+            "studio_limitations": "For teleconferencing courses, the number of students who are enrolled directly from high school and who wish to be admitted to such a course at the Terrace campus will be limited to five (5). No teleconferencing courses will have students in the studio",
+            "technical_operation": "Technical operation of the system shall not be the responsibility of the instructor"
+          },
+          "schedule_restrictions": {
+            "evening_classes": "An instructor's schedule will not include more than two (2) evening classes per week. For the purposes of this section, evening classes shall refer to classes where scheduled instruction takes place after nineteen hundred (1900) hours except with the Union's written consent",
+            "rest_period": "An instructor's schedule will include a twelve (12) hour period free from instruction between the end of the last class one day to the beginning of the first class of the next day, except with the Union's written consent",
+            "weekend_work": "An employee shall not be required to teach on a Saturday or Sunday. In the event that an employee agrees to teach on a Saturday or a Sunday, they shall be assured of at least two (2) consecutive calendar days per week free from any instructional obligations"
+          },
+          "videoconferencing": {
+            "definition": "A videoconferencing course is a course where a student communicates with the instructor through videoconferencing technology",
+            "scope": "Videoconferencing technology may be utilized in the delivery of college courses or programs. Labs and practica will not be videoconferenced under any circumstances",
+            "limitations": "Videoconferencing courses shall be limited to a maximum of one (1) course per semester per employee. Such courses shall only be offered by Regular and/or Temporary Employees and will be subject to the workload provisions of this Collective Agreement including but not limited to Article 13. The use of video-conferencing technology will be a matter of Employee choice",
+            "training": "The first time an instructor delivers any course making use of videoconferencing technology they will receive an additional one half (0.5) section for training which will be provided by the Employer",
+            "student_numbers": "The total number of students at all centers shall be no more than twenty-four (24) students. There shall be a minimum of two (2) students at the originating CMTN campus",
+            "support": "The Employer shall provide all equipment and support including technical support, required for the development or delivery of all videoconferenced courses. Employees shall not be required to provide technical support to students or themselves. All technical support shall be provided by the Employer. The Employer will provide clerical support at the receiving campus(es). Such support shall be in place prior to the delivery of the course. Such support shall be reasonable and include copying, distribution and collection of assignments, materials, and exams as required by the College Professor",
+            "job_security": "No employee(s) shall lose work as a result of development and/or delivery of courses making use of videoconferencing technology"
+          },
+          "prior_learning_assessment": "Where Prior Learning Assessment work is to be undertaken by a faculty member, the College and the Union will mutually determine the amount of the faculty member's workload to be attributed to Prior Learning Assessment, in accordance with Article 13. This determination will be concluded before commencement of the Prior Learning Assessment work",
+          "non_teaching_workload": "The annual non-teaching workloads for instructors shall comprise an appropriate combination of non-teaching activities outlined in Article 13.1 which shall reflect a workload of thirty-five (35) work hours per week during non-teaching periods, except during scheduled vacation time. A detailed list of such proposed activities shall be subject to approval by the appropriate program administrator and ratification by the appropriate Dean by March 31st of each year. The employee shall submit a written report of their activities by September 30th of each year",
+          "workload_determination": "The actual annual workload for each academic programme instructor shall be determined through consultation between the instructor and the Academic / Associate /Assistant Head on the basis of the above guidelines and shall be averaged out over a period of two (2) years, provided there is Union consent (which shall not be unreasonably withheld) to the averaging. This shall then be submitted to the Dean for consideration and eventual approval",
+          "resignation_termination": "In the event of employee resignation or termination there shall be no compensation adjustment, either plus or minus, to reflect variations from the annual normal maximum that may have accumulated at the time of resignation or termination",
+          "reading_break": "During the winter semester of each academic year, all regular university credit instructional employees shall have a five (5) consecutive working day mid-term reading break as determined by the Registrar"
         },
         "13.3": {
-          "title": "Teaching Workload Reduction for Academic Heads and Programme Coordinators",
-          "content": "The teaching workload for the Academic Head shall be reduced by sixty percent (60%), Associate Academic Head by forty percent (40%), Assistant Academic Head by twenty percent (20%)"
+          "title": "Teaching Workload Reduction for Academic, Associate Academic & Assistant Academic Head and Programme Coordinators",
+          "content": "The teaching workload for the Academic Head shall be as set out in Article 13.2.1 except that it shall be reduced by a margin of sixty percent (60%) to compensate for the additional administrative and related duties necessary to fulfill the functions of the Academic Head. Article 13.2.2, Article 13.2.3, and Article 13.2.4, shall apply to the Academic Head. The teaching workload for the Associate Academic Head shall be as set out in Article 13.2.1 except that it shall be reduced by a margin of forty (40%) percent to compensate for the additional administrative and related duties necessary to fulfill the functions of the Associate Academic Head. Article 13.2.2, Article 13.2.3, and Article 13.2.4, shall apply to the Associate Academic Head. The teaching workload for the Assistant Academic Head shall be as set out in Article 13.2.1 except that it shall be reduced by a margin of twenty (20%) percent to compensate for the additional administrative and related duties necessary to fulfill the functions of the Assistant Academic Head. Article 13.2.2, Article 13.2.3, and Article 13.2.4, shall apply to the Assistant Academic Head. The teaching workload for the Terrace campus ECE programme coordinator and the Terrace campus Social Service Worker programme coordinator shall be as set out in Article 13.2.1 except that it shall be reduced by a margin of twenty percent (20%) to compensate for the additional administrative and related duties necessary to fulfill the functions of the programme coordinator. The college agrees to provide forty (40%) of a full-time Northern Collaborative Nursing Program instructor to complete the additional administrative and related duties necessary to fulfill the functions of the programme coordinator. Programme coordinators in any College location shall have a workload reduction of a minimum of twenty percent (20%). Article 13.2.2 shall apply to programme coordinators."
+        },
+        "13.4": {
+          "title": "Workload for Non-Instructional Employees",
+          "content": "On the basis of thirty-five (35) per week, the workload for non-instructional employees shall be initiated on the departmental level and shall be determined by a process of consultation between the Academic Head / Associate / Assistant Academic Head and the departments on the basis of the provisions contained in this Article and shall then be submitted to the Dean for consideration and approval which shall not be unreasonably withheld. Subject to funds being available and operational requirements the College will provide substitutes for librarians during vacation and professional development periods."
+        },
+        "13.5": {
+          "title": "Low Enrollment Courses",
+          "content": "The Employer reserves the right to cancel any low enrollment course and require the Academic Head, in consultation with the employee affected, to reassign workload to bring the employee up to the annual workload for the year."
+        },
+        "13.6": {
+          "title": "Other Work Conditions",
+          "content": "The College shall make every reasonable effort to provide faculty with adequate support and resources for instruction; office space and classroom furnishings; and support staff. There shall be instructional support. Such instructional support shall be determined by the appropriate Dean in consultation with the appropriate Academic / Associate / Assistant Head. The College's instructional timetables are the responsibility of the Registrar. Timetables shall be initiated at the departmental / program level and shall be determined by a process of consultation between the Academic / Associate / Assistant Academic Head and instructional departments. Timetables shall be submitted to the Dean for consideration and approval by March 1st, which approval shall not be unreasonably denied. In the event that timetables have not been submitted by March 1st, the Registrar may complete and post the timetables(s). The College will provide appropriate signage on its facilities. Faculty members will be provided with name plates with their credentials. Ventilation shall be provided in all College facilities in accordance with federal and provincial standards on air quality. The College will support the participation of faculty members on provincial articulation committees to the fullest extent as funding permits. The College will support the participation of the Academic Head at any provincial meetings as appropriate. The College will support the participation of faculty members on provincial committees as appropriate and as funding permits. Any changes in parking regulations and policies shall be made by written consultation with the Union. The Academic / Associate / Assistant Academic Head and Program Coordinators will be consulted during the preparation of the calendar. In consultation with the Academic Head the College agrees to advertise sections courses/programs to students/communities throughout the entire College region. Where the College has a Science Laboratory Technician at a Centre where University Transfer courses are offered, the Technician will take functional direction from the appropriate Science faculty member(s). The College will provide Internet and e-mail access on campus to all employees. Working conditions for part-time faculty include, but are not limited to, orientation, office, keys, e-mail account, computer access, phone, and mailbox."
+        }
+      }
+    },
+    "14": {
+      "title": "MANAGEMENT RIGHTS",
+      "sections": {
+        "14.1": {
+          "title": "Management Rights",
+          "content": "Except as otherwise provided in the Agreement, the College or its delegated officers have exclusive control over the management, supervision and administration of the College and its affairs and the direction of the employees covered by this Agreement. However, if situations arise that are not spoken to in the Agreement, the College agrees to consult with the Union. The exercise of management rights shall be in a fair, reasonable manner, which is not arbitrary or discriminatory."
         }
       }
     },
@@ -309,7 +816,37 @@
       "sections": {
         "15.1": {
           "title": "Calculation of Seniority",
-          "content": "The basis of seniority will be the full-time annual workload of a regular employee"
+          "content": "The basis of seniority will be the full-time annual workload of a regular employee. A full-time employee with full-time salary, for the purposes of calculation of seniority, shall be considered to have one (1) year of seniority. All calculation of seniority for regular employees with less than a full-time workload will be pro-rated based on salary. The calculation will be based on the workload as identified in Article 13 worked during the academic year (September to August). For part-time employees, one (1) year of seniority will be based on eight (8) sections (or equivalent). There will be a regular and a part-time / temporary seniority list.",
+          "additional_criteria": {
+            "start_date": "Seniority starts from the initial date of appointment. The date of hire of an employee is relevant only if they have equivalent seniority to another employee. When that is the case, the employee with the earlier hire date will be considered to have the most seniority",
+            "substitution": "Subbing for one day will be calculated as 1/15th of a section; acting coordinator for one day will be calculated as 1/5 (section) × ½ (semester) × 1/15 weeks x number of days",
+            "leaves": "All leaves shall be counted for the purposes of seniority; for part-time employees, the calculation will be prorated",
+            "job_sharing": "Seniority for regular employees when job sharing shall be counted as equivalent to paid or unpaid leaves of absence"
+          }
+        },
+        "15.2": {
+          "title": "Seniority List",
+          "content": "The Employer shall maintain a seniority list showing all the necessary information relevant to the application of the seniority provisions of the Agreement. An up-to-date seniority list shall be sent to the President of the Union on a quarterly basis. Separate lists will be maintained for regular and for temporary / part-time employees. Seniority will be calculated to three (3) decimal places."
+        },
+        "15.3": {
+          "title": "Seniority Accrual - Regular Employees",
+          "content": "Seniority shall continue to accrue for regular employees on any paid or unpaid leaves of absence within the provisions of this Agreement."
+        },
+        "15.4": {
+          "title": "Seniority Breaks",
+          "content": "Employees shall maintain but not accrue seniority for periods of employment in another bargaining unit."
+        },
+        "15.5": {
+          "title": "Loss of Seniority",
+          "content": "An employee shall lose their seniority in the event that: (a) an arbitrator upholds a decision of an employee discharged for just cause; (b) they resign from an employee position at the College; (c) they are on layoff for more than twenty-four (24) months."
+        },
+        "15.6": {
+          "title": "Application of Seniority for Temporary and Part-time Employees",
+          "content": "Temporary and part-time employees without a break in service of twenty-four (24) or more months shall be considered as internal applicants on regular job postings."
+        },
+        "15.7": {
+          "title": "Seniority List for Early Retirement",
+          "content": "The Employer shall maintain a seniority list for early retirees showing all the necessary information relevant to the application of Article 16. An up-to-date early retirement list shall be sent to the President of the Union on an annual basis."
         }
       }
     },
@@ -318,7 +855,86 @@
       "sections": {
         "16.1": {
           "title": "Eligibility",
-          "content": "The College may offer to a faculty member or a faculty member may request early retirement incentive alternatives provided they meet criteria: age fifty-five (55) or over, minimum of ten (10) years pensionable service"
+          "content": "The College may offer to a faculty member or a faculty member may request a choice of the early retirement incentive alternatives described provided the employee meets the following criteria: (a) is age fifty-five (55) or over (b) has a minimum of ten (10) years pensionable service under pension plans administered by the British Columbia Pension Corporation (c) is a regular employee at the time of early retirement (d) is on the maximum step of the salary scale (e) elects to cease employment with the College for the purposes of retirement. During any contract year, the College shall accept at least one (1), but not necessarily more than one (1) employee's request (provided there are such requests) of early retirement within thirty (30) days of the request being made. If more than one (1) request is made, then the selection shall be made as per Article 16.3."
+        },
+        "16.2": {
+          "title": "Agreement",
+          "content": "Application to the plan is voluntary except in cases arising from the application of Article 11. A faculty member who wishes to be considered for early retirement incentive shall do so in writing no later than December 1 for retirement that will occur during the College's next Fiscal Year. The College shall provide copies of all applications to the Union. An employee has the right to accept or decline an early retirement incentive offer made by the College within thirty (30) days of the offer being proposed. In the event of acceptance of an offer of early retirement, the employee's date of retirement shall be at a mutually agreed upon date. Agreement shall be in writing and shall specify the early retirement date with the incentive option agreed upon.",
+          "offer_details": "The offer of early retirement shall include, but is not limited to, the following: (a) Lump sum payment amount (Article 16.4) (b) Maximum lump sum payment amount for Sick Leave Plan payment (Article 6.7.6) (c) Last day of active work determined from the amount of vacation days and Professional Development days remaining. (d) Contact information for the College Pension Plan, Canada Pension Plan (CPP) and Old Age Security (OAS)."
+        },
+        "16.3": {
+          "title": "Selection Criteria",
+          "content": "In considering applications for early retirement incentive from eligible faculty, should the College determine that it is able to offer an incentive but is unable to offer an incentive to all who have applied, it will use the following criteria in ascertaining the faculty member to whom such offers shall be given: (a) Faculty members with less time remaining prior to retirement shall be given preference; and (b) In the event that two (2) or more faculty members have the same amount of time remaining prior to retirement, then the faculty member with greater seniority shall be given preference."
+        },
+        "16.4": {
+          "title": "Benefit Options",
+          "content": "A lump sum payment will be paid in one sum on the date of retirement as per the following amounts:",
+          "lump_sum_schedule": {
+            "1_year": "20% of salary",
+            "2_years": "40% of salary", 
+            "3_years": "60% of salary",
+            "4_years": "80% of salary",
+            "5_or_more_years": "100% of salary"
+          },
+          "past_service_option": "The College will purchase on behalf of the employee past service contributions to the College pension plan equivalent to the value of the lump sum payment as indicated above."
+        },
+        "16.5": {
+          "title": "Protection of Medical Benefit Coverage",
+          "content": "Early retiring employees in receipt of a College Pension may obtain basic medical and extended health benefits coverage through the Superannuation Commission when filing a claim for pension. Appropriate deductions will be made from monthly pension. NOTE: Pensioners who decline the Extended Health benefit coverage at retirement will NOT be eligible for coverage later unless they can prove continuous coverage under an extended health care plan (e.g. coverage under spouse's plan). Early retiring employees not immediately commencing receipt of a College pension may elect to continue their basic medical and extended health* benefit coverage through the College during the period preceding receipt of pension, but in any event no longer than five years following retirement, provided that: (a) written notification of the intent to continue these benefits is provided to the Personnel Department six (6) weeks prior to the date of early retirement; and (b) the individual maintains BC residency; and (c) the participant prepays all premium costs. *Coverage will be under a separate group for retirees at a reduced level of coverage."
+        },
+        "16.6": {
+          "title": "Financial Consulting",
+          "content": "Each employee who accepts the early retirement incentives is entitled to receive three (3) personal financial consultations conducted by a firm of qualified financial consultants selected by the College. Fees for consultative sessions to a maximum of one hundred and sixty dollars ($160) per session will be borne by the College."
+        },
+        "16.7": {
+          "title": "Seniority List for Early Retirement",
+          "content": "The Employer shall maintain a seniority list for early retirees showing all the necessary information relevant to the application of Article 16. An up-to-date early retirement list shall be sent to the President of the Union on an annual basis."
+        },
+        "16.8": {
+          "title": "Union Representation",
+          "content": "There shall be a Shop Steward present at all meetings where an offer of early retirement is being made pursuant to Article 16. The Union shall receive copies of all correspondence relating to Early Retirement."
+        }
+      }
+    },
+    "17": {
+      "title": "LEARNING AND DEGREE GRANTING OPPORTUNITIES IN NORTHERN BC",
+      "sections": {
+        "17.1": {
+          "title": "Preamble",
+          "content": "The parties recognize that the post-secondary educational opportunities in the area served by Coast Mountain College are best enhanced by a co-operative, integrated plan developed through structures which allow those institutions and agencies and workers who deliver and support the delivery of programmes to be involved in a consultative process as equal partners. In order to enhance this partnership, the parties agree to the following:"
+        },
+        "17.2": {
+          "title": "Regional Academic Planning",
+          "content": "The College will consult the Union with respect to any academic plans the University may propose for the region. The Union will provide the College advice with respect to the educational viability of the UNBC proposed programs. Consultation shall include meaningful and in-depth discussion by the parties during all stages of the planning process and full disclosure of all information and access to all documentation as they become available. The record of consultation will be in writing and copies shall be provided to the parties."
+        },
+        "17.3": {
+          "title": "Documentation of Educational Planning",
+          "content": "The parties agree that no agreements shall be struck between UNBC and CMTN without the prior consultation between the College and the Union. The College agrees to consult with the Faculty to discuss the educational plans of UNBC. The outcome of all discussions will be relayed to the UNBC liaison committee of the College Board. The record of consultation will be in writing and copies shall be provided to the parties."
+        },
+        "17.4": {
+          "title": "Division of Labour",
+          "content": "The parties believe that access to degree completion in the northwest will dramatically increase the participation rates at the College. To this end Coast Mountain College will support access to UNBC degree completion programs in the northwest and continue to offer university courses at years one (1) and two (2) and career programs that transfer to a variety of other institutions as well as UNBC. UNBC will be responsible for third (3rd) and fourth (4th) year and university graduate courses."
+        },
+        "17.5": {
+          "title": "Exploration of Secondment Opportunities",
+          "content": "The College will explore with the University the possibility of current employees having an option to deliver UNBC programmes. The College will support the request of current employees to be seconded to the University and continue to be entitled to the benefits of this Collective Agreement."
+        },
+        "17.6": {
+          "title": "Secondment to UNBC and Other Degree Granting Institutions",
+          "content": "The College will encourage the secondment of faculty to UNBC and other degree granting institutions: Requests for full-time and part-time secondments will be made by the Academic Head. The secondment will occur through the written agreement of the College, the Academic Head, the employee and the other institution. The College shall not unreasonably withhold written agreement. A copy shall be provided to the Union. Opportunities for secondment will be advertised internally. The advertisement will be written by the Academic Head. Openings which occur as the result of secondment will be filled in accordance with the Collective Agreement. Coast Mountain College programs will not be jeopardized by such secondment. All aspects of the Collective Agreement as applicable will continue and Coast Mountain College will be reimbursed by the degree granting institutions accordingly. For the purpose of workload calculations, one section from another degree granting institution will be considered one section from Coast Mountain College."
+        },
+        "17.7": {
+          "title": "Other Third Party Agreements",
+          "content": "The College agrees that prior to undertaking contractual teaching and learning arrangements with other learning institutions and/or corporations, the College will consult with the Union."
+        }
+      }
+    },
+    "18": {
+      "title": "SAVINGS CLAUSE",
+      "sections": {
+        "18.1": {
+          "title": "Savings Clause",
+          "content": "Should any part hereof or any provision herein contained be rendered or declared invalid by reason of any existing or subsequent enacted legislation or by any judgment or order of a court of competent jurisdiction, such invalidation of such part or portion of this Agreement shall not invalidate the remaining portions hereof, and such remaining portions shall continue in full force and effect. In the event that any clause or section is held invalid, or enforcement of, or compliance with which has been restrained, as above set forth, the parties affected thereby shall enter into immediate negotiations upon the request of either party for the purpose of arriving at a mutually satisfactory replacement for such article or section during the period of invalidity or restraint. If the parties do not agree on a mutually satisfactory replacement, they shall submit the dispute to the Grievance Procedure."
         }
       }
     }
@@ -326,7 +942,7 @@
   "salary_scales": {
     "effective_dates": {
       "april_1_2019": "Base rates",
-      "april_1_2020": "Rates with increases",
+      "april_1_2020": "Rates with increases", 
       "april_1_2021": "Final rates"
     },
     "annual_salary": {
@@ -390,7 +1006,7 @@
       "starting_point": "Step 11",
       "bachelors_degree": "Step 10 (one degree), Step 9 (two degrees)",
       "masters_degree": "Step 9 (one degree), Step 8 (two degrees)",
-      "doctoral_degree": "Step 8 (one degree), Step 7 (two degrees)",
+      "doctoral_degree": "Step 8 (one degree), Step 7 (two degrees)", 
       "teaching_certificate": "One additional increment",
       "related_experience": "One increment for each full year of teaching, librarianship, counseling, coordinating, or related work experience"
     }
@@ -398,24 +1014,63 @@
   "appendices": {
     "appendix_a": {
       "title": "Sick Leave Plan",
-      "eligibility": "Regular employees shall be covered by the Sick Leave Plan upon commencing work for the Employer",
-      "benefits": "Regular employees who are unable to work because of an illness or injury are entitled to a benefit of one hundred percent (100%) of regular salary for a period not to exceed one hundred twenty (120) calendar days"
+      "sections": {
+        "A1": {
+          "title": "Eligibility",
+          "content": "Regular employees shall be covered by the Sick Leave Plan upon commencing work for the Employer. Regular employees who are unable to work because of an illness or injury are entitled to a benefit of one hundred percent (100%) of regular salary for a period not to exceed one hundred twenty (120) calendar days for the date of disability. Where a regular employee is on a claim recognized by the Workers' Compensation Board (while the employee was on the Employer's business), the employee shall be entitled to leave at their regular salary up to one hundred twenty (120) calendar days for any one claim. In such cases the compensation payable by the Workers' Compensation Board shall be remitted to the Employer. Determination of regular salary shall be done in accordance with the rates listed in the Collective Agreement for the period in which the benefit is claimed."
+        },
+        "A2": {
+          "title": "Recurring Disabilities",
+          "content": "Employees who return to work after being absent because of illness or injury, and within five (5) consecutive days of work again become unable to work because of the same illness or injury, are considered to still be within the original sick leave period as defined in Section A.1.2. Employees who return to work after being absent because of illness or injury, and within five (5) consecutive days of work again become unable to work because of a new illness or injury unrelated to the illness or injury that caused the previous absence, shall be entitled to a further one hundred twenty (120) day period of benefits under the Sick Leave Plan. Employees who return to work after being absent because of illness or injury, and after working five (5) or more consecutive days of work again become unable to work because of the same illness or injury, shall be entitled to a further one hundred twenty (120) day period of benefits under the Sick Leave Plan. This does not apply to an employee who has returned to work on a trial basis as approved by the Employer and the Union. In such a case, the maximum benefit period shall continue to be as defined in Section A.2.1. Employees who return to work after a period of illness or injury and who do not work the same workload that they had prior to the illness or injury shall receive pro-rated benefits under the Sick Leave Plan; however, this period shall not exceed one hundred twenty (120) days from the initial date of disability if absence is due to the same illness or injury."
+        },
+        "A3": {
+          "title": "Integration with Other Disability Income",
+          "content": "Sick Leave benefits shall be reduced by other disability income benefits to which the absent employee is entitled, except disability income which was being received prior to the illness or injury resulting in the employee being absent from work and which is unrelated to the illness or injury causing the current absence. Integration shall take place to the extent that Sick Leave benefits shall be reduced by other disability income benefits to which the absent employee is entitled, except disability income which was being received prior to the illness or injury resulting in the employee being absent from work and which is unrelated to the illness or injury causing the current absence. Integration shall take place to the extent that income from all benefit sources equals one hundred percent (100%) of regular pay. Other disability income shall mean: (a) Any amount the absent employee receives from any College group insurance, wage continuation or pension plan. (b) Any amount of disability income provided by compulsory act or law, except Unemployment Insurance sickness benefits and WorkSafeBC benefits payable in accordance with Section A.1.3. (c) Any periodic benefit payment from the Canada or Quebec Pension Plan or other social security plan of any country. This section does not apply to a war disability pension paid under an Act of the Government of Canada or other Commonwealth countries."
+        },
+        "A4": {
+          "title": "Benefits Not Paid During Certain Periods",
+          "content": "Benefits shall not be paid when an employee is: (a) receiving designated statutory holiday pay; (b) engaged in an occupation for wage or profit; (c) on strike or is locked out unless the strike or lockout occurred after the illness or injury resulting in the employee being absent from work; (d) serving a prison sentence; (e) on suspension without pay; (f) on paid absence in the period immediately preceding retirement; (g) on any unassisted leave or personal leave without pay. Notwithstanding A.4 above, where an illness or injury occurs during the leave which prevents the employee from returning to work on the scheduled date of return and provided the leave does not exceed thirty (30) days, the Sick Leave Plan shall be effective from the date of disability due to illness or injury. Benefits shall be paid for the balance of one hundred twenty (120) days remaining from the scheduled date of return to work. In other circumstances, the Sick Leave Plan shall be effective upon the scheduled date of return to work."
+        },
+        "A5": {
+          "title": "Employee to Inform Employer",
+          "content": "The employee shall inform the Employer as soon as possible of their inability to report to work because of illness or injury. The employee shall inform the Employer of the date of return to duty, in advance of that date, in order that relief scheduled for that employee can be notified."
+        },
+        "A6": {
+          "title": "Medical Certificate Upon Recovery",
+          "content": "The Employer may require an employee to produce a medical certificate from a qualified medical practitioner attesting to the fact that the employee is capable of returning to work when the employee has been absent from work for illness or injury for thirty (30) consecutive working days or more."
+        },
+        "A7": {
+          "title": "UIC Premium",
+          "content": "The parties agree that the complete premium reduction from the Unemployment Insurance Commission accruing as a result of the Sick Leave Plan shall be returned to the Employer."
+        },
+        "A8": {
+          "title": "Benefits Upon Layoff or Separation",
+          "content": "Subject to A.8.2, A.8.3, and A.8.4 below, regular employees who are receiving benefits pursuant to A.1.2 or A.1.3 continue to receive such benefits upon layoff or separation until the termination of the illness or injury or until the maximum benefit entitlement has been granted, whichever comes first, if the notice of layoff or separation is given after the commencement of the illness or injury for which benefits are being paid. In the event that layoff or separation notice was given prior to the commencement of the illness or injury, benefits shall cease on the effective date of the layoff or separation only if the illness or injury commenced within two (2) months of the effective date of the layoff or separation. Benefits shall continue to be paid in accordance with A.8.1 above, for which notice of layoff or separation was given prior to the commencement of the illness or injury and if the illness or injury commenced more than two (2) months before the effective date of the layoff or separation. Notwithstanding any of the above, an employee who is on an appointment of fixed duration shall not be eligible for the benefits of the Sick Leave Plan beyond the end of the period for which they were hired unless they are reappointed."
+        },
+        "A9": {
+          "title": "Illness or Injury During Annual Vacation",
+          "content": "An employee who is eligible for the benefits of the Sick Leave Plan during their annual vacation, may claim to displace annual vacation by notifying the Employer within seven (7) days of returning to work. The employee must provide necessary documentation attesting to their illness or injury. The period of annual vacation so displaced shall be taken at a time mutually agreeable to the employee and the Employer."
+        }
+      }
     }
   },
   "letters_of_understanding": {
     "online_courses": {
       "title": "Online Courses",
-      "content": "The development, delivery, and revision of courses or programs making use of online technology shall be a matter of employee choice, up to a maximum of two (2) courses making use of online technology per semester per individual employee"
+      "content": "The development, delivery, and revision of courses or programs making use of online technology shall be a matter of employee choice, up to a maximum of two (2) courses making use of online technology per semester per individual employee. Such courses shall only be offered by Regular and/or Temporary Employees and will be subject to the workload provisions of this Collective Agreement including but not limited to Article 13. Class size of on-line courses shall be no larger than twenty-four (24) students. The Employer shall provide all equipment and support including technical support, required for the development or delivery of all online courses. Employees shall not be required to provide technical support to students or themselves. All technical support shall be provided by the Employer. The Employer will provide clerical support at the receiving campus(es). Such support shall be in place prior to the delivery of the course. Such support shall be reasonable and may include copying, distribution and collection of assignments, materials, and exams as required by the College Professor. The employer will provide training support in the learning management system(s) that the employee chooses to use. The development of each different on-line or web-based course by an Employee is equal to one (1) section of release time. No employee(s) shall be laid off as the result of development and/or delivery of courses or programs making use of online technology. The parties agree that they will strike a joint committee with equal representation from the Employer and Union to review this letter of understanding no later than August 31, 2018, and provide any recommendations to their respective principals for review by December 31, 2018. The parties agree that they do not have the authority to bind their respective principals to any recommendations that the joint committee may make. This Letter of Understanding expires effective March 31, 2019, unless expressly and explicitly renewed by the parties to the Letter of Understanding.",
+      "expiry_date": "March 31, 2019"
     }
   },
   "memoranda_of_agreement": {
     "workload_grievances_ece_ssw": {
       "title": "Workload Grievances ECE and SSW",
-      "date": "November 22, 1993"
+      "date": "November 22, 1993",
+      "content": "Memorandum of Agreement regarding workload grievances for Early Childhood Education and Social Service Worker programs"
     },
     "workload_review_ece_ssw": {
-      "title": "Workload Review of ECE and SSW",
-      "date": "July 16, 1987"
+      "title": "Workload Review of ECE and SSW", 
+      "date": "July 16, 1987",
+      "content": "Memorandum regarding workload review for Early Childhood Education and Social Service Worker programs"
     }
   },
   "general_provisions": {
@@ -424,5 +1079,25 @@
     "grievance_time_limits": "Grievance must be presented within thirty (30) days after the date on which the College Step 1 designate was notified",
     "arbitration_expenses": "Each party to the arbitration shall pay its own expenses and costs of arbitration, and one-half (½) the compensation and expenses of the Arbitrator",
     "management_rights": "Except as otherwise provided in the Agreement, the College or its delegated officers have exclusive control over the management, supervision and administration of the College"
+  },
+  "indexes": {
+    "article_reference": {
+      "title": "Index - Article Reference",
+      "content": "Comprehensive cross-reference index of all articles and their subsections with page numbers for easy navigation through the collective agreement"
+    },
+    "general_index": {
+      "title": "Index - General", 
+      "content": "Alphabetical index of key terms, concepts, and provisions throughout the collective agreement with corresponding page references"
+    }
+  },
+  "common_agreement": {
+    "title": "Common Agreement",
+    "content": "Additional provisions and procedures that apply across multiple bargaining units and institutions within the post-secondary education system in British Columbia"
+  },
+  "signature_block": {
+    "coast_mountain_college": "Coast Mountain College representatives",
+    "cupe_local_2409": "Canadian Union of Public Employees Local 2409 representatives", 
+    "psea_board_vice_chair": "PSEA Board Vice-Chair signature",
+    "date_signed": "2021"
   }
 }
