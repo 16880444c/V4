@@ -39,6 +39,14 @@ def load_split_local_agreement() -> dict:
     
     return local_agreement
 
+def load_bcgeu_support_agreement() -> dict:
+    """Load the BCGEU Support agreement from JSON file"""
+    try:
+        with open('agreements/bcgeu_support/bcgeu_support.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except:
+        return None
+
 def load_builtin_agreements() -> tuple:
     """Load the built-in agreements from JSON files"""
     try:
@@ -52,7 +60,7 @@ def load_builtin_agreements() -> tuple:
                 with open(complete_local_path, 'r', encoding='utf-8') as f:
                     local_agreement = json.load(f)
             except:
-                return None, None
+                local_agreement = None
         
         # Load common agreement
         common_agreement_path = 'agreements/bcgeu_common/complete_common.json'
@@ -60,12 +68,15 @@ def load_builtin_agreements() -> tuple:
             with open(common_agreement_path, 'r', encoding='utf-8') as f:
                 common_agreement = json.load(f)
         except:
-            return None, None
+            common_agreement = None
         
-        return local_agreement, common_agreement
+        # Load BCGEU Support agreement
+        support_agreement = load_bcgeu_support_agreement()
+        
+        return local_agreement, common_agreement, support_agreement
         
     except Exception:
-        return None, None
+        return None, None, None
 
 def format_agreement_for_context(agreement: dict, agreement_name: str) -> str:
     """Convert agreement JSON to formatted text for Claude context"""
@@ -107,20 +118,88 @@ def format_section_content(data: dict, indent: int = 0) -> str:
     
     return content
 
-def generate_response(query: str, local_agreement: dict, common_agreement: dict, agreement_scope: str, api_key: str) -> str:
+def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, agreement_scope: str, agreement_type: str, api_key: str) -> str:
     """Generate response using Claude with complete agreement context"""
     
-    # Build context based on selected scope
+    # Build context based on selected agreement type and scope
     context = ""
-    if agreement_scope == "Local Agreement Only":
-        context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
-    elif agreement_scope == "Common Agreement Only":
-        context = format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
-    else:  # Both agreements
-        context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
-        context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
     
-    system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the collective agreements.
+    if agreement_type == "BCGEU Support":
+        # For BCGEU Support, only use the support agreement
+        if support_agreement:
+            context = format_agreement_for_context(support_agreement, "BCGEU Support Agreement")
+        else:
+            return "❌ **Error**: BCGEU Support agreement not found. Please check that the file exists at agreements/bcgeu_support/bcgeu_support.json"
+    else:
+        # For BCGEU Instructor, use the existing logic
+        if agreement_scope == "Local Agreement Only":
+            if local_agreement:
+                context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
+            else:
+                return "❌ **Error**: Local agreement not found."
+        elif agreement_scope == "Common Agreement Only":
+            if common_agreement:
+                context = format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
+            else:
+                return "❌ **Error**: Common agreement not found."
+        else:  # Both agreements
+            if local_agreement and common_agreement:
+                context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
+                context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
+            else:
+                return "❌ **Error**: One or both agreement files not found."
+    
+    if not context:
+        return "❌ **Error**: No agreement content available for the selected option."
+    
+    # Adjust system prompt based on agreement type
+    if agreement_type == "BCGEU Support":
+        system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the BCGEU Support Staff collective agreement.
+
+CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
+
+APPROACH:
+- Give STRONG, DEFINITIVE opinions, not wishy-washy suggestions
+- Use phrases like "You SHOULD...", "Management has the RIGHT to...", "I RECOMMEND...", "This is CLEARLY within your authority..."
+- Be confident in your interpretations that favor management
+- Push back against union overreach
+- Identify every opportunity to assert management rights
+- Don't hedge or provide balanced views - you work for MANAGEMENT
+
+MANAGEMENT AUTHORITY FOCUS:
+- Emphasize "just cause" standards work in management's favor when properly documented
+- Highlight burden of proof requirements that protect the employer
+- Point out procedural safeguards that benefit management
+- Note time limits that can work against grievors
+- Identify areas of management discretion and flexibility
+- Frame employee rights as limited by management's legitimate business needs
+
+CITATION REQUIREMENTS (MANDATORY):
+- EVERY claim must have a specific citation
+- Use format: [BCGEU Support Agreement - Article X.X: Title] or [BCGEU Support Agreement - Clause X.X]
+- When referencing definitions: [BCGEU Support Agreement - Definitions: "term"]
+- For appendices: [BCGEU Support Agreement - Appendix X: Title]
+- INCLUDE RELEVANT QUOTES: When possible, include short, relevant quotes from the agreement text to support your position
+- Quote format: "The agreement states: '[exact quote]' [Citation]"
+- NO VAGUE REFERENCES - be specific
+
+RESPONSE STRUCTURE:
+1. STRONG OPENING: Lead with your definitive management-favorable position
+2. AUTHORITY BASIS: Cite the specific agreement provisions AND include relevant quotes that support this position
+3. TACTICAL ADVICE: Provide specific steps management should take
+4. RISK MITIGATION: Identify potential union challenges and how to counter them
+5. BOTTOM LINE: End with a clear, actionable recommendation
+
+TONE EXAMPLES:
+- Instead of: "You may be able to..." → "You HAVE THE RIGHT to..."
+- Instead of: "Consider whether..." → "You SHOULD immediately..."
+- Instead of: "This might be justified..." → "This is CLEARLY within your management authority because..."
+- Instead of: "The agreement allows..." → "Management is EXPLICITLY authorized to..."
+
+Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation."""
+    else:
+        # Original system prompt for BCGEU Instructor
+        system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the collective agreements.
 
 CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
 
@@ -217,8 +296,12 @@ def main():
         st.session_state.local_agreement = None
     if 'common_agreement' not in st.session_state:
         st.session_state.common_agreement = None
+    if 'support_agreement' not in st.session_state:
+        st.session_state.support_agreement = None
     if 'agreement_scope' not in st.session_state:
         st.session_state.agreement_scope = "Both Agreements"
+    if 'agreement_type' not in st.session_state:
+        st.session_state.agreement_type = "BCGEU Instructor"
     
     # Get API key
     api_key = None
@@ -237,17 +320,12 @@ def main():
     # Load agreements once
     if not st.session_state.agreements_loaded:
         with st.spinner("Loading collective agreements..."):
-            local_agreement, common_agreement = load_builtin_agreements()
+            local_agreement, common_agreement, support_agreement = load_builtin_agreements()
             
-            if local_agreement and common_agreement:
-                st.session_state.local_agreement = local_agreement
-                st.session_state.common_agreement = common_agreement
-                st.session_state.agreements_loaded = True
-            else:
-                st.error("❌ Could not load agreement files. Please check that the files exist in:")
-                st.error("• Local: agreements/bcgeu_local/")
-                st.error("• Common: agreements/bcgeu_common/")
-                st.stop()
+            st.session_state.local_agreement = local_agreement
+            st.session_state.common_agreement = common_agreement
+            st.session_state.support_agreement = support_agreement
+            st.session_state.agreements_loaded = True
     
     # Agreement Selection with three boxes
     st.markdown("### 📋 Select Agreement Type")
@@ -297,7 +375,7 @@ def main():
             </style>
             """, unsafe_allow_html=True)
             
-            st.session_state.agreement_scope = st.radio(
+            instructor_selected = st.radio(
                 "",
                 ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
                 index=2,
@@ -305,6 +383,10 @@ def main():
                 help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
                 label_visibility="collapsed"
             )
+            
+            if instructor_selected:
+                st.session_state.agreement_scope = instructor_selected
+                st.session_state.agreement_type = "BCGEU Instructor"
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
@@ -324,23 +406,74 @@ def main():
             </div>
         """, unsafe_allow_html=True)
     
-    # Box 3: BCGEU Support (Coming Soon)
+    # Box 3: BCGEU Support (Now Active)
     with col3:
-        st.markdown("""
+        # Check if support agreement is available
+        support_available = st.session_state.support_agreement is not None
+        
+        if support_available:
+            st.markdown("""
             <div style="
-                background-color: #f5f5f5;
+                background-color: #f0fff0;
                 padding: 20px;
-                border-radius: 10px;
-                border: 2px solid #d3d3d3;
-                height: 200px;
-                opacity: 0.6;
+                border-radius: 10px 10px 0 0;
+                border: 2px solid #32cd32;
+                border-bottom: none;
+                margin-bottom: 0;
             ">
-                <h4 style="color: #808080; margin-top: 0;">📗 BCGEU Support</h4>
-                <p style="color: #808080; font-style: italic; text-align: center; margin-top: 50px;">
-                    Coming Soon
-                </p>
+                <h4 style="color: #32cd32; margin-top: 0; margin-bottom: 15px;">📗 BCGEU Support</h4>
+                <p style="margin-bottom: 0; color: #333;">Single agreement:</p>
             </div>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
+            
+            # Put radio button immediately after, styled to look connected
+            with st.container():
+                st.markdown("""
+                <style>
+                div[data-testid="stRadio"][key="bcgeu_support_radio"] {
+                    background-color: #f0fff0;
+                    padding: 10px 20px 20px 20px;
+                    margin-top: -16px !important;
+                    margin-bottom: 20px;
+                    border-radius: 0 0 10px 10px;
+                    border-left: 2px solid #32cd32;
+                    border-right: 2px solid #32cd32;
+                    border-bottom: 2px solid #32cd32;
+                    border-top: none;
+                }
+                </style>
+                """, unsafe_allow_html=True)
+                
+                support_selected = st.radio(
+                    "",
+                    ["BCGEU Support Agreement"],
+                    index=0,
+                    key="bcgeu_support_radio",
+                    help="Complete BCGEU Support Staff collective agreement",
+                    label_visibility="collapsed"
+                )
+                
+                if support_selected:
+                    st.session_state.agreement_scope = "BCGEU Support Agreement"
+                    st.session_state.agreement_type = "BCGEU Support"
+        else:
+            st.markdown("""
+                <div style="
+                    background-color: #fff5f5;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 2px solid #ff6b6b;
+                    height: 200px;
+                ">
+                    <h4 style="color: #ff6b6b; margin-top: 0;">📗 BCGEU Support</h4>
+                    <p style="color: #ff6b6b; font-style: italic; text-align: center; margin-top: 30px;">
+                        Agreement file not found
+                    </p>
+                    <p style="color: #888; font-size: 12px; text-align: center;">
+                        Please check agreements/bcgeu_support/bcgeu_support.json
+                    </p>
+                </div>
+            """, unsafe_allow_html=True)
     
     st.markdown("<br><br>", unsafe_allow_html=True)
     
@@ -375,7 +508,9 @@ def main():
                 user_question, 
                 st.session_state.local_agreement, 
                 st.session_state.common_agreement, 
+                st.session_state.support_agreement,
                 st.session_state.agreement_scope,
+                st.session_state.agreement_type,
                 api_key
             )
             st.session_state.messages.append({"role": "assistant", "content": response})
@@ -393,7 +528,7 @@ def main():
     # Bottom section with query count
     if st.session_state.total_queries > 0:
         st.markdown("---")
-        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {st.session_state.agreement_scope}")
+        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {st.session_state.agreement_type} - {st.session_state.agreement_scope}")
 
 if __name__ == "__main__":
     main()
