@@ -284,9 +284,9 @@ def main():
             st.session_state.agreements_loaded = True
     
     # New Topic button in top right
-    col_title, col_button = st.columns([4, 1])
+    col_title, col_spacer, col_button = st.columns([3, 1, 1])
     with col_button:
-        if st.button("🔄 New Topic", help="Reset and start a new conversation"):
+        if st.button("🔄 New Topic", help="Reset and start a new conversation", key="top_new_topic"):
             reset_conversation()
     
     # Create list of available options
@@ -306,49 +306,98 @@ def main():
     
     # Simple dropdown selection
     st.markdown("### 📋 Select Agreement")
+    st.markdown('<div style="margin-bottom: 10px;"></div>', unsafe_allow_html=True)
     
     current_selection = st.session_state.get('agreement_selection', 'Please select an agreement...')
     if current_selection not in agreement_options:
         current_selection = 'Please select an agreement...'
     
     selected_agreement = st.selectbox(
-        "Choose which agreement to search:",
+        "",
         options=agreement_options,
         index=agreement_options.index(current_selection),
-        key='agreement_selectbox'
+        key='agreement_selectbox',
+        label_visibility="collapsed"
     )
     
     # Update session state
     if selected_agreement != st.session_state.get('agreement_selection'):
         st.session_state.agreement_selection = selected_agreement
     
-    # Show selection status
+    # Show selection status with improved styling
     if selected_agreement and selected_agreement != "Please select an agreement...":
-        st.success(f"✅ **Selected**: {selected_agreement}")
+        st.markdown(f"""
+        <div style="
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+        ">
+            <div style="color: #155724; font-weight: 600;">
+                ✅ Selected: {selected_agreement}
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
         
         # Add helpful information about the selection
         if "Both Agreements" in selected_agreement:
-            st.info("ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.")
+            st.markdown(f"""
+            <div style="
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 10px 0;
+            ">
+                <div style="color: #0c5460; font-size: 14px;">
+                    ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
     else:
-        st.info("ℹ️ Please select an agreement to begin")
+        st.markdown(f"""
+        <div style="
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+        ">
+            <div style="color: #6c757d; font-weight: 500;">
+                ℹ️ Please select an agreement to begin
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
     
     st.markdown("---")
     
-    # Question input section
+    # Question input section with improved styling
     st.markdown("### 💬 Ask Your Question")
+    st.markdown('<div style="margin-bottom: 15px;"></div>', unsafe_allow_html=True)
     
-    user_question = st.text_area(
-        "",
-        placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
-        height=100,
-        key="question_input",
-        label_visibility="collapsed"
-    )
+    # Create a form to handle Enter key submission
+    with st.form(key="question_form", clear_on_submit=False):
+        user_question = st.text_area(
+            "",
+            placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
+            height=120,
+            key="question_input",
+            label_visibility="collapsed"
+        )
+        
+        # Button row with improved spacing
+        col_left, col_center, col_right, col_new_topic = st.columns([1, 1, 1, 1])
+        
+        with col_center:
+            submit_button = st.form_submit_button("🔍 Get Answer", type="primary", use_container_width=True)
+        
+        with col_new_topic:
+            new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start a new conversation", use_container_width=True)
     
-    # Submit button
-    col_left, col_center, col_right = st.columns([1, 1, 1])
-    with col_center:
-        submit_button = st.button("🔍 Get Answer", type="primary", use_container_width=True)
+    # Handle new topic button
+    if new_topic_button:
+        reset_conversation()
     
     st.markdown("---")
     
@@ -373,18 +422,63 @@ def main():
                 )
                 st.session_state.messages.append({"role": "assistant", "content": response})
     
-    # Display conversation history
+    # Display conversation history with improved styling
     if st.session_state.messages:
         st.markdown("### 📝 Conversation History")
-        for message in st.session_state.messages:
-            with st.chat_message(message["role"]):
+        st.markdown('<div style="margin-bottom: 20px;"></div>', unsafe_allow_html=True)
+        
+        for i, message in enumerate(st.session_state.messages):
+            if message["role"] == "user":
+                st.markdown(f"""
+                <div style="
+                    background-color: #e3f2fd;
+                    border-left: 4px solid #2196f3;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 0 8px 8px 0;
+                ">
+                    <div style="color: #1565c0; font-weight: 600; margin-bottom: 8px;">
+                        👤 Your Question:
+                    </div>
+                    <div style="color: #333;">
+                        {message["content"]}
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div style="
+                    background-color: #f3e5f5;
+                    border-left: 4px solid #9c27b0;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 0 8px 8px 0;
+                ">
+                    <div style="color: #7b1fa2; font-weight: 600; margin-bottom: 8px;">
+                        🤖 Assistant Response:
+                    </div>
+                    <div style="color: #333;">
+                """, unsafe_allow_html=True)
                 st.markdown(message["content"])
+                st.markdown("</div></div>", unsafe_allow_html=True)
     
-    # Bottom section with query count
+    # Bottom section with improved styling
     if st.session_state.total_queries > 0:
         st.markdown("---")
         current_selection = st.session_state.get('agreement_selection', 'None')
-        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection}")
+        st.markdown(f"""
+        <div style="
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            margin-top: 20px;
+        ">
+            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection}
+        </div>
+        """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
