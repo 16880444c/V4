@@ -1,0 +1,580 @@
+{
+  "agreement_metadata": {
+    "title": "Common Agreement between The Employers' Bargaining Committee and Federation of Post-Secondary Educators of BC (FPSE)",
+    "parties": {
+      "employer_committee": "The Employers' Bargaining Committee",
+      "union": "Federation of Post-Secondary Educators of BC (FPSE)",
+      "member_institutions": [
+        "Camosun College",
+        "Coast Mountain College", 
+        "College of New Caledonia",
+        "College of the Rockies",
+        "North Island College",
+        "Okanagan College",
+        "Selkirk College"
+      ],
+      "union_locals": [
+        "Academic Workers' Union (FPSE Local 11)",
+        "Faculty Association of the College of New Caledonia (FPSE Local 3)",
+        "Camosun College Faculty Association (FPSE Local 12)",
+        "College of the Rockies Faculty Association (FPSE Local 6)",
+        "North Island College Faculty Association (FPSE Local 16)",
+        "Okanagan College Faculty Association (FPSE Local 9)",
+        "Selkirk College Faculty Association (FPSE Local 10)"
+      ]
+    },
+    "effective_dates": {
+      "start": "2019-04-01",
+      "end": "2022-03-31"
+    },
+    "document_version": "April 1, 2019 to March 31, 2022"
+  },
+  "definitions": {
+    "agreement": "This Common Agreement reached between the employers and the unions as defined in 'Parties' or 'Common Parties' definition",
+    "collective_agreement": "The combination of provisions of the Common Agreement with local provisions that constitute a collective agreement between an institution and a local union",
+    "employee": "A person employed within a bargaining unit represented by one of the unions that has ratified a Collective Agreement that includes this Common Agreement",
+    "employer": "An employer that has ratified a Collective Agreement that includes this Common Agreement",
+    "institution": "A post-secondary institution that has ratified a Collective Agreement that includes this Common Agreement",
+    "jadrc": "Joint Administration and Dispute Resolution Committee established pursuant to Article 3.2 of this Agreement",
+    "joint_labour_management_committee": "A committee formed by local parties with equal representation from a local union and an institution",
+    "local_parties": "The institution and local bargaining unit where both have ratified a Collective Agreement that includes this Common Agreement",
+    "local_provision": "A provision of a Collective Agreement established by negotiations between an individual employer and a local union",
+    "local_union": "A bargaining unit representing employees at an institution that has ratified a Collective Agreement that includes this Common Agreement",
+    "ministry": "The Ministry of Advanced Education, Skills and Training",
+    "psea": "Post-Secondary Employers' Association established for post-secondary institutions under the Public Sector Employers' Act",
+    "ratification": "The acceptance by a local union and by both an institution and the PSEA of the terms of a Collective Agreement that includes this Common Agreement",
+    "union": "A faculty association or trade union certified as a bargaining agent"
+  },
+  "articles": {
+    "1": {
+      "title": "PREAMBLE",
+      "sections": {
+        "1.1": {
+          "title": "Purpose of Common Agreement",
+          "content": "The purpose of this Agreement is to establish and maintain orderly collective bargaining procedures between the Parties and to promote the efficient and effective operation of the institution through the establishment and continuance of harmonious relations and working conditions"
+        },
+        "1.2": {
+          "title": "Future Legislation",
+          "content": "In the event that any future legislation renders null and void or materially alters any provision of this Agreement, the Parties hereto will negotiate a mutually agreeable provision to be substituted"
+        },
+        "1.3": {
+          "title": "Conflict with Policies",
+          "content": "Every reasonable effort will be made to harmonize employer policies with the provisions of this Agreement. In the event of a conflict between the contents of this Agreement and any policies made by the employer, the terms of this Agreement will prevail"
+        },
+        "1.4": {
+          "title": "Singular and Plural",
+          "content": "Wherever the singular is used in the Common Agreement, the same shall be construed as meaning the plural if the context requires unless otherwise specifically stated"
+        }
+      }
+    },
+    "2": {
+      "title": "HARASSMENT",
+      "sections": {
+        "2.1": {
+          "title": "Statement of Commitment",
+          "content": "The Institutions promote teaching, scholarship and research and the free and critical discussion of ideas. Unions and employers are committed to providing a working and learning environment that allows for full and free participation of all members of the institutional community"
+        },
+        "2.2": {
+          "title": "Definitions",
+          "content": "Harassment is a form of discrimination that adversely affects the recipient on one or more of the prohibited grounds under the BC Human Rights Code. Sexual Harassment is behaviour of a sexual nature by a person who knows or ought reasonably to know that the behaviour is unwanted or unwelcome"
+        },
+        "2.3": {
+          "title": "Procedures",
+          "content": "Local Informal Processes, Right to Legal Counsel, Mediation, and Investigation procedures are outlined for handling harassment complaints"
+        },
+        "2.4": {
+          "title": "Findings",
+          "content": "The employer will make a written determination based upon the facts and recommendation within ten (10) working days of receipt of the Investigator's report"
+        },
+        "2.5": {
+          "title": "Rights of the Parties",
+          "content": "Outlines rights regarding Human Rights Code complaints and disciplinary actions"
+        },
+        "2.6": {
+          "title": "False Complaints, Breaches of Confidentiality and Retaliatory Action",
+          "content": "Frivolous, vexatious or malicious complaints of harassment or breaches of the confidentiality provisions may result in discipline"
+        }
+      }
+    },
+    "3": {
+      "title": "EMPLOYER/UNION RELATIONS",
+      "sections": {
+        "3.1": {
+          "title": "Human Resources Database",
+          "content": "The Parties believe that their on-going and collective bargaining relationships are enhanced through useful, timely, and accessible data on relevant human resources matters"
+        },
+        "3.2": {
+          "title": "Joint Administration and Dispute Resolution Committee",
+          "content": "The Parties will maintain a JADRC consisting of three (3) representatives of each party to assist in administration, provide dialogue forum, and resolve disputes"
+        },
+        "3.3": {
+          "title": "Leave of Absence for College Committees and Union Leave",
+          "content": "Provisions for leave of absence for college committee participation and union business without loss of pay"
+        }
+      }
+    },
+    "4": {
+      "title": "PRIOR LEARNING ASSESSMENT",
+      "sections": {
+        "4.1": {
+          "title": "Definition",
+          "content": "Prior Learning Assessment (PLA) is the assessment by some valid and reliable means, of what has been learned through formal and non-formal education/training or experience"
+        },
+        "4.2": {
+          "title": "Prior Learning Assessment as Workload",
+          "content": "Prior learning assessment work undertaken by an employee will be integrated into and form part of the employee's workload"
+        },
+        "4.3": {
+          "title": "Training in Prior Learning Assessment",
+          "content": "An employee required to perform prior learning assessment has a right to employer-paid training time and expenses"
+        },
+        "4.4": {
+          "title": "Prior Learning Assessment Coordinators",
+          "content": "Prior Learning Assessment coordinators will be faculty or instructional bargaining unit members"
+        }
+      }
+    },
+    "5": {
+      "title": "COPYRIGHT AND INTELLECTUAL PROPERTY",
+      "sections": {
+        "5.1": {
+          "title": "Copyright Ownership",
+          "content": "Defines ownership of copyright for work products created by employees under various circumstances"
+        },
+        "5.2": {
+          "title": "Employer Rights to Materials Copyrighted by Employee(s)",
+          "content": "Where employee holds copyright, institution has right to use copyrighted material in perpetuity for institutional purposes"
+        },
+        "5.3": {
+          "title": "Employee Rights to Materials Copyrighted by the Employer",
+          "content": "Where institution holds copyright, employee has right to use copyrighted material in perpetuity, free of charge"
+        },
+        "5.4": {
+          "title": "Joint Review",
+          "content": "JADRC may review issues arising from the application of this Article"
+        }
+      }
+    },
+    "6": {
+      "title": "JOB SECURITY",
+      "sections": {
+        "6.1": {
+          "title": "Employee Security and Regularization",
+          "content": "Provisions to ensure employee security and regularization of employees, including entitlement to regularization after specified periods of work"
+        },
+        "6.2": {
+          "title": "Program Transfers and Mergers",
+          "content": "Procedures for when institutions transfer or merge programs affecting employees"
+        },
+        "6.3": {
+          "title": "Registry of Laid Off Employees",
+          "content": "System-wide electronic registry of job postings and eligible employees for laid-off workers"
+        },
+        "6.4": {
+          "title": "Targeted Labour Adjustment",
+          "content": "Menu of labour adjustment strategies to minimize layoffs including job sharing, reduced hours, transfers, and severance options"
+        },
+        "6.5": {
+          "title": "Contracting Out",
+          "content": "Limitations on contracting out work that would result in layoffs or reduction in assigned workload"
+        },
+        "6.6": {
+          "title": "Education Technology/Distributed Learning",
+          "content": "Provisions governing development and delivery of distributed learning programs including training, resources, and job security"
+        }
+      }
+    },
+    "7": {
+      "title": "LEAVES",
+      "sections": {
+        "7.1": {
+          "title": "Definitions",
+          "content": "Definitions of spouse, family, and related terms for leave provisions"
+        },
+        "7.2": {
+          "title": "General Leave",
+          "content": "Employer may grant leave with or without pay for up to twenty-four (24) consecutive months"
+        },
+        "7.3": {
+          "title": "Seniority Accrual",
+          "content": "All paid leaves treated as continuous employment for seniority accrual purposes"
+        },
+        "7.6": {
+          "title": "Bereavement Leave",
+          "content": "Five (5) days leave with no loss of pay and benefits for death of family member"
+        },
+        "7.7": {
+          "title": "Family Illness Leave",
+          "content": "Up to five (5) days per year without loss of pay or benefits for family illness"
+        },
+        "7.8": {
+          "title": "Compassionate Care Leave",
+          "content": "Up to twenty-seven (27) weeks without pay to care for gravely ill family member"
+        },
+        "7.10": {
+          "title": "Jury Duty and Court Appearances",
+          "content": "Leave without loss of pay and benefits for jury duty or court appearances"
+        },
+        "7.11": {
+          "title": "Public Duties",
+          "content": "Leave provisions for election activities and public office"
+        },
+        "7.13": {
+          "title": "Deferred Salary Leave",
+          "content": "Each employer will establish deferred salary leave plan consistent with Canada Revenue Agency regulations"
+        },
+        "7.17": {
+          "title": "Cultural Leave for Aboriginal Employees",
+          "content": "Up to three (3) days' leave with pay per calendar year for Aboriginal cultural events"
+        }
+      }
+    },
+    "8": {
+      "title": "PARENTAL LEAVE",
+      "sections": {
+        "8.1": {
+          "title": "Preamble",
+          "content": "Definitions and entitlement to leave of absence without pay of up to twelve (12) consecutive months in addition to statutory requirements"
+        },
+        "8.2": {
+          "title": "Commencement of Leave",
+          "content": "Timing provisions for when leave may commence for birth mothers, spouses, and adopting parents"
+        },
+        "8.3": {
+          "title": "Benefits Continuation",
+          "content": "Employer maintains coverage for medical, extended health, dental, group life and disability benefits"
+        },
+        "8.4": {
+          "title": "Return to Work",
+          "content": "Employee retains seniority and is placed in same or comparable position upon return"
+        },
+        "8.5": {
+          "title": "Supplemental Employment Benefit (SEB) for Maternity and Parental Leave",
+          "content": "Detailed provisions for supplemental payments to Employment Insurance benefits during maternity and parental leave"
+        }
+      }
+    },
+    "9": {
+      "title": "HEALTH AND WELFARE BENEFITS",
+      "sections": {
+        "9.1": {
+          "title": "Joint Committee on Benefits Administration",
+          "content": "Establishment of Joint Committee with four (4) members from each side to oversee benefits administration"
+        },
+        "9.2": {
+          "title": "Specific Benefits",
+          "content": "Extended Health Benefits with 95% reimbursement, Group Life and ADD at 3x annual salary, Dental Plan provisions"
+        },
+        "9.3": {
+          "title": "Disability Benefits",
+          "content": "Single plan providing 100% salary for first 30 days, 70% for next 21 weeks, and 70% long-term disability thereafter"
+        }
+      }
+    },
+    "10": {
+      "title": "PENSIONS",
+      "sections": {
+        "10.1": {
+          "title": "Mandatory Enrolment",
+          "content": "Enrolment in the College Pension Plan as set out by the Public Sector Pension Plans Act, Schedule A"
+        },
+        "10.2": {
+          "title": "Existing Employees",
+          "content": "Employees on payroll as of ratification who have not joined retain the right not to do so"
+        }
+      }
+    },
+    "11": {
+      "title": "EARLY RETIREMENT INCENTIVE",
+      "sections": {
+        "11.1": {
+          "title": "Definition",
+          "content": "Early retirement defined as retirement at or after age 55 and before age 64"
+        },
+        "11.2": {
+          "title": "Eligibility",
+          "content": "Must be at highest achievable step of salary scale and have minimum of ten (10) years of full-time equivalent service"
+        },
+        "11.3": {
+          "title": "Incentive Payment",
+          "content": "Age-based incentive payment schedule from 100% at age 55-59 down to 0% at age 64"
+        }
+      }
+    },
+    "12": {
+      "title": "SALARIES",
+      "sections": {
+        "12.1": {
+          "title": "Provincial Salary Scale",
+          "content": "Annual salary increases of 2% effective April 1, 2019, April 1, 2020, and April 1, 2021"
+        },
+        "12.2": {
+          "title": "Secondary Scale Adjustment",
+          "content": "All steps on secondary scales increased by 2% on same dates as provincial scale"
+        },
+        "12.3": {
+          "title": "Maintenance of Placement",
+          "content": "Employee moving between institutions within two years maintains higher salary placement"
+        },
+        "12.4": {
+          "title": "Calculation of Pay",
+          "content": "Institutions review division of annual pay to ensure employees receive full or pro-rated gross annual salary"
+        },
+        "12.5": {
+          "title": "Overload",
+          "content": "Regular employee working overload receives pro-rata salary or commensurate workload reduction"
+        },
+        "12.6": {
+          "title": "Faculty Administrative Stipends",
+          "content": "Stipends for faculty administrative positions increased by 2% on same schedule as salary scales"
+        }
+      }
+    },
+    "13": {
+      "title": "EFFECT OF THIS AGREEMENT",
+      "sections": {
+        "13.1": {
+          "title": "Local Agreement Supersession",
+          "content": "Where local collective agreement provides greater employee benefit, local provision supersedes Common Agreement"
+        },
+        "13.2": {
+          "title": "Effective Date",
+          "content": "All provisions effective on date of ratification except as otherwise noted"
+        },
+        "13.3": {
+          "title": "Exceptions to Article 13.1",
+          "content": "Lists specific articles not subject to local agreement supersession"
+        }
+      }
+    },
+    "14": {
+      "title": "INTERNATIONAL EDUCATION",
+      "sections": {
+        "14.1": {
+          "title": "General",
+          "content": "Employee participation voluntary, collective agreement terms apply, workload interpretation provisions"
+        },
+        "14.2": {
+          "title": "Expenses",
+          "content": "Employer reimburses receipted expenses pursuant to policy, provides travel advances"
+        },
+        "14.3": {
+          "title": "Health and Welfare Benefits",
+          "content": "Current benefits coverage provided, premiums paid as if working in BC, travel medical insurance supplied"
+        },
+        "14.4": {
+          "title": "Emergencies and Emergency Evacuation",
+          "content": "24-hour contact provisions, evacuation procedures, employer responsibility for emergency expenses"
+        },
+        "14.5": {
+          "title": "Orientation and Return",
+          "content": "Reasonable orientation prior to departure, three working days between international assignment and regular duties"
+        }
+      }
+    },
+    "15": {
+      "title": "HEALTH AND SAFETY EQUIPMENT",
+      "sections": {
+        "15.1": {
+          "title": "Equipment Provision",
+          "content": "Employer supplies at no cost all health and safety apparel and equipment required by BC Workers' Compensation Act"
+        }
+      }
+    },
+    "16": {
+      "title": "COMMON FACULTY PROFESSIONAL DEVELOPMENT FUND",
+      "sections": {
+        "16.1": {
+          "title": "Purpose",
+          "content": "Fund in support of professional development activities for maintenance and development of faculty professional competence"
+        },
+        "16.2": {
+          "title": "Process",
+          "content": "Local parties agree on process and criteria for review and adjudication of employee applications"
+        },
+        "16.3": {
+          "title": "Fund",
+          "content": "Fund set at 0.6% of faculty salary for each institution, unspent monies retained by employer"
+        }
+      }
+    },
+    "17": {
+      "title": "TERM",
+      "sections": {
+        "17.1": {
+          "title": "Agreement Term",
+          "content": "Agreement in effect from April 1, 2019 to March 31, 2022, continues until renewal"
+        }
+      }
+    }
+  },
+  "salary_scales": {
+    "provincial_salary_scale": {
+      "step_1": {
+        "april_1_2019_to_march_31_2020": 95134,
+        "april_1_2020_to_march_31_2021": 97037,
+        "april_1_2021_to_march_31_2022": 98978
+      },
+      "step_2": {
+        "april_1_2019_to_march_31_2020": 89121,
+        "april_1_2020_to_march_31_2021": 90903,
+        "april_1_2021_to_march_31_2022": 92721
+      },
+      "step_3": {
+        "april_1_2019_to_march_31_2020": 83014,
+        "april_1_2020_to_march_31_2021": 84674,
+        "april_1_2021_to_march_31_2022": 86367
+      },
+      "step_4": {
+        "april_1_2019_to_march_31_2020": 79620,
+        "april_1_2020_to_march_31_2021": 81212,
+        "april_1_2021_to_march_31_2022": 82836
+      },
+      "step_5": {
+        "april_1_2019_to_march_31_2020": 76700,
+        "april_1_2020_to_march_31_2021": 78234,
+        "april_1_2021_to_march_31_2022": 79799
+      },
+      "step_6": {
+        "april_1_2019_to_march_31_2020": 73787,
+        "april_1_2020_to_march_31_2021": 75263,
+        "april_1_2021_to_march_31_2022": 76768
+      },
+      "step_7": {
+        "april_1_2019_to_march_31_2020": 70868,
+        "april_1_2020_to_march_31_2021": 72285,
+        "april_1_2021_to_march_31_2022": 73731
+      },
+      "step_8": {
+        "april_1_2019_to_march_31_2020": 67954,
+        "april_1_2020_to_march_31_2021": 69313,
+        "april_1_2021_to_march_31_2022": 70699
+      },
+      "step_9": {
+        "april_1_2019_to_march_31_2020": 65036,
+        "april_1_2020_to_march_31_2021": 66337,
+        "april_1_2021_to_march_31_2022": 67664
+      },
+      "step_10": {
+        "april_1_2019_to_march_31_2020": 62119,
+        "april_1_2020_to_march_31_2021": 63361,
+        "april_1_2021_to_march_31_2022": 64628
+      },
+      "step_11": {
+        "april_1_2019_to_march_31_2020": 59204,
+        "april_1_2020_to_march_31_2021": 60388,
+        "april_1_2021_to_march_31_2022": 61596
+      }
+    },
+    "salary_increases": {
+      "april_1_2019": "2%",
+      "april_1_2020": "2%", 
+      "april_1_2021": "2%"
+    }
+  },
+  "appendices": {
+    "appendix_a": {
+      "title": "Provincial Salary Scale",
+      "content": "Contains the salary scale table with steps 1-11 and effective dates"
+    },
+    "appendix_b": {
+      "title": "List of Investigators",
+      "investigators": [
+        "Rebecca Frame",
+        "Ana Mohammed", 
+        "Linda Sum",
+        "Kyra Hudson",
+        "Laurie Mills",
+        "Yuki Matsuno",
+        "Ken Saunders"
+      ]
+    },
+    "appendix_c": {
+      "title": "Dispute Referral Form",
+      "content": "Form for referring disputes to JADRC"
+    },
+    "appendix_d": {
+      "title": "List of Arbitrators",
+      "arbitrators": [
+        "Joan Gordon",
+        "Judi Korbin", 
+        "Ken Saunders",
+        "Robert Pekeles",
+        "Corinn Bell"
+      ]
+    },
+    "appendix_e2": {
+      "title": "Registry of Laid Off Employees - Form 2",
+      "content": "PSEA Registry of Eligible Employees form"
+    },
+    "appendix_f": {
+      "title": "Medical Travel Referral Benefit",
+      "content": "Benefit summary, eligible expenses, exclusions, and claims adjudication"
+    },
+    "appendix_g": {
+      "title": "Dental Plan",
+      "content": "Nine month limitation details and process for more frequent cleaning"
+    },
+    "appendix_h": {
+      "title": "Deferred Salary Leave Application, Agreement, and Approval Form",
+      "content": "Template form for deferred salary leave applications"
+    },
+    "appendix_i": {
+      "title": "Family Members for the Purpose of Article 7.8 Compassionate Care Leave",
+      "content": "Comprehensive list of family member definitions for compassionate care leave"
+    }
+  },
+  "letters_of_understanding": {
+    "lou_1": {
+      "title": "Employment Equity – Aboriginal Employees",
+      "content": "PSEA and FPSE recognize Aboriginal employees are underrepresented and commit to redress this through special programs"
+    },
+    "lou_2": {
+      "title": "Medical Services Plan of BC",
+      "content": "If government reverts to individually paid premium system, employer will pay 100% of premiums"
+    },
+    "lou_3": {
+      "title": "Expedited Arbitration",
+      "content": "Detailed expedited arbitration process for grievance resolution excluding dismissals, suspensions over 5 days, policy grievances"
+    },
+    "lou_4": {
+      "title": "Working Committee on Secondary Scales",
+      "content": "Joint committee to quantify costs of transitioning non-regular faculty from secondary scales to Provincial Salary Scale"
+    }
+  },
+  "general_provisions": {
+    "harassment_procedures": "Comprehensive procedures including mediation and investigation options",
+    "dispute_resolution": "JADRC established for Common Agreement dispute resolution",
+    "job_security": "Employee security and regularization provisions with registry system for laid-off employees", 
+    "benefits_administration": "Joint Committee on Benefits Administration oversees health, welfare and disability benefits",
+    "professional_development": "Common Faculty Professional Development Fund at 0.6% of faculty salary",
+    "international_education": "Voluntary participation with expense reimbursement and emergency provisions"
+  },
+  "negotiating_committees": {
+    "employers": {
+      "spokesperson": "Michael Madill, Post-Secondary Employers' Association (PSEA)",
+      "representatives": [
+        "Barb Severyn, Camosun College",
+        "Brian Bonia, Coast Mountain College", 
+        "Fred Alaggia, College of New Caledonia",
+        "Gary Leier, College of the Rockies",
+        "Ken Crewe, North Island College",
+        "Linda Heska, Okanagan College",
+        "David Feldman, Selkirk College"
+      ]
+    },
+    "unions": {
+      "co_chairs": ["Bob Davis, FPSE", "Leslie Molnar, FPSE"],
+      "spokesperson": "Lesley Burke O'Flynn, FPSE Staff",
+      "local_representatives": [
+        "Kelly Pitman, CCFA, FPSE Local 12",
+        "Sheree Ronaasen, AWU/CUPE 2409, FPSE Local 11",
+        "Jan Mastromatteo, FACNC, FPSE Local 3", 
+        "Ben Heyde, CORFA, FPSE Local 6",
+        "Janis Almond, NICFA, FPSE Local 16",
+        "Bob Groves, OCFA, FPSE Local 9",
+        "Victor Villa, SCFA, FPSE Local 10"
+      ]
+    }
+  }
+}
