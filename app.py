@@ -217,6 +217,8 @@ def main():
         st.session_state.local_agreement = None
     if 'common_agreement' not in st.session_state:
         st.session_state.common_agreement = None
+    if 'agreement_scope' not in st.session_state:
+        st.session_state.agreement_scope = "Both Agreements"
     
     # Get API key
     api_key = None
@@ -252,30 +254,28 @@ def main():
     
     col1, col2, col3 = st.columns(3)
     
-    # Box 1: BCGEU Instructor (Active)
+    # Box 1: BCGEU Instructor (Active) - with radio buttons inside
     with col1:
-        with st.container():
-            st.markdown("""
-                <div style="
-                    background-color: #f0f8ff;
-                    padding: 20px;
-                    border-radius: 10px;
-                    border: 2px solid #1e90ff;
-                    height: 200px;
-                ">
-                    <h4 style="color: #1e90ff; margin-top: 0;">📘 BCGEU Instructor</h4>
-                </div>
-            """, unsafe_allow_html=True)
-            
-            # Use a container to overlay content on the styled div
-            with st.container():
-                agreement_scope = st.radio(
-                    "",
-                    ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-                    index=2,
-                    key="bcgeu_instructor_radio",
-                    help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
-                )
+        st.markdown("""
+            <div style="
+                background-color: #f0f8ff;
+                padding: 20px;
+                border-radius: 10px;
+                border: 2px solid #1e90ff;
+                margin-bottom: 20px;
+            ">
+                <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+            </div>
+        """, unsafe_allow_html=True)
+        
+        # Radio buttons for agreement scope
+        st.session_state.agreement_scope = st.radio(
+            "Choose scope:",
+            ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
+            index=2,
+            key="bcgeu_instructor_radio",
+            help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
+        )
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
@@ -313,33 +313,70 @@ def main():
             </div>
         """, unsafe_allow_html=True)
     
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    
+    # Prominent Question Input Section
+    st.markdown("### 💬 Ask Your Question")
     st.markdown("---")
     
-    # Display conversation history
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-    
-    # Chat input
-    if prompt := st.chat_input("Ask about collective agreement provisions..."):
-        # Add user message
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+    # Create a more prominent input area
+    with st.container():
+        st.markdown("""
+            <div style="
+                background-color: #ffffff;
+                padding: 30px;
+                border-radius: 15px;
+                border: 3px solid #1e90ff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin: 20px 0;
+            ">
+                <h4 style="color: #1e90ff; text-align: center; margin-bottom: 20px;">
+                    🤔 What would you like to know about the collective agreement?
+                </h4>
+            </div>
+        """, unsafe_allow_html=True)
         
-        # Generate response
-        with st.chat_message("assistant"):
-            with st.spinner("Analyzing agreements..."):
-                response = generate_response(
-                    prompt, 
-                    st.session_state.local_agreement, 
-                    st.session_state.common_agreement, 
-                    agreement_scope,
-                    api_key
-                )
-                st.markdown(response)
-                st.session_state.messages.append({"role": "assistant", "content": response})
+        # Large text area for questions
+        user_question = st.text_area(
+            "",
+            placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
+            height=100,
+            key="question_input",
+            label_visibility="collapsed"
+        )
+        
+        # Centered submit button
+        col_left, col_center, col_right = st.columns([1, 1, 1])
+        with col_center:
+            submit_button = st.button("🔍 Get Answer", type="primary", use_container_width=True)
+    
+    st.markdown("---")
+    
+    # Process the question when submitted
+    if submit_button and user_question:
+        # Add user message
+        st.session_state.messages.append({"role": "user", "content": user_question})
+        
+        # Generate and display response
+        with st.spinner("Analyzing agreements..."):
+            response = generate_response(
+                user_question, 
+                st.session_state.local_agreement, 
+                st.session_state.common_agreement, 
+                st.session_state.agreement_scope,
+                api_key
+            )
+            st.session_state.messages.append({"role": "assistant", "content": response})
+        
+        # Clear the input
+        st.rerun()
+    
+    # Display conversation history
+    if st.session_state.messages:
+        st.markdown("### 📝 Conversation History")
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
     
     # Example questions for new users
     if len(st.session_state.messages) == 0:
@@ -361,7 +398,7 @@ def main():
     # Bottom section with query count
     if st.session_state.total_queries > 0:
         st.markdown("---")
-        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {agreement_scope}")
+        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {st.session_state.agreement_scope}")
 
 if __name__ == "__main__":
     main()
