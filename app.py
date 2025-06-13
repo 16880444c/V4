@@ -328,11 +328,11 @@ def main():
         key="question_input",
         label_visibility="collapsed"
     )
-        
-        # Centered submit button
-        col_left, col_center, col_right = st.columns([1, 1, 1])
-        with col_center:
-            submit_button = st.button("🔍 Get Answer", type="primary", use_container_width=True)
+    
+    # Centered submit button
+    col_left, col_center, col_right = st.columns([1, 1, 1])
+    with col_center:
+        submit_button = st.button("🔍 Get Answer", type="primary", use_container_width=True)
     
     st.markdown("---")
     
