@@ -256,42 +256,44 @@ def main():
     
     # Box 1: BCGEU Instructor (Active) - with radio buttons inside
     with col1:
-        # Use st.container with custom CSS to create the box effect
+        # Create the box using markdown and put everything inside it
+        st.markdown("""
+        <div style="
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #1e90ff;
+            margin-bottom: 20px;
+        ">
+            <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+            <p style="margin-bottom: 10px; color: #333;">Choose scope:</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Put radio buttons immediately after, styled to look connected
         with st.container():
-            # Apply custom CSS to style this container as a box
             st.markdown("""
-                <style>
-                .bcgeu-box {
-                    background-color: #f0f8ff;
-                    padding: 20px;
-                    border-radius: 10px;
-                    border: 2px solid #1e90ff;
-                    margin-bottom: 20px;
-                }
-                .bcgeu-title {
-                    color: #1e90ff;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    margin-bottom: 15px;
-                }
-                </style>
-                <div class="bcgeu-box">
-                    <div class="bcgeu-title">📘 BCGEU Instructor</div>
-                </div>
+            <style>
+            div[data-testid="stRadio"] {
+                background-color: #f0f8ff;
+                padding: 0 20px 20px 20px;
+                margin-top: -20px;
+                border-radius: 0 0 10px 10px;
+                border-left: 2px solid #1e90ff;
+                border-right: 2px solid #1e90ff;
+                border-bottom: 2px solid #1e90ff;
+            }
+            </style>
             """, unsafe_allow_html=True)
             
-            # Place radio buttons directly after the styled header
-            st.markdown('<div style="margin-top: -20px; padding: 0 20px 20px 20px; background-color: #f0f8ff; border-radius: 0 0 10px 10px; margin-left: -20px; margin-right: -20px;">', unsafe_allow_html=True)
-            
             st.session_state.agreement_scope = st.radio(
-                "Choose scope:",
+                "",
                 ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
                 index=2,
                 key="bcgeu_instructor_radio",
-                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time."
+                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
+                label_visibility="collapsed"
             )
-            
-            st.markdown('</div>', unsafe_allow_html=True)
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
