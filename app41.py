@@ -152,14 +152,36 @@ def format_section_content(data: dict, indent: int = 0) -> str:
 def reset_conversation():
     """Reset conversation and selections"""
     # Clear all relevant session state
-    keys_to_clear = ['messages', 'total_queries', 'agreement_selection']
+    keys_to_clear = ['messages', 'total_queries', 'conversation_context', 'current_question_type']
     for key in keys_to_clear:
         if key in st.session_state:
             del st.session_state[key]
+    # Reset question type to initial
+    st.session_state.current_question_type = "initial"
     st.rerun()
 
+def build_conversation_context(messages: list) -> str:
+    """Build conversation context from message history"""
+    if not messages:
+        return ""
+    
+    context = "\n\nPREVIOUS CONVERSATION CONTEXT:\n"
+    context += "="*50 + "\n"
+    
+    for i, message in enumerate(messages):
+        if message["role"] == "user":
+            context += f"\nPrevious Question {i//2 + 1}: {message['content']}\n"
+        else:
+            context += f"Previous Response {i//2 + 1}: {message['content'][:500]}...\n"  # Truncate for context
+    
+    context += "\nEND OF PREVIOUS CONVERSATION\n"
+    context += "="*50 + "\n\n"
+    
+    return context
+
 def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, 
-                     cupe_local_agreement: dict, cupe_common_agreement: dict, selection: str, api_key: str) -> str:
+                     cupe_local_agreement: dict, cupe_common_agreement: dict, selection: str, api_key: str, 
+                     is_followup: bool = False) -> str:
     """Generate response using Claude with complete agreement context"""
     
     # Build context based on selection
@@ -206,6 +228,11 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
     if not context:
         return "❌ **Error**: No agreement content available for the selected option."
     
+    # Add conversation context for follow-up questions
+    conversation_context = ""
+    if is_followup and st.session_state.get('messages'):
+        conversation_context = build_conversation_context(st.session_state.messages)
+    
     # Determine system prompt based on agreement type
     if "Support" in selection:
         agreement_type = "BCGEU Support Agreement"
@@ -216,6 +243,10 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
     else:
         agreement_type = "BCGEU Instructor agreements"
         citation_format = "[Agreement Type - Article X.X: Title]"
+    
+    follow_up_instruction = ""
+    if is_followup:
+        follow_up_instruction = "\n\nIMPORTANT: This is a FOLLOW-UP question in an ongoing conversation. Consider the previous conversation context when formulating your response. Build upon previous answers where relevant, and reference earlier discussion points when appropriate."
     
     system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the {agreement_type}.
 
@@ -253,11 +284,13 @@ RESPONSE STRUCTURE:
 4. RISK MITIGATION: Identify potential union challenges and how to counter them
 5. BOTTOM LINE: End with a clear, actionable recommendation
 
-Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation."""
+Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation.{follow_up_instruction}"""
 
     user_message = f"""Based on the complete collective agreement provisions below, provide strong management-focused guidance for this question:
 
-QUESTION: {query}
+{conversation_context}
+
+{"FOLLOW-UP " if is_followup else ""}QUESTION: {query}
 
 COMPLETE COLLECTIVE AGREEMENT CONTENT:
 {context}
@@ -291,6 +324,75 @@ Provide definitive, management-favorable guidance with specific citations and qu
     
     except Exception as e:
         return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again.\n\nIf the issue continues, please contact support."
+
+def render_question_section(selected_agreement: str, api_key: str):
+    """Render the question input section based on current state"""
+    
+    # Initialize question type if not set
+    if 'current_question_type' not in st.session_state:
+        st.session_state.current_question_type = "initial"
+    
+    # Determine question type and section title
+    if st.session_state.current_question_type == "initial" or not st.session_state.messages:
+        section_title = "💬 Ask Your Question"
+        placeholder_text = "Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic..."
+        form_key = "initial_question_form"
+        button_text = "🔍 Get Answer"
+    else:
+        section_title = "💬 Continue the Conversation"
+        placeholder_text = "Ask a follow-up question about the topic, or start a new topic..."
+        form_key = "followup_question_form"
+        button_text = "💬 Ask Follow-up"
+    
+    st.markdown(f"### {section_title}")
+    
+    # Create form with dynamic key to ensure proper handling
+    with st.form(key=form_key, clear_on_submit=True):
+        user_question = st.text_area(
+            "",
+            placeholder=placeholder_text,
+            height=120,
+            key=f"question_input_{st.session_state.current_question_type}",
+            label_visibility="collapsed",
+            help="💡 Press Ctrl+Enter to submit your question!"
+        )
+        
+        # Button layout
+        if st.session_state.current_question_type == "initial" or not st.session_state.messages:
+            # Initial question - just submit and new topic buttons
+            col1, col2, col3, col4 = st.columns([1, 1.2, 1.2, 1])
+            
+            with col2:
+                submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
+            
+            with col3:
+                new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start fresh", use_container_width=True)
+        else:
+            # Follow-up question - show both options
+            col1, col2, col3, col4 = st.columns([0.5, 1.5, 1.5, 0.5])
+            
+            with col2:
+                submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
+            
+            with col3:
+                new_topic_button = st.form_submit_button("🔄 New Topic", help="Clear conversation and start fresh", use_container_width=True)
+    
+    # Handle new topic button
+    if new_topic_button:
+        reset_conversation()
+        return None, False
+    
+    # Handle question submission
+    if submit_button and user_question:
+        # Check if an agreement is selected
+        if not selected_agreement or selected_agreement == "Please select an agreement...":
+            st.error("⚠️ **Please select an agreement above before asking a question.**")
+            return None, False
+        else:
+            is_followup = st.session_state.current_question_type == "followup" and len(st.session_state.messages) > 0
+            return user_question, is_followup
+    
+    return None, False
 
 def main():
     # Add simple, clean CSS
@@ -389,6 +491,8 @@ def main():
         st.session_state.cupe_local_agreement = None
     if 'cupe_common_agreement' not in st.session_state:
         st.session_state.cupe_common_agreement = None
+    if 'current_question_type' not in st.session_state:
+        st.session_state.current_question_type = "initial"
     
     # Get API key
     api_key = None
@@ -442,134 +546,123 @@ def main():
     
     agreement_options.extend(cupe_options)
     
-    # Agreement selection
-    st.markdown("### 📋 Select Agreement")
-    
-    current_selection = st.session_state.get('agreement_selection', 'Please select an agreement...')
-    if current_selection not in agreement_options:
-        current_selection = 'Please select an agreement...'
-    
-    selected_agreement = st.selectbox(
-        "Choose which agreement to search:",
-        options=agreement_options,
-        index=agreement_options.index(current_selection),
-        key='agreement_selectbox'
-    )
-    
-    # Update session state
-    if selected_agreement != st.session_state.get('agreement_selection'):
-        st.session_state.agreement_selection = selected_agreement
-    
-    # Show selection status
-    if selected_agreement and selected_agreement != "Please select an agreement...":
-        st.markdown(f'<div class="status-success">✅ Selected: {selected_agreement}</div>', unsafe_allow_html=True)
+    # Agreement selection (only show if no active conversation or at the start)
+    if not st.session_state.messages:
+        st.markdown("### 📋 Select Agreement")
         
-        # Add helpful information about the selection
-        if "Both Agreements" in selected_agreement:
-            st.markdown('<div class="status-info">ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.</div>', unsafe_allow_html=True)
-    else:
-        st.markdown('<div class="status-waiting">ℹ️ Please select an agreement to begin</div>', unsafe_allow_html=True)
-    
-    # Show agreement availability status
-    with st.expander("📊 Agreement Availability Status"):
-        col1, col2 = st.columns(2)
+        current_selection = st.session_state.get('agreement_selection', 'Please select an agreement...')
+        if current_selection not in agreement_options:
+            current_selection = 'Please select an agreement...'
         
-        with col1:
-            st.markdown("**BCGEU Agreements:**")
-            bcgeu_local_status = "✅ Available" if st.session_state.local_agreement else "❌ Not found"
-            bcgeu_common_status = "✅ Available" if st.session_state.common_agreement else "❌ Not found"
-            bcgeu_support_status = "✅ Available" if st.session_state.support_agreement else "❌ Not found"
-            
-            st.markdown(f"• Local Agreement: {bcgeu_local_status}")
-            st.markdown(f"• Common Agreement: {bcgeu_common_status}")
-            st.markdown(f"• Support Agreement: {bcgeu_support_status}")
-        
-        with col2:
-            st.markdown("**CUPE Agreements:**")
-            cupe_local_status = "✅ Available" if st.session_state.cupe_local_agreement else "❌ Not found"
-            cupe_common_status = "✅ Available" if st.session_state.cupe_common_agreement else "❌ Not found"
-            
-            st.markdown(f"• Local Agreement: {cupe_local_status}")
-            st.markdown(f"• Common Agreement: {cupe_common_status}")
-            
-            if not st.session_state.cupe_common_agreement:
-                st.markdown("  *Attempted to load from GitHub*")
-    
-    st.markdown("---")
-    
-    # Question input section
-    st.markdown("### 💬 Ask Your Question")
-    
-    # Create a form to handle Enter key submission
-    with st.form(key="question_form", clear_on_submit=False):
-        user_question = st.text_area(
-            "",
-            placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
-            height=120,
-            key="question_input",
-            label_visibility="collapsed",
-            help="💡 Press Enter to submit your question!"
+        selected_agreement = st.selectbox(
+            "Choose which agreement to search:",
+            options=agreement_options,
+            index=agreement_options.index(current_selection),
+            key='agreement_selectbox'
         )
         
-        # Button row
-        col1, col2, col3, col4 = st.columns([1, 1.2, 1.2, 1])
+        # Update session state
+        if selected_agreement != st.session_state.get('agreement_selection'):
+            st.session_state.agreement_selection = selected_agreement
         
-        with col2:
-            submit_button = st.form_submit_button("🔍 Get Answer", type="primary", use_container_width=True)
-        
-        with col3:
-            new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start fresh", use_container_width=True)
-    
-    # Handle new topic button
-    if new_topic_button:
-        reset_conversation()
-    
-    st.markdown("---")
-    
-    # Process the question when submitted
-    if submit_button and user_question:
-        # Check if an agreement is selected
-        if not selected_agreement or selected_agreement == "Please select an agreement...":
-            st.error("⚠️ **Please select an agreement above before asking a question.**")
-        else:
-            # Add user message
-            st.session_state.messages.append({"role": "user", "content": user_question})
+        # Show selection status
+        if selected_agreement and selected_agreement != "Please select an agreement...":
+            st.markdown(f'<div class="status-success">✅ Selected: {selected_agreement}</div>', unsafe_allow_html=True)
             
-            # Generate and display response
-            with st.spinner("Analyzing agreement..."):
-                response = generate_response(
-                    user_question, 
-                    st.session_state.local_agreement, 
-                    st.session_state.common_agreement, 
-                    st.session_state.support_agreement,
-                    st.session_state.cupe_local_agreement,
-                    st.session_state.cupe_common_agreement,
-                    selected_agreement,
-                    api_key
-                )
-                st.session_state.messages.append({"role": "assistant", "content": response})
-    
-    # Display conversation history
-    if st.session_state.messages:
+            # Add helpful information about the selection
+            if "Both Agreements" in selected_agreement:
+                st.markdown('<div class="status-info">ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.</div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="status-waiting">ℹ️ Please select an agreement to begin</div>', unsafe_allow_html=True)
+        
+        # Show agreement availability status
+        with st.expander("📊 Agreement Availability Status"):
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("**BCGEU Agreements:**")
+                bcgeu_local_status = "✅ Available" if st.session_state.local_agreement else "❌ Not found"
+                bcgeu_common_status = "✅ Available" if st.session_state.common_agreement else "❌ Not found"
+                bcgeu_support_status = "✅ Available" if st.session_state.support_agreement else "❌ Not found"
+                
+                st.markdown(f"• Local Agreement: {bcgeu_local_status}")
+                st.markdown(f"• Common Agreement: {bcgeu_common_status}")
+                st.markdown(f"• Support Agreement: {bcgeu_support_status}")
+            
+            with col2:
+                st.markdown("**CUPE Agreements:**")
+                cupe_local_status = "✅ Available" if st.session_state.cupe_local_agreement else "❌ Not found"
+                cupe_common_status = "✅ Available" if st.session_state.cupe_common_agreement else "❌ Not found"
+                
+                st.markdown(f"• Local Agreement: {cupe_local_status}")
+                st.markdown(f"• Common Agreement: {cupe_common_status}")
+                
+                if not st.session_state.cupe_common_agreement:
+                    st.markdown("  *Attempted to load from GitHub*")
+        
+        st.markdown("---")
+        
+        # Initial question section (only if no conversation started)
+        user_question, is_followup = render_question_section(selected_agreement, api_key)
+        
+    else:
+        # If there's an active conversation, get the stored agreement selection
+        selected_agreement = st.session_state.get('agreement_selection', 'Please select an agreement...')
+        
+        # Show current selection at top but not editable during conversation
+        st.markdown(f'<div class="status-success">✅ Current Agreement: {selected_agreement}</div>', unsafe_allow_html=True)
+        st.markdown("---")
+        
+        # Display conversation history first
         st.markdown("### 📝 Conversation History")
         
         for message in st.session_state.messages:
             if message["role"] == "user":
-                # Simple approach using streamlit's chat message
                 with st.chat_message("user"):
                     st.markdown(f"**Your Question:** {message['content']}")
             else:
-                # Assistant messages
                 with st.chat_message("assistant"):
                     st.markdown("**Expert Analysis:**")
                     st.markdown(message["content"])
+        
+        st.markdown("---")
+        
+        # Then show question section for follow-ups
+        user_question, is_followup = render_question_section(selected_agreement, api_key)
     
-    # Footer with stats
+    # Process the question when submitted
+    if user_question:
+        # Add user message
+        st.session_state.messages.append({"role": "user", "content": user_question})
+        
+        # Set question type for next iteration
+        st.session_state.current_question_type = "followup"
+        
+        # Generate and display response
+        with st.spinner("Analyzing agreement..."):
+            response = generate_response(
+                user_question, 
+                st.session_state.local_agreement, 
+                st.session_state.common_agreement, 
+                st.session_state.support_agreement,
+                st.session_state.cupe_local_agreement,
+                st.session_state.cupe_common_agreement,
+                selected_agreement,
+                api_key,
+                is_followup
+            )
+            st.session_state.messages.append({"role": "assistant", "content": response})
+        
+        # Rerun to show the new conversation state
+        st.rerun()
+    
+    # Footer with stats (only show if there are queries)
     if st.session_state.total_queries > 0:
         current_selection = st.session_state.get('agreement_selection', 'None')
+        conversation_length = len(st.session_state.messages) // 2
         st.markdown(f"""
         <div class="footer-stats">
-            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection}
+            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection} | 📊 Questions in conversation: {conversation_length}
         </div>
         """, unsafe_allow_html=True)
 
