@@ -261,12 +261,13 @@ def main():
         <div style="
             background-color: #f0f8ff;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
             border: 2px solid #1e90ff;
-            margin-bottom: 20px;
+            border-bottom: none;
+            margin-bottom: 0;
         ">
             <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
-            <p style="margin-bottom: 10px; color: #333;">Choose scope:</p>
+            <p style="margin-bottom: 0; color: #333;">Choose scope:</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -276,12 +277,17 @@ def main():
             <style>
             div[data-testid="stRadio"] {
                 background-color: #f0f8ff;
-                padding: 0 20px 20px 20px;
-                margin-top: -20px;
+                padding: 10px 20px 20px 20px;
+                margin-top: 0;
+                margin-bottom: 20px;
                 border-radius: 0 0 10px 10px;
                 border-left: 2px solid #1e90ff;
                 border-right: 2px solid #1e90ff;
                 border-bottom: 2px solid #1e90ff;
+                border-top: none;
+            }
+            div[data-testid="stRadio"] > div {
+                margin-top: 0;
             }
             </style>
             """, unsafe_allow_html=True)
