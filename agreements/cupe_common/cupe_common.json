@@ -2,8 +2,8 @@
   "agreement_metadata": {
     "title": "Common Agreement between The Employers' Bargaining Committee and Federation of Post-Secondary Educators of BC (FPSE)",
     "parties": {
-      "employer_committee": "The Employers' Bargaining Committee",
-      "union": "Federation of Post-Secondary Educators of BC (FPSE)",
+      "employer_committee": "The Employers' Bargaining Committee on behalf of member institutions ratifying this Common Agreement",
+      "union": "Federation of Post-Secondary Educators of BC (FPSE) on behalf of its local unions ratifying this Common Agreement",
       "member_institutions": [
         "Camosun College",
         "Coast Mountain College", 
@@ -27,23 +27,98 @@
       "start": "2019-04-01",
       "end": "2022-03-31"
     },
-    "document_version": "April 1, 2019 to March 31, 2022"
+    "document_version": "For the term of April 1, 2019 to March 31, 2022"
+  },
+  "common_parties_list": {
+    "employers_bargaining_committee": [
+      "Camosun College",
+      "Coast Mountain College", 
+      "College of New Caledonia",
+      "College of the Rockies",
+      "North Island College",
+      "Okanagan College",
+      "Selkirk College"
+    ],
+    "fpse_locals": [
+      "Academic Workers' Union (FPSE Local 11)",
+      "Faculty Association of the College of New Caledonia (FPSE Local 3)",
+      "Camosun College Faculty Association (FPSE Local 12)",
+      "College of the Rockies Faculty Association (FPSE Local 6)",
+      "North Island College Faculty Association (FPSE Local 16)",
+      "Okanagan College Faculty Association (FPSE Local 9)",
+      "Selkirk College Faculty Association (FPSE Local 10)"
+    ]
   },
   "definitions": {
-    "agreement": "This Common Agreement reached between the employers and the unions as defined in 'Parties' or 'Common Parties' definition",
-    "collective_agreement": "The combination of provisions of the Common Agreement with local provisions that constitute a collective agreement between an institution and a local union",
-    "employee": "A person employed within a bargaining unit represented by one of the unions that has ratified a Collective Agreement that includes this Common Agreement",
-    "employer": "An employer that has ratified a Collective Agreement that includes this Common Agreement",
-    "institution": "A post-secondary institution that has ratified a Collective Agreement that includes this Common Agreement",
-    "jadrc": "Joint Administration and Dispute Resolution Committee established pursuant to Article 3.2 of this Agreement",
-    "joint_labour_management_committee": "A committee formed by local parties with equal representation from a local union and an institution",
-    "local_parties": "The institution and local bargaining unit where both have ratified a Collective Agreement that includes this Common Agreement",
-    "local_provision": "A provision of a Collective Agreement established by negotiations between an individual employer and a local union",
-    "local_union": "A bargaining unit representing employees at an institution that has ratified a Collective Agreement that includes this Common Agreement",
-    "ministry": "The Ministry of Advanced Education, Skills and Training",
-    "psea": "Post-Secondary Employers' Association established for post-secondary institutions under the Public Sector Employers' Act",
-    "ratification": "The acceptance by a local union and by both an institution and the PSEA of the terms of a Collective Agreement that includes this Common Agreement",
-    "union": "A faculty association or trade union certified as a bargaining agent"
+    "1": {
+      "term": "Agreement or Common Agreement",
+      "definition": "means this Common Agreement reached between the employers and the unions as defined in 'Parties' or 'Common Parties' definition"
+    },
+    "2": {
+      "term": "Collective Agreement",
+      "definition": "means the combination of provisions of the Common Agreement with local provisions that constitute a collective agreement between an institution and a local union"
+    },
+    "3": {
+      "term": "Employee",
+      "definition": "means a person employed within a bargaining unit represented by one of the unions that has ratified a Collective Agreement that includes this Common Agreement"
+    },
+    "4": {
+      "term": "Employer",
+      "definition": "means an employer that has ratified a Collective Agreement that includes this Common Agreement"
+    },
+    "5": {
+      "term": "Institution",
+      "definition": "means a post-secondary institution that has ratified a Collective Agreement that includes this Common Agreement"
+    },
+    "6": {
+      "term": "Joint Administration and Dispute Resolution Committee or JADRC",
+      "definition": "means the committee established pursuant to Article 3.2 of this Agreement"
+    },
+    "7": {
+      "term": "Joint Labour-Management Committee",
+      "definition": "means a committee formed by local parties with equal representation from a local union and an institution"
+    },
+    "8": {
+      "term": "Local parties",
+      "definition": "means the institution and local bargaining unit where both have ratified a Collective Agreement that includes this Common Agreement"
+    },
+    "9": {
+      "term": "Local provision",
+      "definition": "means a provision of a Collective Agreement established by negotiations between an individual employer and a local union"
+    },
+    "10": {
+      "term": "Local union",
+      "definition": "means a bargaining unit representing employees at an institution that has ratified a Collective Agreement that includes this Common Agreement"
+    },
+    "11": {
+      "term": "Ministry",
+      "definition": "means the Ministry of Advanced Education, Skills and Training"
+    },
+    "12": {
+      "term": "Parties or Common Parties",
+      "definition": "means the following employers and unions that have ratified a Collective Agreement that includes this Common Agreement",
+      "specific_parties": [
+        "Camosun College/Camosun College Faculty Association (FPSE Local 12)",
+        "Coast Mountain College/Academic Workers' Union (FPSE Local 11)",
+        "College of New Caledonia/Faculty Association of the College of New Caledonia (FPSE Local 3)",
+        "College of the Rockies/College of the Rockies Faculty Association (FPSE Local 6)",
+        "North Island College/North Island College Faculty Association (FPSE Local 16)",
+        "Okanagan College/Okanagan College Faculty Association (FPSE Local 9)",
+        "Selkirk College/Selkirk College Faculty Association (FPSE Local 10)"
+      ]
+    },
+    "13": {
+      "term": "Post-Secondary Employers' Association or PSEA",
+      "definition": "means the employers' association that is established for post-secondary institutions under the Public Sector Employers' Act and that is the employer bargaining agent for all institutions"
+    },
+    "14": {
+      "term": "Ratification",
+      "definition": "means the acceptance by a local union and by both an institution and the PSEA of the terms of a Collective Agreement that includes this Common Agreement. The local unions and institutions are those listed in 12 above"
+    },
+    "15": {
+      "term": "Union",
+      "definition": "means a faculty association or trade union certified as a bargaining agent"
+    }
   },
   "articles": {
     "1": {
@@ -51,19 +126,22 @@
       "sections": {
         "1.1": {
           "title": "Purpose of Common Agreement",
-          "content": "The purpose of this Agreement is to establish and maintain orderly collective bargaining procedures between the Parties and to promote the efficient and effective operation of the institution through the establishment and continuance of harmonious relations and working conditions"
+          "subsections": {
+            "1.1.1": "The purpose of this Agreement is to establish and maintain orderly collective bargaining procedures between the Parties.",
+            "1.1.2": "In order to promote the efficient and effective operation of the institution through the establishment and continuance of harmonious relations and working conditions established under the collective agreement, and to assist in the development and expansion of the public post-secondary system, the Parties therefore agree to the following terms of contract."
+          }
         },
         "1.2": {
           "title": "Future Legislation",
-          "content": "In the event that any future legislation renders null and void or materially alters any provision of this Agreement, the Parties hereto will negotiate a mutually agreeable provision to be substituted"
+          "content": "In the event that any future legislation renders null and void or materially alters any provision of this Agreement, the Parties hereto will negotiate a mutually agreeable provision to be substituted for the provision so rendered null and void or materially altered. All other provisions of the Common Agreement shall remain in full force and effect."
         },
         "1.3": {
           "title": "Conflict with Policies",
-          "content": "Every reasonable effort will be made to harmonize employer policies with the provisions of this Agreement. In the event of a conflict between the contents of this Agreement and any policies made by the employer, the terms of this Agreement will prevail"
+          "content": "Every reasonable effort will be made to harmonize employer policies with the provisions of this Agreement. In the event of a conflict between the contents of this Agreement and any policies made by the employer, the terms of this Agreement will prevail."
         },
         "1.4": {
           "title": "Singular and Plural",
-          "content": "Wherever the singular is used in the Common Agreement, the same shall be construed as meaning the plural if the context requires unless otherwise specifically stated"
+          "content": "Wherever the singular is used in the Common Agreement, the same shall be construed as meaning the plural if the context requires unless otherwise specifically stated."
         }
       }
     },
@@ -72,27 +150,114 @@
       "sections": {
         "2.1": {
           "title": "Statement of Commitment",
-          "content": "The Institutions promote teaching, scholarship and research and the free and critical discussion of ideas. Unions and employers are committed to providing a working and learning environment that allows for full and free participation of all members of the institutional community"
+          "content": "The Institutions promote teaching, scholarship and research and the free and critical discussion of ideas. Unions and employers are committed to providing a working and learning environment that allows for full and free participation of all members of the institutional community. Harassment undermines these objectives and violates the fundamental rights, personal dignity and integrity of individuals or groups of individuals. Harassment is a serious offence that may be cause for disciplinary sanctions including, where appropriate, dismissal or expulsion. The Institutions have a responsibility under the BC's Human Rights Code to prevent harassment and to provide procedures to handle complaints, to resolve problems and to remedy situations where harassment occurs. The employer will offer educational and training programs designed to prevent harassment and to support the administration of the institutional policies and to ensure that all members of the institutional community are aware of their responsibility with respect to the policy. The Unions and Employers agree that attendance is required and will take place during compensated work time."
         },
         "2.2": {
           "title": "Definitions",
-          "content": "Harassment is a form of discrimination that adversely affects the recipient on one or more of the prohibited grounds under the BC Human Rights Code. Sexual Harassment is behaviour of a sexual nature by a person who knows or ought reasonably to know that the behaviour is unwanted or unwelcome"
+          "subsections": {
+            "2.2.1": {
+              "title": "Harassment",
+              "definition": "Harassment is a form of discrimination that adversely affects the recipient on one or more of the prohibited grounds under the BC Human Rights Code [R.S.B.C. 1996 c.210]. Harassment as defined above is behaviour or the effect of behaviour, whether direct or indirect, which meets one of the following conditions:",
+              "conditions": [
+                "(a) is abusive or demeaning;",
+                "(b) would be viewed by a reasonable person experiencing the behaviour or effect of the behaviour, as an interference with their participation in an institutional related activity;",
+                "(c) creates a poisoned environment."
+              ],
+              "protected_grounds": "As of this date, the grounds protected against discrimination by BC's Human Rights Code [R.S.B.C. 1996 c.210] are race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, or age of that person or because that person has been convicted of a criminal or summary conviction offence that is unrelated to the employment or to the intended employment of that person."
+            },
+            "2.2.2": {
+              "title": "Sexual Harassment",
+              "definition": "Sexual Harassment is behaviour of a sexual nature by a person who knows or ought reasonably to know that the behaviour is unwanted or unwelcome; and",
+              "conditions": [
+                "(a) which interferes with another person's participation in an institution-related activity; or",
+                "(b) leads to or implies employment, or academically-related consequences for the person harassed; or",
+                "(c) which creates a poisoned environment."
+              ]
+            }
+          }
         },
         "2.3": {
           "title": "Procedures",
-          "content": "Local Informal Processes, Right to Legal Counsel, Mediation, and Investigation procedures are outlined for handling harassment complaints"
+          "subsections": {
+            "2.3.1": {
+              "title": "Local Informal Processes",
+              "content": "The Parties agree that the local parties where mutually agreeable, may first attempt to use local policies or processes to resolve complaints of harassment and sexual harassment prior to accessing the following procedures in Article 2.3.3 Mediation and 2.3.4 Investigation."
+            },
+            "2.3.2": {
+              "title": "Right to Legal Counsel",
+              "content": "The union is the exclusive bargaining agent for the bargaining unit employee and as such has the exclusive right to represent the employee in all matters pertaining to their terms and conditions of employment, including matters that may lead to discipline by the employer. An individual bargaining unit employee has no right to be represented by legal counsel during an Article 2 investigation involving an allegation of harassment."
+            },
+            "2.3.3": {
+              "title": "Mediation",
+              "introduction": "When a complaint is received by the employer involving an individual covered by this collective agreement, whether as a complainant or respondent, the local parties will initiate a mediation procedure at the bargaining unit level. The mediation process is the recommended avenue of resolution. Consensual mediation will require the agreement of the complainant and the respondent to use the following process:",
+              "process": [
+                "(a) the local parties will discuss the nature of the complaint and agree upon who will conduct the mediation;",
+                "(b) the mediation process and resolution will be kept strictly confidential by all participants;",
+                "(c) where a resolution is reached, the complainant and the respondent must agree in writing to the resolution and the matter will then be considered concluded;",
+                "(d) no record of the mediation except the written agreed resolution will be placed on an employee's file. The written resolution will be removed from the employee's file after twelve (12) months unless there has been a subsequent complaint of harassment against the employee within the twelve (12) month period."
+              ]
+            },
+            "2.3.4": {
+              "title": "Investigation",
+              "content": "Where either the complainant or respondent does not agree to mediation, or no resolution is reached during the mediation, the complaint will be referred to an investigator selected from a list of investigators agreed upon by the local parties. The parties will consider, among other things, the ability of the selected investigator to begin their investigation in a timely manner. An investigator will be appointed within ten (10) working days of referral. Where the local parties are unable to agree on a list of investigators, JADRC will determine the list. (See Appendix B.) The referral should, where possible, include a written statement from the complainant and the respondent which succinctly outlines the issue(s) in dispute. The referral should be assembled by the Institution and forwarded to the Investigator with a copy sent to the union(s). The appointment of an investigator does not preclude an investigator from mediating the dispute where possible up to the time of submission of the Investigator's report to the local parties pursuant to Article 2.3.5(a) below. Any complaint of harassment will be kept confidential except as is necessary to investigate and resolve the issue. Investigators will stress the confidentiality of the investigation with the person(s) interviewed."
+            }
+          }
+        },
+        "2.3.5": {
+          "title": "Terms of Reference of the Investigator",
+          "subsections": [
+            "(a) The purpose of the investigator will be to ascertain facts.",
+            "(b) All persons quoted in the investigation will be named by code determined by the Investigator to preserve confidentiality.",
+            "(c) The complete report of the Investigator will be given, in confidence, to the union(s) and the employer. It is the responsibility of the employer to forward a copy of the report to the complainant and the respondent. The employer will state, in a covering letter, that the report is confidential. The report should refer to individuals involved by code only. However, a reference key will be provided to the employer and the union(s) for internal use. This practice should be repeated at any subsequent arbitral proceeding. Upon consultation with the union, the employer may redact information from the forwarded report if the release of that information would violate the personal privacy of the individuals.",
+            "(d) The report will not be introduced as evidence or have standing in any arbitration, or other legal procedure. This does not preclude the parties from reaching an Agreed Statement of Fact based upon facts in the report in preparation for an arbitral proceeding.",
+            {
+              "subsection": "(e) Reliance on Report of Third Party Investigator",
+              "content": "Despite 2.3.3 (d), an institution is entitled to rely on the fact of mediation or the report of a third party investigator as evidence that may mitigate liability in a proceeding that follows receipt of the third party investigator's report. The employer is entitled to rely on the investigator's report as evidence that it acted in good faith in any disciplinary action that it undertook following receipt of the third party investigator's report where the issue of good faith is raised by a grievor or the union."
+            },
+            "(f) The investigator will not be compellable as a witness in any arbitration or other legal procedure which may result from the investigation.",
+            "(g) The investigator will conclude their work within twenty (20) days of appointment and will render a report within a further ten (10) days. These timelines may be extended if deemed appropriate by the local parties. If a dispute arises with respect to the extension, the matter will be referred to JADRC. If requested by the investigator, the employer will provide meeting space and contact information about persons to be interviewed.",
+            "(h) The investigator may, as part of their report, make recommendations for resolution of the complaint.",
+            "(i) The investigator's report will not be placed on an employee's file."
+          ]
         },
         "2.4": {
           "title": "Findings",
-          "content": "The employer will make a written determination based upon the facts and recommendation within ten (10) working days of receipt of the Investigator's report"
+          "subsections": {
+            "2.4.1": "The employer will make a written determination based upon the facts and recommendation, if any, within ten (10) working days of the receipt of the Investigator's report. If necessary, this timeline may be extended by mutual agreement between the local parties.",
+            "2.4.2": {
+              "content": "The determination will:",
+              "requirements": [
+                "(a) state the action(s), if any, to be taken or required by the employer;",
+                "(b) include, where appropriate, a statement of exoneration."
+              ]
+            }
+          }
         },
         "2.5": {
           "title": "Rights of the Parties",
-          "content": "Outlines rights regarding Human Rights Code complaints and disciplinary actions"
+          "content": "Should a complainant file a complaint under the provisions of the Human Rights Code, it is understood that the Human Rights Code complaint will be set aside until such time as the procedures under this Article have been completed. Where an allegation includes both complaints under the Human Rights Code and a personal harassment complaint, the local parties may agree to have the Investigator investigate all of the complaints, in order to relieve against expense and duality of process.",
+          "subsections": {
+            "2.5.1": {
+              "content": "The above noted procedure does not restrict:",
+              "items": [
+                "(a) The employer's right to take disciplinary action;",
+                "(b) The union's right to grieve such disciplinary action or to grieve an alleged violation of this Article."
+              ]
+            },
+            "2.5.2": "The report of the investigator may be used in the development of an Agreed Statement of Fact for an arbitral proceeding."
+          }
         },
         "2.6": {
           "title": "False Complaints, Breaches of Confidentiality and Retaliatory Action",
-          "content": "Frivolous, vexatious or malicious complaints of harassment or breaches of the confidentiality provisions may result in discipline"
+          "content": "Frivolous, vexatious or malicious complaints of harassment or breaches of the confidentiality provisions of this clause or retaliation in respect of a complaint may result in discipline. Should retaliation be alleged following the filing of a complaint, an Investigator may deal with that allegation and make a finding."
+        },
+        "2.7": {
+          "title": "Local Discussion",
+          "content": "The local parties will meet as necessary to facilitate the administration and other aspects of the application of this Article including issues arising under Article 2.8 below. The local parties may refer any differences over the administration or application of this Article to JADRC for resolution."
+        },
+        "2.8": {
+          "title": "Relation to Other Agreements",
+          "content": "Where a complaint under Article 2 involves individuals who are covered by another collective agreement the local parties will meet to clarify and agree upon a procedure."
         }
       }
     },
@@ -101,15 +266,80 @@
       "sections": {
         "3.1": {
           "title": "Human Resources Database",
-          "content": "The Parties believe that their on-going and collective bargaining relationships are enhanced through useful, timely, and accessible data on relevant human resources matters"
+          "introduction": "The Parties believe that their on-going and collective bargaining relationships are enhanced through useful, timely, and accessible data on relevant human resources matters, including those listed below. The Parties agree to provide and support the accumulation and dissemination of available data to the PSEA, which will be responsible for the management of the HRDB project including the gathering, analysis, and maintenance of such data. The Parties may undertake joint projects for the comparative analysis of such data. The Parties agree that a Steering Committee will oversee this program. The Committee will include representatives designated by each Party. The Parties recommend that the Ministry of Advanced Education, Skills and Training continue to provide funding to assist in the gathering, analysis, and maintenance of such data through the agreed-upon organization.",
+          "subsections": {
+            "3.1.1": {
+              "title": "Relevant Matters include:",
+              "categories": {
+                "health_and_welfare": [
+                  "(i) Benefit Plan Designs",
+                  "(ii) Participation rates",
+                  "(iii) Premiums",
+                  "(iv) Cost sharing",
+                  "(v) Commission costs",
+                  "(vi) Carrier contracts"
+                ],
+                "collective_bargaining": [
+                  "(i) Salary information by classification",
+                  "(ii) FTE, headcount, placement on scale, appointment status",
+                  "(iii) Demographics: age and gender"
+                ],
+                "contract_administration": [
+                  "(i) Arbitration, Labour Relations Board, JADRC, Harassment, Jurisdictional and other third-party decisions and costs thereof for the system",
+                  "(ii) Local Letters of Understanding"
+                ]
+              }
+            }
+          }
         },
         "3.2": {
           "title": "Joint Administration and Dispute Resolution Committee",
-          "content": "The Parties will maintain a JADRC consisting of three (3) representatives of each party to assist in administration, provide dialogue forum, and resolve disputes"
+          "subsections": {
+            "3.2.1": {
+              "title": "Formation and Composition",
+              "content": "The Parties to this agreement will maintain a Joint Administration and Dispute Resolution Committee (JADRC) consisting of three (3) representatives of each party. Where appropriate, additional individuals may be called as resources, by mutual agreement."
+            },
+            "3.2.2": {
+              "title": "Operation",
+              "content": "Meetings of JADRC shall be held as needed. A meeting shall be held within twenty (20) days of the written request of either party unless mutually agreed otherwise. A minimum of four (4) representatives with equal representation from the Common Parties will constitute a quorum. JADRC will set its own procedures and protocols. All decisions of JADRC will be mutual decisions between the Parties and will be recorded or confirmed in writing."
+            },
+            "3.2.3": {
+              "title": "Purpose",
+              "content": "The purpose of JADRC is to:",
+              "functions": [
+                "(a) Assist in the administration of the Common Agreement.",
+                "(b) Provide a forum for dialogue between the Parties respecting issues impacting labour relations.",
+                "(c) Provide a means for resolving issues pertaining to the implementation, interpretation and resolution of matters arising from the Common Agreement.",
+                "(d) Appoint arbitrator(s) as applicable for Common Agreement Dispute Resolution.",
+                "(e) Develop strategies to reduce arbitration and related costs."
+              ]
+            },
+            "3.2.4": {
+              "title": "Common Agreement Dispute Resolution",
+              "content": "Where a dispute arises concerning the interpretation, application, operation or alleged violation of this Agreement, the local parties will refer the dispute to JADRC using the Dispute Referral Form at Appendix C to this Agreement. Such referral would occur after the local grievance procedure is exhausted or deemed completed by agreement of the local parties. JADRC will act as the registrar for referred disputes and will forward the matter to an arbitrator, within thirty (30) calendar days of the receipt of the dispute by JADRC's designated registrar. (See Appendix D for the list of arbitrators.) Notwithstanding the referral of a dispute to an arbitrator, the local parties may mutually agree to request that JADRC attempt to resolve the matter through a pre-hearing discussion at the JADRC level. Where JADRC reaches a mutual decision on a matter referred, the decision will be final and binding upon the local parties. Prior to an arbitral hearing, and in the absence of any JADRC decision, the local parties may resolve a dispute which relates to the interpretation, application, operation or alleged violation of this Agreement. The resolution is without prejudice or precedent."
+            },
+            "3.2.5": {
+              "title": "Process and Costs",
+              "content": "A matter referred to an arbitrator will be scheduled and heard within sixty (60) calendar days of referral unless otherwise mutually agreed by the local parties. Decisions will be final and binding except as provided by Section 99 of the Labour Relations Code. Arbitral decisions shall be rendered within fifteen (15) calendar days of the conclusion of the hearing. Time limits may be altered by mutual agreement between the parties. An arbitrator has the authority to order pre-hearing disclosure and to act as a mediator provided such action does not unduly delay a decision. Each local party will be responsible for its own costs. The costs of the arbitrator will be shared by the local parties."
+            }
+          }
         },
         "3.3": {
           "title": "Leave of Absence for College Committees and Union Leave",
-          "content": "Provisions for leave of absence for college committee participation and union business without loss of pay"
+          "subsections": {
+            "3.3.1": {
+              "title": "Leave of Absence for College Committees",
+              "content": "An employee whose assigned work schedule would prevent them from attending meetings of a college committee to which they have been elected or appointed, will be granted a leave of absence from their regular duties without loss of pay or other entitlements to attend such meeting(s). Where such leave is granted, the employer will replace the employee as necessary. Costs arising from this provision will not be charged against the program area of the participating employee."
+            },
+            "3.3.2": {
+              "title": "Union Leave",
+              "content": "Meetings between representatives of the union and the employer will be scheduled at times mutually agreeable to the Parties. Reasonable effort shall be made to hold such meetings at times that do not conflict with assigned duties. Where such meetings cannot be scheduled at times that do not conflict with assigned duties, the employer will grant a leave of absence without loss of pay or other entitlements for the purpose of attending such meetings to the total equivalent of one-quarter full-time equivalent per annum. Where such leave is granted, the employer will replace the employee as necessary. This clause may be utilized by the union to ensure adequate representation by the union with respect to issues that affect the institution or the post-secondary system. To facilitate the administration of this provision, the union will ensure that the employer is advised of the eligible leaves to be taken. The union may designate a person(s) who will be entitled to union leave under this Article and will advise the employer of the amount of the leave to be taken. The amount of the entitlement is one quarter of a full time equivalent per annum, without loss of pay or other entitlement. Costs arising from this provision will not be charged against the program area of the participating union representative. This provision will not be utilized where existing employer-paid release time arrangements exceed this one-quarter full-time equivalent entitlement."
+            },
+            "3.3.3": {
+              "title": "Additional Union Leave Without Pay",
+              "content": "A bargaining unit may purchase additional release time above that currently paid for by the employer at replacement costs. Replacement cost is that for the individual who is carrying out the duties of the individual released. Such leaves will not be unreasonably withheld."
+            }
+          }
         }
       }
     },
@@ -118,19 +348,19 @@
       "sections": {
         "4.1": {
           "title": "Definition",
-          "content": "Prior Learning Assessment (PLA) is the assessment by some valid and reliable means, of what has been learned through formal and non-formal education/training or experience"
+          "content": "Prior Learning Assessment (PLA) is the assessment by some valid and reliable means, of what has been learned through formal and non-formal education/training or experience, that is worthy of credit in a course or program offered by the institution providing credit. The assessment and evaluation of prior learning and the determination of competency and credit awarded, will be done by instructional or faculty staff who have the appropriate subject matter expertise but other staff in an institution may have a supporting role in the process. The work required for prior learning assessment includes but is not limited to: classroom-based and individual advising; classroom-based and individual assessment, training and upgrading; development of assessment tools; and training in the use of flexible assessment."
         },
         "4.2": {
           "title": "Prior Learning Assessment as Workload",
-          "content": "Prior learning assessment work undertaken by an employee will be integrated into and form part of the employee's workload"
+          "content": "Prior learning assessment work undertaken by an employee covered by this Agreement will be integrated into and form part of the employee's workload as workload is defined in the employee's collective agreement."
         },
         "4.3": {
           "title": "Training in Prior Learning Assessment",
-          "content": "An employee required to perform prior learning assessment has a right to employer-paid training time and expenses"
+          "content": "An employee required to perform prior learning assessment responsibilities as part of their workload, has a right to employer-paid training time and expenses, in the methodology and application of prior learning assessment as necessary for the assigned task."
         },
         "4.4": {
           "title": "Prior Learning Assessment Coordinators",
-          "content": "Prior Learning Assessment coordinators will be faculty or instructional bargaining unit members"
+          "content": "Prior Learning Assessment coordinators will be faculty or instructional bargaining unit members."
         }
       }
     },
@@ -139,19 +369,30 @@
       "sections": {
         "5.1": {
           "title": "Copyright Ownership",
-          "content": "Defines ownership of copyright for work products created by employees under various circumstances"
+          "introduction": "The copyright or patent for any work product, including creative work, instructional strategies or curriculum/instructional material, software or any other material or technology that may be copyrighted or patented:",
+          "subsections": {
+            "5.1.1": "belongs to the employee(s) where the work product has been prepared or created as part of assigned duties, other than the duties listed in Article 5.1.2 below, and the copyright to all copyrightable material shall be the sole property of the employee(s) and shall be retained throughout their lifetime and upon their death by their heirs or assigns; and",
+            "5.1.2": {
+              "content": "belongs to the institution where one or more employees:",
+              "conditions": [
+                "(a) have been hired or agrees to create and produce copyrightable work product for the institution, or",
+                "(b) are given release time from usual duties to create and produce copyrightable work product, or",
+                "(c) are paid, in addition to their regular rate of pay, for their time in an appointment to produce copyrightable work product."
+              ]
+            }
+          }
         },
         "5.2": {
           "title": "Employer Rights to Materials Copyrighted by Employee(s)",
-          "content": "Where employee holds copyright, institution has right to use copyrighted material in perpetuity for institutional purposes"
+          "content": "Where the employee holds the copyright pursuant to Article 5.1.1, the institution shall have a right to use their copyrighted material in perpetuity for institutional purposes. The institution may amend and update the copyrighted material with the approval of the employee(s) holding the copyright to the material. Such approval will not be unreasonably withheld."
         },
         "5.3": {
           "title": "Employee Rights to Materials Copyrighted by the Employer",
-          "content": "Where institution holds copyright, employee has right to use copyrighted material in perpetuity, free of charge"
+          "content": "Where the institution holds the copyright pursuant to Article 5.1.2, the employee(s) shall have the right to use in perpetuity, free of charge, such copyrighted material. The employee may amend and update the copyrighted material with the approval of the institution holding the copyright to the material. Such approval will not be unreasonably withheld."
         },
         "5.4": {
           "title": "Joint Review",
-          "content": "JADRC may review issues arising from the application of this Article"
+          "content": "JADRC may, at the request of either party, review issues arising from the application of this Article."
         }
       }
     },
@@ -160,27 +401,277 @@
       "sections": {
         "6.1": {
           "title": "Employee Security and Regularization",
-          "content": "Provisions to ensure employee security and regularization of employees, including entitlement to regularization after specified periods of work"
+          "subsections": {
+            "6.1.1": {
+              "title": "Intent",
+              "content": "The purpose of this Article is to ensure that, by April 1, 2000, provisions relating to employee security and regularization of employees are established within each collective agreement affecting employees covered by this Agreement and to ensure that current and future employees who qualify for regularization under the provisions of this Article will be regularized. Where this Article establishes a date for action, the parties responsible for taking the action may agree to another date."
+            },
+            "6.1.2": {
+              "title": "Definitions",
+              "terms": {
+                "department_or_functional_area": "means the operational or administrative sub-division of an institution within which an employee is appointed and assigned workload and may include geographic limitations.",
+                "employee_security": "means the array of entitlements to continued employment, health and welfare and other benefits, and other rights available to employees through this Agreement or a local collective agreement.",
+                "non_regular_employee": "means a person employed on any basis other than regular as defined in the local collective agreement.",
+                "regularization": "means the process by which a non-regular employee converts to regular status under this Article.",
+                "regular_full_time": "employee means a person who holds an appointment to ongoing work with a full-time annual workload within one or more departments or functional areas.",
+                "regular_part_time": "employee means a person who holds an appointment to an ongoing annual workload of less than full-time within one or more departments or functional areas."
+              }
+            },
+            "6.1.3": {
+              "title": "Parameters for Employee Security and Regularization",
+              "subsection_a": {
+                "content": "Employee security and regularization provisions include those relating to:",
+                "items": [
+                  "(i) creating, posting and filling new positions and posting and filling vacant positions;",
+                  "(ii) the types of appointment categories contained in the collective agreement;",
+                  "(iii) the entitlements of regular and/or non-regular employees to continued appointment, access to additional work, and/or to health and welfare benefits based on time worked and/or seniority;",
+                  "(iv) the circumstances under which a non-regular employee may be entitled to convert to or otherwise become a regular employee;",
+                  "(v) requirements for notice of layoff or reduction in workload, including requirements relating to the timing of layoff notice;",
+                  "(vi) requirements relating to the accumulation of severance and the condition for payment of severance."
+                ]
+              },
+              "subsection_b": {
+                "content": "Amendments to existing employee security and regularization provisions must include:",
+                "regularization_options": [
+                  {
+                    "option_1": "entitlement to regularization after a period of time worked of at least two consecutive appointment years of work at a workload of fifty percent (50%) or greater for each of two (2) consecutive appointment years and where there is a reasonable expectation of ongoing employment for which the employee is qualified at a workload of at least fifty percent (50%) or greater for two semesters in the next appointment year;"
+                  },
+                  {
+                    "option_2": "entitlement to regularization after the employee has performed a workload at least one hundred and twenty percent (120%) of an annualized workload over at least two (2) consecutive years and there is a reasonable expectation of an ongoing workload assignment for which the employee is qualified, of at least fifty percent (50%) on an annualized basis over the immediately subsequent appointment year."
+                  }
+                ],
+                "evaluation_requirement": "(ii) requirements that an employee receive a satisfactory evaluation prior to regularization. An employee will be deemed to have received a satisfactory evaluation if one has not been undertaken by the employer. The employer may evaluate a non-regular employee at least once each twelve (12) month period and the employee may request an additional evaluation not more often than once in each twelve (12) month period."
+              },
+              "subsection_c": {
+                "content": "In developing revised employee security and regularization provisions, local parties and/or JADRC and/or the arbitrator must consider the effects of any conversion from non-regular to regular status, including:",
+                "considerations": [
+                  "(i) entitlement to confirmation of appointment as a regular employee;",
+                  "(ii) requirements for a probationary period post-conversion of at least twelve months;",
+                  "(iii) accumulation of regular seniority and severance entitlement related to appointment to regular status;",
+                  "(iv) rights of regular employees to new or additional work for which they are qualified both within and outside a department or functional area, and the operational implications of such rights;",
+                  "(v) limitations on concurrent regular appointment at more than one institution;",
+                  "(vi) cost implications of any entitlement that may be derived from work or appointment in more than one campus, centre or geographic limitation;",
+                  "(vii) relationship of work performed by bargaining unit members in continuing and/or community education to any entitlement to consideration for conversion;",
+                  "(viii) the right of the employer to create, post and fill a new position or to post and fill a vacant position;",
+                  "(ix) educational implications for requirements to teach upper level degree courses and/or non-degree courses;",
+                  "(x) implications for existing appointment types;",
+                  "(xi) the cost implications for the employer of any changes and the impact on student access, employees and services."
+                ]
+              }
+            },
+            "6.1.4": {
+              "title": "Local Discussion Process",
+              "process_details": [
+                {
+                  "subsection_a": "Within fifteen (15) working days of ratification of this Agreement, a local bargaining unit must advise the local employer in writing either (i) that it agrees to retain the existing local employee security and regularization provisions without any changes, or (ii) that it wishes to commence the process for amending existing local provisions respecting employee security and regularization through the processes established in this Article."
+                },
+                {
+                  "subsection_b": "Where the local bargaining unit advises the employer under (a) above, of its intention to commence the processes for amending the existing local employee security and regularization provisions, the parties will commence discussions forthwith."
+                },
+                {
+                  "subsection_c": "The purpose of these local party discussions is to amend local collective agreement provisions respecting employee security and regularization as necessary to satisfy the intent of this Article and within the parameters established in Article 6.1.3 above."
+                },
+                {
+                  "subsection_d": "Local discussions must conclude no later than April 30, 1999. The results of local discussions may be: (i) An agreement to: (1) amend existing provisions respecting employee security and regularization effective by April 1, 2000, or (2) maintain the current local collective agreement provisions respecting employee security and regularization, (ii) Referral to JADRC for resolution of issues on which agreement has not been reached no later than June 30, 1999."
+                }
+              ]
+            },
+            "6.1.5": {
+              "title": "JADRC Resolution of Disputes",
+              "content": "JADRC will review submissions received from the local parties and will: (a) agree on a resolution of the issues submitted to it by the local parties no later than September 30, 1999, in which event the decision will be binding upon those local parties, or (b) where JADRC is unable to reach agreement it will submit its differences to Donald R. Munroe by October 31, 1999, or such other person as mutually agreed on, acting as sole arbitrator of the issues submitted to them."
+            },
+            "6.1.6": {
+              "title": "Jurisdiction",
+              "arbitrator_authority": [
+                {
+                  "subsection_a": "The arbitrator has the jurisdiction to resolve the differences submitted to them considering: (i) submissions made by the local parties respecting the differences remaining between them after the review by JADRC; (ii) provisions of employee security and regularization in place at other similar colleges, university colleges, agencies and institutes in British Columbia; (iii) the cost implications for the employer of any changes and the impact on student access, employees and services."
+                },
+                {
+                  "subsection_b": "A decision of the arbitrator is binding on the local parties and will take effect on April 1, 2000 or such other date as the arbitrator may determine is required to phase in changes to a collective agreement."
+                },
+                {
+                  "subsection_c": "In making their decision, the arbitrator will make changes necessary to amend employment provisions within the parameters established under Article 6.1.3 above that require the least amount of change in existing provisions necessary to meet the requirements of this Article and that the arbitrator considers to be reasonable."
+                },
+                {
+                  "subsection_d": "An agreement reached between local parties to amend existing provisions on employee security and regularization under this process is not admissible in an arbitration under this provision."
+                }
+              ]
+            },
+            "6.1.7": {
+              "title": "Certification and Grievances",
+              "content": "No result of this process will have the effect of altering an existing certification. Any grievance that arises regarding regularization will be referred to the JADRC process for resolution."
+            }
+          }
         },
         "6.2": {
           "title": "Program Transfers and Mergers",
-          "content": "Procedures for when institutions transfer or merge programs affecting employees"
+          "subsections": {
+            "6.2.1": {
+              "title": "Notice of Program Transfer / Merger",
+              "content": "When one or more institutions covered by this Agreement decides to transfer or merge a program or a partial program and the transfer or merger will result in the transfer or layoff of one or more employees at one or more of the institutions, the institutions will provide written notice to the local union(s) as soon as possible, but in no event less than sixty (60) days prior to the date of transfer or merger."
+            },
+            "6.2.2": {
+              "title": "Transfer/Merger Agreements",
+              "content": "When notice is served, a committee composed of equal representation from each institution and each local union representing employees affected by the transfer or merger will be formed to negotiate a transfer/merger agreement. The transfer/merger agreement will address all relevant matters and will be signed by each of the parties. A copy of the agreement will be provided to each affected employee."
+            },
+            "6.2.3": {
+              "title": "Disputes",
+              "content": "Grievances arising prior to the transfer/merger date remain the responsibility of the sending institution. If a dispute arises as a result of a program transfer/merger and/or its employees being transferred the matter will be referred to the JADRC for resolution."
+            }
+          }
         },
         "6.3": {
           "title": "Registry of Laid Off Employees",
-          "content": "System-wide electronic registry of job postings and eligible employees for laid-off workers"
+          "subsections": {
+            "6.3.1": {
+              "title": "Electronic Posting of Available Positions",
+              "content": "On behalf of the Parties, the PSEA will maintain a system-wide electronic Registry of job postings and the necessary supporting database.",
+              "requirements": [
+                "(a) Institutions are encouraged to use the Registry for the posting of all available positions.",
+                "(b) Institutions will post on the Registry all employment opportunities of half-time or more and longer than three (3) months in duration that are available to applicants beyond those employed by the institution.",
+                "(c) Postings will be removed from the Registry and archived to the database one (1) week after the closing by the institution that entered the posting.",
+                "(d) Employers may elect to include job postings of positions from institutions not covered by this Agreement.",
+                "(e) All employees covered by this Agreement may access the electronic registry of job postings for purposes of review.",
+                "(f) Unions, employers and eligible employees have the right to access the information on the Registry."
+              ]
+            },
+            "6.3.2": {
+              "title": "Electronic Registry of Eligible Employees (Registrants)",
+              "eligibility": {
+                "subsection_a": "Employees covered by this Agreement are eligible for listing on the Registry if they are employees who have received notice of layoff or have been laid off and are either: (i) regular employees with one (1) calendar year of service working at fifty percent (50%) workload or greater, as defined in the applicable local agreement, or (ii) non-regular employees with two (2) calendar years of service working at fifty percent (50%) workload or greater, as defined in the applicable local agreements.",
+                "subsection_b": "Employees who meet the service requirements of Article 6.3.2(a)(i) above and have not had appointments renewed are eligible for listing on the Registry.",
+                "subsection_c": {
+                  "title": "Length of Listing",
+                  "content": "An employee listed on the Registry may continue to be listed until the earlier of: (i) recall or re-appointment to equivalent employment at the institution from which the person was laid off or was not re-appointed; (ii) obtaining equivalent employment as a result of being listed on the Registry; (iii) the expiration of the employee's recall rights or two (2) years from the date of registration, whichever is later."
+                },
+                "subsection_d": {
+                  "title": "Implementation",
+                  "process": [
+                    "(i) An employee applies for listing through their Employee Relations Department by completing the PSEA Registry of Eligible Employees form (Appendix E2 - Form 2).",
+                    "(ii) The institution will immediately forward the completed form to the PSEA who will list eligible employees on the Registry.",
+                    "(iii) A registrant is responsible to ensure that the information on the Registry is current and to notify immediately the Employer and the local union if they are no longer available for employment through the Registry."
+                  ]
+                },
+                "subsection_e": {
+                  "title": "Employees Not Eligible",
+                  "exclusions": "Employees are not eligible for listing on the Registry if they have: (i) had their employment terminated for just and reasonable cause; (ii) accepted early retirement, or (iii) voluntarily resigned their employment."
+                }
+              }
+            },
+            "6.3.3": {
+              "title": "Applying for Available Positions",
+              "requirements": [
+                "(a) It is the responsibility of employees listed on the Registry to enquire about and apply for available work as listed on the Electronic Posting of Available Positions.",
+                "(b) Employees applying for a posted position in the manner prescribed by the posting institution must tell the institution at the time of application that they are a registrant on the Registry."
+              ]
+            },
+            "6.3.4": {
+              "title": "Rights for Registrants",
+              "entitlements": {
+                "subsection_a": {
+                  "title": "Entitlement for Interview",
+                  "content": "Registrants applying for job postings at institutions who meet the hiring criteria as set by the Selection Committee at the hiring institution will be short-listed and will be interviewed. In the event that more than five (5) qualified registrants apply, the institution shall interview the five (5) most qualified registrants. The application of this language is subject to the provisions of the collective agreement in effect at the receiving institution."
+                },
+                "subsection_b": {
+                  "title": "Entitlements for Successful Applicants",
+                  "benefits": [
+                    "(i) Orientation/Training: A registrant who accepts an offer of available work shall be entitled to a reasonable amount of orientation and/or training.",
+                    "(ii) Benefits: Registrants who are eligible for health and welfare benefits at the hiring institution shall have the waiting period(s) waived subject to carrier provisions.",
+                    {
+                      "benefit": "(iii) Seniority: All registrants who accept an offer of available work will have their seniority recognized at the new institution for all purposes other than severance accrual for subsequent layoffs.",
+                      "details": [
+                        "(1) In the case of the hiring from the Registry of an applicant represented by the BCGEU into another bargaining unit represented by the BCGEU, they will have their seniority recognized for all purposes other than severance accrual.",
+                        "(2) FPSE local unions may elect to participate in a reciprocal arrangement with other participating FPSE locals and with the BCGEU bargaining units for the purposes of recognition of seniority other than severance accrual. FPSE local unions that elect to participate in such a reciprocal arrangement must indicate their participation through formal notification to JADRC.",
+                        "(3) In the case of the hiring of an applicant from the Registry by and from institutions with bargaining units registered with JADRC, the successful applicant shall carry their seniority to that new institution for all purposes other than severance accrual."
+                      ]
+                    },
+                    "(iv) Relocation Costs for Registrants: Relocation costs for successful applicants who change residence as a result of the hiring that are supported by proper proof of expenditures within ninety (90) days of commencing employment, will be paid by the hiring institution in accordance with its relocation policies and practices for the position for which the registrant was hired. If funding is available, the costs will be reimbursed to the hiring institution from the Labour Adjustment Fund.",
+                    "(v) Recall and Repayment: An employee hired from the Registry who is recalled by an institution and returns to work at that institution will repay relocation costs received from the institution that hired them in accordance with its relocation policies and practices for the position for which the registrant was hired."
+                  ]
+                }
+              }
+            }
+          }
         },
         "6.4": {
           "title": "Targeted Labour Adjustment",
-          "content": "Menu of labour adjustment strategies to minimize layoffs including job sharing, reduced hours, transfers, and severance options"
+          "subsections": {
+            "6.4.1": {
+              "title": "Employer Commitments",
+              "content": "It is agreed that the institution will make every reasonable attempt to minimize the impact of funding shortfalls and reductions on the work force. It is incumbent upon institutions to communicate effectively with their employees and the unions representing those employees as soon as the impact of any funding reduction or shortfall or profile change has been assessed. If a work force reduction is necessary, the Joint Labour Management Committee will canvas employees in a targeted area or other areas over a fourteen (14) day period, or such longer time as the Joint Labour Management Committee agrees, to find volunteer solutions that provide as many viable options as possible and minimize potential layoffs. Subject to any agreement that the Joint Labour Management Committee may make to extend the period of a canvass, such canvasses shall take place either: • prior to the issuance of lay-off notice to employees under the local agreement, or • by no later than fourteen (14) calendar days following the annual deadline for notice of non-renewal or layoff where a local provision provides for such a deadline, whichever date is later. The union shall be provided with a copy of each final plan for employee labour adjustment."
+            },
+            "6.4.2": {
+              "title": "Menu of Labour Adjustment Strategies",
+              "introduction": "Where a work force reduction is necessary, the following labour adjustment strategies will be considered, as applicable.",
+              "workplace_organization": {
+                "title": "6.4.2.1 Labour Adjustment Strategies: Workplace Organization",
+                "content": "Subject to the institution's operational considerations, excluding the availability of funding, the following menu of work place organization labour adjustment strategies will be offered by institutions to minimize layoffs and at the appropriate time in the employee reduction process set out in the local provisions:",
+                "strategies": [
+                  "(a) Job sharing.",
+                  "(b) Reduced hours of work through partial leaves.",
+                  "(c) Transfers to other areas within the bargaining unit subject to available work and to meeting qualifications, with minimal training required where such training can be scheduled within the employee's professional development and other non-instructional time.",
+                  "(d) Unpaid leaves of absence for use to seek alternate employment, retirement adjustment, retraining, etc.",
+                  "(e) Workload averaging that does not incur a net increase in compensation cost.",
+                  "(f) Combined pension earnings and reduced workload to equal one hundred percent (100%) of regular salary subject to compliance with the regulations of the College Pension Plan.",
+                  "(g) Agreed secondment.",
+                  "(h) Combinations and variations of the above or other workplace organization alternatives."
+                ]
+              },
+              "employee_transition": {
+                "title": "6.4.2.2 Labour Adjustment Strategies: Employee Transition",
+                "content": "Subject to the institution's operational considerations, including the availability of funding, the following menu of employee transition labour adjustment strategies will be offered by institutions to minimize layoffs and at the appropriate time in the employee reduction process set out in the local provisions:",
+                "strategies": [
+                  "(a) Paid leaves of absence for use to seek alternate employment, retirement adjustment, retraining, etc.",
+                  "(b) Severance with up to twelve (12) months' severance payment for an employee other than the employee(s) identified for layoff. Such severance shall be calculated by applying the local agreement severance provisions to the employee who is being offered severance. If the employee elects to take severance pay under this Article, they thereby waive all other rights, claims, or entitlements, and severs their relationship with the institution.",
+                  "(c) Workload averaging that does incur a net increase in compensation",
+                  "(d) Purchasing past pensionable service. If permissible the employer will match a minimum of three (3) years' contributions to the College Pension Plan where an employee opts for early retirement.",
+                  "(e) Early retirement incentives pursuant to local collective agreements.",
+                  "(f) Retraining.",
+                  "(g) Continuation of health and welfare benefits.",
+                  "(h) Combination and variations of the above or other employee transition alternatives."
+                ]
+              }
+            },
+            "6.4.3": {
+              "title": "Layoffs May Occur",
+              "content": "Once strategies other than layoff have been explored, the institutions may proceed, if need be, to layoffs. For those affected by layoff, the provisions of the local collective agreement will apply and the system-wide Electronic Registry of Laid off Employees will be available."
+            },
+            "6.4.4": {
+              "title": "No Stacking of Entitlements",
+              "content": "While various options may be considered and offered, there will be no stacking of entitlements."
+            }
+          }
         },
         "6.5": {
           "title": "Contracting Out",
-          "content": "Limitations on contracting out work that would result in layoffs or reduction in assigned workload"
+          "subsections": {
+            "6.5.1": {
+              "title": "Additional Limitation on Contracting Out",
+              "content": "In addition to, and without limiting, any provision in a local collective agreement, an institution covered by this Agreement will not contract out:",
+              "prohibitions": [
+                "(a) any work presently performed by the employees covered by a collective agreement which would result in the layoff of such employees, including a reduction in assigned workload, or",
+                "(b) the instructional activities that are contained in the programs listed and/or funded in the approved annual institutional program profile and that are currently performed by bargaining unit employees."
+              ]
+            },
+            "6.5.2": {
+              "title": "Certain Inter-Institutional Arrangements Permissible",
+              "content": "After consultation with a local bargaining unit, an institution covered by this Agreement may enter into arrangements to have instructional activities contained in the programs listed and/or funded in the approved annual institutional program profile performed by another institution covered by this Agreement provided it is performed by instructional bargaining unit employees in the receiving institution(s). Contract training work may also be moved between institutions which are party to this Agreement provided the work is done by instructional bargaining unit employees in the receiving institution(s)."
+            }
+          }
         },
         "6.6": {
-          "title": "Education Technology/Distributed Learning",
-          "content": "Provisions governing development and delivery of distributed learning programs including training, resources, and job security"
+          "title": "Education Technology/ Distributed Learning",
+          "subsections": {
+            "6.6.1": "Distributed learning includes, but is not limited to, print based education courses, online or web-based instruction, video-conferencing, teleconferencing, instructional video and audio tapes, hybrid or mixed-mode programs and courses.",
+            "6.6.2": "In developing and offering distributed learning programs and courses, the employer will plan in collaboration with the department or functional area and the employee(s) who will develop and/or deliver the program or course. For the purposes of this Article, departments or functional areas are defined as the operational or administrative sub-division of an institution within which an employee is appointed and assigned workload and may include geographic limitations.",
+            "6.6.3": "Subject to mutual agreement, the local parties may develop criteria for the determination of the appropriate release time for the development, delivery and revision of distributed learning programs or courses. To the extent that they contain provisions that address release time and workload for the development, delivery and revision of distributed learning programs or courses, local letters of understanding shall apply.",
+            "6.6.4": "The employer will provide the necessary technological and human resources for employees assigned to develop and deliver the program and courses.",
+            "6.6.5": "The employer will provide the necessary and appropriate training in the use of relevant educational technology for employees assigned to deliver distributed learning programs and courses.",
+            "6.6.6": "Employees delivering distributed learning programs/courses shall not be required to provide technical support to students taking distributed learning courses.",
+            "6.6.7": "Employees shall not be required to deliver distributed learning programs/ courses from their home. Employees delivering or developing distributed learning courses shall be provided with office space and the appropriate technology to support them in their work.",
+            "6.6.8": "Where an employee has been assigned an online course and agrees to the employers' request to teach all or part of that course from home, the employer shall provide the appropriate technology and pay for the reasonable and approved cost of delivering those courses from home.",
+            "6.6.9": "No regular employee will be laid off as a direct result of the introduction of distributed learning or education technology."
+          }
         }
       }
     },
@@ -189,221 +680,104 @@
       "sections": {
         "7.1": {
           "title": "Definitions",
-          "content": "Definitions of spouse, family, and related terms for leave provisions"
+          "content": "All references to spouse within the leave provisions of this Agreement include married and common-law partners regardless of sexual orientation, gender identity, or gender expression. References to family include spouse, children, children's spouses, stepchild, stepchild in-law, siblings, in-law siblings, parents, step-parents, parents-in-law, grandparents, grandchildren, nieces and nephews, and any other person living in the same household who is dependent upon the employee For the purpose of Article 7.8 – Compassionate Care Leave – only, the definition of "family member" is as set out in Appendix I."
         },
         "7.2": {
           "title": "General Leave",
-          "content": "Employer may grant leave with or without pay for up to twenty-four (24) consecutive months"
+          "content": "An Employer may grant a leave of absence with or without pay to an employee for any reason for up to twenty-four (24) consecutive months. Such leaves shall not be unreasonably denied. Where an application for general leave is denied, the applicant will be provided with a written explanation for the denial of the leave."
         },
         "7.3": {
           "title": "Seniority Accrual",
-          "content": "All paid leaves treated as continuous employment for seniority accrual purposes"
+          "content": "All paid leaves shall be treated as continuous employment for the purposes of seniority accrual. Unpaid leaves shall be treated as continuous employment for the purposes of seniority accrual for the duration of the leave, except for movement up the salary increment scale."
+        },
+        "7.4": {
+          "title": "Retention of Status",
+          "content": "An employee on approved paid or unpaid leave will retain their employment status for the duration of the leave."
+        },
+        "7.5": {
+          "title": "Benefits While on Leave",
+          "content": "An employee will continue to receive their salary and benefits while on paid leave under this Article. An employee on unpaid leave may arrange to pay the costs required to maintain benefit coverage in accordance with the local provisions of the collective agreement."
         },
         "7.6": {
           "title": "Bereavement Leave",
-          "content": "Five (5) days leave with no loss of pay and benefits for death of family member"
+          "content": "An employee will be entitled to five (5) days leave with no loss of pay and benefits in the case of the death of a family member and upon notification to the employer. The Employer may grant additional leave with pay."
         },
         "7.7": {
           "title": "Family Illness Leave",
-          "content": "Up to five (5) days per year without loss of pay or benefits for family illness"
+          "content": "An employee will be granted leave of absence for up to five (5) days per year without loss of pay or benefits for family illness. Additional family illness leave may be granted by the employer."
         },
         "7.8": {
           "title": "Compassionate Care Leave",
-          "content": "Up to twenty-seven (27) weeks without pay to care for gravely ill family member"
+          "subsections": {
+            "7.8.1": {
+              "title": "Entitlement",
+              "content": "An employee will be granted a compassionate care leave of absence without pay for up to twenty-seven (27) weeks to care for a gravely ill family member. For the purpose of this Article 7.8, "family member" is defined as one of the persons listed in Appendix I – Family Members for the Purpose of Article 7.8 Compassionate Care Leave. In order to be eligible for this leave, the employee must provide a medical certificate as proof that the ill family member needs care or support and is at risk of dying within twenty-six (26) weeks. An employee who is granted a compassionate care leave of absence to care for a gravely ill family member shall be entitled to the benefits as follows:",
+              "benefits": [
+                "a) The employee's benefit coverage will continue for the duration of the compassionate care leave, to a maximum of twenty-seven (27) weeks, and the premium payment shall be on the same basis as if the employee were not on leave.",
+                "b) Where an employee elects to buy back pensionable service for part of all of the duration of the compassionate care leave, to a maximum of twenty-seven (27) weeks, the employer will pay the employer portion of the pension contribution in accordance with the Pension Plan regulations.",
+                "c) Compassionate care leave, up to a maximum of twenty-seven (27) weeks, shall be treated as continuous employment for the purposes of seniority accrual under this Agreement.",
+                "d) An employee who returns to work following a leave granted under this provision shall be placed in the position the employee held prior to the leave or in a comparable position."
+              ]
+            },
+            "7.8.2": {
+              "title": "Additional Leaves",
+              "content": "Should an employee require additional time to care for a gravely ill family member, additional leaves may be granted beyond the twenty-seven (27) week period specified in Article 7.8.1 above. Such additional leave shall be in accordance with the Employment Standards Act, including the certification criteria as outlined in the Act."
+            }
+          }
+        },
+        "7.9": {
+          "title": "Donor Leave",
+          "content": "An employee who is donating bone marrow or an organ is eligible for leave for the purpose of such donation. An employee on such leave may apply for sick leave and/or short-term disability benefits as applicable."
         },
         "7.10": {
           "title": "Jury Duty and Court Appearances",
-          "content": "Leave without loss of pay and benefits for jury duty or court appearances"
+          "content": "Leave of absence without loss of pay and benefits will be provided to an employee summoned to serve on a jury or when subpoenaed or summoned as a witness in a criminal or civil proceeding not occasioned by the employee's private affairs, or when the employee accompanies a dependent child when the child is subpoenaed or summoned to appear as a witness in a criminal or civil proceeding. An employee in receipt of pay or benefits under this Article has the responsibility to reimburse the employer all monies paid to them by the Court, except travelling and meal allowances not reimbursed by the employer."
         },
         "7.11": {
           "title": "Public Duties",
-          "content": "Leave provisions for election activities and public office"
+          "subsections": {
+            "7.11.1": "An employer may grant a leave of absence without pay to an employee to engage in election campaign activities in a municipal, provincial, federal election, or Aboriginal government to a maximum of ninety (90) days. Such leaves will not be unreasonably denied.",
+            "7.11.2": {
+              "content": "An employer will grant a leave of absence without pay to an employee:",
+              "provisions": [
+                "(a) to seek election in a municipal, provincial, federal election, or Aboriginal government to a maximum of ninety (90) days.",
+                "(b) Where elected to public office, for up to two (2) consecutive terms."
+              ]
+            },
+            "7.11.3": "The Parties agree that Article 7.11 Public Duties may be applied to duties that include non-elected Aboriginal governance."
+          }
+        },
+        "7.12": {
+          "title": "Exchange Leave",
+          "content": "An employee holding a regular or continuous appointment may exchange their position and responsibilities with a qualified person from another institution for a fixed period of time with the agreement of the employee's Department and the employer. The employee will continue to receive regular salary and benefits for the duration of the exchange. The exchanging individual will be paid by their institutional employer. Where there are large inequities in cost of living between the location of the exchanging individual, the employer and the employee may discuss whether further assistance is required to facilitate the exchange."
         },
         "7.13": {
           "title": "Deferred Salary Leave",
-          "content": "Each employer will establish deferred salary leave plan consistent with Canada Revenue Agency regulations"
+          "content": "Each employer ratifying this Agreement will establish or, as necessary, review and update a deferred salary leave plan consistent with Regulations issued by Canada Revenue Agency under the Income Tax Act. The parties may use the Application, Agreement, and Approval Form as a template (see Appendix H) for the deferred salary leave plan."
+        },
+        "7.14": {
+          "title": "Leave Respecting the Death of a Child",
+          "content": "An employee is entitled to a leave of absence without pay of up to 104 weeks if they are entitled to leave respecting the death of a child under the Employment Standards Act and such leave will be in accordance with the Employment Standards Act. There will be no interruption in the accrual of seniority or eligibility for benefits."
+        },
+        "7.15": {
+          "title": "Leave Respecting the Disappearance of a Child",
+          "content": "An employee is entitled to a leave of absence without pay of up to 52 weeks if they are entitled to leave respecting the disappearance of a child under the Employment Standards Act and such leave will be in accordance with the Employment Standards Act. There will be no interruption in the accrual of seniority or eligibility for benefits."
+        },
+        "7.16": {
+          "title": "Leave for Domestic Violence",
+          "content": "Where leave from work is required due to an employee and/or an employee's dependent child being a victim of domestic violence, the employee shall be granted leave, in each calendar year, as follows in accordance with Employment Standards Act:",
+          "entitlements": [
+            "(a) up to ten (10) days of unpaid leave to be taken intermittently or in one continuous period; and",
+            "(b) up to fifteen (15) weeks of unpaid leave."
+          ],
+          "paid_provision": "Notwithstanding the above, the Employer will provide pay for three (3) of the days referenced in (a) above. In the event existing legislation is changed regarding domestic violence leave to provide more than three (3) days paid leave, the Employer will provide such leave consistent with the legislation. (No stacking of entitlements.)"
         },
         "7.17": {
           "title": "Cultural Leave for Aboriginal Employees",
-          "content": "Up to three (3) days' leave with pay per calendar year for Aboriginal cultural events"
-        }
-      }
-    },
-    "8": {
-      "title": "PARENTAL LEAVE",
-      "sections": {
-        "8.1": {
-          "title": "Preamble",
-          "content": "Definitions and entitlement to leave of absence without pay of up to twelve (12) consecutive months in addition to statutory requirements"
-        },
-        "8.2": {
-          "title": "Commencement of Leave",
-          "content": "Timing provisions for when leave may commence for birth mothers, spouses, and adopting parents"
-        },
-        "8.3": {
-          "title": "Benefits Continuation",
-          "content": "Employer maintains coverage for medical, extended health, dental, group life and disability benefits"
-        },
-        "8.4": {
-          "title": "Return to Work",
-          "content": "Employee retains seniority and is placed in same or comparable position upon return"
-        },
-        "8.5": {
-          "title": "Supplemental Employment Benefit (SEB) for Maternity and Parental Leave",
-          "content": "Detailed provisions for supplemental payments to Employment Insurance benefits during maternity and parental leave"
-        }
-      }
-    },
-    "9": {
-      "title": "HEALTH AND WELFARE BENEFITS",
-      "sections": {
-        "9.1": {
-          "title": "Joint Committee on Benefits Administration",
-          "content": "Establishment of Joint Committee with four (4) members from each side to oversee benefits administration"
-        },
-        "9.2": {
-          "title": "Specific Benefits",
-          "content": "Extended Health Benefits with 95% reimbursement, Group Life and ADD at 3x annual salary, Dental Plan provisions"
-        },
-        "9.3": {
-          "title": "Disability Benefits",
-          "content": "Single plan providing 100% salary for first 30 days, 70% for next 21 weeks, and 70% long-term disability thereafter"
-        }
-      }
-    },
-    "10": {
-      "title": "PENSIONS",
-      "sections": {
-        "10.1": {
-          "title": "Mandatory Enrolment",
-          "content": "Enrolment in the College Pension Plan as set out by the Public Sector Pension Plans Act, Schedule A"
-        },
-        "10.2": {
-          "title": "Existing Employees",
-          "content": "Employees on payroll as of ratification who have not joined retain the right not to do so"
-        }
-      }
-    },
-    "11": {
-      "title": "EARLY RETIREMENT INCENTIVE",
-      "sections": {
-        "11.1": {
-          "title": "Definition",
-          "content": "Early retirement defined as retirement at or after age 55 and before age 64"
-        },
-        "11.2": {
-          "title": "Eligibility",
-          "content": "Must be at highest achievable step of salary scale and have minimum of ten (10) years of full-time equivalent service"
-        },
-        "11.3": {
-          "title": "Incentive Payment",
-          "content": "Age-based incentive payment schedule from 100% at age 55-59 down to 0% at age 64"
-        }
-      }
-    },
-    "12": {
-      "title": "SALARIES",
-      "sections": {
-        "12.1": {
-          "title": "Provincial Salary Scale",
-          "content": "Annual salary increases of 2% effective April 1, 2019, April 1, 2020, and April 1, 2021"
-        },
-        "12.2": {
-          "title": "Secondary Scale Adjustment",
-          "content": "All steps on secondary scales increased by 2% on same dates as provincial scale"
-        },
-        "12.3": {
-          "title": "Maintenance of Placement",
-          "content": "Employee moving between institutions within two years maintains higher salary placement"
-        },
-        "12.4": {
-          "title": "Calculation of Pay",
-          "content": "Institutions review division of annual pay to ensure employees receive full or pro-rated gross annual salary"
-        },
-        "12.5": {
-          "title": "Overload",
-          "content": "Regular employee working overload receives pro-rata salary or commensurate workload reduction"
-        },
-        "12.6": {
-          "title": "Faculty Administrative Stipends",
-          "content": "Stipends for faculty administrative positions increased by 2% on same schedule as salary scales"
-        }
-      }
-    },
-    "13": {
-      "title": "EFFECT OF THIS AGREEMENT",
-      "sections": {
-        "13.1": {
-          "title": "Local Agreement Supersession",
-          "content": "Where local collective agreement provides greater employee benefit, local provision supersedes Common Agreement"
-        },
-        "13.2": {
-          "title": "Effective Date",
-          "content": "All provisions effective on date of ratification except as otherwise noted"
-        },
-        "13.3": {
-          "title": "Exceptions to Article 13.1",
-          "content": "Lists specific articles not subject to local agreement supersession"
-        }
-      }
-    },
-    "14": {
-      "title": "INTERNATIONAL EDUCATION",
-      "sections": {
-        "14.1": {
-          "title": "General",
-          "content": "Employee participation voluntary, collective agreement terms apply, workload interpretation provisions"
-        },
-        "14.2": {
-          "title": "Expenses",
-          "content": "Employer reimburses receipted expenses pursuant to policy, provides travel advances"
-        },
-        "14.3": {
-          "title": "Health and Welfare Benefits",
-          "content": "Current benefits coverage provided, premiums paid as if working in BC, travel medical insurance supplied"
-        },
-        "14.4": {
-          "title": "Emergencies and Emergency Evacuation",
-          "content": "24-hour contact provisions, evacuation procedures, employer responsibility for emergency expenses"
-        },
-        "14.5": {
-          "title": "Orientation and Return",
-          "content": "Reasonable orientation prior to departure, three working days between international assignment and regular duties"
-        }
-      }
-    },
-    "15": {
-      "title": "HEALTH AND SAFETY EQUIPMENT",
-      "sections": {
-        "15.1": {
-          "title": "Equipment Provision",
-          "content": "Employer supplies at no cost all health and safety apparel and equipment required by BC Workers' Compensation Act"
-        }
-      }
-    },
-    "16": {
-      "title": "COMMON FACULTY PROFESSIONAL DEVELOPMENT FUND",
-      "sections": {
-        "16.1": {
-          "title": "Purpose",
-          "content": "Fund in support of professional development activities for maintenance and development of faculty professional competence"
-        },
-        "16.2": {
-          "title": "Process",
-          "content": "Local parties agree on process and criteria for review and adjudication of employee applications"
-        },
-        "16.3": {
-          "title": "Fund",
-          "content": "Fund set at 0.6% of faculty salary for each institution, unspent monies retained by employer"
-        }
-      }
-    },
-    "17": {
-      "title": "TERM",
-      "sections": {
-        "17.1": {
-          "title": "Agreement Term",
-          "content": "Agreement in effect from April 1, 2019 to March 31, 2022, continues until renewal"
+          "provisions": [
+            "(a) A self-identified Aboriginal employee may request up to three (3) days' leave with pay per calendar year to organize and/or attend Aboriginal cultural event(s). Such leave will not be unreasonable withheld.",
+            "(b) Employees will provide the Employer with the dates of the days for which leave will be requested. Wherever possible, employees will provide a minimum of two weeks' notice for leave under this provision."
+          ]
         }
       }
     }
@@ -466,19 +840,418 @@
         "april_1_2021_to_march_31_2022": 61596
       }
     },
-    "salary_increases": {
-      "april_1_2019": "2%",
-      "april_1_2020": "2%", 
-      "april_1_2021": "2%"
+    "footnote": "The first day of the first full pay period after this date. For April 1, 2019, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. For April 1, 2020, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment."
+  },
+  "articles_continued": {
+    "8": {
+      "title": "PARENTAL LEAVE",
+      "sections": {
+        "8.1": {
+          "title": "Preamble",
+          "subsections": {
+            "8.1.1": {
+              "title": "Definitions",
+              "terms": {
+                "common_law_partner": "is a person of the same or different sex where the employee has signed a declaration or affidavit that they have been living in a common-law relationship or have been co-habiting for at least twelve (12) months. The period of co-habitation may be less than twelve (12) months where the employee has claimed the common-law partner's child/children for taxation purposes.",
+                "base_salary": "is the salary that an employee would earn if working their full workload up to a maximum of a full workload as defined in the employee's collective agreement."
+              }
+            },
+            "8.1.2": {
+              "title": "Entitlement",
+              "content": "Upon written request, an employee shall be entitled to a leave of absence without pay of up to twelve (12) consecutive months in addition to statutory requirements."
+            }
+          }
+        },
+        "8.2": {
+          "title": "Commencement of Leave",
+          "introduction": "Leave taken under Article 8.1.2 shall commence:",
+          "timing_options": {
+            "8.2.1": "for the birth mother, immediately after the end of the leave taken under the maternity leave provisions or within seventy-eight (78) weeks of the birth unless the employer and the employee agree otherwise.",
+            "8.2.2": "for a spouse, a biological father, or a common-law partner to care for the child after the child's birth and within seventy-eight (78) weeks of the birth.",
+            "8.2.3": "for an adopting parent, within seventy-eight (78) weeks after the child is placed with the parent."
+          }
+        },
+        "8.3": {
+          "title": "Benefits Continuation",
+          "content": "The Employer will maintain coverage for medical, extended health, dental, group life and disability benefits for leaves taken under Article 8. For the period of the leave, premium and pension contribution payment will be as follows:",
+          "payment_terms": [
+            "(a) Premium payment for benefit coverage shall be on the same basis as if the employee were not on leave.",
+            "(b) Contributions for pensionable service shall be on the same basis as if the employee were not on leave. Where an employee elects to buy back pensionable service for part or all of the Article 8 leave, the employer will pay the employer portion of the pension contributions in accordance with the Pension Plan regulations."
+          ]
+        },
+        "8.4": {
+          "title": "Return to Work",
+          "provisions": {
+            "8.4.1": "An employee who returns to work following a parental leave shall retain the seniority the employee had attained prior to the leave and shall accrue seniority for the period of leave.",
+            "8.4.2": "An employee who returns to work following a parental leave, shall be placed in the same position that employee held prior to the leave or in a comparable position.",
+            "8.4.3": "An employee who has taken leave under this provision is entitled to all increases in wages and benefits the employee would have been entitled to had the leave not been taken.",
+            "8.4.4": "Where the proposed commencement of the leave or return to work does not coincide with the instructional calendar the local parties will negotiate mutually acceptable dates.",
+            "8.4.5": "Upon written request, an employee on parental leave under Article 8.1.2 may return to work on a graduated basis. Upon receipt of a request, the local parties will mutually agree to an acceptable graduated parental leave return to work plan for the employee."
+          }
+        },
+        "8.5": {
+          "title": "Supplemental Employment Benefit (SEB) for Maternity and Parental Leave",
+          "subsections": {
+            "8.5.1": {
+              "content": "When on maternity or parental leave, an employee will receive a supplemental payment added to Employment Insurance benefits as follows:",
+              "payment_schedule": [
+                "(a) For the first week of maternity leave an employee shall receive one hundred percent (100%) of their salary calculated on their average base salary.",
+                "(b) For a maximum of fifteen (15) additional weeks of maternity leave the employee shall receive an amount equal to the difference between the Employment Insurance benefits and ninety-five percent (95%) of their salary calculated on their average base salary.",
+                "(c) For up to a maximum of thirty-five (35) weeks of parental leave, the biological, adoptive or legally recognized parent shall receive an amount equal to the difference between the Employment Insurance Standard Parental EI Benefits and eighty-five percent (85%) of the employee's salary calculated on their average base salary.",
+                "(d) If the biological, adoptive or legally recognized parent elects the Extended Parental EI Benefit, for a maximum of sixty-one (61) weeks the parent shall receive the same total SEB benefit amount received under article 8.5.1(c) when the employee opts for the thirty-five (35) week EI benefit, spread out and paid over the sixty-one (61) week period. The Employer will make this calculation.",
+                "(e) Provided the employee received SEB as per Article 8.5.1(a), (b), (c), or (d), for the last week of the parental leave, where no EI benefit is paid, the employee shall receive one hundred percent (100%) of their salary calculated on their average base salary.",
+                "(f) The average base salary for the purpose of Article 8.5.1(a) through (e) is the employee's average base salary for the twenty-six (26) weeks preceding the maternity or parental leave. If the employee has been on unpaid leave for part of the preceding twenty-six (26) weeks, then up to four (4) weeks of that unpaid leave will be subtracted from the twenty-six (26) weeks for the purpose of calculating the average base salary."
+              ]
+            },
+            "8.5.2": "An employee is not entitled to receive Supplemental Employment Benefits and disability benefits concurrently. To receive Supplemental Employment Benefits the employee shall provide the employer with proof of application for and receipt of Employment Insurance benefits.",
+            "8.5.3": {
+              "title": "Repayment of the Supplemental Employment Benefit",
+              "terms": [
+                "(a) To be entitled to the Supplemental Employment Benefit as noted above, an employee must sign an agreement that they will return to work (provided there is reasonable expectation of work) and remain in the Employer's employ for a period of the duration of the leaves taken or six (6) months, whichever is less (exclusive of leave taken pursuant to Article 8.1.2) after their return to work. Should the employee fail to return to work for a period of the duration of the leaves taken or six (6) months, whichever is less, the employee shall reimburse the Employer for the Supplemental Employment Benefit on a pro rata basis. Should a repayment be required, any monies owing will be deducted from the employee's pay, if available, otherwise the employee will be invoiced.",
+                "(b) Article 8.5.3(a) does not apply to an employee while they are on a leave under Article 8.1.2. Article 8.5.3(a) will apply once the leave under Article 8.1.2 has ended."
+              ]
+            }
+          }
+        }
+      }
+    },
+    "9": {
+      "title": "HEALTH AND WELFARE BENEFITS",
+      "sections": {
+        "9.1": {
+          "title": "Joint Committee on Benefits Administration",
+          "subsections": {
+            "9.1.1": {
+              "title": "Committee Established",
+              "content": "The Parties agree to maintain a Joint Committee on Benefits with four (4) members appointed by each side."
+            },
+            "9.1.2": {
+              "title": "Committee Mandate",
+              "content": "The Joint Committee on Benefits has a mandate to undertake tasks related to health and welfare benefits and disability benefits including:",
+              "tasks": [
+                "(a) Comparison and analysis of contract administration and costs, using criteria developed by the committee.",
+                "(b) Monitoring carrier performance including receiving reports from the plan administrator(s).",
+                "(c) Reviewing the cost effectiveness and quality of benefit delivery, service, and administration by carriers, including access issues.",
+                "(d) Tendering of contracts.",
+                "(e) Training for local Joint Rehabilitation Committees."
+              ],
+              "additional_note": "Participation in the existing Benefits User Group will continue. Participation is open to institutions that are not currently members of the Benefits User Group."
+            },
+            "9.1.3": {
+              "title": "Constraints",
+              "content": "The Joint Committee on Benefits will not make any changes to the plan provisions that would increase the costs of health and welfare benefits or disability benefits for individual employers or reduce plan provisions without the agreement of the Parties to this Agreement. The Joint Committee shall be authorized to determine appropriate use of the Article 9.1.3 savings from the 1998-2001 agreement (in the amount of $71,849) and to allocate the funds to that use."
+            },
+            "9.1.4": {
+              "title": "Costs of the Joint Committee",
+              "content": "The employers will pay up to $50,000 for the costs of the committee's operations, exclusive of salaries and benefits."
+            }
+          }
+        },
+        "9.2": {
+          "title": "Specific Benefits",
+          "subsections": {
+            "9.2.1": {
+              "title": "Benefit Provisions",
+              "content": "The following benefits will be provided to employees based on eligibility requirements in the local collective agreements:",
+              "benefit_categories": {
+                "extended_health_benefits": {
+                  "provisions": [
+                    "(i) Total lifetime coverage level will be unlimited.",
+                    "(ii) Reimbursement level on claims will be ninety-five percent (95%); where existing reimbursement provisions in a local agreement exceed ninety-five percent (95%), the existing local provision will remain in force.",
+                    "(iii) Hearing Aid benefit claims will be to a maximum of one-thousand dollars ($1000) every three (3) years.",
+                    "(iv) Medical Travel Referral Benefit shall be in accordance with the provisions set out in Appendix F.",
+                    "(v) Health and welfare benefits coverage will cease on the day that an employee's employment terminates.",
+                    "(vi) Eye vision exams shall be reimbursed to a maximum of one hundred dollars ($100) every two (2) years.",
+                    "(vii) Vision care shall be increased to six-hundred and fifty dollars ($650) every two (2) years."
+                  ]
+                },
+                "group_life_and_add": "Group Life and Accidental Death and Dismemberment benefits each shall be set at three (3) times the employee's annual salary.",
+                "dental_plan": "Plan A that includes revision of cleaning of the teeth (prophylaxis and scaling) every nine months except dependent children (up to age 19) and those with gum disease and other dental problems as approved by the Plan. Dental Plan interpretation shall be in accordance with the provisions set out in Appendix G.",
+                "termination_of_coverage": "Retiring employees who are eligible under the local collective agreement for health and welfare benefits and who have applied for College Pension Plan benefits will maintain coverage until the commencement of pension health and welfare benefits and in any event no later than ninety (90) calendar days following the date of the employee's retirement."
+              }
+            },
+            "9.2.2": {
+              "title": "Flexible Benefit Plan Impact",
+              "content": "Existing flexible benefits plan default levels of coverage shall be increased, where necessary, to match the benefit levels established in Article 9.2.1."
+            },
+            "9.2.3": {
+              "title": "Level of Health and Welfare Benefits",
+              "content": "There will be no change to the level of health and welfare benefits without prior consultation between the local parties."
+            }
+          }
+        },
+        "9.3": {
+          "title": "Disability Benefits",
+          "subsections": {
+            "9.3.1": "The employers shall continue a single plan for the provision of disability benefits for eligible employees who are covered by this Agreement and whose local bargaining unit has opted into this Agreement's Plan pursuant to Article 9.3.3 in the 2001-2004 Common Agreement who have joined or who will subsequently join the plan pursuant to Article 9.3.3 below.",
+            "9.3.2": {
+              "content": "(a) The disability benefits plan will be as set out in the findings of the Joint Committee on Benefits Administration (JCBA) entitled Long-Term Disability Benefit Initiative, but will be an insured plan and will include the following elements:",
+              "plan_elements": [
+                "• Benefit level of sick leave at one hundred percent (100%) for the first thirty (30) calendar days, short-term disability at seventy percent (70%) weekly indemnity for the next twenty one (21) weeks, and long-term disability leave of seventy percent (70%) thereafter",
+                "• Long-term disability as defined on the basis of two-year own occupation and any other occupation thereafter as described by the JCBA plan",
+                "• Health and welfare benefit premiums will be paid by the employer or the Plan for employees on sick leave, short-term disability and long-term disability",
+                "• Employer payment of premiums for both short-term and long-term disability benefits",
+                "• Claims Review Committee made up of three (3) medical doctors (one designated by the claimant, one by the employer and the third agreed to by the first two doctors)",
+                "• Mandatory rehabilitation as described in the JCBA plan",
+                "• Subject to provisions of the Plan, enrolment is mandatory for all active regular employees and for active non-regular employees employed on a continuing basis for at least a four (4) month period with fifty percent (50%) or more of a full-time workload as defined by local provisions."
+              ],
+              "partial_disability": "(b) The disability benefits plan includes Partial Disability Benefits which shall be administered in accordance with the terms and conditions of this plan, as amended July 1, 2009."
+            },
+            "9.3.3": {
+              "content": "Within ninety (90) days of the ratification of this Agreement, a local bargaining unit that is not already covered by the common disability plan shall advise the local employer in writing either:",
+              "options": [
+                "(a) that it wishes its members to be covered by the disability benefits plan by this Agreement, or",
+                "(b) that it wishes its members to continue to be covered by the disability benefits plan that currently applies to them."
+              ]
+            },
+            "9.3.4": {
+              "content": "(a) Current employees in a local bargaining unit that chooses to participate in this Agreement's disability benefits plan under Article 9.3.3 (a) above shall retain any sick leave banks accrued up to but not beyond March 31, 2004 including any entitlement to full or partial payout of such sick leave banks. The local provisions for use of those sick leave banks including payout, where applicable, shall continue to apply.",
+              "additional_provision": "(b) Current employees in a local bargaining unit that chooses to participate in this Agreement's disability benefits plan under Article 9.3.3 (a) and who have sick leave benefits of a fixed amount of time and who are entitled under their local collective agreement to a payout of such benefits shall have those benefits converted to a bank as of March 31, 2004 and shall be entitled to payout of the bank, subject to the provisions of the local collective agreement."
+            },
+            "9.3.5": "Employees in a local bargaining unit that chooses to participate in this Agreement's disability benefits plan under Article 9.3.3 (a) and who are not eligible for enrolment in the Plan shall be entitled to sick leave coverage as provided in the local collective agreement, subject to such sick leave not exceeding a maximum of thirty (30) calendar days per illness.",
+            "9.3.6": "Disability benefits plan members shall establish and maintain a Joint Rehabilitation Committee (JRC) with up to two (2) representatives appointed by the Union and up to two (2) representatives appointed by the Employer. The operation of the JRC is subject to the terms and conditions of the disability benefits plan.",
+            "9.3.7": "The Joint Committee on Benefits Administration (JCBA) shall oversee the continuation of the plan as described in Article 9.3.2 and shall address such matters pertaining to the plan as are included in the JCBA's mandate as set out in Article 9.1.2."
+          }
+        }
+      }
+    },
+    "10": {
+      "title": "PENSIONS",
+      "sections": {
+        "10.1": {
+          "title": "Mandatory Enrolment",
+          "content": "Enrolment in the College Pension Plan shall be as set out by the Public Sector Pension Plans Act, Schedule A."
+        },
+        "10.2": {
+          "title": "Existing Employees",
+          "content": "The employer will encourage employees who have not joined the College Pension Plan to do so. However, employees on payroll as of the date of ratification who have not joined the College Pension Plan shall retain the right not to do so."
+        }
+      }
+    },
+    "11": {
+      "title": "EARLY RETIREMENT INCENTIVE",
+      "sections": {
+        "11.1": {
+          "title": "Definition",
+          "content": "For the purposes of this provision, early retirement is defined as retirement at or after age 55 and before age 64."
+        },
+        "11.2": {
+          "title": "Eligibility",
+          "requirements": {
+            "11.2.1": "An employee must be at the highest achievable step of the salary scale.",
+            "11.2.2": "An employee must have a minimum of ten (10) years of full-time equivalent service in the BC College and Institute System."
+          }
+        },
+        "11.3": {
+          "title": "Incentive Payment",
+          "subsections": {
+            "11.3.1": {
+              "content": "An employer may offer and an employee may accept an early retirement incentive based on the age at retirement to be paid in the following amounts",
+              "payment_schedule": {
+                "age_55_to_59": "100% of Annual Salary at Time of Retirement",
+                "age_60": "80%",
+                "age_61": "60%",
+                "age_62": "40%",
+                "age_63": "20%",
+                "age_64": "0%"
+              }
+            },
+            "11.3.2": "An employer may opt to pay the early retirement incentive in three equal annual payments over a thirty-six (36) month period.",
+            "11.3.3": "Eligible bargaining unit members may opt for a partial early retirement with a pro-rated incentive."
+          }
+        }
+      }
+    },
+    "12": {
+      "title": "SALARIES",
+      "sections": {
+        "12.1": {
+          "title": "Provincial Salary Scale",
+          "content": "The Provincial Salary Scale is attached as Appendix A.",
+          "increases": {
+            "12.1.1": "Effective the first day of the first full pay period after April 1, 2019, all annual rates of pay in Appendix A of the collective agreement which were in effect on March 31, 2019 shall be increased by two percent (2%). The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.1.2": "Effective the first day of the first full pay period after April 1, 2020, all annual rates of pay in Appendix A of the collective agreement which were in effect on March 31, 2020 shall be increased by two percent (2%). The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.1.3": "Effective the first day of the first full pay period after April 1, 2021, all annual rates of pay in Appendix A of the collective agreement which were in effect on March 31, 2021 shall be increased by two percent (2%)."
+          },
+          "rounding_and_application": "The new rates shall be rounded to the nearest whole dollar. These wage increases shall apply to all current employees who are members of the bargaining unit on the date of ratification. Notwithstanding the foregoing, any former employees who worked for any of the FTT Employers in a FTT bargaining unit position between April 1, 2019 and the date of ratification must apply to the applicable FTT Employer within eight (8) weeks of the date of ratification in order to be eligible and receive the increased amount as retroactive payment. It is understood that any retroactive payments will be processed when practicable, given the current public health issue."
+        },
+        "12.2": {
+          "title": "Secondary Scale Adjustment",
+          "content": "All steps on secondary scales will be increased as follows:",
+          "increases": {
+            "12.2.1": "Effective the first day of the first full pay period after April 1, 2019: two percent (2%). The Parties agree that retroactive adjustment will apply from the date of ratification to April 1, 2019 in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.2.2": "Effective the first day of the first full pay period after April 1, 2020: two percent (2%). The Parties agree that retroactive adjustment will apply from the date of ratification to April 1, 2020 in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.2.3": "Effective the first day of the first full pay period after April 1, 2021: two percent (2%).",
+            "12.2.4": "Despite Articles 12.2.1 to 12.2.3, above, local parties may elect to revise secondary scales to the extent possible within a weighted average of the salary increases specified in Article 12.2."
+          },
+          "rounding_and_application": "The new rates shall be rounded to the nearest whole cent or dollar as applicable. These wage increases shall apply to all current employees who are members of the bargaining unit on the date of ratification. Notwithstanding the foregoing, any former employees who worked for any of the FTT Employers in a FTT bargaining unit position between April 1, 2019 and the date of ratification must apply to the applicable FTT Employer within eight (8) weeks of the date of ratification in order to be eligible and receive the increased amount as retroactive payment. It is understood that any retroactive payments will be processed when practicable, given the current public health issue."
+        },
+        "12.3": {
+          "title": "Maintenance of Placement",
+          "content": "Where an employee covered by this Agreement becomes employed within two (2) years by another institution also covered by this Agreement, initial placement shall be made at the higher of the placement formula at the hiring institution or their current or most recent salary step. This will only apply when the employee becomes employed in the same or a substantially similar field. The normal probation provisions of the hiring institution will apply."
+        },
+        "12.4": {
+          "title": "Calculation of Pay",
+          "content": "Each institution will review its division of annual pay into pay periods to ensure that employees receive the full or pro-rated (as applicable) gross annual salary in the Provincial Salary Scale in Appendix A."
+        },
+        "12.5": {
+          "title": "Overload",
+          "content": "A regular employee who works an overload in a given year shall receive no less than either:",
+          "options": [
+            "(a) the pro-rata salary for the overload based on the Provincial Salary Scale or the secondary scale on which the employee is placed or",
+            "(b) a reduction of workload in a subsequent year that is commensurate with the amount of the overload."
+          ],
+          "conditions": "The conditions governing overloads are as set out in the regular employee's local collective agreement, subject to the above provision."
+        },
+        "12.6": {
+          "title": "Faculty Administrative Stipends",
+          "content": "Stipends currently in place for faculty administrative positions that are occupied by employees covered by this Agreement shall be increased as follows:",
+          "increases": {
+            "12.6.1": "Effective the first day of the first full pay period after April 1, 2019: two percent (2%). The Parties agree that retroactive adjustment will apply from the date of ratification to April 1, 2019 in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.6.2": "Effective the first day of the first full pay period after April 1, 2020: two percent (2%). The Parties agree that retroactive adjustment will apply from the date of ratification to April 1, 2020 in the case of a tentative settlement on or before June 30, 2020. After the date there will be no retroactive adjustment. The Parties agree that PSEA and FPSE may extend this June 30, 2020 deadline by mutual agreement.",
+            "12.6.3": "Effective the first day of the first full pay period after April 1, 2021: two percent (2%)."
+          },
+          "rounding_and_application": "The new rates shall be rounded to the nearest whole cent or dollar as applicable. These wage increases shall apply to all current employees who are members of the bargaining unit on the date of ratification. Notwithstanding the foregoing, any former employees who worked for any of the FTT Employers in a FTT bargaining unit position between April 1, 2019 and the date of ratification must apply to the applicable FTT Employer within eight (8) weeks of the date of ratification in order to be eligible and receive the increased amount as retroactive payment. It is understood that any retroactive payments will be processed when practicable, given the current public health issue."
+        }
+      }
+    },
+    "13": {
+      "title": "EFFECT OF THIS AGREEMENT",
+      "sections": {
+        "13.1": "Where a provision of a local collective agreement provides a greater employee benefit than does a similar provision of this Agreement, except as noted in Article 13.3 below, the local agreement provision will supersede the provision of this Agreement to the extent of the greater benefit.",
+        "13.2": "All provisions of this Agreement will be effective on the date of ratification except as otherwise noted.",
+        "13.3": {
+          "content": "The following Articles are not subject to Article 13.1 above:",
+          "non_superseding_articles": [
+            "• Article 2 - Harassment",
+            "• Article 3.1 - Human Resource Database",
+            "• Article 3.2.1 - 3.2.5 - Joint Administration and Dispute Resolution Committee",
+            "• Article 4 - Prior Learning Assessment",
+            "• Article 6.1.7 - Referral to JADRC",
+            "• Article 6.2 - Program Transfers and Mergers",
+            "• Article 6.3 - Registry of Laid Off Employees",
+            "• Article 6.4 - Targeted Labour Adjustment",
+            "• Article 6.6 – Educational Technology/ Distributed Learning",
+            "• Article 7.8 - Compassionate Care Leave",
+            "• Article 8 - Parental Leave",
+            "• Article 9.1 - Joint Committee on Benefits Administration",
+            "• Article 9.3 - Disability Benefits",
+            "• Article 12.1 and Appendix A - Provincial Salary Scale",
+            "• Article 12.2 - Secondary Scale Adjustment",
+            "• Letter of Understanding - Expedited Arbitration"
+          ]
+        },
+        "13.4": "Any disputes over the application of this Article will be resolved through JADRC."
+      }
+    },
+    "14": {
+      "title": "INTERNATIONAL EDUCATION",
+      "introduction": "The Parties agree that participation in international education is important and valuable, enhancing student and faculty opportunities while supporting international education at each institution. The Parties agree that this Article shall govern the terms and conditions for employees who travel outside Canada and the U.S. to perform assigned work pursuant to the employees' collective agreement.",
+      "sections": {
+        "14.1": {
+          "title": "General",
+          "provisions": [
+            "(a) Employee participation in international education is voluntary.",
+            "(b) Subject to Article 14.1(d) below, the terms and conditions of the Collective Agreement will apply.",
+            "(c) The employer will meet and review the terms and conditions for each assignment outside Canada and the U.S. with the employee participating in an international education project.",
+            "(d) Should an international education project require interpretation of the workload provisions in the Collective Agreement, the employer will apply to the employee such workload terms as are equivalent to those workload terms that would normally apply.",
+            "(e) The employer will convene an annual review session for the employees participating under this Article to enable the employees to share experiences and identify problems and solutions. The employer will ensure that minutes of these meetings are recorded and provided to the union."
+          ]
+        },
+        "14.2": {
+          "title": "Expenses",
+          "provisions": [
+            "(a) The employer will reimburse, pursuant to employer policy, receipted expenses incurred by an employee while on employer business. The employer may grant a sufficient travel advance to cover those expenses that can reasonably be anticipated prior to travel, including appropriate transportation, accommodation and meal expenses.",
+            "(b) The employer will waive the requirement that receipts be provided in situations where these are not reasonably obtainable."
+          ]
+        },
+        "14.3": {
+          "title": "Health and Welfare Benefits",
+          "content": "The employer will provide current health and welfare benefits coverage for employees working under this Article. Premiums for this coverage will continue to be paid as if the employee was continuing to work for the employer in British Columbia.",
+          "limitations": [
+            "(a) Dental expenses incurred will be reimbursed based on the British Columbia fee schedule in effect under the employer's group policy.",
+            "(b) Benefit coverage will not extend beyond the date the policy or any benefits terminate with the employer's insurance carrier.",
+            "(c) The employer will supply travel medical insurance.",
+            "(d) When employees are working in countries where payment for medical services may require cash payment, employees will submit their claim to the insurance carrier for reimbursement of such expenses. The employer will advance monies in such instances if there is an anticipated delay from the insurance carrier.",
+            "(e) An employee will be referred to the employer's Human Resources department to clarify the benefit and travel medical insurance coverage.",
+            "(f) The Parties agree that Article 14.3 – Health and Welfare Benefits – shall govern the terms and conditions for employees who are required to travel to the U.S. to perform assigned work pursuant to the employees' collective agreement."
+          ]
+        },
+        "14.4": {
+          "title": "Emergencies and Emergency Evacuation",
+          "provisions": [
+            "(a) The employer will provide an employee with twenty-four (24) hour contact number(s), e-mail address(es) or fax number(s) to ensure the timely referral of an emergency to a responsible employer official who will make every effort to assist in the satisfactory resolution of an apprehended or actual emergency for the employee.",
+            "(b) The employer will consult with the appropriate Canadian government departments and the embassy or consulate in the country where employees are working to determine the appropriate procedures should evacuation become necessary. The employer will ensure that this information is made available to the employee in advance of travel. A copy of this information will be provided to the union at the same time.",
+            "(c) If necessary, the employer will contract with local specialists with respect to the safety of employees, their families and companions.",
+            "(d) In the event of an emergency, the employee will immediately contact the appropriate employer official for assistance and direction. The employee has the right to leave the area if they reasonably apprehends that their health or safety is in danger. The expenses incurred in the satisfactory resolution of an emergency or emergency evacuation of an employee will be the responsibility of the employer. Those additional expenses incurred in the satisfactory resolution of an emergency or emergency evacuation of an employee's family or companion(s) will be initially paid by the employer and then reimbursed to the employer by the employee on a mutually agreed basis."
+          ]
+        },
+        "14.5": {
+          "title": "Orientation and Return",
+          "subsections": {
+            "14.5.1": {
+              "content": "Employees working under this Article will receive a reasonable orientation prior to departure that includes but is not limited to:",
+              "orientation_topics": [
+                "(a) the project;",
+                "(b) the culture and country;",
+                "(c) travel, safety or medical concerns, benefits issues; and",
+                "(d) other issues related to the work."
+              ]
+            },
+            "14.5.2": "The employer will arrange the scheduling of international work in such a way that an employee will be provided three (3) working days, inclusive of required travel time, between the completion of their international education assignments before assuming regular duties at the institution. This will not apply in situations where an employee elects to extend their stay through the use of vacation time."
+          }
+        },
+        "14.6": {
+          "title": "Application",
+          "content": "Article 14 shall apply to local unions as follows:",
+          "application_options": {
+            "14.6.1": "Within fifteen (15) working days following ratification of its collective agreement commencing April 1, 2004, a local union whose collective agreement expiring March 31, 2004 included local provisions on International Education shall advise the employer in writing either: (a) That it agrees to retain the existing local International Education language without any changes, or (b) That it chooses to adopt the International Education language of this Article 14.",
+            "14.6.2": "Article 14 shall apply to any local union whose collective agreement expiring March 31, 2004 did not include local provisions on International Education."
+          }
+        }
+      }
+    },
+    "15": {
+      "title": "HEALTH AND SAFETY EQUIPMENT",
+      "content": "The employer agrees to supply at no cost to employees all pieces of health and safety apparel and equipment required by the BC Workers' Compensation Act and the Occupational Health and Safety Regulations."
+    },
+    "16": {
+      "title": "COMMON FACULTY PROFESSIONAL DEVELOPMENT FUND",
+      "sections": {
+        "16.1": {
+          "title": "Purpose",
+          "subsections": {
+            "16.1.1": "The Common Faculty Professional Development Fund (\"the Fund\") is in support of various types of professional development activities. Such professional development is for the maintenance and development of the faculty members' professional competence and effectiveness. The purpose is to assist faculty to remain current and active in their discipline and program. The Fund is not meant to replace any existing development or educational funds."
+          }
+        },
+        "16.2": {
+          "title": "Process",
+          "subsections": {
+            "16.2.1": "The local parties will mutually agree on a process and criteria for the review and adjudication of employee applications to the Fund. The process will include the recommendation of adjudicated applications to the applicable senior administrator. The senior administrator is responsible for the final approval of applications."
+          }
+        },
+        "16.3": {
+          "title": "Fund",
+          "subsections": {
+            "16.3.1": "The Fund will be set at point six of one percent (0.6%) of faculty salary for each institution.",
+            "16.3.2": "Any monies in the Fund not spent at the end of any fiscal year shall be retained by the employer."
+          }
+        }
+      }
+    },
+    "17": {
+      "title": "TERM",
+      "content": "This Agreement shall be in effect from April 1, 2019 to March 31, 2022, and shall continue in force until the renewal of this Agreement."
     }
   },
   "appendices": {
     "appendix_a": {
-      "title": "Provincial Salary Scale",
-      "content": "Contains the salary scale table with steps 1-11 and effective dates"
+      "title": "PROVINCIAL SALARY SCALE",
+      "salary_table": "Contains the salary scale table with steps 1-11 and effective dates",
+      "footnote": "The first day of the first full pay period after this date. For April 1, 2019, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2019 will apply in the case of a tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment. For April 1, 2020, the first day of the first full pay period after this date. The Parties agree that retroactive adjustment from the date of ratification to April 1, 2020 will apply in the case of tentative settlement on or before June 30, 2020. After that date there will be no retroactive adjustment."
     },
     "appendix_b": {
-      "title": "List of Investigators",
+      "title": "LIST OF INVESTIGATORS",
       "investigators": [
         "Rebecca Frame",
         "Ana Mohammed", 
@@ -487,94 +1260,444 @@
         "Laurie Mills",
         "Yuki Matsuno",
         "Ken Saunders"
-      ]
+      ],
+      "note": "This list may be amended at any time by the Joint Administration Dispute Resolution Committee."
     },
     "appendix_c": {
-      "title": "Dispute Referral Form",
-      "content": "Form for referring disputes to JADRC"
+      "title": "DISPUTE REFERRAL FORM",
+      "form_fields": {
+        "date": "____________________________________",
+        "employer_section": {
+          "college_institute": "",
+          "contact_person": "",
+          "address": "",
+          "phone": "",
+          "fax": "",
+          "email": ""
+        },
+        "union_section": {
+          "college_institute": "",
+          "contact_person": "",
+          "address": "",
+          "phone": "",
+          "fax": "",
+          "email": ""
+        },
+        "dispute_details": {
+          "article_in_dispute": "",
+          "copy_given_to_local_parties": "NO YES DATE:",
+          "statement_of_issues": ""
+        },
+        "signature_section": {
+          "signature": "__________________________________________",
+          "title": "______________________________________"
+        },
+        "jadrc_use_only": {
+          "date_received": "",
+          "date_circulated": "",
+          "joint_statement_received": "",
+          "union_statement_received": "",
+          "employer_statement_received": "",
+          "file_number_assigned": "",
+          "referred_to_arbitrator": ""
+        }
+      }
     },
     "appendix_d": {
-      "title": "List of Arbitrators",
+      "title": "LIST OF ARBITRATORS",
       "arbitrators": [
         "Joan Gordon",
         "Judi Korbin", 
         "Ken Saunders",
         "Robert Pekeles",
         "Corinn Bell"
-      ]
+      ],
+      "selection_method": "The following arbitrators are to be chosen in rotation as referenced in Articles 3.2.3 and 3.2.4",
+      "note": "This list may be amended at any time by the Joint Administration Dispute Resolution Committee."
     },
     "appendix_e2": {
-      "title": "Registry of Laid Off Employees - Form 2",
-      "content": "PSEA Registry of Eligible Employees form"
+      "title": "REGISTRY OF LAID OFF EMPLOYEES - FORM 2",
+      "subtitle": "PSEA REGISTRY OF ELIGIBLE EMPLOYEES",
+      "form_fields": [
+        "0. (For PSEA use only:)",
+        "1. College, University College, Institute:",
+        "2. Registrant:",
+        "3. Service Date (length of service):",
+        "4. Program/Area:",
+        "5. Date of Availability (Lay-off or End of Contract):",
+        "Registrant Electronic Resume available at:",
+        "College/University College/Institute Contact Person:",
+        "College/University College/Institute Contact Phone Number:",
+        "Bargaining Unit Contact Person:",
+        "Bargaining Unit Contact Phone Number:"
+      ],
+      "information_release_waiver": "Information Release Waiver for the purposes of the Freedom of Information and Protection of Privacy: I agree that the above personal information including my Resume (if available) can be made available to prospective Institutional Employers and Union via the internet or other means.",
+      "signature_section": "Signature of Registrant _____________ Date _____________"
     },
     "appendix_f": {
-      "title": "Medical Travel Referral Benefit",
-      "content": "Benefit summary, eligible expenses, exclusions, and claims adjudication"
+      "title": "MEDICAL TRAVEL REFERRAL BENEFIT",
+      "benefit_summary": {
+        "deductible_amount": "None",
+        "benefit_amount": "100% of eligible expenses", 
+        "individual_maximum": "$10,000 per year",
+        "coverage_limitations": [
+          "➢ $125 per day for a maximum of 50 days per calendar year for all eligible expenses combined;",
+          "➢ Where an employer requires it, receipts must be submitted with the expense claim;",
+          "➢ Where the eligible expenses exceed $125 per day, but do not exceed the average of $125 per day for the year, the average will be paid. For example, where the expenses claimed in a given calendar year are $150 day 1, $125 day 2 and $160 day 3, a total of $375 will be paid. Where the expenses claimed in a given calendar year are $150 day 1, $75 day 2 and $300 day 3, a total of $375 will be paid;",
+          "➢ Coverage will not be provided for travel and expenses incurred outside of BC except where the cost of travel to Alberta is less than the required travel within BC;",
+          "➢ Referral must be made by a physician to a specialist (a physician whose specialized services and treatments routinely performed are those that general practitioners do not perform)."
+        ]
+      },
+      "list_of_eligible_expenses": {
+        "medical_travel": "When ordered by the attending physician because in their opinion adequate medical treatment is not available within a 100 kilometre radius of the employee's home campus, the following are included as eligible expenses:",
+        "transportation": [
+          "➢ Public transportation (e.g. scheduled air, rail, bus, taxi and/or ferry);",
+          "➢ Automobile use as set out in the policy or collective agreement (as applicable) of employee's institution"
+        ],
+        "accommodation": "Where transportation has been provided as outlined above, accommodation in a commercial facility, Easter Seal House, Heather House, Vancouver Lodge, Ronald McDonald House, or other similar institutions as approved by the administrator, before and after medical treatment.",
+        "meals": "Where transportation has been provided above, reasonable and customary expenses for meals as set out in the policy or collective agreement (as applicable) of the employee's institution.",
+        "attendant": "Where necessary, and at the request of the attending physician, transportation and accommodation of an attendant (e.g. family member or registered nurse) in connection with expenses incurred under items 1 and 2 above."
+      },
+      "superior_benefits": "A superior benefit that existed in an institution's Medical Travel Referral Benefit Plan or Collective agreement that was in place prior to the 1998 Common Agreement continues to apply.",
+      "exclusions": {
+        "title": "No benefit shall be payable for:",
+        "list": [
+          "➢ Charges which are considered an insured service of any provincial government plan;",
+          "➢ Charges which are considered an insured service under the extended health plan, or any other group plan in force at the time;",
+          "➢ Charges for a surgical procedure or treatment performed primarily for beautification, or charges for hospital confinement for such surgical procedure or treatment;",
+          "➢ Charges for medical treatment, transport or travel, other than specifically provided under eligible expenses;",
+          "➢ Charges not included in the list of eligible expenses;",
+          "➢ Charges for services and supplies which are furnished without the recommendation and approval of a physician acting within the scope of their license;",
+          "➢ Charges which are not medically necessary to the care and treatment of any existing or suspected injury, disease or pregnancy;",
+          "➢ Charges which are from an occupational injury or disease covered by any Workers' Compensation legislation or similar legislation;",
+          "➢ Charges which would not normally have been incurred but for the presence of this coverage or for which the employee or dependent is not legally allowed to pay;",
+          "➢ Charges which the administrator is not permitted, by any law to cover;",
+          "➢ Charges for dental work where a third party is responsible for payments of such charges;",
+          "➢ Charges for bodily injury resulting directly or indirectly from war or act of war (whether declared or undeclared), insurrection or riot, or hostilities of any kind;",
+          "➢ Charges for services and supplies resulting from any intentionally self-inflicted wound;",
+          "➢ Charges for experimental procedures or treatment not approved by the Canadian Medical Association or the appropriate medical speciality society;",
+          "➢ Charges made by a physician for travel, broken appointments, communication costs, filling in forms, or physician's supplies."
+        ]
+      },
+      "claims_adjudication": {
+        "title": "To claim benefits, the employee or dependent must:",
+        "requirements": [
+          "➢ Submit original receipts or photocopies of receipts if accompanied by an explanation of benefits from another carrier, and a claim form;",
+          "➢ Provide explanation and proof to support the claim including itemized bills and the attending physician's statement that the referral to the location where treatment was received was medically necessary;",
+          "➢ Provide explanation and proof to support the claim that an attendant (if any) was necessary and made at the request of an attending physician."
+        ]
+      }
     },
     "appendix_g": {
-      "title": "Dental Plan",
-      "content": "Nine month limitation details and process for more frequent cleaning"
+      "title": "DENTAL PLAN",
+      "nine_month_limitation": "The nine (9) month limitation applies to 1) polishing, 2) the application of fluoride, and 3) the recall itself. The nine (9) month limitation does not apply to scaling; any current scaling limits in dental contracts apply.",
+      "process_for_frequent_cleaning": {
+        "title": "The process for an individual faculty employee to have their teeth cleaned more frequently than every nine (9) months as provided by Article 9.2.1 (d) is as follows:",
+        "steps": [
+          "➢ Faculty employee visits dentist as usual",
+          "➢ Dentist advises that the faculty employee has gum disease or other dental problem which requires cleaning more frequently than every nine (9) months",
+          "➢ Dentist fills in the usual claim form, but in addition notes that the faculty employee has gum disease or specifies the other dental problem that requires more frequent cleaning",
+          "➢ Faculty employee or dentist submits the form to the Insurance Carrier as normal",
+          "➢ The Insurance Carrier determines if the reasons set out by the dentist fit within the approved reasons under the dental plan for having teeth cleaned more frequently than every nine(9) months"
+        ]
+      },
+      "note": "The employers' approval of the more frequent cleaning is not required."
     },
     "appendix_h": {
-      "title": "Deferred Salary Leave Application, Agreement, and Approval Form",
-      "content": "Template form for deferred salary leave applications"
+      "title": "DEFERRED SALARY LEAVE APPLICATION, AGREEMENT, AND APPROVAL FORM",
+      "form_content": {
+        "introduction": "I have read and I understand the terms and conditions of Article 7.13 Deferred Salary Leave of the Common Agreement the provisions of the [institution name] Deferred Salary Leave Plan, between the union and the employer governing the Deferred Salary Leave Plan. I agree to participate in the Plan subject to its rules and on the following specific conditions:",
+        "fields": {
+          "enrolment_date": "My enrolment in the Plan shall become effective _____, 20___",
+          "year_of_leave": "I propose to commence my leave (yy/mm/dd), upon the approval of the employer, for a period of _______ months (up to one year).",
+          "funding_of_leave": "To accomplish the funding of the leave I hereby authorize the following amounts be withheld from my current compensation effective the date of my enrolment in the Plan:"
+        },
+        "funding_years": {
+          "first_year": "_______%",
+          "second_year": "_______%",
+          "third_year": "______%",
+          "fourth_year": "______%",
+          "additional_years": "Number of additional year _______________",
+          "percentage_per_additional_year": "Percentage per additional year _________________"
+        },
+        "modification_clause": "The participant may, by written notice to the employer prior to the anniversary date in any year, alter the percentage amounts for that and any subsequent year subject to the provisions [institution name] of the Deferred Salary Leave Plan Memorandum.",
+        "signatures": {
+          "applicant": "______________________ _________________\nSignature of Applicant Date",
+          "employer": "The employer hereby approves the above noted employees participation in the Deferred Salary Leave Plan\n______________________ _________________\nSignature of Employer Date"
+        }
+      }
     },
     "appendix_i": {
-      "title": "Family Members for the Purpose of Article 7.8 Compassionate Care Leave",
-      "content": "Comprehensive list of family member definitions for compassionate care leave"
+      "title": "FAMILY MEMBERS FOR THE PURPOSE OF ARTICLE 7.8 COMPASSIONATE CARE LEAVE",
+      "section_1": {
+        "title": "The following \"family members\" are persons identified through their relationship to the employee.",
+        "relationships": [
+          "• Spouse (includes heterosexual, common-law, and same-sex relationships)",
+          "• Children",
+          "• Children's spouses",
+          "• Step-children",
+          "• Step-children-in-law",
+          "• Siblings",
+          "• In-law siblings",
+          "• Parents",
+          "• Step-parents",
+          "• Parents-in-law",
+          "• Grandparents",
+          "• Grandchildren",
+          "• Nieces/Nephews",
+          "• Guardians",
+          "• Step-siblings",
+          "• Aunts/Uncles",
+          "• Current or former foster-parents",
+          "• Current or former foster children",
+          "• Current or former wards",
+          "• Current or former guardians",
+          "• Spouse of sibling or step-sibling",
+          "• Spouse of child or step-child",
+          "• Spouse of a grandparent",
+          "• Spouse of a grandchild",
+          "• Spouse of an aunt or uncle",
+          "• Spouse of a niece or nephew",
+          "• Spouse of a current or former foster child",
+          "• Spouse of a current or former guardian",
+          "• Spouse of an employee's current or former foster parent",
+          "• Spouse of an employee's current or former ward",
+          "• Spouse of a person who is living with the employee as a member of the employee's family"
+        ]
+      },
+      "section_2": {
+        "title": "The following \"family members\" are persons identified through their relationship to the employee's spouse",
+        "relationships": [
+          "• Spouse's parents or step-parents",
+          "• Spouse's siblings or step-siblings",
+          "• Spouse's children",
+          "• Spouse's grandparents",
+          "• Spouse's grandchildren",
+          "• Spouse's aunts or uncles",
+          "• Spouse's nieces or nephews",
+          "• Spouse's current or former foster parents",
+          "• Spouse's current or former wards"
+        ]
+      },
+      "section_3": {
+        "title": "The following \"family members\" are deemed family members",
+        "relationships": [
+          "• Any other person in the same household who is dependent upon the employee",
+          "• Any person who lives with the employee as a member of the employee's family",
+          "• Whether or not related to an employee by blood, adoption, marriage or common-law partnership, an individual with a serious medical condition who considers the employee to be, or whom the employee considers to be, like a close relative"
+        ]
+      }
     }
   },
   "letters_of_understanding": {
     "lou_1": {
-      "title": "Employment Equity – Aboriginal Employees",
-      "content": "PSEA and FPSE recognize Aboriginal employees are underrepresented and commit to redress this through special programs"
+      "title": "EMPLOYMENT EQUITY – ABORIGINAL EMPLOYEES",
+      "content": "PSEA and FPSE recognize that Aboriginal employees are underrepresented in the post-secondary education system. They are committed to redress the under-representation of Aboriginal employees and therefore further agree that:",
+      "commitments": [
+        "• PSEA and FPSE will encourage the Employers, and with support from the local faculty association/union, to make application to the Human Rights Tribunal under section 42 of the Human Rights Code to obtain approval for a special program that would serve to attract and retain Aboriginal employees.",
+        "• PSEA and FPSE will assist the Employers and the local faculty association/union as requested in the application for and implementation of a special program consistent with this Letter of Understanding"
+      ]
     },
     "lou_2": {
-      "title": "Medical Services Plan of BC",
-      "content": "If government reverts to individually paid premium system, employer will pay 100% of premiums"
+      "title": "MEDICAL SERVICES PLAN OF BC",
+      "content": "The parties recognize that the method of funding MSP has been changed from an individually paid premium system to a system funded by an employer paid payroll tax. If the government, at any time in the future, reverts to an individually paid premium system for basic medical insurance, the parties agree that the employer will pay 100% of the premium for employees on the same basis as exists in the 2014 – 2019 collective agreement."
     },
     "lou_3": {
-      "title": "Expedited Arbitration",
-      "content": "Detailed expedited arbitration process for grievance resolution excluding dismissals, suspensions over 5 days, policy grievances"
+      "title": "EXPEDITED ARBITRATION",
+      "introduction": "Re: Expedited Arbitration\nEffective the date of ratification, the parties agree that the following expedited arbitration process will be used for the resolution of grievances:",
+      "sections": {
+        "1": {
+          "title": "Expedited Arbitrations",
+          "content": "Where a difference arises at an institution relating to the interpretation, application or administration of a local agreement, including where an allegation is made that a term or condition of a local agreement has been violated, either of the local parties may, after exhausting the steps of the grievance procedure under the local agreement, notify the other local party within ten (10) calendar days of receipt of the last grievance step reply, of its desire to arbitrate and to submit the difference or allegation to expedited arbitration before a single arbitrator."
+        },
+        "2": {
+          "title": "Issues for Expedited Arbitration",
+          "subsection_a": {
+            "content": "All grievances except those relating to the following shall be resolved by expedited arbitration:",
+            "exclusions": [
+              "i. Dismissals;",
+              "ii. Suspensions in excess of five (5) working days;",
+              "iii. Policy grievances;",
+              "iv. Grievances requiring substantial interpretation of a provision of the collective agreement;",
+              "v. Grievances requiring the presentation of extrinsic evidence;",
+              "vi. Grievances where a local party intends to raise a preliminary objection;",
+              "vii. Grievances arising from the duty to accommodate; and",
+              "viii. Grievances arising from the interpretation, application and administration of the Common Agreement, including but not limited to, the application of Article 13.1 of the Common Agreement."
+            ]
+          },
+          "subsection_b": "Those grievances not suitable for resolution at expedited arbitration, as listed under section 2 (a) above, may be referred to arbitration under the provisions of the local agreement.",
+          "subsection_c": "By mutual agreement, a grievance falling into any of the categories as listed under section 2 (a) above, may be placed into the expedited arbitration process."
+        },
+        "3": {
+          "title": "Expedited Arbitrators",
+          "content": "The following arbitrators shall be selected on the basis of the person who is available to hear the grievance within thirty (30) calendar days of appointment, on a rotating basis. It is understood that the same arbitrator will not be selected to hear consecutive grievances except by mutual agreement by the parties.",
+          "arbitrators": [
+            "• Kate Young",
+            "• Colin Taylor",
+            "• John Hall",
+            "• Mark Brown",
+            "• Marguerite Jackson",
+            "• Joan Gordon"
+          ],
+          "backup_provision": "If none of the listed arbitrators is available to hear the grievance within thirty (30) calendar days, the local parties shall agree to another arbitrator within thirty (30) calendar days."
+        },
+        "4": {
+          "title": "Process",
+          "content": "As the process is intended to be expedited, lawyers shall not be retained to represent either local party. This does not preclude either local party from using staff who may be lawyers."
+        },
+        "5": {
+          "title": "Agreed Statement of Facts",
+          "content": "The local parties shall develop an agreed statement of facts and shall exchange reliance documents prior to the hearing. Disclosure of relevant or potentially relevant documents is a mutual and ongoing obligation before and during the particular hearing."
+        },
+        "6": {
+          "title": "Written Submission",
+          "content": "By mutual agreement, written submissions may be used in place of a hearing. Submissions shall be in standard format and will not be more than ten (10) pages long."
+        },
+        "7": {
+          "title": "Procedure",
+          "content": "All presentations shall be short and concise and are to include a comprehensive opening statement. The local parties shall make limited use of authorities during their presentations."
+        },
+        "8": {
+          "title": "Mediation",
+          "provisions": [
+            "a) Prior to rendering a decision, the arbitrator may assist the local parties in mediating a resolution to the grievance.",
+            "b) Where mediation fails or is not appropriate in the opinion of the arbitrator, a decision shall be rendered as contemplated herein."
+          ]
+        },
+        "9": {
+          "title": "Issuance of Decision",
+          "content": "The decision of the arbitrator is to be completed and mailed to the local parties within three (3) working days of the hearing."
+        },
+        "10": {
+          "title": "Status of the Decision",
+          "provisions": [
+            "a) All decisions, including mediated settlements, under this expedited arbitration process are limited in application to the particular dispute and are without prejudice. The decisions shall have no precedential value and shall not be referred to in any subsequent proceeding. The expedited arbitrators shall include statements to this effect at the beginning of their decision.",
+            "b) All settlements of proposed expedited arbitration cases made prior to an expedited hearing are also without prejudice and have no precedential value.",
+            "c) The decision or award, including mediated settlements, is final, binding, and conclusive. It is understood that it is not the intention of either party to appeal a decision of an expedited arbitration proceeding.",
+            "d) Should the local parties disagree as to the meaning of the decision or award, including mediated settlements, either party may request that the arbitrator clarify the decision."
+          ]
+        },
+        "11": {
+          "title": "Costs",
+          "provisions": [
+            "a) The local parties shall equally share in the costs of the fees and expenses of the expedited arbitrator.",
+            "b) Hearings shall be conducted at the institution or at the offices of the local union where possible to minimize costs."
+          ]
+        },
+        "12": {
+          "title": "Authority of Arbitrator",
+          "content": "The expedited arbitrator shall have the same powers and authority as an arbitration board established under the provisions under the Labour Relations Code."
+        }
+      }
     },
     "lou_4": {
-      "title": "Working Committee on Secondary Scales",
-      "content": "Joint committee to quantify costs of transitioning non-regular faculty from secondary scales to Provincial Salary Scale"
+      "title": "WORKING COMMITTEE ON SECONDARY SCALES",
+      "sections": {
+        "1": {
+          "title": "Committee Mandate",
+          "content": "The Employer and the Union agree to participate in a joint committee (the \"Committee\"), with a mandate to:",
+          "mandate_items": [
+            "• Quantify the costs that would be required in order to transition the base pay for employees included in this letter of understanding for each local from the applicable secondary salary scales to the Provincial Salary Scale as appropriate subject to the parameters described below."
+          ]
+        },
+        "2": {
+          "title": "Application",
+          "content": "This LOU will apply to non-regular faculty employees whose pay:",
+          "criteria": [
+            "a. Is determined according to a local salary scale other than the Provincial Salary Scale, or",
+            "b. is differentiated from regular faculty employees due to limits on progression up the salary scale that do not apply to regular faculty employees, or",
+            "c. is differentiated from regular faculty employees due to limits on initial placement on the salary scale that do not apply to regular faculty employees, or",
+            "d. is differentiated from that paid to regular faculty employees through reduction formulas applied to the Provincial Salary Scale that do not apply to regular employees."
+          ]
+        },
+        "3": {
+          "title": "Exceptions and Additions",
+          "content": "This letter of understanding shall not apply to classifications of non-regular faculty employees in the bargaining unit who do not perform work normally done by regular faculty bargaining unit members, as defined by the collective agreement. (For example, substitutes, continuing education instructors, and instructional/faculty assistants). Additionally, qualification-based differences in pay are excluded from the scope of this committee work. In addition to non-regular employees, this letter of understanding shall apply to the following regular employee groups only:",
+          "specific_groups": [
+            "i. Selkirk College: Regular faculty being paid according to on-line courses (LOU #7).",
+            "ii. Any other regular faculty groups that the parties mutually agree."
+          ]
+        },
+        "4": {
+          "title": "Definition and Formula – Base Pay",
+          "introduction": "This formula calculates base pay for non-regular employees included in this LOU. This formula sets a standard to be used by the committee for calculating base pay for non-regular faculty employees who perform work normally done by regular faculty bargaining unit members, as defined by the collective agreement during the same time period of their work assignment. For those institutions that have a different pay structure in their local collective agreement for non-regular employees, the pay calculated using the following formula will be converted on the same/equivalent basis to their local pay structure for non-regular employees. (i.e. hourly, per course, weighted hourly, etc.).",
+          "base_pay_formula": {
+            "formula": "S*D*P/Y where:",
+            "variables": [
+              "S is the full-time annual salary on the appropriate step of the grid, as per local collective agreement placement provisions.",
+              "D is the number of days in the appointment period.",
+              "P is the percentage of full-time work during the appointment period.",
+              "Y is two hundred and sixty-one (261) days, which is the number of working days in one year. This is calculated based on three hundred and sixty-five (365) days per year divided by seven (7) days per week and multiplied by five (5) working days per week."
+            ],
+            "examples": {
+              "standard_appointment": "A 16-week appointment at 25% of full-time work at step 6 salary would be $72,340 x 80 days x 0.25 divided by 261 = $5,543.30",
+              "compressed_appointment": "The same work performed in a compressed format over an 8 week appointment would result in 50% of full-time work for 40 days: $72,340 x 40 days x 0.50 divided by 261 = $5,543.30"
+            },
+            "clarifications": [
+              "b) For clarity, base pay does not include lieu payments, such as vacation and/or benefits. These additional lieu payments, if applicable to non-regular employees in the local collective agreement, would be added to the base pay to formulate the non-regular employee's total compensation related to the term of the work assignment.",
+              "c) The cost to transition an employee from the applicable secondary salary scales to the Provincial Salary Scale will be defined as the difference between the base pay the employee is paid using the secondary scale for the term of their work assignment and the amount the employee would be paid according to the above formula."
+            ]
+          }
+        },
+        "5": {
+          "title": "Costing Criteria:",
+          "criteria": [
+            "a) The Parties will use an average of the most recent 3 years of HRDB data (April 1, 2016 – March 31, 2019) for costing purposes. Where the data is not available in the HRDB data, the parties will use data from the institution's historic records using the same 3 year period. Where the institution does not use an April 1 – March 31 year, the records used will be those that most closely fit that time period.",
+            "b) Normal rounding principles will apply. If rounding to the nearest dollar, less than .5 dollars will be rounded down to the nearest lower whole dollar and .5 dollars or more will be rounded to the nearest higher whole dollar. If rounding to the nearest cent, less than .5 cents will be rounded down to the nearest lower whole cent and .5 cents or more will be rounded to the nearest higher whole cent."
+          ]
+        },
+        "6": {
+          "title": "Committee Composition",
+          "content": "The Committee shall be equally represented and shall consist of:",
+          "members": [
+            "• Four (4) Employer Representatives, two (2) of which will be from PSEA; and",
+            "• Four (4) Union Representatives."
+          ],
+          "costs": "Costs for leaves and expenses to be borne by each party."
+        },
+        "7": {
+          "title": "Timelines",
+          "content": "The work of the Committee will conclude no later than March 31, 2022. This information shall be provided by the Committee to each party's respective principals and may be brought forward by either party in the next round of collective bargaining."
+        }
+      }
     }
   },
-  "general_provisions": {
-    "harassment_procedures": "Comprehensive procedures including mediation and investigation options",
-    "dispute_resolution": "JADRC established for Common Agreement dispute resolution",
-    "job_security": "Employee security and regularization provisions with registry system for laid-off employees", 
-    "benefits_administration": "Joint Committee on Benefits Administration oversees health, welfare and disability benefits",
-    "professional_development": "Common Faculty Professional Development Fund at 0.6% of faculty salary",
-    "international_education": "Voluntary participation with expense reimbursement and emergency provisions"
-  },
   "negotiating_committees": {
-    "employers": {
-      "spokesperson": "Michael Madill, Post-Secondary Employers' Association (PSEA)",
-      "representatives": [
-        "Barb Severyn, Camosun College",
-        "Brian Bonia, Coast Mountain College", 
-        "Fred Alaggia, College of New Caledonia",
-        "Gary Leier, College of the Rockies",
-        "Ken Crewe, North Island College",
-        "Linda Heska, Okanagan College",
-        "David Feldman, Selkirk College"
-      ]
-    },
-    "unions": {
-      "co_chairs": ["Bob Davis, FPSE", "Leslie Molnar, FPSE"],
-      "spokesperson": "Lesley Burke O'Flynn, FPSE Staff",
-      "local_representatives": [
-        "Kelly Pitman, CCFA, FPSE Local 12",
-        "Sheree Ronaasen, AWU/CUPE 2409, FPSE Local 11",
-        "Jan Mastromatteo, FACNC, FPSE Local 3", 
-        "Ben Heyde, CORFA, FPSE Local 6",
-        "Janis Almond, NICFA, FPSE Local 16",
-        "Bob Groves, OCFA, FPSE Local 9",
-        "Victor Villa, SCFA, FPSE Local 10"
-      ]
+    "2019_2022": {
+      "title": "Common Agreement Negotiating Committees 2019-2022",
+      "employers": {
+        "title": "For the Employers:",
+        "members": [
+          "Michael Madill, Spokesperson, Post-Secondary Employers' Association (PSEA)",
+          "Barb Severyn, Camosun College",
+          "Brian Bonia, Coast Mountain College",
+          "Fred Alaggia, College of New Caledonia",
+          "Gary Leier, College of the Rockies",
+          "Ken Crewe, North Island College",
+          "Linda Heska, Okanagan College",
+          "David Feldman, Selkirk College"
+        ]
+      },
+      "unions": {
+        "title": "For the Unions:",
+        "leadership": [
+          "Bob Davis, Co-Chair, FPSE",
+          "Leslie Molnar, Co-Chair, FPSE",
+          "Lesley Burke O'Flynn, Spokesperson, FPSE Staff"
+        ],
+        "local_representatives": {
+          "title": "Representatives of Participating Unions",
+          "members": [
+            "Kelly Pitman, CCFA, FPSE Local 12",
+            "Sheree Ronaasen, AWU/CUPE 2409, FPSE Local 11",
+            "Jan Mastromatteo, FACNC, FPSE Local 3",
+            "Ben Heyde, CORFA, FPSE Local 6",
+            "Janis Almond, NICFA, FPSE Local 16",
+            "Bob Groves, OCFA, FPSE Local 9",
+            "Victor Villa, SCFA, FPSE Local 10"
+          ]
+        }
+      }
     }
   }
 }
