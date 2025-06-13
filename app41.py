@@ -469,10 +469,11 @@ def main():
                     <div style="color: #7b1fa2; font-weight: 600; margin-bottom: 8px;">
                         🤖 Expert Analysis:
                     </div>
-                    <div style="color: #333;">
+                </div>
                 """, unsafe_allow_html=True)
+                
+                # Use regular markdown for the assistant content to avoid HTML issues
                 st.markdown(message["content"])
-                st.markdown("</div></div>", unsafe_allow_html=True)
     
     # Footer with stats
     if st.session_state.total_queries > 0:
