@@ -389,13 +389,16 @@ def main():
                 </style>
                 """, unsafe_allow_html=True)
                 
-                scope_options = ["Local Agreement Only", "Common Agreement Only", "Both Agreements"]
+                scope_options = ["Select scope...", "Local Agreement Only", "Common Agreement Only", "Both Agreements"]
                 
-                # Only show current selection if this agreement type is selected
-                if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope in scope_options:
-                    current_scope_index = scope_options.index(st.session_state.selected_scope)
+                # Determine current selection index
+                if st.session_state.selected_agreement == "BCGEU Instructor" and st.session_state.selected_scope:
+                    if st.session_state.selected_scope in scope_options[1:]:
+                        current_scope_index = scope_options.index(st.session_state.selected_scope)
+                    else:
+                        current_scope_index = 0
                 else:
-                    current_scope_index = None
+                    current_scope_index = 0
                 
                 instructor_scope = st.radio(
                     "",
@@ -406,9 +409,14 @@ def main():
                     label_visibility="collapsed"
                 )
                 
-                if instructor_scope:
+                if instructor_scope and instructor_scope != "Select scope...":
                     st.session_state.selected_agreement = "BCGEU Instructor"
                     st.session_state.selected_scope = instructor_scope
+                    st.rerun()
+                elif instructor_scope == "Select scope..." and st.session_state.selected_agreement == "BCGEU Instructor":
+                    # User deselected by going back to placeholder
+                    st.session_state.selected_agreement = None
+                    st.session_state.selected_scope = None
                     st.rerun()
         else:
             st.markdown("""
@@ -476,7 +484,7 @@ def main():
             with st.container():
                 st.markdown(f"""
                 <style>
-                div[data-testid="stRadio"][key="support_agreement"] {{
+                div[data-testid="stRadio"] {{
                     background-color: {bg_color};
                     padding: 10px 20px 20px 20px;
                     margin-top: -16px !important;
@@ -490,20 +498,31 @@ def main():
                 </style>
                 """, unsafe_allow_html=True)
                 
-                current_support_index = 0 if st.session_state.selected_agreement == "BCGEU Support" else None
+                support_options = ["Select agreement...", "BCGEU Support Agreement"]
+                
+                # Determine current selection index
+                if st.session_state.selected_agreement == "BCGEU Support":
+                    current_support_index = 1
+                else:
+                    current_support_index = 0
                 
                 support_selected = st.radio(
                     "",
-                    ["BCGEU Support Agreement"],
+                    support_options,
                     index=current_support_index,
                     key="support_agreement",
                     help="Complete BCGEU Support Staff collective agreement",
                     label_visibility="collapsed"
                 )
                 
-                if support_selected and st.session_state.selected_agreement != "BCGEU Support":
+                if support_selected == "BCGEU Support Agreement":
                     st.session_state.selected_agreement = "BCGEU Support"
                     st.session_state.selected_scope = "BCGEU Support Agreement"
+                    st.rerun()
+                elif support_selected == "Select agreement..." and st.session_state.selected_agreement == "BCGEU Support":
+                    # User deselected by going back to placeholder
+                    st.session_state.selected_agreement = None
+                    st.session_state.selected_scope = None
                     st.rerun()
         else:
             st.markdown("""
@@ -527,7 +546,7 @@ def main():
     # Display current selection
     if st.session_state.selected_agreement:
         if st.session_state.selected_agreement == "BCGEU Support":
-            st.success(f"✅ **Selected**: {st.session_state.selected_agreement} - {st.session_state.selected_scope}")
+            st.success(f"✅ **Selected**: BCGEU Support Agreement")
         else:
             st.success(f"✅ **Selected**: {st.session_state.selected_agreement} - {st.session_state.selected_scope}")
     else:
