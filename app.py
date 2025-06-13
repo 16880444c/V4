@@ -256,22 +256,32 @@ def main():
     
     # Box 1: BCGEU Instructor (Active) - with radio buttons inside
     with col1:
-        # Create a container with custom styling
+        # Use st.container with custom CSS to create the box effect
         with st.container():
+            # Apply custom CSS to style this container as a box
             st.markdown("""
-                <div style="
+                <style>
+                .bcgeu-box {
                     background-color: #f0f8ff;
                     padding: 20px;
                     border-radius: 10px;
                     border: 2px solid #1e90ff;
                     margin-bottom: 20px;
-                ">
-                    <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+                }
+                .bcgeu-title {
+                    color: #1e90ff;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+                </style>
+                <div class="bcgeu-box">
+                    <div class="bcgeu-title">📘 BCGEU Instructor</div>
                 </div>
             """, unsafe_allow_html=True)
             
-            # Use negative margin to pull radio buttons up into the box
-            st.markdown('<div style="margin-top: -60px; padding: 0 20px 20px 20px;">', unsafe_allow_html=True)
+            # Place radio buttons directly after the styled header
+            st.markdown('<div style="margin-top: -20px; padding: 0 20px 20px 20px; background-color: #f0f8ff; border-radius: 0 0 10px 10px; margin-left: -20px; margin-right: -20px;">', unsafe_allow_html=True)
             
             st.session_state.agreement_scope = st.radio(
                 "Choose scope:",
