@@ -243,7 +243,185 @@ Provide definitive, management-favorable guidance with specific citations and qu
 
 def main():
     st.title("⚖️ Coast Mountain College Agreement Assistant")
-    st.markdown("*Your comprehensive collective agreement analysis tool*")
+    
+    # Add custom CSS for better styling
+    st.markdown("""
+    <style>
+    /* Main title styling */
+    .main-title {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2.5em;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    /* Subtitle styling */
+    .subtitle {
+        text-align: center;
+        color: #6c757d;
+        font-style: italic;
+        font-size: 1.1em;
+        margin-bottom: 2em;
+        padding: 0 20px;
+    }
+    
+    /* Section headers */
+    .section-header {
+        background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 1.4em;
+        font-weight: 600;
+        margin: 1.5em 0 0.8em 0;
+    }
+    
+    /* Card styling */
+    .custom-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+    
+    .custom-card:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+    
+    /* Status boxes */
+    .status-box {
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px 0;
+        border-left: 5px solid;
+        background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,249,250,0.9));
+        backdrop-filter: blur(10px);
+    }
+    
+    .status-selected {
+        border-left-color: #28a745;
+        background: linear-gradient(135deg, rgba(212, 237, 218, 0.3), rgba(195, 230, 203, 0.3));
+    }
+    
+    .status-info {
+        border-left-color: #17a2b8;
+        background: linear-gradient(135deg, rgba(209, 236, 241, 0.3), rgba(190, 229, 235, 0.3));
+    }
+    
+    .status-waiting {
+        border-left-color: #6c757d;
+        background: linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(222, 226, 230, 0.8));
+    }
+    
+    /* Button styling */
+    .stButton > button {
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Text area styling */
+    .stTextArea > div > div > textarea {
+        border-radius: 10px;
+        border: 2px solid #e9ecef;
+        transition: border-color 0.3s ease;
+    }
+    
+    .stTextArea > div > div > textarea:focus {
+        border-color: #4facfe;
+        box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+    }
+    
+    /* Selectbox styling */
+    .stSelectbox > div > div > select {
+        border-radius: 8px;
+        border: 2px solid #e9ecef;
+    }
+    
+    /* Footer styling */
+    .footer-stats {
+        text-align: center;
+        color: #6c757d;
+        font-size: 14px;
+        padding: 15px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 10px;
+        margin-top: 30px;
+        border: 1px solid #dee2e6;
+    }
+    
+    /* Message styling */
+    .message-user {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border-left: 4px solid #2196f3;
+        border-radius: 0 12px 12px 0;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .message-assistant {
+        background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+        border-left: 4px solid #9c27b0;
+        border-radius: 0 12px 12px 0;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .message-header {
+        font-weight: 700;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* Glassmorphism effect */
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    
+    /* Animated gradient background */
+    .main-container {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        min-height: 100vh;
+        padding: 20px;
+        margin: -20px;
+    }
+    
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Create animated gradient background
+    st.markdown('<div class="main-container">', unsafe_allow_html=True)
+    
+    # Enhanced title and subtitle
+    st.markdown('<h1 class="main-title">⚖️ Coast Mountain College Agreement Assistant</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="subtitle">Your comprehensive collective agreement analysis tool - powered by AI</p>', unsafe_allow_html=True)
     
     # Initialize session state
     if 'messages' not in st.session_state:
@@ -304,37 +482,36 @@ def main():
     if st.session_state.support_agreement:
         agreement_options.append("BCGEU Support Agreement")
     
-    # Simple dropdown selection
-    st.markdown("### 📋 Select Agreement")
-    st.markdown('<div style="margin-bottom: 10px;"></div>', unsafe_allow_html=True)
+    # Simple dropdown selection with enhanced styling
+    st.markdown('<h3 class="section-header">📋 Select Agreement</h3>', unsafe_allow_html=True)
+    
+    # Create a glassmorphism container for the selectbox
+    st.markdown("""
+    <div class="glass-effect" style="padding: 25px; margin: 20px 0;">
+    """, unsafe_allow_html=True)
     
     current_selection = st.session_state.get('agreement_selection', 'Please select an agreement...')
     if current_selection not in agreement_options:
         current_selection = 'Please select an agreement...'
     
     selected_agreement = st.selectbox(
-        "",
+        "Choose your agreement:",
         options=agreement_options,
         index=agreement_options.index(current_selection),
-        key='agreement_selectbox',
-        label_visibility="collapsed"
+        key='agreement_selectbox'
     )
+    
+    st.markdown('</div>', unsafe_allow_html=True)
     
     # Update session state
     if selected_agreement != st.session_state.get('agreement_selection'):
         st.session_state.agreement_selection = selected_agreement
     
-    # Show selection status with improved styling
+    # Show selection status with enhanced styling
     if selected_agreement and selected_agreement != "Please select an agreement...":
         st.markdown(f"""
-        <div style="
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            border-radius: 8px;
-            padding: 12px;
-            margin: 15px 0;
-        ">
-            <div style="color: #155724; font-weight: 600;">
+        <div class="status-box status-selected">
+            <div style="color: #155724; font-weight: 700; font-size: 1.1em;">
                 ✅ Selected: {selected_agreement}
             </div>
         </div>
@@ -343,57 +520,61 @@ def main():
         # Add helpful information about the selection
         if "Both Agreements" in selected_agreement:
             st.markdown(f"""
-            <div style="
-                background-color: #d1ecf1;
-                border: 1px solid #bee5eb;
-                border-radius: 8px;
-                padding: 10px;
-                margin: 10px 0;
-            ">
-                <div style="color: #0c5460; font-size: 14px;">
-                    ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.
+            <div class="status-box status-info">
+                <div style="color: #0c5460; font-size: 14px; font-weight: 500;">
+                    ℹ️ <strong>Performance Tip:</strong> Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.
                 </div>
             </div>
             """, unsafe_allow_html=True)
     else:
         st.markdown(f"""
-        <div style="
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 12px;
-            margin: 15px 0;
-        ">
-            <div style="color: #6c757d; font-weight: 500;">
-                ℹ️ Please select an agreement to begin
+        <div class="status-box status-waiting">
+            <div style="color: #6c757d; font-weight: 600; font-size: 1.05em;">
+                ⏳ Please select an agreement to begin your search
             </div>
         </div>
         """, unsafe_allow_html=True)
     
-    st.markdown("---")
+    # Question input section with enhanced styling
+    st.markdown('<h3 class="section-header">💬 Ask Your Question</h3>', unsafe_allow_html=True)
     
-    # Question input section with improved styling
-    st.markdown("### 💬 Ask Your Question")
-    st.markdown('<div style="margin-bottom: 15px;"></div>', unsafe_allow_html=True)
+    # Create a glassmorphism container for the form
+    st.markdown("""
+    <div class="glass-effect" style="padding: 30px; margin: 20px 0;">
+    """, unsafe_allow_html=True)
     
     # Create a form to handle Enter key submission
     with st.form(key="question_form", clear_on_submit=False):
+        st.markdown("### 🎤 What would you like to know?")
         user_question = st.text_area(
             "",
-            placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
-            height=120,
+            placeholder="💡 Ask about workload, leave policies, scheduling rules, benefits, grievance procedures, or any other collective agreement topic...",
+            height=130,
             key="question_input",
-            label_visibility="collapsed"
+            label_visibility="collapsed",
+            help="💡 Tip: Press Enter to submit your question!"
         )
         
-        # Button row with improved spacing
-        col_left, col_center, col_right, col_new_topic = st.columns([1, 1, 1, 1])
+        # Enhanced button row with better spacing
+        st.markdown('<div style="margin-top: 20px;"></div>', unsafe_allow_html=True)
+        col_left, col_center, col_right, col_new_topic = st.columns([1, 1.2, 0.8, 1.2])
         
         with col_center:
-            submit_button = st.form_submit_button("🔍 Get Answer", type="primary", use_container_width=True)
+            submit_button = st.form_submit_button(
+                "🔍 Get Answer", 
+                type="primary", 
+                use_container_width=True,
+                help="Click or press Enter to search"
+            )
         
         with col_new_topic:
-            new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start a new conversation", use_container_width=True)
+            new_topic_button = st.form_submit_button(
+                "🔄 New Topic", 
+                help="Reset and start fresh", 
+                use_container_width=True
+            )
+    
+    st.markdown('</div>', unsafe_allow_html=True)
     
     # Handle new topic button
     if new_topic_button:
@@ -422,63 +603,59 @@ def main():
                 )
                 st.session_state.messages.append({"role": "assistant", "content": response})
     
-    # Display conversation history with improved styling
+    # Display conversation history with enhanced styling
     if st.session_state.messages:
-        st.markdown("### 📝 Conversation History")
-        st.markdown('<div style="margin-bottom: 20px;"></div>', unsafe_allow_html=True)
+        st.markdown('<h3 class="section-header">📝 Conversation History</h3>', unsafe_allow_html=True)
         
         for i, message in enumerate(st.session_state.messages):
             if message["role"] == "user":
                 st.markdown(f"""
-                <div style="
-                    background-color: #e3f2fd;
-                    border-left: 4px solid #2196f3;
-                    padding: 15px;
-                    margin: 15px 0;
-                    border-radius: 0 8px 8px 0;
-                ">
-                    <div style="color: #1565c0; font-weight: 600; margin-bottom: 8px;">
-                        👤 Your Question:
+                <div class="message-user">
+                    <div class="message-header" style="color: #1565c0;">
+                        <span style="font-size: 1.2em;">👤</span>
+                        <span>Your Question:</span>
                     </div>
-                    <div style="color: #333;">
+                    <div style="color: #333; line-height: 1.6;">
                         {message["content"]}
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
             else:
                 st.markdown(f"""
-                <div style="
-                    background-color: #f3e5f5;
-                    border-left: 4px solid #9c27b0;
-                    padding: 15px;
-                    margin: 15px 0;
-                    border-radius: 0 8px 8px 0;
-                ">
-                    <div style="color: #7b1fa2; font-weight: 600; margin-bottom: 8px;">
-                        🤖 Assistant Response:
+                <div class="message-assistant">
+                    <div class="message-header" style="color: #7b1fa2;">
+                        <span style="font-size: 1.2em;">🤖</span>
+                        <span>Expert Analysis:</span>
                     </div>
-                    <div style="color: #333;">
+                    <div style="color: #333; line-height: 1.6;">
                 """, unsafe_allow_html=True)
                 st.markdown(message["content"])
                 st.markdown("</div></div>", unsafe_allow_html=True)
     
-    # Bottom section with improved styling
+    # Enhanced footer with stats
     if st.session_state.total_queries > 0:
-        st.markdown("---")
         current_selection = st.session_state.get('agreement_selection', 'None')
         st.markdown(f"""
-        <div style="
-            text-align: center;
-            color: #6c757d;
-            font-size: 14px;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
-            margin-top: 20px;
-        ">
-            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection}
+        <div class="footer-stats">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.2em;">💬</span>
+                    <span><strong>Queries:</strong> {st.session_state.total_queries}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.2em;">🎯</span>
+                    <span><strong>Current:</strong> {current_selection}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.2em;">⚡</span>
+                    <span><strong>Status:</strong> Ready</span>
+                </div>
+            </div>
         </div>
         """, unsafe_allow_html=True)
+    
+    # Close the main container
+    st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
