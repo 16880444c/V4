@@ -544,6 +544,12 @@ def main():
                 </div>
             """, unsafe_allow_html=True)
     
+    # Debug info - let's see what's actually loaded
+    if st.checkbox("Show debug info"):
+        st.write("Support agreement loaded:", st.session_state.support_agreement is not None)
+        st.write("Selected agreement:", st.session_state.selected_agreement)
+        st.write("Selected scope:", st.session_state.selected_scope)
+    
     # Display current selection
     if st.session_state.selected_agreement:
         if st.session_state.selected_agreement == "BCGEU Support":
