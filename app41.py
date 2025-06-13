@@ -118,31 +118,38 @@ def format_section_content(data: dict, indent: int = 0) -> str:
     
     return content
 
-def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, agreement_scope: str, agreement_type: str, api_key: str) -> str:
+def reset_session():
+    """Reset all session state variables to start fresh"""
+    st.session_state.messages = []
+    st.session_state.selected_agreement = None
+    st.session_state.selected_scope = None
+    st.rerun()
+
+def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, selected_agreement: str, selected_scope: str, api_key: str) -> str:
     """Generate response using Claude with complete agreement context"""
     
-    # Build context based on selected agreement type and scope
+    # Build context based on selected agreement and scope
     context = ""
     
-    if agreement_type == "BCGEU Support":
+    if selected_agreement == "BCGEU Support":
         # For BCGEU Support, only use the support agreement
         if support_agreement:
             context = format_agreement_for_context(support_agreement, "BCGEU Support Agreement")
         else:
             return "❌ **Error**: BCGEU Support agreement not found. Please check that the file exists at agreements/bcgeu_support/bcgeu_support.json"
-    else:
-        # For BCGEU Instructor, use the existing logic
-        if agreement_scope == "Local Agreement Only":
+    elif selected_agreement == "BCGEU Instructor":
+        # For BCGEU Instructor, use the scope selection
+        if selected_scope == "Local Agreement Only":
             if local_agreement:
                 context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
             else:
                 return "❌ **Error**: Local agreement not found."
-        elif agreement_scope == "Common Agreement Only":
+        elif selected_scope == "Common Agreement Only":
             if common_agreement:
                 context = format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
             else:
                 return "❌ **Error**: Common agreement not found."
-        else:  # Both agreements
+        elif selected_scope == "Both Agreements":
             if local_agreement and common_agreement:
                 context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
                 context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
@@ -153,7 +160,7 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
         return "❌ **Error**: No agreement content available for the selected option."
     
     # Adjust system prompt based on agreement type
-    if agreement_type == "BCGEU Support":
+    if selected_agreement == "BCGEU Support":
         system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the BCGEU Support Staff collective agreement.
 
 CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
@@ -298,10 +305,10 @@ def main():
         st.session_state.common_agreement = None
     if 'support_agreement' not in st.session_state:
         st.session_state.support_agreement = None
-    if 'agreement_scope' not in st.session_state:
-        st.session_state.agreement_scope = "Both Agreements"
-    if 'agreement_type' not in st.session_state:
-        st.session_state.agreement_type = "BCGEU Instructor"
+    if 'selected_agreement' not in st.session_state:
+        st.session_state.selected_agreement = None
+    if 'selected_scope' not in st.session_state:
+        st.session_state.selected_scope = None
     
     # Get API key
     api_key = None
@@ -327,66 +334,95 @@ def main():
             st.session_state.support_agreement = support_agreement
             st.session_state.agreements_loaded = True
     
+    # New Topic button in top right
+    col_title, col_button = st.columns([4, 1])
+    with col_button:
+        if st.button("🔄 New Topic", help="Reset and start a new conversation"):
+            reset_session()
+    
     # Agreement Selection with three boxes
     st.markdown("### 📋 Select Agreement Type")
+    st.markdown("*Please select which agreement you'd like to search:*")
     
     col1, col2, col3 = st.columns(3)
     
-    # Box 1: BCGEU Instructor (Active) - with radio buttons inside
+    # Box 1: BCGEU Instructor
     with col1:
-        # Create the box using markdown and put everything inside it
-        st.markdown("""
-        <div style="
-            background-color: #f0f8ff;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            border: 2px solid #1e90ff;
-            border-bottom: none;
-            margin-bottom: 0;
-        ">
-            <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
-            <p style="margin-bottom: 0; color: #333;">Choose scope:</p>
-        </div>
-        """, unsafe_allow_html=True)
+        instructor_available = st.session_state.local_agreement is not None and st.session_state.common_agreement is not None
         
-        # Put radio buttons immediately after, styled to look connected
-        with st.container():
-            st.markdown("""
-            <style>
-            div[data-testid="stRadio"] {
-                background-color: #f0f8ff;
-                padding: 10px 20px 20px 20px;
-                margin-top: -16px !important;
-                margin-bottom: 20px;
-                border-radius: 0 0 10px 10px;
-                border-left: 2px solid #1e90ff;
-                border-right: 2px solid #1e90ff;
-                border-bottom: 2px solid #1e90ff;
-                border-top: none;
-            }
-            div[data-testid="stRadio"] > div {
-                margin-top: 0 !important;
-                padding-top: 0 !important;
-            }
-            div[data-testid="stRadio"] > div > div {
-                margin-top: 0 !important;
-                padding-top: 0 !important;
-            }
-            </style>
+        if instructor_available:
+            # Determine if this box is selected
+            is_selected = st.session_state.selected_agreement == "BCGEU Instructor"
+            border_color = "#1e90ff" if is_selected else "#cccccc"
+            bg_color = "#f0f8ff" if is_selected else "#f9f9f9"
+            text_color = "#1e90ff" if is_selected else "#666666"
+            
+            st.markdown(f"""
+            <div style="
+                background-color: {bg_color};
+                padding: 20px;
+                border-radius: 10px 10px 0 0;
+                border: 2px solid {border_color};
+                border-bottom: none;
+                margin-bottom: 0;
+            ">
+                <h4 style="color: {text_color}; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
+                <p style="margin-bottom: 0; color: #333;">Choose scope:</p>
+            </div>
             """, unsafe_allow_html=True)
             
-            instructor_selected = st.radio(
-                "",
-                ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-                index=2,
-                key="bcgeu_instructor_radio",
-                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
-                label_visibility="collapsed"
-            )
-            
-            if instructor_selected:
-                st.session_state.agreement_scope = instructor_selected
-                st.session_state.agreement_type = "BCGEU Instructor"
+            # Radio buttons for scope selection
+            with st.container():
+                st.markdown(f"""
+                <style>
+                div[data-testid="stRadio"][key="instructor_scope"] {{
+                    background-color: {bg_color};
+                    padding: 10px 20px 20px 20px;
+                    margin-top: -16px !important;
+                    margin-bottom: 20px;
+                    border-radius: 0 0 10px 10px;
+                    border-left: 2px solid {border_color};
+                    border-right: 2px solid {border_color};
+                    border-bottom: 2px solid {border_color};
+                    border-top: none;
+                }}
+                </style>
+                """, unsafe_allow_html=True)
+                
+                scope_options = ["Local Agreement Only", "Common Agreement Only", "Both Agreements"]
+                current_scope_index = scope_options.index(st.session_state.selected_scope) if st.session_state.selected_scope in scope_options else None
+                
+                instructor_scope = st.radio(
+                    "",
+                    scope_options,
+                    index=current_scope_index,
+                    key="instructor_scope",
+                    help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
+                    label_visibility="collapsed"
+                )
+                
+                if instructor_scope and (st.session_state.selected_agreement != "BCGEU Instructor" or st.session_state.selected_scope != instructor_scope):
+                    st.session_state.selected_agreement = "BCGEU Instructor"
+                    st.session_state.selected_scope = instructor_scope
+                    st.rerun()
+        else:
+            st.markdown("""
+                <div style="
+                    background-color: #fff5f5;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 2px solid #ff6b6b;
+                    height: 200px;
+                ">
+                    <h4 style="color: #ff6b6b; margin-top: 0;">📘 BCGEU Instructor</h4>
+                    <p style="color: #ff6b6b; font-style: italic; text-align: center; margin-top: 30px;">
+                        Agreement files not found
+                    </p>
+                    <p style="color: #888; font-size: 12px; text-align: center;">
+                        Please check agreement files
+                    </p>
+                </div>
+            """, unsafe_allow_html=True)
     
     # Box 2: CUPE Instructor (Coming Soon)
     with col2:
@@ -406,56 +442,64 @@ def main():
             </div>
         """, unsafe_allow_html=True)
     
-    # Box 3: BCGEU Support (Now Active)
+    # Box 3: BCGEU Support
     with col3:
-        # Check if support agreement is available
         support_available = st.session_state.support_agreement is not None
         
         if support_available:
-            st.markdown("""
+            # Determine if this box is selected
+            is_selected = st.session_state.selected_agreement == "BCGEU Support"
+            border_color = "#32cd32" if is_selected else "#cccccc"
+            bg_color = "#f0fff0" if is_selected else "#f9f9f9"
+            text_color = "#32cd32" if is_selected else "#666666"
+            
+            st.markdown(f"""
             <div style="
-                background-color: #f0fff0;
+                background-color: {bg_color};
                 padding: 20px;
                 border-radius: 10px 10px 0 0;
-                border: 2px solid #32cd32;
+                border: 2px solid {border_color};
                 border-bottom: none;
                 margin-bottom: 0;
             ">
-                <h4 style="color: #32cd32; margin-top: 0; margin-bottom: 15px;">📗 BCGEU Support</h4>
+                <h4 style="color: {text_color}; margin-top: 0; margin-bottom: 15px;">📗 BCGEU Support</h4>
                 <p style="margin-bottom: 0; color: #333;">Single agreement:</p>
             </div>
             """, unsafe_allow_html=True)
             
-            # Put radio button immediately after, styled to look connected
+            # Radio button for support agreement
             with st.container():
-                st.markdown("""
+                st.markdown(f"""
                 <style>
-                div[data-testid="stRadio"][key="bcgeu_support_radio"] {
-                    background-color: #f0fff0;
+                div[data-testid="stRadio"][key="support_agreement"] {{
+                    background-color: {bg_color};
                     padding: 10px 20px 20px 20px;
                     margin-top: -16px !important;
                     margin-bottom: 20px;
                     border-radius: 0 0 10px 10px;
-                    border-left: 2px solid #32cd32;
-                    border-right: 2px solid #32cd32;
-                    border-bottom: 2px solid #32cd32;
+                    border-left: 2px solid {border_color};
+                    border-right: 2px solid {border_color};
+                    border-bottom: 2px solid {border_color};
                     border-top: none;
-                }
+                }}
                 </style>
                 """, unsafe_allow_html=True)
+                
+                current_support_index = 0 if st.session_state.selected_agreement == "BCGEU Support" else None
                 
                 support_selected = st.radio(
                     "",
                     ["BCGEU Support Agreement"],
-                    index=0,
-                    key="bcgeu_support_radio",
+                    index=current_support_index,
+                    key="support_agreement",
                     help="Complete BCGEU Support Staff collective agreement",
                     label_visibility="collapsed"
                 )
                 
-                if support_selected:
-                    st.session_state.agreement_scope = "BCGEU Support Agreement"
-                    st.session_state.agreement_type = "BCGEU Support"
+                if support_selected and st.session_state.selected_agreement != "BCGEU Support":
+                    st.session_state.selected_agreement = "BCGEU Support"
+                    st.session_state.selected_scope = "BCGEU Support Agreement"
+                    st.rerun()
         else:
             st.markdown("""
                 <div style="
@@ -475,7 +519,16 @@ def main():
                 </div>
             """, unsafe_allow_html=True)
     
-    st.markdown("<br><br>", unsafe_allow_html=True)
+    # Display current selection
+    if st.session_state.selected_agreement:
+        if st.session_state.selected_agreement == "BCGEU Support":
+            st.success(f"✅ **Selected**: {st.session_state.selected_agreement} - {st.session_state.selected_scope}")
+        else:
+            st.success(f"✅ **Selected**: {st.session_state.selected_agreement} - {st.session_state.selected_scope}")
+    else:
+        st.info("ℹ️ Please select an agreement type above to begin")
+    
+    st.markdown("<br>", unsafe_allow_html=True)
     
     # Prominent Question Input Section
     st.markdown("### 💬 Ask Your Question")
@@ -499,24 +552,28 @@ def main():
     
     # Process the question when submitted
     if submit_button and user_question:
-        # Add user message
-        st.session_state.messages.append({"role": "user", "content": user_question})
-        
-        # Generate and display response
-        with st.spinner("Analyzing agreements..."):
-            response = generate_response(
-                user_question, 
-                st.session_state.local_agreement, 
-                st.session_state.common_agreement, 
-                st.session_state.support_agreement,
-                st.session_state.agreement_scope,
-                st.session_state.agreement_type,
-                api_key
-            )
-            st.session_state.messages.append({"role": "assistant", "content": response})
-        
-        # Clear the input
-        st.rerun()
+        # Check if an agreement is selected
+        if not st.session_state.selected_agreement:
+            st.error("⚠️ **Please select an agreement type above before asking a question.**")
+        else:
+            # Add user message
+            st.session_state.messages.append({"role": "user", "content": user_question})
+            
+            # Generate and display response
+            with st.spinner("Analyzing agreements..."):
+                response = generate_response(
+                    user_question, 
+                    st.session_state.local_agreement, 
+                    st.session_state.common_agreement, 
+                    st.session_state.support_agreement,
+                    st.session_state.selected_agreement,
+                    st.session_state.selected_scope,
+                    api_key
+                )
+                st.session_state.messages.append({"role": "assistant", "content": response})
+            
+            # Clear the input
+            st.rerun()
     
     # Display conversation history
     if st.session_state.messages:
@@ -528,7 +585,10 @@ def main():
     # Bottom section with query count
     if st.session_state.total_queries > 0:
         st.markdown("---")
-        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {st.session_state.agreement_type} - {st.session_state.agreement_scope}")
+        if st.session_state.selected_agreement:
+            st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {st.session_state.selected_agreement} - {st.session_state.selected_scope}")
+        else:
+            st.caption(f"💬 Total queries: {st.session_state.total_queries}")
 
 if __name__ == "__main__":
     main()
