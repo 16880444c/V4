@@ -1,0 +1,60 @@
+{
+    "memoranda_of_agreement": {
+        "1": {
+            "title": "Joint Job Evaluation/Pay Equity Committee",
+            "sections": {
+                "1": "The parties agree to the formation of a joint job evaluation/pay equity committee by September 30, 2000 whose job will be to develop a Job Evaluation Plan, including implementation strategies and time lines. The Committee will use the factors and checklist from the B. C. Government and Service Employees' Union (Master) Gender-Neutral Job Evaluation Plan, subject to amendments necessary to adjust to the College setting.",
+                "2": "The Joint Committee will be comprised of equal representation from the Union and the College. Either or both parties may expand the Committee to include resource person(s) as ex-officio, upon agreement from the other party. Both parties agree that at least fifty percent (50%) of their representation on the Committee will be female. Union members on the Committee shall be entitled to employer paid release time.",
+                "3": "The parties agree to make joint application to the provincial government to obtain one percent (1%) of the total bargaining unit payroll effective April 1, 2000 and one percent (1%) effective April 1, every year thereafter until such time as the Gender-Neutral Job Evaluation Plan has been fully implemented. Refer to Common Agreement (Letter of Understanding #3).",
+                "4": "The parties recognize that the current pay grid has thirteen levels and may require further expansion.",
+                "5": "If a position is rated lower than its current level as a result of the implementation of the Job Evaluation Plan, the incumbent shall remain at their current pay level and will continue to receive negotiated wage increases. When the incumbent vacates the position, the position will be posted and filled at the job level established by the Joint Job Evaluation/Pay Equity Committee."
+            }
+        },
+        "2": {
+            "title": "Staff Development and Training Fund",
+            "sections": {
+                "preamble": "It is expected that over the life of the next collective agreement, Coast Mountain College will continue to face a shortage of skilled workers causing staffing shortages that negatively impact services to students. The parties to this agreement recognize that the welfare of the college as well as the currency and competency of the employees requires a sharpened focus on training and development.",
+                "staff_development_fund": {
+                    "year_1": "During year 1, the funding allocation of $18, 000 will be allocated to the Staff Development Fund. Thirty (30%) percent of the fund will be used to sponsor college-wide in-house group courses. The remainder of the fund will be used for Job Training or Career Development purposes.",
+                    "year_2": "During year 2, the funding allocation of $36,000 will be allocated to the Staff Development Fund. Thirty (30%) percent of the fund will be used to sponsor college-wide in-house group courses. The remainder of the fund will be used for Job Training or Career Development purposes.",
+                    "year_3_and_beyond": "During year 3 and beyond, the funding allocation of $55,000 will be allocated to the Staff Development Fund. Thirty (30%) percent of the fund will be used to sponsor college-wide in-house group courses. The remainder of the fund will be used for Job Training or Career Development purposes. Funds not allocated within a calendar year will be carried over for one year only."
+                },
+                "job_training": "Job training is intended to assist employees in maintaining and improving knowledge and skills, in order that the employee may perform the duties outlined in the position description.",
+                "career_development": "The employees and the College benefit from career development, which enable the employees to prepare for promotional advancement within the college and to improve their present knowledge and skills.",
+                "committee": "The College and the Union shall establish a jointly administered Staff Development and Training Committee. The Committee shall consist of two representative of the College and two representatives of the Union. The guidelines for the administration of the Staff Development and Training Fund will be established by the Committee and approved by Coast Mountain College and BCGEU (Local 712 - Support Staff)."
+            }
+        },
+        "3": {
+            "title": "Medical Services Plan of BC",
+            "content": "The parties recognize that the method of funding MSP has been changed from an individually paid premium system to a system funded by an employer paid payroll tax. If the government, at any time in the future, reverts to an individually paid premium system for basic medical insurance, the parties agree that the employer will pay 100% of the premium for the employees on the same basis as exits in the 2014 - 2019 collective agreement."
+        },
+        "4": {
+            "title": "Standby Pilot - Information Technology Support",
+            "sections": {
+                "intent": "Information Technology standby provisions are being introduced with the mutual intent of providing: Compensation for responding to work inquiries outside of a standard workday; Predictability in expectations for responding to inquiries outside of a standard workday. This MOA applies only to employees working in the Information Technology Services Department.",
+                "provisions": {
+                    "1": "Standby is defined as being scheduled to be available to provide telephone/text support at any time following the completion of an employee's scheduled shift during a standard workweek, or on scheduled days of rest.",
+                    "2": "An employee on standby will be receive one (1) hour pay at the employee's regular rate of pay for each four (4) hour period or less of standby.",
+                    "3": "If an employee is asked to report to the workplace while on standby, the employee shall receive Call Out pay as set out in Article 19.11",
+                    "4": "If an employee determines another employee or resource is needed, the standby employee will advise the applicable manager.",
+                    "5": "During standby shifts, normal response time to inquiries is 15 to 20 minutes.",
+                    "6": "The Employer will post the standby schedule at least ten (10) working days in advance.",
+                    "7": "Standby shifts will be rotated between employees. Employees may trade shifts with written approval from their manager.",
+                    "8": "No employee will be compelled to accept standby on two (2) consecutive weekends or on two (2) consecutive statutory holidays.",
+                    "9": "An employee who has an approved scheduled vacation shall not be scheduled for standby duty by the employer, without the consent of the employee.",
+                    "10": "This MOA will be in force and effect until June 30, 2021.",
+                    "11": "This MOA can be cancelled by either party issuing thirty (30) days' notice.",
+                    "12": "The MOA can be renewed by mutual agreement."
+                }
+            }
+        },
+        "5": {
+            "title": "Workplace Bullying and Harassment",
+            "sections": {
+                "agreement": "Both parties agree that the Employer has a duty to ensure the health and safety of its workers, and as a result, employers must take all reasonable steps to prevent where possible, or otherwise minimize, workplace bullying and harassment.",
+                "reasonable_steps": "Reasonable steps to address the hazard include: Develop a policy statement with respect to workplace bullying or harassment not being accepted or tolerated.",
+                "employer_commitment": "The Employer agrees to create a Bullying and harassment policy statement in alignment with WorkSafeBC legislation within sixty (60) days of ratification. The Employer agrees to consult with the Union on creation of this policy. In the interim, procedure will be followed until Article 1.8 Personal Harassment clauses (b), (d), (e) and (f)."
+            }
+        }
+    }
+}
