@@ -43,7 +43,6 @@ def load_split_local_agreement() -> dict:
 def load_bcgeu_support_agreement() -> dict:
     """Load the BCGEU Support agreement from split JSON files"""
     support_agreement = {}
-    loaded_files = []
     
     # List of all BCGEU support split files
     support_files = [
@@ -59,31 +58,17 @@ def load_bcgeu_support_agreement() -> dict:
     # Load each file and merge into the complete agreement
     for filename in support_files:
         try:
-            if os.path.exists(filename):
-                with open(filename, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    support_agreement.update(data)
-                    loaded_files.append(filename)
-            else:
-                # File doesn't exist - this helps debug path issues
-                continue
-        except Exception as e:
-            # Skip files that can't be loaded but continue trying others
-            continue
-    
-    # Store debug info for later use
-    if hasattr(st.session_state, '__dict__'):
-        st.session_state.support_loaded_files = loaded_files
+            with open(filename, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                support_agreement.update(data)
+        except:
+            pass  # Silently skip any files that can't be loaded
     
     # If no files were loaded, try the old single file as fallback
     if not support_agreement:
         try:
-            fallback_path = 'agreements/bcgeu_support/bcgeu_support.json'
-            if os.path.exists(fallback_path):
-                with open(fallback_path, 'r', encoding='utf-8') as f:
-                    support_agreement = json.load(f)
-                    if hasattr(st.session_state, '__dict__'):
-                        st.session_state.support_loaded_files = [fallback_path]
+            with open('agreements/bcgeu_support/bcgeu_support.json', 'r', encoding='utf-8') as f:
+                support_agreement = json.load(f)
         except:
             pass
     
@@ -749,39 +734,11 @@ def main():
                 st.markdown("**BCGEU Agreements:**")
                 bcgeu_local_status = "✅ Available" if st.session_state.local_agreement else "❌ Not found"
                 bcgeu_common_status = "✅ Available" if st.session_state.common_agreement else "❌ Not found"
-                
-                # Enhanced support agreement status with file details
-                if st.session_state.support_agreement:
-                    loaded_files = getattr(st.session_state, 'support_loaded_files', [])
-                    if loaded_files:
-                        bcgeu_support_status = f"✅ Available ({len(loaded_files)} files loaded)"
-                        st.markdown(f"• Support Agreement: {bcgeu_support_status}")
-                        st.markdown("  Files loaded:")
-                        for file in loaded_files:
-                            file_name = file.split('/')[-1]  # Just show filename
-                            st.markdown(f"    - {file_name}")
-                    else:
-                        bcgeu_support_status = "✅ Available (source unknown)"
-                        st.markdown(f"• Support Agreement: {bcgeu_support_status}")
-                else:
-                    st.markdown("• Support Agreement: ❌ Not found")
-                    st.markdown("  Expected files:")
-                    expected_files = [
-                        'definitions_json.json',
-                        'articles_1_10_json.json', 
-                        'articles_11_20_json.json',
-                        'articles_21_30_json.json',
-                        'articles_31_36_json.json',
-                        'appendices_json.json',
-                        'memoranda_json.json'
-                    ]
-                    for file in expected_files:
-                        file_path = f'agreements/bcgeu_support/{file}'
-                        exists = "✅" if os.path.exists(file_path) else "❌"
-                        st.markdown(f"    {exists} {file}")
+                bcgeu_support_status = "✅ Available" if st.session_state.support_agreement else "❌ Not found"
                 
                 st.markdown(f"• Local Agreement: {bcgeu_local_status}")
                 st.markdown(f"• Common Agreement: {bcgeu_common_status}")
+                st.markdown(f"• Support Agreement: {bcgeu_support_status}")
             
             with col2:
                 st.markdown("**CUPE Agreements:**")
