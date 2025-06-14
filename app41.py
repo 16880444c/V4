@@ -99,114 +99,6 @@ def load_cupe_common_agreement() -> dict:
             pass
         return None
 
-def extract_debug_info(agreement_data: dict, agreement_name: str) -> dict:
-    """Extract article numbers and appendices from agreement data for debugging"""
-    debug_info = {
-        'agreement_name': agreement_name,
-        'articles': [],
-        'appendices': [],
-        'other_sections': []
-    }
-    
-    if not agreement_data:
-        return debug_info
-    
-    for section_key, section_data in agreement_data.items():
-        section_lower = section_key.lower()
-        
-        # Check for articles
-        if 'article' in section_lower and isinstance(section_data, dict):
-            for key, value in section_data.items():
-                if 'article' in key.lower():
-                    debug_info['articles'].append(key)
-        
-        # Check for appendices
-        elif 'appendix' in section_lower or 'appendices' in section_lower:
-            if isinstance(section_data, dict):
-                for key in section_data.keys():
-                    debug_info['appendices'].append(key)
-            else:
-                debug_info['appendices'].append(section_key)
-        
-        # Track other sections
-        else:
-            debug_info['other_sections'].append(section_key)
-    
-    return debug_info
-
-def show_debug_modal():
-    """Show debug information in a modal"""
-    if st.session_state.get('show_debug', False):
-        with st.expander("🔍 DEBUG: Loaded Agreement Content", expanded=True):
-            selected_agreement = st.session_state.get('agreement_selection', '')
-            
-            if "BCGEU Instructor - Local Only" in selected_agreement:
-                debug_info = extract_debug_info(st.session_state.local_agreement, "BCGEU Local Agreement")
-                display_debug_info([debug_info])
-            
-            elif "BCGEU Instructor - Common Only" in selected_agreement:
-                debug_info = extract_debug_info(st.session_state.common_agreement, "BCGEU Common Agreement")
-                display_debug_info([debug_info])
-            
-            elif "BCGEU Instructor - Both Agreements" in selected_agreement:
-                local_info = extract_debug_info(st.session_state.local_agreement, "BCGEU Local Agreement")
-                common_info = extract_debug_info(st.session_state.common_agreement, "BCGEU Common Agreement")
-                display_debug_info([local_info, common_info])
-            
-            elif "BCGEU Support Agreement" in selected_agreement:
-                debug_info = extract_debug_info(st.session_state.support_agreement, "BCGEU Support Agreement")
-                display_debug_info([debug_info])
-            
-            elif "CUPE - Local Agreement" in selected_agreement:
-                debug_info = extract_debug_info(st.session_state.cupe_local_agreement, "CUPE Local Agreement")
-                display_debug_info([debug_info])
-            
-            elif "CUPE - Common Agreement" in selected_agreement:
-                debug_info = extract_debug_info(st.session_state.cupe_common_agreement, "CUPE Common Agreement")
-                display_debug_info([debug_info])
-            
-            elif "CUPE - Both Agreements" in selected_agreement:
-                local_info = extract_debug_info(st.session_state.cupe_local_agreement, "CUPE Local Agreement")
-                common_info = extract_debug_info(st.session_state.cupe_common_agreement, "CUPE Common Agreement")
-                display_debug_info([local_info, common_info])
-            
-            if st.button("❌ Close Debug", key="close_debug"):
-                st.session_state.show_debug = False
-                st.rerun()
-
-def display_debug_info(debug_infos: list):
-    """Display debug information for one or more agreements"""
-    for debug_info in debug_infos:
-        st.markdown(f"**{debug_info['agreement_name']}**")
-        
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            st.markdown("**Articles:**")
-            if debug_info['articles']:
-                for article in sorted(debug_info['articles']):
-                    st.markdown(f"• {article}")
-            else:
-                st.markdown("*No articles found*")
-        
-        with col2:
-            st.markdown("**Appendices:**")
-            if debug_info['appendices']:
-                for appendix in sorted(debug_info['appendices']):
-                    st.markdown(f"• {appendix}")
-            else:
-                st.markdown("*No appendices found*")
-        
-        with col3:
-            st.markdown("**Other Sections:**")
-            if debug_info['other_sections']:
-                for section in sorted(debug_info['other_sections']):
-                    st.markdown(f"• {section}")
-            else:
-                st.markdown("*No other sections found*")
-        
-        st.markdown("---")
-
 def load_builtin_agreements() -> tuple:
     """Load all built-in agreements from JSON files"""
     try:
@@ -286,7 +178,7 @@ def format_section_content(data: dict, indent: int = 0) -> str:
 def reset_conversation():
     """Reset conversation and selections"""
     # Clear all relevant session state
-    keys_to_clear = ['messages', 'total_queries', 'conversation_context', 'current_question_type', 'show_debug']
+    keys_to_clear = ['messages', 'total_queries', 'conversation_context', 'current_question_type']
     for key in keys_to_clear:
         if key in st.session_state:
             del st.session_state[key]
@@ -493,34 +385,23 @@ def render_question_section(selected_agreement: str, api_key: str):
         
         # Button layout
         if st.session_state.current_question_type == "initial" or not st.session_state.messages:
-            # Initial question - submit, new topic, and debug buttons
-            col1, col2, col3, col4, col5 = st.columns([0.5, 1.2, 1.2, 1, 0.5])
+            # Initial question - just submit and new topic buttons
+            col1, col2, col3, col4 = st.columns([1, 1.2, 1.2, 1])
             
             with col2:
                 submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
             
             with col3:
                 new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start fresh", use_container_width=True)
-            
-            with col4:
-                debug_button = st.form_submit_button("🔍 Debug", help="Show loaded agreement content", use_container_width=True)
         else:
-            # Follow-up question - show all three options
-            col1, col2, col3, col4, col5 = st.columns([0.3, 1.2, 1.2, 1, 0.3])
+            # Follow-up question - show both options
+            col1, col2, col3, col4 = st.columns([0.5, 1.5, 1.5, 0.5])
             
             with col2:
                 submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
             
             with col3:
                 new_topic_button = st.form_submit_button("🔄 New Topic", help="Clear conversation and start fresh", use_container_width=True)
-            
-            with col4:
-                debug_button = st.form_submit_button("🔍 Debug", help="Show loaded agreement content", use_container_width=True)
-    
-    # Handle debug button
-    if debug_button:
-        st.session_state.show_debug = True
-        st.rerun()
     
     # Handle new topic button
     if new_topic_button:
@@ -638,8 +519,6 @@ def main():
         st.session_state.cupe_common_agreement = None
     if 'current_question_type' not in st.session_state:
         st.session_state.current_question_type = "initial"
-    if 'show_debug' not in st.session_state:
-        st.session_state.show_debug = False
     
     # Get API key
     api_key = None
@@ -666,10 +545,6 @@ def main():
             st.session_state.cupe_local_agreement = cupe_local_agreement
             st.session_state.cupe_common_agreement = cupe_common_agreement
             st.session_state.agreements_loaded = True
-    
-    # Show debug modal if requested
-    if st.session_state.get('show_debug', False):
-        show_debug_modal()
     
     # Create list of available options
     agreement_options = ["Please select an agreement..."]
