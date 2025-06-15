@@ -3,6 +3,7 @@ import json
 import anthropic
 from datetime import datetime
 import os
+import requests
 
 # Set page config
 st.set_page_config(
@@ -39,9 +40,69 @@ def load_split_local_agreement() -> dict:
     
     return local_agreement
 
-def load_builtin_agreements() -> tuple:
-    """Load the built-in agreements from JSON files"""
+def load_bcgeu_support_agreement() -> dict:
+    """Load the BCGEU Support agreement from split JSON files"""
+    support_agreement = {}
+    
+    # List of all BCGEU support split files
+    support_files = [
+        'agreements/bcgeu_support/definitions_json.json',
+        'agreements/bcgeu_support/articles_1_10_json.json',
+        'agreements/bcgeu_support/articles_11_20_json.json',
+        'agreements/bcgeu_support/articles_21_30_json.json',
+        'agreements/bcgeu_support/articles_31_36_json.json',
+        'agreements/bcgeu_support/appendices_json.json',
+        'agreements/bcgeu_support/memoranda_json.json'
+    ]
+    
+    # Load each file and merge into the complete agreement
+    for filename in support_files:
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                support_agreement.update(data)
+        except:
+            pass  # Silently skip any files that can't be loaded
+    
+    # If no files were loaded, try the old single file as fallback
+    if not support_agreement:
+        try:
+            with open('agreements/bcgeu_support/bcgeu_support.json', 'r', encoding='utf-8') as f:
+                support_agreement = json.load(f)
+        except:
+            pass
+    
+    return support_agreement if support_agreement else None
+
+def load_cupe_local_agreement() -> dict:
+    """Load the CUPE Local agreement from JSON file"""
     try:
+        with open('agreements/cupe_local/cupe_local.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except:
+        return None
+
+def load_cupe_common_agreement() -> dict:
+    """Load the CUPE Common agreement from GitHub or local file"""
+    # First try to load from local file
+    try:
+        with open('agreements/cupe_common/cupe_common.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except:
+        # If local file doesn't exist, try to fetch from GitHub
+        try:
+            github_url = "https://raw.githubusercontent.com/16880444c/V4/main/agreements/cupe_common/cupe_common.json"
+            response = requests.get(github_url, timeout=10)
+            if response.status_code == 200:
+                return response.json()
+        except:
+            pass
+        return None
+
+def load_builtin_agreements() -> tuple:
+    """Load all built-in agreements from JSON files"""
+    try:
+        # Load BCGEU agreements
         # Try loading split files first
         local_agreement = load_split_local_agreement()
         
@@ -52,7 +113,7 @@ def load_builtin_agreements() -> tuple:
                 with open(complete_local_path, 'r', encoding='utf-8') as f:
                     local_agreement = json.load(f)
             except:
-                return None, None
+                local_agreement = None
         
         # Load common agreement
         common_agreement_path = 'agreements/bcgeu_common/complete_common.json'
@@ -60,12 +121,19 @@ def load_builtin_agreements() -> tuple:
             with open(common_agreement_path, 'r', encoding='utf-8') as f:
                 common_agreement = json.load(f)
         except:
-            return None, None
+            common_agreement = None
         
-        return local_agreement, common_agreement
+        # Load BCGEU Support agreement (now from multiple files)
+        support_agreement = load_bcgeu_support_agreement()
+        
+        # Load CUPE agreements
+        cupe_local_agreement = load_cupe_local_agreement()
+        cupe_common_agreement = load_cupe_common_agreement()
+        
+        return local_agreement, common_agreement, support_agreement, cupe_local_agreement, cupe_common_agreement
         
     except Exception:
-        return None, None
+        return None, None, None, None, None
 
 def format_agreement_for_context(agreement: dict, agreement_name: str) -> str:
     """Convert agreement JSON to formatted text for Claude context"""
@@ -107,20 +175,106 @@ def format_section_content(data: dict, indent: int = 0) -> str:
     
     return content
 
-def generate_response(query: str, local_agreement: dict, common_agreement: dict, agreement_scope: str, api_key: str) -> str:
+def reset_conversation():
+    """Reset conversation and selections"""
+    # Clear all relevant session state
+    keys_to_clear = ['messages', 'total_queries', 'conversation_context', 'current_question_type']
+    for key in keys_to_clear:
+        if key in st.session_state:
+            del st.session_state[key]
+    # Reset question type to initial
+    st.session_state.current_question_type = "initial"
+    st.rerun()
+
+def build_conversation_context(messages: list) -> str:
+    """Build conversation context from message history"""
+    if not messages:
+        return ""
+    
+    context = "\n\nPREVIOUS CONVERSATION CONTEXT:\n"
+    context += "="*50 + "\n"
+    
+    for i, message in enumerate(messages):
+        if message["role"] == "user":
+            context += f"\nPrevious Question {i//2 + 1}: {message['content']}\n"
+        else:
+            context += f"Previous Response {i//2 + 1}: {message['content'][:500]}...\n"  # Truncate for context
+    
+    context += "\nEND OF PREVIOUS CONVERSATION\n"
+    context += "="*50 + "\n\n"
+    
+    return context
+
+def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, 
+                     cupe_local_agreement: dict, cupe_common_agreement: dict, selection: str, api_key: str, 
+                     is_followup: bool = False) -> str:
     """Generate response using Claude with complete agreement context"""
     
-    # Build context based on selected scope
+    # Build context based on selection
     context = ""
-    if agreement_scope == "Local Agreement Only":
-        context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
-    elif agreement_scope == "Common Agreement Only":
-        context = format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
-    else:  # Both agreements
-        context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
-        context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
     
-    system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the collective agreements.
+    if selection == "BCGEU Instructor - Local Only":
+        if local_agreement:
+            context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
+        else:
+            return "❌ **Error**: Local agreement not found."
+    elif selection == "BCGEU Instructor - Common Only":
+        if common_agreement:
+            context = format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
+        else:
+            return "❌ **Error**: Common agreement not found."
+    elif selection == "BCGEU Instructor - Both Agreements":
+        if local_agreement and common_agreement:
+            context = format_agreement_for_context(local_agreement, "Coast Mountain College Local Agreement")
+            context += "\n\n" + format_agreement_for_context(common_agreement, "BCGEU Common Agreement")
+        else:
+            return "❌ **Error**: One or both BCGEU agreement files not found."
+    elif selection == "BCGEU Support Agreement":
+        if support_agreement:
+            context = format_agreement_for_context(support_agreement, "BCGEU Support Agreement")
+        else:
+            return "❌ **Error**: BCGEU Support agreement not found."
+    elif selection == "CUPE - Local Agreement":
+        if cupe_local_agreement:
+            context = format_agreement_for_context(cupe_local_agreement, "CUPE Local Agreement")
+        else:
+            return "❌ **Error**: CUPE Local agreement not found."
+    elif selection == "CUPE - Common Agreement":
+        if cupe_common_agreement:
+            context = format_agreement_for_context(cupe_common_agreement, "CUPE Common Agreement")
+        else:
+            return "❌ **Error**: CUPE Common agreement not found."
+    elif selection == "CUPE - Both Agreements":
+        if cupe_local_agreement and cupe_common_agreement:
+            context = format_agreement_for_context(cupe_local_agreement, "CUPE Local Agreement")
+            context += "\n\n" + format_agreement_for_context(cupe_common_agreement, "CUPE Common Agreement")
+        else:
+            return "❌ **Error**: One or both CUPE agreement files not found."
+    
+    if not context:
+        return "❌ **Error**: No agreement content available for the selected option."
+    
+    # Add conversation context for follow-up questions
+    conversation_context = ""
+    if is_followup and st.session_state.get('messages'):
+        conversation_context = build_conversation_context(st.session_state.messages)
+    
+    # Determine system prompt based on agreement type
+    if "Support" in selection:
+        agreement_type = "BCGEU Support Agreement"
+        citation_format = "[BCGEU Support Agreement - Article X.X: Title]"
+    elif "CUPE" in selection:
+        agreement_type = "CUPE agreements"
+        citation_format = "[CUPE Agreement - Article X.X: Title]"
+    else:
+        agreement_type = "BCGEU Instructor agreements"
+        citation_format = "[Agreement Type - Article X.X: Title]"
+    
+    follow_up_instruction = ""
+    if is_followup:
+        follow_up_instruction = "\n\nIMPORTANT: This is a FOLLOW-UP question in an ongoing conversation. Consider the previous conversation context when formulating your response. Build upon previous answers where relevant, and reference earlier discussion points when appropriate."
+    
+    system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the {agreement_type}.
 
 CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
 
@@ -142,8 +296,7 @@ MANAGEMENT AUTHORITY FOCUS:
 
 CITATION REQUIREMENTS (MANDATORY):
 - EVERY claim must have a specific citation
-- Use format: [Agreement Type - Article X.X: Title] or [Agreement Type - Clause X.X]
-- Example: [Local Agreement - Article 10.1: Burden of Proof] or [Common Agreement - Clause 6.5: Contracting Out]
+- Use format: {citation_format}
 - When referencing definitions: [Agreement Type - Definitions: "term"]
 - For appendices: [Agreement Type - Appendix X: Title]
 - INCLUDE RELEVANT QUOTES: When possible, include short, relevant quotes from the agreement text to support your position
@@ -157,17 +310,13 @@ RESPONSE STRUCTURE:
 4. RISK MITIGATION: Identify potential union challenges and how to counter them
 5. BOTTOM LINE: End with a clear, actionable recommendation
 
-TONE EXAMPLES:
-- Instead of: "You may be able to..." → "You HAVE THE RIGHT to..."
-- Instead of: "Consider whether..." → "You SHOULD immediately..."
-- Instead of: "This might be justified..." → "This is CLEARLY within your management authority because..."
-- Instead of: "The agreement allows..." → "Management is EXPLICITLY authorized to..."
-
-Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation."""
+Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation.{follow_up_instruction}"""
 
     user_message = f"""Based on the complete collective agreement provisions below, provide strong management-focused guidance for this question:
 
-QUESTION: {query}
+{conversation_context}
+
+{"FOLLOW-UP " if is_followup else ""}QUESTION: {query}
 
 COMPLETE COLLECTIVE AGREEMENT CONTENT:
 {context}
@@ -194,7 +343,7 @@ Provide definitive, management-favorable guidance with specific citations and qu
         return response.content[0].text
     
     except anthropic.RateLimitError:
-        return "⚠️ **Rate Limit Reached**\n\nThe system has reached its usage limit for this minute. This typically happens when processing large amounts of text.\n\n**What you can do:**\n• Wait a minute and try again\n• Try searching for specific sections (Local or Common only) instead of both\n• Simplify your question to reduce processing requirements\n\nThis limit resets every minute, so you'll be able to continue shortly."
+        return "⚠️ **Rate Limit Reached**\n\nThe system has reached its usage limit for this minute. This typically happens when processing large amounts of text.\n\n**What you can do:**\n• Wait a minute and try again\n• Try searching for specific sections instead of both agreements\n• Simplify your question to reduce processing requirements\n\nThis limit resets every minute, so you'll be able to continue shortly."
     
     except anthropic.APIError as e:
         return f"⚠️ **API Error**\n\nThere was an issue connecting to the AI service. Please try again in a moment.\n\nIf the problem persists, please contact support."
@@ -202,9 +351,154 @@ Provide definitive, management-favorable guidance with specific citations and qu
     except Exception as e:
         return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again.\n\nIf the issue continues, please contact support."
 
+def render_question_section(selected_agreement: str, api_key: str):
+    """Render the question input section based on current state"""
+    
+    # Initialize question type if not set
+    if 'current_question_type' not in st.session_state:
+        st.session_state.current_question_type = "initial"
+    
+    # Determine question type and section title
+    if st.session_state.current_question_type == "initial" or not st.session_state.messages:
+        section_title = "💬 Ask Your Question"
+        placeholder_text = "Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic..."
+        form_key = "initial_question_form"
+        button_text = "🔍 Get Answer"
+    else:
+        section_title = "💬 Continue the Conversation"
+        placeholder_text = "Ask a follow-up question about the topic, or start a new topic..."
+        form_key = "followup_question_form"
+        button_text = "💬 Ask Follow-up"
+    
+    st.markdown(f"### {section_title}")
+    
+    # Create form with dynamic key to ensure proper handling
+    with st.form(key=form_key, clear_on_submit=True):
+        user_question = st.text_area(
+            "",
+            placeholder=placeholder_text,
+            height=120,
+            key=f"question_input_{st.session_state.current_question_type}",
+            label_visibility="collapsed",
+            help="💡 Press Ctrl+Enter to submit your question!"
+        )
+        
+        # Button layout
+        if st.session_state.current_question_type == "initial" or not st.session_state.messages:
+            # Initial question - just submit and new topic buttons
+            col1, col2, col3, col4 = st.columns([1, 1.2, 1.2, 1])
+            
+            with col2:
+                submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
+            
+            with col3:
+                new_topic_button = st.form_submit_button("🔄 New Topic", help="Reset and start fresh", use_container_width=True)
+        else:
+            # Follow-up question - show both options
+            col1, col2, col3, col4 = st.columns([0.5, 1.5, 1.5, 0.5])
+            
+            with col2:
+                submit_button = st.form_submit_button(button_text, type="primary", use_container_width=True)
+            
+            with col3:
+                new_topic_button = st.form_submit_button("🔄 New Topic", help="Clear conversation and start fresh", use_container_width=True)
+    
+    # Handle new topic button
+    if new_topic_button:
+        reset_conversation()
+        return None, False
+    
+    # Handle question submission
+    if submit_button and user_question:
+        # Check if an agreement is selected
+        if not selected_agreement or selected_agreement == "Please select an agreement...":
+            st.error("⚠️ **Please select an agreement above before asking a question.**")
+            return None, False
+        else:
+            is_followup = st.session_state.current_question_type == "followup" and len(st.session_state.messages) > 0
+            return user_question, is_followup
+    
+    return None, False
+
 def main():
-    st.title("⚖️ Coast Mountain College Agreement Assistant")
-    st.markdown("*Your comprehensive collective agreement analysis tool*")
+    # Add simple, clean CSS
+    st.markdown("""
+    <style>
+    .big-font {
+        font-size: 2.5em !important;
+        font-weight: 700;
+        color: #1f77b4;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .subtitle {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+        margin-bottom: 2em;
+    }
+    .status-success {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 15px 0;
+        color: #155724;
+        font-weight: 600;
+    }
+    .status-info {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        color: #0c5460;
+    }
+    .status-waiting {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 15px 0;
+        color: #6c757d;
+        font-weight: 500;
+    }
+    .user-message {
+        background-color: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .assistant-message {
+        background-color: #f3e5f5;
+        border-left: 4px solid #9c27b0;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .footer-stats {
+        text-align: center;
+        color: #6c757d;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 20px;
+        border: 1px solid #dee2e6;
+    }
+    .agreement-group {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 5px 0;
+        border-left: 4px solid #007bff;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Main title
+    st.markdown('<div class="big-font">⚖️ Coast Mountain College Agreement Assistant</div>', unsafe_allow_html=True)
+    st.markdown('<div class="subtitle">Your comprehensive collective agreement analysis tool</div>', unsafe_allow_html=True)
     
     # Initialize session state
     if 'messages' not in st.session_state:
@@ -217,8 +511,14 @@ def main():
         st.session_state.local_agreement = None
     if 'common_agreement' not in st.session_state:
         st.session_state.common_agreement = None
-    if 'agreement_scope' not in st.session_state:
-        st.session_state.agreement_scope = "Both Agreements"
+    if 'support_agreement' not in st.session_state:
+        st.session_state.support_agreement = None
+    if 'cupe_local_agreement' not in st.session_state:
+        st.session_state.cupe_local_agreement = None
+    if 'cupe_common_agreement' not in st.session_state:
+        st.session_state.cupe_common_agreement = None
+    if 'current_question_type' not in st.session_state:
+        st.session_state.current_question_type = "initial"
     
     # Get API key
     api_key = None
@@ -237,163 +537,160 @@ def main():
     # Load agreements once
     if not st.session_state.agreements_loaded:
         with st.spinner("Loading collective agreements..."):
-            local_agreement, common_agreement = load_builtin_agreements()
+            local_agreement, common_agreement, support_agreement, cupe_local_agreement, cupe_common_agreement = load_builtin_agreements()
             
-            if local_agreement and common_agreement:
-                st.session_state.local_agreement = local_agreement
-                st.session_state.common_agreement = common_agreement
-                st.session_state.agreements_loaded = True
-            else:
-                st.error("❌ Could not load agreement files. Please check that the files exist in:")
-                st.error("• Local: agreements/bcgeu_local/")
-                st.error("• Common: agreements/bcgeu_common/")
-                st.stop()
+            st.session_state.local_agreement = local_agreement
+            st.session_state.common_agreement = common_agreement
+            st.session_state.support_agreement = support_agreement
+            st.session_state.cupe_local_agreement = cupe_local_agreement
+            st.session_state.cupe_common_agreement = cupe_common_agreement
+            st.session_state.agreements_loaded = True
     
-    # Agreement Selection with three boxes
-    st.markdown("### 📋 Select Agreement Type")
+    # Create list of available options
+    agreement_options = ["Please select an agreement..."]
     
-    col1, col2, col3 = st.columns(3)
+    # Add BCGEU Instructor options if available
+    if st.session_state.local_agreement and st.session_state.common_agreement:
+        agreement_options.extend([
+            "BCGEU Instructor - Local Only",
+            "BCGEU Instructor - Common Only", 
+            "BCGEU Instructor - Both Agreements"
+        ])
     
-    # Box 1: BCGEU Instructor (Active) - with radio buttons inside
-    with col1:
-        # Create the box using markdown and put everything inside it
-        st.markdown("""
-        <div style="
-            background-color: #f0f8ff;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            border: 2px solid #1e90ff;
-            border-bottom: none;
-            margin-bottom: 0;
-        ">
-            <h4 style="color: #1e90ff; margin-top: 0; margin-bottom: 15px;">📘 BCGEU Instructor</h4>
-            <p style="margin-bottom: 0; color: #333;">Choose scope:</p>
-        </div>
-        """, unsafe_allow_html=True)
+    # Add BCGEU Support option if available
+    if st.session_state.support_agreement:
+        agreement_options.append("BCGEU Support Agreement")
+    
+    # Add CUPE options if available
+    cupe_options = []
+    if st.session_state.cupe_local_agreement:
+        cupe_options.append("CUPE - Local Agreement")
+    if st.session_state.cupe_common_agreement:
+        cupe_options.append("CUPE - Common Agreement")
+    if st.session_state.cupe_local_agreement and st.session_state.cupe_common_agreement:
+        cupe_options.append("CUPE - Both Agreements")
+    
+    agreement_options.extend(cupe_options)
+    
+    # Agreement selection (only show if no active conversation or at the start)
+    if not st.session_state.messages:
+        st.markdown("### 📋 Select Agreement")
         
-        # Put radio buttons immediately after, styled to look connected
-        with st.container():
-            st.markdown("""
-            <style>
-            div[data-testid="stRadio"] {
-                background-color: #f0f8ff;
-                padding: 10px 20px 20px 20px;
-                margin-top: -16px !important;
-                margin-bottom: 20px;
-                border-radius: 0 0 10px 10px;
-                border-left: 2px solid #1e90ff;
-                border-right: 2px solid #1e90ff;
-                border-bottom: 2px solid #1e90ff;
-                border-top: none;
-            }
-            div[data-testid="stRadio"] > div {
-                margin-top: 0 !important;
-                padding-top: 0 !important;
-            }
-            div[data-testid="stRadio"] > div > div {
-                margin-top: 0 !important;
-                padding-top: 0 !important;
-            }
-            </style>
-            """, unsafe_allow_html=True)
+        current_selection = st.session_state.get('agreement_selection', 'Please select an agreement...')
+        if current_selection not in agreement_options:
+            current_selection = 'Please select an agreement...'
+        
+        selected_agreement = st.selectbox(
+            "Choose which agreement to search:",
+            options=agreement_options,
+            index=agreement_options.index(current_selection),
+            key='agreement_selectbox'
+        )
+        
+        # Update session state
+        if selected_agreement != st.session_state.get('agreement_selection'):
+            st.session_state.agreement_selection = selected_agreement
+        
+        # Show selection status
+        if selected_agreement and selected_agreement != "Please select an agreement...":
+            st.markdown(f'<div class="status-success">✅ Selected: {selected_agreement}</div>', unsafe_allow_html=True)
             
-            st.session_state.agreement_scope = st.radio(
-                "",
-                ["Local Agreement Only", "Common Agreement Only", "Both Agreements"],
-                index=2,
-                key="bcgeu_instructor_radio",
-                help="Searching 'Both Agreements' uses more resources. If you encounter rate limits, try searching one agreement at a time.",
-                label_visibility="collapsed"
-            )
-    
-    # Box 2: CUPE Instructor (Coming Soon)
-    with col2:
-        st.markdown("""
-            <div style="
-                background-color: #f5f5f5;
-                padding: 20px;
-                border-radius: 10px;
-                border: 2px solid #d3d3d3;
-                height: 200px;
-                opacity: 0.6;
-            ">
-                <h4 style="color: #808080; margin-top: 0;">📙 CUPE Instructor</h4>
-                <p style="color: #808080; font-style: italic; text-align: center; margin-top: 50px;">
-                    Coming Soon
-                </p>
-            </div>
-        """, unsafe_allow_html=True)
-    
-    # Box 3: BCGEU Support (Coming Soon)
-    with col3:
-        st.markdown("""
-            <div style="
-                background-color: #f5f5f5;
-                padding: 20px;
-                border-radius: 10px;
-                border: 2px solid #d3d3d3;
-                height: 200px;
-                opacity: 0.6;
-            ">
-                <h4 style="color: #808080; margin-top: 0;">📗 BCGEU Support</h4>
-                <p style="color: #808080; font-style: italic; text-align: center; margin-top: 50px;">
-                    Coming Soon
-                </p>
-            </div>
-        """, unsafe_allow_html=True)
-    
-    st.markdown("<br><br>", unsafe_allow_html=True)
-    
-    # Prominent Question Input Section
-    st.markdown("### 💬 Ask Your Question")
-    st.markdown("---")
-    
-    # Large text area for questions
-    user_question = st.text_area(
-        "",
-        placeholder="Enter your question about workload, leave, scheduling, benefits, or any other collective agreement topic...",
-        height=100,
-        key="question_input",
-        label_visibility="collapsed"
-    )
-    
-    # Centered submit button
-    col_left, col_center, col_right = st.columns([1, 1, 1])
-    with col_center:
-        submit_button = st.button("🔍 Get Answer", type="primary", use_container_width=True)
-    
-    st.markdown("---")
+            # Add helpful information about the selection
+            if "Both Agreements" in selected_agreement:
+                st.markdown('<div class="status-info">ℹ️ Searching both agreements uses more resources. If you encounter rate limits, try selecting individual agreements.</div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="status-waiting">ℹ️ Please select an agreement to begin</div>', unsafe_allow_html=True)
+        
+        # Show agreement availability status
+        with st.expander("📊 Agreement Availability Status"):
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("**BCGEU Agreements:**")
+                bcgeu_local_status = "✅ Available" if st.session_state.local_agreement else "❌ Not found"
+                bcgeu_common_status = "✅ Available" if st.session_state.common_agreement else "❌ Not found"
+                bcgeu_support_status = "✅ Available" if st.session_state.support_agreement else "❌ Not found"
+                
+                st.markdown(f"• Local Agreement: {bcgeu_local_status}")
+                st.markdown(f"• Common Agreement: {bcgeu_common_status}")
+                st.markdown(f"• Support Agreement: {bcgeu_support_status}")
+            
+            with col2:
+                st.markdown("**CUPE Agreements:**")
+                cupe_local_status = "✅ Available" if st.session_state.cupe_local_agreement else "❌ Not found"
+                cupe_common_status = "✅ Available" if st.session_state.cupe_common_agreement else "❌ Not found"
+                
+                st.markdown(f"• Local Agreement: {cupe_local_status}")
+                st.markdown(f"• Common Agreement: {cupe_common_status}")
+                
+                if not st.session_state.cupe_common_agreement:
+                    st.markdown("  *Attempted to load from GitHub*")
+        
+        st.markdown("---")
+        
+        # Initial question section (only if no conversation started)
+        user_question, is_followup = render_question_section(selected_agreement, api_key)
+        
+    else:
+        # If there's an active conversation, get the stored agreement selection
+        selected_agreement = st.session_state.get('agreement_selection', 'Please select an agreement...')
+        
+        # Show current selection at top but not editable during conversation
+        st.markdown(f'<div class="status-success">✅ Current Agreement: {selected_agreement}</div>', unsafe_allow_html=True)
+        st.markdown("---")
+        
+        # Display conversation history first
+        st.markdown("### 📝 Conversation History")
+        
+        for message in st.session_state.messages:
+            if message["role"] == "user":
+                with st.chat_message("user"):
+                    st.markdown(f"**Your Question:** {message['content']}")
+            else:
+                with st.chat_message("assistant"):
+                    st.markdown("**Expert Analysis:**")
+                    st.markdown(message["content"])
+        
+        st.markdown("---")
+        
+        # Then show question section for follow-ups
+        user_question, is_followup = render_question_section(selected_agreement, api_key)
     
     # Process the question when submitted
-    if submit_button and user_question:
+    if user_question:
         # Add user message
         st.session_state.messages.append({"role": "user", "content": user_question})
         
+        # Set question type for next iteration
+        st.session_state.current_question_type = "followup"
+        
         # Generate and display response
-        with st.spinner("Analyzing agreements..."):
+        with st.spinner("Analyzing agreement..."):
             response = generate_response(
                 user_question, 
                 st.session_state.local_agreement, 
                 st.session_state.common_agreement, 
-                st.session_state.agreement_scope,
-                api_key
+                st.session_state.support_agreement,
+                st.session_state.cupe_local_agreement,
+                st.session_state.cupe_common_agreement,
+                selected_agreement,
+                api_key,
+                is_followup
             )
             st.session_state.messages.append({"role": "assistant", "content": response})
         
-        # Clear the input
+        # Rerun to show the new conversation state
         st.rerun()
     
-    # Display conversation history
-    if st.session_state.messages:
-        st.markdown("### 📝 Conversation History")
-        for message in st.session_state.messages:
-            with st.chat_message(message["role"]):
-                st.markdown(message["content"])
-    
-    # Bottom section with query count
+    # Footer with stats (only show if there are queries)
     if st.session_state.total_queries > 0:
-        st.markdown("---")
-        st.caption(f"💬 Total queries: {st.session_state.total_queries} | 🎯 Current scope: {st.session_state.agreement_scope}")
+        current_selection = st.session_state.get('agreement_selection', 'None')
+        conversation_length = len(st.session_state.messages) // 2
+        st.markdown(f"""
+        <div class="footer-stats">
+            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection} | 📊 Questions in conversation: {conversation_length}
+        </div>
+        """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
