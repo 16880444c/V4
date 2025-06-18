@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-import openai
+import anthropic
 from datetime import datetime
 import os
 
@@ -92,7 +92,7 @@ def format_agreement_for_context(agreement: dict, agreement_name: str) -> str:
     return context
 
 def generate_response(query: str, local_agreement: dict, common_agreement: dict, agreement_scope: str, api_key: str) -> str:
-    """Generate response using GPT-4o-mini with complete agreement context"""
+    """Generate response using Claude with complete agreement context"""
     
     # Build context based on selected scope
     context = ""
@@ -178,17 +178,17 @@ COMPLETE COLLECTIVE AGREEMENT CONTENT:
 
 Provide definitive, management-favorable guidance with specific citations and quotes from the agreement text."""
 
-    client = openai.OpenAI(api_key=api_key)
+    client = anthropic.Anthropic(api_key=api_key)
     
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",  # Much more cost-effective
+        response = client.messages.create(
+            model="claude-3-5-sonnet-20241022",  # Latest Claude model
+            max_tokens=2000,
+            temperature=0.1,
+            system=system_prompt,
             messages=[
-                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
-            ],
-            max_tokens=1500,
-            temperature=0.1
+            ]
         )
         
         # Update usage stats
@@ -196,7 +196,7 @@ Provide definitive, management-favorable guidance with specific citations and qu
             st.session_state.total_queries = 0
         st.session_state.total_queries += 1
         
-        return response.choices[0].message.content
+        return response.content[0].text
     except Exception as e:
         return f"Error generating response: {e}"
 
@@ -210,19 +210,37 @@ def main():
     if 'total_queries' not in st.session_state:
         st.session_state.total_queries = 0
     
-    # Get API key
+    # Get API key with better error handling
     api_key = None
-    try:
-        api_key = st.secrets["OPENAI_API_KEY"]
-    except:
-        try:
-            api_key = os.getenv("OPENAI_API_KEY")
-        except:
-            pass
     
+    # Try Streamlit secrets first
+    try:
+        if "ANTHROPIC_API_KEY" in st.secrets:
+            api_key = st.secrets["ANTHROPIC_API_KEY"]
+            st.success("✅ Anthropic API key loaded from Streamlit secrets")
+    except Exception as e:
+        st.warning(f"Could not load from secrets: {e}")
+    
+    # Try environment variables if secrets failed
     if not api_key:
-        st.error("🔑 OpenAI API key not found. Please set it in Streamlit secrets or environment variables.")
-        st.stop()
+        try:
+            api_key = os.getenv("ANTHROPIC_API_KEY")
+            if api_key:
+                st.success("✅ Anthropic API key loaded from environment variables")
+        except Exception as e:
+            st.warning(f"Could not load from environment: {e}")
+    
+    # If still no API key, ask user to input it
+    if not api_key:
+        st.error("🔑 Anthropic API key not found in secrets or environment variables.")
+        api_key = st.text_input(
+            "Please enter your Anthropic API Key:", 
+            type="password",
+            help="Your API key will only be used for this session and not stored."
+        )
+        if not api_key:
+            st.warning("Please provide your Anthropic API key to continue.")
+            st.stop()
     
     # Agreement Selection (prominent, no sidebar)
     st.markdown("### 📋 Select Collective Agreement")
