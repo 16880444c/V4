@@ -456,6 +456,24 @@ Provide structured, balanced analysis with specific citations and strategic reco
     except Exception as e:
         return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again."
 
+def process_strikethrough_text(text: str) -> str:
+    """Process text to preserve strikethrough formatting by converting to [REMOVED: text] format"""
+    import re
+    
+    # Pattern to match various strikethrough formats
+    patterns = [
+        (r'~~(.+?)~~', r'[REMOVED: \1]'),  # Markdown strikethrough
+        (r'<s>(.+?)</s>', r'[REMOVED: \1]'),  # HTML strikethrough
+        (r'<del>(.+?)</del>', r'[REMOVED: \1]'),  # HTML del tag
+        (r'<strike>(.+?)</strike>', r'[REMOVED: \1]'),  # HTML strike tag
+    ]
+    
+    processed_text = text
+    for pattern, replacement in patterns:
+        processed_text = re.sub(pattern, replacement, processed_text, flags=re.DOTALL)
+    
+    return processed_text
+
 def render_analysis_section(selected_agreement: str, api_key: str):
     """Render the analysis input section"""
     
@@ -490,6 +508,8 @@ Examples:
 • "We want to change the workload formula to include online course weighting"
 • "The union is proposing 3 additional professional development days"
 • "What are the trends in sabbatical leave provisions?"
+
+Note: Strikethrough text (~~text~~) will be preserved as [REMOVED: text] to show deletions.
 """
         form_key = "initial_analysis_form"
         button_text = "🔍 Analyze"
@@ -509,7 +529,7 @@ Examples:
             height=150,
             key=f"analysis_input_{len(st.session_state.messages)}",
             label_visibility="collapsed",
-            help="💡 Be specific about the proposed changes or issues you want analyzed"
+            help="💡 Be specific about the proposed changes or issues you want analyzed. Strikethrough text will be preserved to show removals."
         )
         
         # Button layout
@@ -533,8 +553,10 @@ Examples:
             st.error("⚠️ **Please select an agreement above before starting analysis.**")
             return None, None, False
         else:
+            # Process strikethrough text
+            processed_question = process_strikethrough_text(user_question)
             is_followup = len(st.session_state.messages) > 0
-            return user_question, analysis_type, is_followup
+            return processed_question, analysis_type, is_followup
     
     return None, None, False
 
