@@ -509,7 +509,10 @@ Examples:
 • "The union is proposing 3 additional professional development days"
 • "What are the trends in sabbatical leave provisions?"
 
-Note: Strikethrough text (~~text~~) will be preserved as [REMOVED: text] to show deletions.
+💡 STRIKETHROUGH TIPS:
+• If pasting from Word/Google Docs loses formatting, manually type [REMOVED: old text] new text
+• Or use ~~text~~ markdown format for deletions
+• Example: "Change from [REMOVED: 15 hours] to 12 hours per week"
 """
         form_key = "initial_analysis_form"
         button_text = "🔍 Analyze"
@@ -520,6 +523,17 @@ Note: Strikethrough text (~~text~~) will be preserved as [REMOVED: text] to show
         button_text = "💬 Continue Analysis"
     
     st.markdown(f"### {section_title}")
+    
+    # Add helpful note about strikethrough handling
+    if not st.session_state.messages:
+        st.markdown("""
+        <div class="strikethrough-help">
+        <strong>📝 Handling Text Changes:</strong><br>
+        • For deleted text: Use [REMOVED: old text] or ~~old text~~<br>
+        • For added text: Just type the new text normally<br>
+        • Example: "Change salary from [REMOVED: $50,000] to $55,000"
+        </div>
+        """, unsafe_allow_html=True)
     
     # Create form
     with st.form(key=form_key, clear_on_submit=True):
@@ -622,7 +636,56 @@ def main():
         margin-top: 20px;
         border: 1px solid #dee2e6;
     }
+    .strikethrough-help {
+        background-color: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 10px 0;
+        color: #856404;
+    }
+    /* Preserve strikethrough formatting in text areas */
+    textarea {
+        font-family: 'Courier New', monospace !important;
+    }
     </style>
+    
+    <script>
+    // Attempt to preserve strikethrough formatting during paste
+    document.addEventListener('DOMContentLoaded', function() {
+        const textareas = document.querySelectorAll('textarea');
+        textareas.forEach(function(textarea) {
+            textarea.addEventListener('paste', function(e) {
+                e.preventDefault();
+                const clipboardData = e.clipboardData || window.clipboardData;
+                const pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+                
+                // Try to preserve HTML formatting
+                let processedData = pastedData;
+                if (pastedData.includes('<s>') || pastedData.includes('<del>') || pastedData.includes('<strike>')) {
+                    processedData = pastedData
+                        .replace(/<s[^>]*>(.*?)<\/s>/gi, '[REMOVED: $1]')
+                        .replace(/<del[^>]*>(.*?)<\/del>/gi, '[REMOVED: $1]')
+                        .replace(/<strike[^>]*>(.*?)<\/strike>/gi, '[REMOVED: $1]')
+                        .replace(/<[^>]*>/g, ''); // Remove other HTML tags
+                }
+                
+                // Insert the processed text
+                const start = textarea.selectionStart;
+                const end = textarea.selectionEnd;
+                const text = textarea.value;
+                const before = text.substring(0, start);
+                const after = text.substring(end, text.length);
+                textarea.value = before + processedData + after;
+                textarea.selectionStart = textarea.selectionEnd = start + processedData.length;
+                
+                // Trigger change event
+                const event = new Event('input', { bubbles: true });
+                textarea.dispatchEvent(event);
+            });
+        });
+    });
+    </script>
     """, unsafe_allow_html=True)
     
     # Main title
