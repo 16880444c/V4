@@ -205,9 +205,118 @@ def build_conversation_context(messages: list) -> str:
     
     return context
 
+def get_system_prompt(response_style: str, agreement_type: str, citation_format: str, is_followup: bool) -> str:
+    """Generate system prompt based on response style"""
+    
+    follow_up_instruction = ""
+    if is_followup:
+        follow_up_instruction = "\n\nIMPORTANT: This is a FOLLOW-UP question in an ongoing conversation. Consider the previous conversation context when formulating your response. Build upon previous answers where relevant, and reference earlier discussion points when appropriate."
+    
+    base_citation_requirements = f"""CITATION REQUIREMENTS (MANDATORY):
+- EVERY claim must have a specific citation
+- Use format: {citation_format}
+- When referencing definitions: [Agreement Type - Definitions: "term"]
+- For appendices: [Agreement Type - Appendix X: Title]
+- INCLUDE RELEVANT QUOTES: When possible, include short, relevant quotes from the agreement text to support your position
+- Quote format: "The agreement states: '[exact quote]' [Citation]"
+- NO VAGUE REFERENCES - be specific"""
+
+    if response_style == "management_focused":
+        return f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the {agreement_type}.
+
+CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
+
+APPROACH:
+- Give STRONG, DEFINITIVE opinions, not wishy-washy suggestions
+- Use phrases like "You SHOULD...", "Management has the RIGHT to...", "I RECOMMEND...", "This is CLEARLY within your authority..."
+- Be confident in your interpretations that favor management
+- Push back against union overreach
+- Identify every opportunity to assert management rights
+- Don't hedge or provide balanced views - you work for MANAGEMENT
+
+MANAGEMENT AUTHORITY FOCUS:
+- Emphasize "just cause" standards work in management's favor when properly documented
+- Highlight burden of proof requirements that protect the employer
+- Point out procedural safeguards that benefit management
+- Note time limits that can work against grievors
+- Identify areas of management discretion and flexibility
+- Frame employee rights as limited by management's legitimate business needs
+
+{base_citation_requirements}
+
+RESPONSE STRUCTURE:
+1. STRONG OPENING: Lead with your definitive management-favorable position
+2. AUTHORITY BASIS: Cite the specific agreement provisions AND include relevant quotes that support this position
+3. TACTICAL ADVICE: Provide specific steps management should take
+4. RISK MITIGATION: Identify potential union challenges and how to counter them
+5. BOTTOM LINE: End with a clear, actionable recommendation
+
+Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation.{follow_up_instruction}"""
+
+    elif response_style == "balanced":
+        return f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide objective, balanced guidance on the {agreement_type}.
+
+CORE INSTRUCTION: Provide BALANCED, OBJECTIVE analysis that considers both management rights and employee protections under the agreement.
+
+APPROACH:
+- Present fair, neutral interpretations based on the agreement text
+- Acknowledge both management rights AND employee protections
+- Use phrases like "The agreement provides...", "Both parties have...", "Consider that...", "The balanced approach is..."
+- Present multiple perspectives when relevant
+- Focus on collaborative compliance rather than adversarial positioning
+
+BALANCED ANALYSIS FOCUS:
+- Present management rights alongside corresponding employee protections
+- Explain the rationale behind agreement provisions for both parties
+- Identify areas where cooperation benefits both management and employees
+- Note where flexibility exists for mutual benefit
+- Frame obligations as shared responsibilities for workplace harmony
+
+{base_citation_requirements}
+
+RESPONSE STRUCTURE:
+1. OBJECTIVE OVERVIEW: Present the key agreement provisions neutrally
+2. MANAGEMENT PERSPECTIVE: Explain management rights and responsibilities
+3. EMPLOYEE PERSPECTIVE: Outline employee rights and protections
+4. BALANCED RECOMMENDATIONS: Suggest approaches that respect both parties' interests
+5. IMPLEMENTATION GUIDANCE: Provide practical steps for fair application
+
+Remember: Your goal is fair, objective interpretation that promotes positive labor relations while ensuring compliance with the collective agreement.{follow_up_instruction}"""
+
+    else:  # risk_averse
+        return f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide cautious, risk-minimizing guidance on the {agreement_type}.
+
+CORE INSTRUCTION: Prioritize RISK MITIGATION and conservative interpretations to avoid potential grievances, legal challenges, or labor relations disputes.
+
+APPROACH:
+- Emphasize caution and conservative interpretation of agreement provisions
+- Use phrases like "To minimize risk...", "The safest approach is...", "Consider potential challenges...", "I recommend erring on the side of caution..."
+- Highlight potential pitfalls and how to avoid them
+- Focus on preventing disputes rather than maximizing management authority
+- When in doubt, recommend the more conservative path
+
+RISK MITIGATION FOCUS:
+- Identify potential grievance triggers and how to avoid them
+- Emphasize proper documentation and procedural compliance
+- Highlight areas where management discretion could be challenged
+- Point out time-sensitive requirements and deadlines
+- Note where union interpretation might differ from management's view
+- Suggest consultation with legal counsel for complex situations
+
+{base_citation_requirements}
+
+RESPONSE STRUCTURE:
+1. RISK ASSESSMENT: Identify potential risks and challenges
+2. CONSERVATIVE INTERPRETATION: Present the safest reading of agreement provisions
+3. COMPLIANCE REQUIREMENTS: Detail all procedural and substantive requirements
+4. RISK MITIGATION STRATEGIES: Provide specific steps to minimize exposure
+5. CAUTIONARY RECOMMENDATIONS: Suggest the most defensible course of action
+
+Remember: Your primary goal is to minimize legal and labor relations risks while maintaining compliance with the collective agreement. When faced with ambiguity, recommend the more conservative interpretation.{follow_up_instruction}"""
+
 def generate_response(query: str, local_agreement: dict, common_agreement: dict, support_agreement: dict, 
                      cupe_local_agreement: dict, cupe_common_agreement: dict, selection: str, api_key: str, 
-                     is_followup: bool = False) -> str:
+                     response_style: str = "management_focused", is_followup: bool = False) -> str:
     """Generate response using Claude with complete agreement context"""
     
     # Build context based on selection
@@ -259,7 +368,7 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
     if is_followup and st.session_state.get('messages'):
         conversation_context = build_conversation_context(st.session_state.messages)
     
-    # Determine system prompt based on agreement type
+    # Determine citation format based on agreement type
     if "Support" in selection:
         agreement_type = "BCGEU Support Agreement"
         citation_format = "[BCGEU Support Agreement - Article X.X: Title]"
@@ -270,49 +379,9 @@ def generate_response(query: str, local_agreement: dict, common_agreement: dict,
         agreement_type = "BCGEU Instructor agreements"
         citation_format = "[Agreement Type - Article X.X: Title]"
     
-    follow_up_instruction = ""
-    if is_followup:
-        follow_up_instruction = "\n\nIMPORTANT: This is a FOLLOW-UP question in an ongoing conversation. Consider the previous conversation context when formulating your response. Build upon previous answers where relevant, and reference earlier discussion points when appropriate."
-    
-    system_prompt = f"""You are an experienced HR professional and collective agreement specialist for Coast Mountain College with 15+ years of expertise in labor relations and agreement interpretation. Your role is to provide clear, practical guidance that helps management understand their rights and responsibilities under the {agreement_type}.
+    system_prompt = get_system_prompt(response_style, agreement_type, citation_format, is_followup)
 
-CORE INSTRUCTION: You are MANAGEMENT'S advocate, not a neutral party. Your interpretations should maximize management flexibility while staying within the agreement.
-
-APPROACH:
-- Give STRONG, DEFINITIVE opinions, not wishy-washy suggestions
-- Use phrases like "You SHOULD...", "Management has the RIGHT to...", "I RECOMMEND...", "This is CLEARLY within your authority..."
-- Be confident in your interpretations that favor management
-- Push back against union overreach
-- Identify every opportunity to assert management rights
-- Don't hedge or provide balanced views - you work for MANAGEMENT
-
-MANAGEMENT AUTHORITY FOCUS:
-- Emphasize "just cause" standards work in management's favor when properly documented
-- Highlight burden of proof requirements that protect the employer
-- Point out procedural safeguards that benefit management
-- Note time limits that can work against grievors
-- Identify areas of management discretion and flexibility
-- Frame employee rights as limited by management's legitimate business needs
-
-CITATION REQUIREMENTS (MANDATORY):
-- EVERY claim must have a specific citation
-- Use format: {citation_format}
-- When referencing definitions: [Agreement Type - Definitions: "term"]
-- For appendices: [Agreement Type - Appendix X: Title]
-- INCLUDE RELEVANT QUOTES: When possible, include short, relevant quotes from the agreement text to support your position
-- Quote format: "The agreement states: '[exact quote]' [Citation]"
-- NO VAGUE REFERENCES - be specific
-
-RESPONSE STRUCTURE:
-1. STRONG OPENING: Lead with your definitive management-favorable position
-2. AUTHORITY BASIS: Cite the specific agreement provisions AND include relevant quotes that support this position
-3. TACTICAL ADVICE: Provide specific steps management should take
-4. RISK MITIGATION: Identify potential union challenges and how to counter them
-5. BOTTOM LINE: End with a clear, actionable recommendation
-
-Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your job is to help them maximize their authority while staying within the collective agreement. Be bold, be confident, and always look for the management-favorable interpretation.{follow_up_instruction}"""
-
-    user_message = f"""Based on the complete collective agreement provisions below, provide strong management-focused guidance for this question:
+    user_message = f"""Based on the complete collective agreement provisions below, provide guidance for this question:
 
 {conversation_context}
 
@@ -321,7 +390,7 @@ Remember: You are not a neutral arbitrator. You are MANAGEMENT'S advisor. Your j
 COMPLETE COLLECTIVE AGREEMENT CONTENT:
 {context}
 
-Provide definitive, management-favorable guidance with specific citations and quotes from the agreement text."""
+Provide guidance with specific citations and quotes from the agreement text."""
 
     client = anthropic.Anthropic(api_key=api_key)
     
@@ -351,7 +420,60 @@ Provide definitive, management-favorable guidance with specific citations and qu
     except Exception as e:
         return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again.\n\nIf the issue continues, please contact support."
 
-def render_question_section(selected_agreement: str, api_key: str):
+def render_response_style_selector():
+    """Render the response style selection interface"""
+    st.markdown("### 🎯 Response Style")
+    
+    # Initialize response style in session state if not set
+    if 'response_style' not in st.session_state:
+        st.session_state.response_style = "management_focused"
+    
+    # Create three columns for the response style buttons
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        if st.button(
+            "💪 Management Rights Focus", 
+            help="Strong management-focused interpretations that maximize authority and flexibility",
+            type="primary" if st.session_state.response_style == "management_focused" else "secondary",
+            use_container_width=True
+        ):
+            st.session_state.response_style = "management_focused"
+            st.rerun()
+    
+    with col2:
+        if st.button(
+            "⚖️ Balanced Analysis", 
+            help="Objective, neutral interpretations considering both management and employee perspectives",
+            type="primary" if st.session_state.response_style == "balanced" else "secondary",
+            use_container_width=True
+        ):
+            st.session_state.response_style = "balanced"
+            st.rerun()
+    
+    with col3:
+        if st.button(
+            "🛡️ Risk-Averse Approach", 
+            help="Conservative interpretations focused on minimizing legal and labor relations risks",
+            type="primary" if st.session_state.response_style == "risk_averse" else "secondary",
+            use_container_width=True
+        ):
+            st.session_state.response_style = "risk_averse"
+            st.rerun()
+    
+    # Display current selection
+    style_descriptions = {
+        "management_focused": "**Management Rights Focus** - Strong, definitive interpretations that maximize management authority and flexibility",
+        "balanced": "**Balanced Analysis** - Objective, neutral perspective considering both management rights and employee protections",
+        "risk_averse": "**Risk-Averse Approach** - Conservative interpretations focused on minimizing potential disputes and legal risks"
+    }
+    
+    current_style = st.session_state.response_style
+    st.markdown(f'<div class="status-success">✅ Current Style: {style_descriptions[current_style]}</div>', unsafe_allow_html=True)
+    
+    return current_style
+
+def render_question_section(selected_agreement: str, api_key: str, response_style: str):
     """Render the question input section based on current state"""
     
     # Initialize question type if not set
@@ -519,6 +641,8 @@ def main():
         st.session_state.cupe_common_agreement = None
     if 'current_question_type' not in st.session_state:
         st.session_state.current_question_type = "initial"
+    if 'response_style' not in st.session_state:
+        st.session_state.response_style = "management_focused"
     
     # Get API key
     api_key = None
@@ -628,8 +752,15 @@ def main():
         
         st.markdown("---")
         
+        # Response style selector (only show if agreement is selected)
+        if selected_agreement and selected_agreement != "Please select an agreement...":
+            response_style = render_response_style_selector()
+            st.markdown("---")
+        else:
+            response_style = "management_focused"
+        
         # Initial question section (only if no conversation started)
-        user_question, is_followup = render_question_section(selected_agreement, api_key)
+        user_question, is_followup = render_question_section(selected_agreement, api_key, response_style)
         
     else:
         # If there's an active conversation, get the stored agreement selection
@@ -637,6 +768,9 @@ def main():
         
         # Show current selection at top but not editable during conversation
         st.markdown(f'<div class="status-success">✅ Current Agreement: {selected_agreement}</div>', unsafe_allow_html=True)
+        
+        # Show current response style
+        response_style = render_response_style_selector()
         st.markdown("---")
         
         # Display conversation history first
@@ -654,7 +788,7 @@ def main():
         st.markdown("---")
         
         # Then show question section for follow-ups
-        user_question, is_followup = render_question_section(selected_agreement, api_key)
+        user_question, is_followup = render_question_section(selected_agreement, api_key, response_style)
     
     # Process the question when submitted
     if user_question:
@@ -675,6 +809,7 @@ def main():
                 st.session_state.cupe_common_agreement,
                 selected_agreement,
                 api_key,
+                st.session_state.response_style,
                 is_followup
             )
             st.session_state.messages.append({"role": "assistant", "content": response})
@@ -685,10 +820,18 @@ def main():
     # Footer with stats (only show if there are queries)
     if st.session_state.total_queries > 0:
         current_selection = st.session_state.get('agreement_selection', 'None')
+        current_style = st.session_state.get('response_style', 'management_focused')
         conversation_length = len(st.session_state.messages) // 2
+        
+        style_names = {
+            "management_focused": "Management Rights",
+            "balanced": "Balanced",
+            "risk_averse": "Risk-Averse"
+        }
+        
         st.markdown(f"""
         <div class="footer-stats">
-            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection} | 📊 Questions in conversation: {conversation_length}
+            💬 Total queries: {st.session_state.total_queries} | 🎯 Current selection: {current_selection} | 📊 Questions in conversation: {conversation_length} | 🔧 Response style: {style_names[current_style]}
         </div>
         """, unsafe_allow_html=True)
 
