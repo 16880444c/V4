@@ -433,7 +433,7 @@ def render_response_style_selector():
     
     with col1:
         if st.button(
-            "💪 Management Rights Focus", 
+            "📋 Management Rights Focus", 
             help="Strong management-focused interpretations that maximize authority and flexibility",
             type="primary" if st.session_state.response_style == "management_focused" else "secondary",
             use_container_width=True
