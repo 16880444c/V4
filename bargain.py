@@ -448,12 +448,15 @@ Provide structured, balanced analysis with specific citations and strategic reco
     
     except anthropic.RateLimitError:
         return "⚠️ **Rate Limit Reached**\n\nThe system has reached its usage limit for this minute. Please wait a moment and try again."
-    
-    except anthropic.APIError as e:
-        return f"⚠️ **API Error**\n\nThere was an issue connecting to the AI service. Please try again in a moment."
-    
+
+    except anthropic.AuthenticationError as e:
+        return f"⚠️ **Authentication Error**\n\nYour API key is invalid or missing. Please check your `ANTHROPIC_API_KEY`.\n\n`{e}`"
+
+    except anthropic.BadRequestError as e:
+        return f"⚠️ **Bad Request**\n\nThe request was rejected by the API (often a context length issue).\n\n`{e}`"
+
     except Exception as e:
-        return f"⚠️ **Unexpected Error**\n\nSomething went wrong while processing your request. Please try again."
+        return f"⚠️ **Error: {type(e).__name__}**\n\n`{str(e)}`"
 
 def process_strikethrough_text(text: str) -> str:
     """Process text to preserve strikethrough formatting by converting to [REMOVED: text] format"""
