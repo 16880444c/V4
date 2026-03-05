@@ -241,8 +241,8 @@ def generate_bargaining_response(query: str, analysis_type: str, local_agreement
 
     # Brevity preamble applied to all prompts
     BREVITY_PREAMBLE = (
-        "Be concise. Limit your response to 400–500 words. Use headers and bullets only where "
-        "essential. Cite specific article numbers inline, e.g. [Article X.X].\n\n"
+        "Be concise but complete. Aim for 500–700 words. Never truncate a section — if you begin a section, finish it fully. "
+        "Use headers and bullets only where essential. Cite specific article numbers inline, e.g. [Article X.X].\n\n"
     )
 
     # -----------------------------------------------------------------------
@@ -345,7 +345,7 @@ COLLECTIVE AGREEMENT:
     try:
         response = client.messages.create(
             model="claude-sonnet-4-5",
-            max_tokens=900,
+            max_tokens=2000,
             system=system_prompt,
             messages=[
                 {"role": "user", "content": user_message}
