@@ -254,7 +254,7 @@ def generate_bargaining_response(query: str, analysis_type: str, local_agreement
 
 CRITICAL FORMAT RULES — follow these exactly, every time, without exception:
 - Use ONLY the section headings shown above, word-for-word. Do not rename, reorder, merge, or add sections.
-- Every section heading must be formatted as bold markdown exactly as shown (e.g. **1. EXISTING AUTHORITY**).
+- Every section heading must be formatted as bold markdown exactly as shown (e.g. **1. EXISTING AUTHORITY & POTENTIAL IMPACT** for Union Proposals, **1. EXISTING AUTHORITY** for Management Proposals).
 - Do not add an introduction, preamble, summary, or closing paragraph outside the numbered sections.
 - Do not vary the structure based on the question. Always produce all sections in order, even if a section is brief.
 - Cite article numbers inline within sections, e.g. [Article X.X]. Do not create a separate citations section."""
@@ -277,21 +277,21 @@ Identify the 2–3 most likely union objections and provide management's tactica
 How should management prioritize and advance this proposal? Note trade-offs, packaging opportunities with other bargaining items, or minimum acceptable fallback positions that still achieve management's core objective.""" + FORMAT_LOCK
 
     elif analysis_type == "Union Proposal":
-        system_prompt = BREVITY_PREAMBLE + """You are an expert collective bargaining strategist with 20+ years in higher education, retained exclusively by MANAGEMENT (the employer/college). Analyze the union's proposal from management's perspective.
+        system_prompt = BREVITY_PREAMBLE + """You are an expert collective bargaining strategist with 20+ years in higher education, retained exclusively by MANAGEMENT (the employer/college). You are advising the management bargaining team on how to EVALUATE and RESPOND to a union proposal. The user IS management. You are never advising the union.
 
 Your response MUST use these four sections, in this order, with these exact headings:
 
-**1. IS THIS A REAL PROBLEM?**
-Are current provisions already adequate? Cite relevant language that may already address the union's concern.
+**1. EXISTING AUTHORITY & POTENTIAL IMPACT**
+Does management already have the contractual right or language that addresses what the union is asking for? Cite relevant clauses. If current language already covers the union's concern, note how this undermines the need for their proposal and strengthens management's position to resist it. Then assess the potential impact if the union's proposed change were adopted: what rights, flexibilities, or operational practices would management lose or have constrained? Be specific about the practical day-to-day consequences.
 
-**2. COST & RISK**
-Financial cost, loss of management flexibility, precedent dangers (3–5 bullets max).
+**2. COST & RISK ASSESSMENT**
+Provide 3–5 specific, operationally grounded reasons why this proposal is problematic for management (e.g., financial cost, loss of scheduling flexibility, precedent risk, administrative burden, conflict with existing provisions). Be concrete — quantify where possible.
 
-**3. PROBLEMS WITH THE PROPOSAL**
-Rights compromised, unintended consequences, conflicts with existing provisions.
+**3. ANTICIPATED UNION ARGUMENTS & MANAGEMENT RESPONSES**
+Identify the 2–3 strongest arguments the union will make in support of their proposal and provide management's tactical rebuttal to each. Anticipate how the union will frame this at the table and how management should counter.
 
-**4. RECOMMENDED RESPONSE**
-Reject / counter / accept with modifications — with brief rationale and any minimum counter-proposal language.""" + FORMAT_LOCK
+**4. RECOMMENDED RESPONSE STRATEGY**
+Should management reject, counter, or accept with modifications? Provide a clear recommendation with rationale. If a counter-proposal is advisable, outline the minimum acceptable language that protects management's core interests. Note any trade-off or packaging opportunities with other bargaining items.""" + FORMAT_LOCK
 
     else:  # General Analysis
         system_prompt = BREVITY_PREAMBLE + """You are an expert collective bargaining strategist with 20+ years in higher education, retained by MANAGEMENT (the employer/college). Provide concise, management-oriented analysis.
@@ -323,7 +323,11 @@ Two or three options with brief pros/cons, and your recommended approach for man
         )
     elif analysis_type == "Union Proposal":
         analysis_header = "UNION PROPOSAL — MANAGEMENT RESPONSE STRATEGY"
-        instruction = "Analyze this union proposal from management's perspective and recommend how management should respond."
+        instruction = (
+            "You are advising management. Evaluate this union proposal and help management respond strategically. "
+            "Identify whether existing language already addresses the union's concern, assess the cost and risk, "
+            "anticipate the union's arguments and prepare rebuttals, and recommend how management should respond at the table."
+        )
     else:
         analysis_header = "GENERAL BARGAINING ANALYSIS — MANAGEMENT PERSPECTIVE"
         instruction = "Provide analysis of this collective bargaining topic from management's perspective."
@@ -401,7 +405,7 @@ def render_analysis_section(selected_agreement: str, api_key: str):
     if analysis_type == "Management Proposal":
         st.info("📋 **Management Proposal Analysis**: Get strategic advice on how to advance and implement management's own proposals — including existing authority, justification, anticipated union objections, and bargaining strategy.")
     elif analysis_type == "Union Proposal":
-        st.info("🔍 **Union Proposal Analysis**: Examine union requests from management's perspective, identify underlying issues, suggest alternatives, and recommend response strategies.")
+        st.info("🔍 **Union Proposal Analysis**: Examine union requests from management's perspective, identify whether existing language already covers the issue, assess cost and risk, prepare rebuttals to union arguments, and recommend a response strategy.")
     else:
         st.info("📊 **General Analysis**: Management-oriented analysis of collective bargaining topics, trends, and strategic considerations.")
     
