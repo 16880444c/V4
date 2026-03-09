@@ -237,7 +237,7 @@ Provide definitive, management-favorable guidance with specific citations and qu
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=1500,
+            max_tokens=4000,
             system=system_prompt,
             messages=[{"role": "user", "content": user_message}]
         )
